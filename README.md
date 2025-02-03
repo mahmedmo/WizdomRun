@@ -1,12 +1,19 @@
-# 🔖 SENG 401 – Term Project Proposal – Group 17
+# 👾 Wizdom Run
 
-## 👥 Team Members
-- Muhammad Ahmed
-- Matthew Roxas
-- Wilson Zheng
-- Sukriti Badhwar
-- Sahib Thethi
-- Charlie Lang
+## 📑 Table of Contents
+- [🚀 Project Summary](#-project-summary)
+- [📋 Project Overview](#-project-overview)
+  - [📱 Splash Screen & Authentication (MH)](#📱-splash-screen--authentication-mh)
+  - [🎨 Character Creation & Tutorial (MH)](#🎨-character-creation--tutorial-mh)
+  - [📚 Campaign Setup & Notes Import](#📚-campaign-setup--notes-import)
+  - [🛤️ Campaign Structure](#🛤️-campaign-structure)
+  - [🏃 Gameplay Mechanics](#🏃-gameplay-mechanics-endless-runner)
+  - [⚔️ Boss Battles: Turn-Based Combat](#⚔️-boss-battles-turn-based-combat)
+  - [🏆 Winning, Losing, and Achievements](#🏆-winning-losing-and-achievements)
+- [🛠️ Design/Architecture](#-designarchitecture)
+- [🔍 Testing](#-testing)
+- [💻 Tech Stack](#-tech-stack)
+- [👨‍💻 Team Roles](#-team-roles-seng-401---group-17)
 
 ---
 
@@ -17,29 +24,29 @@ Learning complex terminology often feels like a tedious chore, draining motivati
 
 ## 📋 Project Overview
 
-### 1. 📱 Splash Screen & Authentication (MH)
+### 📱 Splash Screen & Authentication (MH)
 - **Splash Screen:** On launch, users are greeted with a dynamic screen displaying the game’s title and environment.
 - **Authentication:** Users can log in or sign up.
 
-### 2. 🎨 Character Creation & Tutorial (MH)
+### 🎨 Character Creation & Tutorial (MH)
 - **Character Creation:** After account creation, users choose and customize their wizard (CH).
 - **Tutorial:** Explains game mechanics:
   - How to import notes for study.
   - How to navigate and play the game.
 
-### 3. 📚 Campaign Setup & Notes Import
+### 📚 Campaign Setup & Notes Import
 - **Campaign Options:** Start a new campaign or continue an existing one.
 - **Notes Import (CH):** Users import study notes.
 - **LLM Processing:** The LLM extracts key terminology/concepts and generates three question sets: **easy**, **medium**, and **hard** (CH).
 
-### 4. 🛤️ Campaign Structure
+### 🛤️ Campaign Structure
 - **Campaign Length:** Users choose from:
   - **Quest (Short)**
   - **Odyssey (Medium)**
   - **Saga (Long)**
 - **Difficulty Progression:** Questions progress from easy (early levels) to hard (later levels).
 
-### 5. 🏃 Gameplay Mechanics: Endless Runner
+### 🏃 Gameplay Mechanics
 - **Auto-Run:** The player character runs automatically through diverse environments.
 - **Combat:** Enemies appear; players cast spells to defeat them.
 - **Mana System:**
@@ -49,7 +56,7 @@ Learning complex terminology often feels like a tedious chore, draining motivati
     - **Incorrect Answer:** No mana gain, limiting spell usage.
 - **Special Events:** Correct responses during events grant additional spells/abilities. *(SH)*
 
-### 6. ⚔️ Boss Battles: Turn-Based Combat
+### ⚔️ Boss Battles: Turn-Based Combat
 - **Boss Encounter:** At the end of each level, a boss battle begins.
 - **Turn-Based Mechanics:**
   - Players receive a hand of cards with unique buffs or bonuses.
@@ -58,20 +65,19 @@ Learning complex terminology often feels like a tedious chore, draining motivati
     - **Incorrect Answer:** Causes the player to skip a turn.
 - **Progression:** Defeating the boss advances the player, carrying over any gained abilities.
 
-### 7. 🏆 Winning, Losing, and Achievements
+### 🏆 Winning, Losing, and Achievements
 - **Failure Limit:** Three losses in a level result in campaign failure and restart.
 - **Achievements:** Successful campaign completions are celebrated and saved on the **Achievements Page** (CH) in the main menu.
 
 ---
 
-## 🔍 Testing
+## 🛠️ Design/Architecture
 *Details to be determined.*
 
 ---
 
-## 🛠️ Design/Architecture
-- **Campaign:** Timestamp management and requirement tracking.
-- **Requirement:** Specifics to be detailed.
+## 🔍 Testing
+*Details to be determined.*
 
 ---
 
@@ -96,7 +102,7 @@ Learning complex terminology often feels like a tedious chore, draining motivati
 
 ---
 
-## 👨‍💻 Team Roles
+## 👨‍💻 Team Roles (SENG 401 - Group 17)
 - **Muhammad Ahmed:** Project Manager, Frontend/Unity Engineer.
 - **Matthew Roxas:** Frontend/Unity Engineer.
 - **Wilson Zheng:** Frontend/Unity Engineer.
