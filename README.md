@@ -1,19 +1,19 @@
-# 👾 Wizdom Run
+# 👾 Wizdom Run 👾
 
 ## Table of Contents
 - [Project Summary](#project-summary)
 - [Project Overview](#project-overview)
-  - [📱 Splash Screen & Authentication (MH)](#-splash-screen--authentication-mh)
+  - [👤 Splash Screen & Authentication (MH)](#-splash-screen--authentication-mh)
   - [🎨 Character Creation & Tutorial (MH)](#-character-creation--tutorial-mh)
-  - [📚 Campaign Setup & Notes Import](#-campaign-setup--notes-import)
-  - [🛤️ Campaign Structure](#-campaign-structure)
-  - [🏃 Gameplay Mechanics](#-gameplay-mechanics-endless-runner)
-  - [⚔️ Boss Battles: Turn-Based Combat](#-boss-battles-turn-based-combat)
+  - [✏️ Campaign Setup & Notes Import](#-campaign-setup--notes-import)
+  - [🎭 Campaign Structure](#-campaign-structure)
+  - [⌛️ Gameplay Mechanics](#-gameplay-mechanics-endless-runner)
+  - [🗡️ Boss Battles: Turn-Based Combat](#-boss-battles-turn-based-combat)
   - [🏆 Winning, Losing, and Achievements](#-winning-losing-and-achievements)
-- [Design/Architecture](#designarchitecture)
-- [🔍 Testing](#-testing)
-- [💻 Tech Stack](#-tech-stack)
-- [👨‍💻 Team Roles](#-team-roles-seng-401---group-17)
+- [Design](#design)
+- [Testing](#-testing)
+- [Tech Stack](#-tech-stack)
+- [Team Roles](#-team-roles-seng-401---group-17)
 
 ---
 
@@ -24,7 +24,7 @@ Learning complex terminology often feels like a tedious chore, draining motivati
 
 ## Project Overview
 
-### 📱 Splash Screen & Authentication (MH)
+### 👤 Splash Screen & Authentication (MH)
 - **Splash Screen:** On launch, users are greeted with a dynamic screen displaying the game’s title and environment.
 - **Authentication:** Users can log in or sign up.
 
@@ -34,19 +34,19 @@ Learning complex terminology often feels like a tedious chore, draining motivati
   - How to import notes for study.
   - How to navigate and play the game.
 
-### 📚 Campaign Setup & Notes Import
+### ✏️ Campaign Setup & Notes Import
 - **Campaign Options:** Start a new campaign or continue an existing one.
 - **Notes Import (CH):** Users import study notes.
 - **LLM Processing:** The LLM extracts key terminology/concepts and generates three question sets: **easy**, **medium**, and **hard** (CH).
 
-### 🛤️ Campaign Structure
+### 🎭 Campaign Structure
 - **Campaign Length:** Users choose from:
   - **Quest (Short)**
   - **Odyssey (Medium)**
   - **Saga (Long)**
 - **Difficulty Progression:** Questions progress from easy (early levels) to hard (later levels).
 
-### 🏃 Gameplay Mechanics
+### ⌛️ Gameplay Mechanics
 - **Auto-Run:** The player character runs automatically through diverse environments.
 - **Combat:** Enemies appear; players cast spells to defeat them.
 - **Mana System:**
@@ -56,7 +56,7 @@ Learning complex terminology often feels like a tedious chore, draining motivati
     - **Incorrect Answer:** No mana gain, limiting spell usage.
 - **Special Events:** Correct responses during events grant additional spells/abilities. *(SH)*
 
-### ⚔️ Boss Battles: Turn-Based Combat
+### 🗡️ Boss Battles: Turn-Based Combat
 - **Boss Encounter:** At the end of each level, a boss battle begins.
 - **Turn-Based Mechanics:**
   - Players receive a hand of cards with unique buffs or bonuses.
@@ -71,26 +71,31 @@ Learning complex terminology often feels like a tedious chore, draining motivati
 
 ---
 
-## Design/Architecture
+## Requirements
 *Details to be determined.*
 
 ---
 
-## 🔍 Testing
+## Design
 *Details to be determined.*
 
 ---
 
-## 💻 Tech Stack
+## Testing
+*Details to be determined.*
 
-### 🌐 Frontend (3x Team Members)
+---
+
+## Tech Stack
+
+### 📺 Frontend (3x Team Members)
 - **React Native + Unity Integration (MH)**
   - **Deployment:** Cross-platform (iOS, Android, Web).
   - **Division of Labor:** Unity manages core gameplay; React Native handles UI (splash, authentication, note imports).
 - **Splash Screen & Auth (MH):** Powered by Firebase.
 - **Local Note Import (MH):** Uses file system access for offline uploads, minimizing database load and ensuring privacy.
 
-### 🤖 LLM Integration (2x Team Members)
+### ⚙️ LLM Integration (2x Team Members)
 - **LLM Communication (MH):** Integrates Deepseek with two specialized models:
   - **deepseek-reasoner:** For initial note analysis and knowledge extraction.
   - **deepseek-chat:** Processes the output to generate final Q&A formats.
@@ -102,7 +107,7 @@ Learning complex terminology often feels like a tedious chore, draining motivati
 
 ---
 
-## 👨‍💻 Team Roles (SENG 401 - Group 17)
+## Team Roles (SENG 401 - Group 17)
 - **Muhammad Ahmed:** Project Manager, Frontend/Unity Engineer.
 - **Matthew Roxas:** Frontend/Unity Engineer.
 - **Wilson Zheng:** Frontend/Unity Engineer.
