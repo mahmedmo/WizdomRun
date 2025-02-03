@@ -10,10 +10,11 @@
   - [⌛️ Gameplay Mechanics](#-gameplay-mechanics-endless-runner)
   - [🗡️ Boss Battles: Turn-Based Combat](#-boss-battles-turn-based-combat)
   - [🏆 Winning, Losing, and Achievements](#-winning-losing-and-achievements)
+- [Requirements](#requirements)
 - [Design](#design)
-- [Testing](#-testing)
-- [Tech Stack](#-tech-stack)
-- [Team Roles](#-team-roles-seng-401---group-17)
+- [Testing](#testing)
+- [Tech Stack](#tech-stack)
+- [Team Roles](#team-roles-seng-401---group-17)
 
 ---
 
