@@ -1,8 +1,8 @@
 # 👾 Wizdom Run
 
-## 📑 Table of Contents
-- [🚀 Project Summary](#-project-summary)
-- [📋 Project Overview](#-project-overview)
+## Table of Contents
+- [Project Summary](#project-summary)
+- [Project Overview](#project-overview)
   - [📱 Splash Screen & Authentication (MH)](#📱-splash-screen--authentication-mh)
   - [🎨 Character Creation & Tutorial (MH)](#🎨-character-creation--tutorial-mh)
   - [📚 Campaign Setup & Notes Import](#📚-campaign-setup--notes-import)
@@ -17,12 +17,12 @@
 
 ---
 
-## 🚀 Project Summary
+## Project Summary
 Learning complex terminology often feels like a tedious chore, draining motivation and focus. Our solution transforms this challenge into an engaging adventure—empowering learners to master new concepts through an immersive game-based experience. Study sessions become captivating quests for growth!
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 ### 📱 Splash Screen & Authentication (MH)
 - **Splash Screen:** On launch, users are greeted with a dynamic screen displaying the game’s title and environment.
@@ -71,7 +71,7 @@ Learning complex terminology often feels like a tedious chore, draining motivati
 
 ---
 
-## 🛠️ Design/Architecture
+## Design/Architecture
 *Details to be determined.*
 
 ---
