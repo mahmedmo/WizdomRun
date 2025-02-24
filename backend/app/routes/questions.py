@@ -11,7 +11,7 @@ def get_questions(campaignID):
         {
             "questionID": q.questionID,
             "difficulty": q.difficulty,
-            "question": q.question,
+            "questionStr": q.question,
             "gotCorrect": q.gotCorrect,
             "wrongAttempts": q.wrongAttempts
         } for q in questions
@@ -25,10 +25,10 @@ def answer_question(questionID):
     if not question:
         return jsonify({"error": "Question not found"}), 404
 
-    if "isCorrect" not in data:
-        return jsonify({"error": "Missing isCorrect field"}), 400
+    if "gotCorrect" not in data:
+        return jsonify({"error": "Missing gotCorrect field"}), 400
 
-    if data["isCorrect"]:
+    if data["gotCorrect"]:
         question.gotCorrect = True
     else:
         question.wrongAttempts += 1

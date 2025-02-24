@@ -43,7 +43,7 @@ class Question(db.Model):
     questionID = db.Column(db.Integer, primary_key=True)
     campaignID = db.Column(db.Integer, db.ForeignKey('campaign.campaignID', ondelete="CASCADE"), nullable=False)
     difficulty = db.Column(Enum('easy', 'medium', 'hard', name='question_difficulty'), nullable=False)
-    question = db.Column(db.Text, nullable=False)
+    questionStr = db.Column(db.Text, nullable=False)
     gotCorrect = db.Column(db.Boolean, nullable=False, default=False)
     wrongAttempts = db.Column(db.Integer, nullable=False, default=0)
 
@@ -54,7 +54,7 @@ class Answer(db.Model):
 
     answerID = db.Column(db.Integer, primary_key=True)
     questionID = db.Column(db.Integer, db.ForeignKey('questions.questionID', ondelete="CASCADE"), nullable=False)
-    answer = db.Column(db.Text, nullable=False)
+    answerStr = db.Column(db.Text, nullable=False)
     isCorrect = db.Column(db.Boolean, nullable=False, default=False)
 
 class PlayerStats(db.Model):
