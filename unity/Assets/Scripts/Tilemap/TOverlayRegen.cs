@@ -34,8 +34,10 @@ public class TOverlayRegen : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Instance != null && GameManager.Instance.IsPaused)
+            return;
         // Check GameTime
-        if (!GameTimeManager.Instance.RunStart()) return;
+        if (!GameManager.Instance.RunStart()) return;
 
         // Tilemap scroll
         transform.position += Vector3.down * scrollSpeed * Time.deltaTime;

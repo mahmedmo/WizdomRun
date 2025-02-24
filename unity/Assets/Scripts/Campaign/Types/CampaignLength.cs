@@ -1,0 +1,1 @@
+public enum CampaignLength { QUEST, ODYSSEY, SAGA }

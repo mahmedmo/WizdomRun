@@ -1,0 +1,1 @@
+public enum PlayerClass { Fire, Water, Earth, Air}
