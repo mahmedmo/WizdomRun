@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections.Generic;
+using System.Collections;
 
 public class TStructRegen : MonoBehaviour
 {
@@ -16,14 +17,11 @@ public class TStructRegen : MonoBehaviour
     public TileBase[] rareStructTilesLeft;
     public TileBase[] rareStructTilesRight;
 
-
     [Header("Spawner")]
-
     [Range(0.0f, 1.0f)]
     public float spawnRate;
     public int maxSpawn = 20;
-    public int rareBuffer = 3;
-    public float structLifespan = 10f;
+    public int rareBuffer = 3; // Buffer for empty rows in between a rare spawn
 
     [Header("Camera")]
     public Camera mainCamera;
@@ -39,7 +37,7 @@ public class TStructRegen : MonoBehaviour
     {
         bottomRowPos = tilemap.origin;
 
-        // Initialize maxSpawn rows
+        // Initialize free rows (row IDs) based on maxSpawn
         for (int i = 0; i < maxSpawn; i++)
         {
             freeRows.Enqueue(bottomRowPos.y + i);
@@ -50,48 +48,42 @@ public class TStructRegen : MonoBehaviour
 
     void Update()
     {
-        // Check GameTime
-        if (!GameTimeManager.Instance.RunStart()) return;
+        if (GameManager.Instance != null && GameManager.Instance.IsPaused)
+            return;
 
-        // Tilemap scroll
+        if (!GameManager.Instance.RunStart()) return;
+
+        // Scroll the entire tilemap downward
         transform.position += Vector3.down * scrollSpeed * Time.deltaTime;
 
-        // Check tilemap bounds and update accordingly
+        // Check bounds to spawn new rows as they come into view
         CheckBounds();
     }
 
     void CheckBounds()
     {
         float topOfMapWorldY = tilemap.CellToWorld(new Vector3Int(0, topRowPos.y, 0)).y;
-        float bottomOfMapWorldY = tilemap.CellToWorld(new Vector3Int(0, bottomRowPos.y, 0)).y;
-
         float cameraTopY = mainCamera.transform.position.y + mainCamera.orthographicSize;
-        float cameraBottomY = mainCamera.transform.position.y - mainCamera.orthographicSize;
 
-        // As rows enter view render them busy
-        if (topOfMapWorldY < cameraTopY)
+        // If the top of our map is in view, add a new row if available
+        if (topOfMapWorldY < cameraTopY && freeRows.Count > 0)
         {
-            if (freeRows.Count > 0)
-            {
-                AddRow(freeRows.Dequeue());
-            }
+            AddRow(freeRows.Dequeue());
         }
-
     }
 
     void AddRow(int rowY)
     {
-        // Ensures no new row (outside of the initial 20) do not get created
+        // Prevent duplicate rows
         if (busyRows.Contains(rowY)) return;
 
         if (skipLeft > 0) skipLeft--;
         if (skipRight > 0) skipRight--;
 
-        // Offset rows to above the height of tilemap
-        int offsetY = 24;
+        int offsetY = 24;  // Pushes rows 24 higher from the bottom of the tilemap (pad of 4)
         int rowYOffset = rowY + offsetY;
 
-        // Create a new Tilemap for each row to implement Z index sorting
+        // Create a new row GameObject with its own Tilemap for Z-sorting
         GameObject row = new GameObject($"Row_{rowY}");
         row.transform.parent = this.transform;
 
@@ -99,33 +91,20 @@ public class TStructRegen : MonoBehaviour
         TilemapRenderer rowRenderer = row.AddComponent<TilemapRenderer>();
 
         rowRenderer.sortingLayerName = "Default";
-
-        // Ensures rows with smaller Y order are in front
         rowRenderer.sortingOrder = -rowYOffset;
 
         int currZ = 0;
-
         bool multiSpawn = Random.value < 0.25f;
 
-        // Rare Spawn handler
-        bool leftRare = false;
-        bool rightRare = false;
-        // Allows either the left or right to take the rare spawn
-        if (Random.value < 0.5f)
-        {
-            leftRare = GameTimeManager.Instance.CanRareSpawn();
-        }
-        else
-        {
-            rightRare = GameTimeManager.Instance.CanRareSpawn();
-        }
+        // Determine if rare spawn
+        bool leftRare = (Random.value < 0.5f) && GameManager.Instance.CanRareSpawn();
+        bool rightRare = (!leftRare) && GameManager.Instance.CanRareSpawn();
 
         // Left Bound Handler
         if (skipLeft <= 0 && Random.value < spawnRate)
         {
             if (multiSpawn)
             {
-                // 0: wide-wide, 1: skinny-skinny, 2: skinny-wide
                 int spawnCase = Random.value < 0.33f ? 0 : (Random.value < 0.66f ? 1 : 2);
                 int firstCol, secondCol;
                 TileBase firstTile, secondTile;
@@ -140,7 +119,6 @@ public class TStructRegen : MonoBehaviour
                         if (firstTile != null) rowTilemap.SetTile(new Vector3Int(firstCol, rowYOffset, currZ), firstTile);
                         if (secondTile != null) rowTilemap.SetTile(new Vector3Int(secondCol, rowYOffset, currZ), secondTile);
                         break;
-
                     case 1: // Skinny-Skinny Pair
                         firstCol = tilemap.origin.x;
                         secondCol = Mathf.Min(tilemap.origin.x + 3, firstCol + Random.Range(2, 4));
@@ -149,11 +127,9 @@ public class TStructRegen : MonoBehaviour
                         if (firstTile != null) rowTilemap.SetTile(new Vector3Int(firstCol, rowYOffset, currZ), firstTile);
                         if (secondTile != null) rowTilemap.SetTile(new Vector3Int(secondCol, rowYOffset, currZ), secondTile);
                         break;
-
                     case 2: // Skinny-Wide Pair
                         firstCol = Random.Range(tilemap.origin.x - 1, tilemap.origin.x + 1);
                         secondCol = Mathf.Min(tilemap.origin.x + 3, firstCol + Random.Range(2, 4));
-
                         firstTile = PickStructTile(true, false);
                         secondTile = PickStructTile(false, false);
                         if (firstTile != null) rowTilemap.SetTile(new Vector3Int(firstCol, rowYOffset, currZ), firstTile);
@@ -165,20 +141,21 @@ public class TStructRegen : MonoBehaviour
             {
                 bool isWide = Random.value < 0.5f;
                 int col = isWide
-                        ? Random.Range(tilemap.origin.x, tilemap.origin.x + 3) // Wide struct bound
-                        : Random.Range(tilemap.origin.x, tilemap.origin.x + 4); // Skinny struct bound
+                    ? Random.Range(tilemap.origin.x, tilemap.origin.x + 3)
+                    : Random.Range(tilemap.origin.x, tilemap.origin.x + 4);
                 TileBase tileToPlace = PickStructTile(isWide, false);
-                if (tileToPlace != null) rowTilemap.SetTile(new Vector3Int(col, rowYOffset, currZ), tileToPlace);
-
+                if (tileToPlace != null)
+                    rowTilemap.SetTile(new Vector3Int(col, rowYOffset, currZ), tileToPlace);
             }
         }
-        // After rareBuffer/2 above and rareBuffer/2 below spawn rare struct
+
+        // Left Bound Rare Hander
         if (skipLeft == rareBuffer / 2)
         {
-            int col = tilemap.origin.x - 1; // Rare struct bound
+            int col = tilemap.origin.x - 1;
             TileBase tileToPlace = PickStructTile(false, true);
-            if (tileToPlace != null) rowTilemap.SetTile(new Vector3Int(col, rowYOffset, currZ), tileToPlace);
-
+            if (tileToPlace != null)
+                rowTilemap.SetTile(new Vector3Int(col, rowYOffset, currZ), tileToPlace);
         }
 
         // Right Bound Handler
@@ -186,14 +163,13 @@ public class TStructRegen : MonoBehaviour
         {
             if (multiSpawn)
             {
-                // 0: wide-wide, 1: skinny-skinny, 2: skinny-wide
                 int spawnCase = Random.value < 0.33f ? 0 : (Random.value < 0.66f ? 1 : 2);
                 int firstCol, secondCol;
                 TileBase firstTile, secondTile;
 
                 switch (spawnCase)
                 {
-                    case 0: // Wide-Wide Pair
+                    case 0:
                         firstCol = tilemap.origin.x + cols;
                         secondCol = firstCol - 3;
                         firstTile = PickStructTile(true, false);
@@ -201,8 +177,7 @@ public class TStructRegen : MonoBehaviour
                         if (firstTile != null) rowTilemap.SetTile(new Vector3Int(firstCol, rowYOffset, currZ), firstTile);
                         if (secondTile != null) rowTilemap.SetTile(new Vector3Int(secondCol, rowYOffset, currZ), secondTile);
                         break;
-
-                    case 1: // Skinny-Skinny Pair
+                    case 1:
                         firstCol = tilemap.origin.x + cols - 1;
                         secondCol = Mathf.Max(tilemap.origin.x + cols - 4, firstCol - Random.Range(2, 4));
                         firstTile = PickStructTile(false, false);
@@ -210,8 +185,7 @@ public class TStructRegen : MonoBehaviour
                         if (firstTile != null) rowTilemap.SetTile(new Vector3Int(firstCol, rowYOffset, currZ), firstTile);
                         if (secondTile != null) rowTilemap.SetTile(new Vector3Int(secondCol, rowYOffset, currZ), secondTile);
                         break;
-
-                    case 2: // Skinny-Wide Pair
+                    case 2:
                         firstCol = Random.Range(tilemap.origin.x + cols, tilemap.origin.x + cols - 2);
                         secondCol = Mathf.Max(tilemap.origin.x + cols - 4, firstCol - Random.Range(2, 4));
                         firstTile = PickStructTile(true, false);
@@ -225,35 +199,40 @@ public class TStructRegen : MonoBehaviour
             {
                 bool isWide = Random.value < 0.5f;
                 int col = isWide
-                    ? Random.Range(tilemap.origin.x + cols - 3, tilemap.origin.x + cols) // Wide struct bound
-                    : Random.Range(tilemap.origin.x + cols - 4, tilemap.origin.x + cols); // Skinny struct bound
+                    ? Random.Range(tilemap.origin.x + cols - 3, tilemap.origin.x + cols)
+                    : Random.Range(tilemap.origin.x + cols - 4, tilemap.origin.x + cols);
                 TileBase tileToPlace = PickStructTile(isWide, false);
-                if (tileToPlace != null) rowTilemap.SetTile(new Vector3Int(col, rowYOffset, currZ), tileToPlace);
+                if (tileToPlace != null)
+                    rowTilemap.SetTile(new Vector3Int(col, rowYOffset, currZ), tileToPlace);
             }
         }
 
-        // After rareBuffer/2 above and rareBuffer/2 below spawn rare struct
+        // Right Bound Rare Hander
         if (skipRight == rareBuffer / 2)
         {
-            int col = tilemap.origin.x + cols; // Rare struct bound
+            int col = tilemap.origin.x + cols;
             TileBase tileToPlace = PickStructTile(false, true);
-            if (tileToPlace != null) rowTilemap.SetTile(new Vector3Int(col, rowYOffset, currZ), tileToPlace);
-
+            if (tileToPlace != null)
+                rowTilemap.SetTile(new Vector3Int(col, rowYOffset, currZ), tileToPlace);
         }
 
         if (leftRare) skipLeft = rareBuffer;
         if (rightRare) skipRight = rareBuffer;
 
         topRowPos = new Vector3Int(0, rowYOffset, 0);
-
         busyRows.Add(rowY);
 
-        DestroyTimer(row, structLifespan, rowY);
+        // Attach RowMonitor script to each row to
+        // recycle row when off screen + recycle buffer
+        RowMonitor monitor = row.AddComponent<RowMonitor>();
+        monitor.parentRegen = this;
+        monitor.bottomRowPos = bottomRowPos;
     }
 
     TileBase PickStructTile(bool isWide, bool isRare)
     {
-        TileBase[] tiles = isRare ? (skipLeft != 0 ? rareStructTilesLeft : rareStructTilesRight) : (isWide ? wideStructTiles : skinnyStructTiles);
+        TileBase[] tiles = isRare ? (skipLeft != 0 ? rareStructTilesLeft : rareStructTilesRight)
+                                    : (isWide ? wideStructTiles : skinnyStructTiles);
         if (tiles.Length > 0)
         {
             int randomIndex = Random.Range(0, tiles.Length);
@@ -262,25 +241,26 @@ public class TStructRegen : MonoBehaviour
         return null;
     }
 
-    void DestroyTimer(GameObject row, float delay, int rowY)
+    public void RecycleRow(GameObject row)
     {
-        // Destroy row after delay
-        Destroy(row, delay);
+        // Find row number
+        int rowY;
+        string[] split = row.name.Split('_');
+        if (split.Length > 1 && int.TryParse(split[1], out rowY))
+        {
+            busyRows.Remove(rowY);
+            freeRows.Enqueue(rowY);
+        }
+        else
+        {
+            Debug.LogWarning("RecycleRow: Could not parse rowY from " + row.name);
+        }
 
-        // Destroy row after half a delay with a 1.50 second pad
-        StartCoroutine(RecycleTimer(rowY, delay / 2 + 1.50f));
-    }
+        Destroy(row);
 
-    System.Collections.IEnumerator RecycleTimer(int rowY, float delay)
-    {
-        // Delay before removing row from busy queue
-        yield return new WaitForSeconds(delay);
-        busyRows.Remove(rowY);
-
-        // Pad for 2 seconds before freeing row
-        yield return new WaitForSeconds(2f);
-        freeRows.Enqueue(rowY);
+        if (freeRows.Count > 0)
+        {
+            AddRow(freeRows.Dequeue());
+        }
     }
 }
-
-
