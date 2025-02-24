@@ -174,10 +174,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0.18367347
-    width: 1.3310658
-    height: 1.3310658
+    x: 0.3688245
+    y: 0
+    width: 0.26256388
+    height: 0.99963516
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 1366722138}
   - component: {fileID: 1366722137}
   m_Layer: 0
-  m_Name: HFOverlay
+  m_Name: DLOverlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -429,20 +429,13 @@ MonoBehaviour:
   rows: 20
   cols: 12
   overlayBaseTiles:
-  - {fileID: 11400000, guid: e647fae12aa424a1894fbdc1cd0defcd, type: 2}
-  - {fileID: 11400000, guid: 7f2b2ab5aa429415b8906386c380c915, type: 2}
-  - {fileID: 11400000, guid: 11cf6673ff09647b59270c0fea55aa70, type: 2}
-  - {fileID: 11400000, guid: 835c757dcd1514df9ad60bfd5fecac01, type: 2}
-  - {fileID: 11400000, guid: 9e753b6c119544fd59ad551a7bc01963, type: 2}
-  - {fileID: 11400000, guid: 00e602d7257cd4ec8a58a514b73ecc7b, type: 2}
-  - {fileID: 11400000, guid: 361c0064d448f4312a50a20b4d86a925, type: 2}
-  - {fileID: 11400000, guid: 35525ce9e988d418eb9003b9e86b04d7, type: 2}
-  overlayPathTiles:
-  - {fileID: 11400000, guid: 00e602d7257cd4ec8a58a514b73ecc7b, type: 2}
-  - {fileID: 11400000, guid: 361c0064d448f4312a50a20b4d86a925, type: 2}
-  - {fileID: 11400000, guid: 35525ce9e988d418eb9003b9e86b04d7, type: 2}
-  - {fileID: 11400000, guid: 9e753b6c119544fd59ad551a7bc01963, type: 2}
-  spawnRate: 0.5
+  - {fileID: 11400000, guid: 322de533eb3e69d4eb24d7ed59a3e03d, type: 2}
+  - {fileID: 11400000, guid: 589c39904fbb13940ad664e52246eb39, type: 2}
+  - {fileID: 11400000, guid: a4a66cbcd4b2c6e4cbb9e5744f0b7428, type: 2}
+  - {fileID: 11400000, guid: 696f88d5ff8360f4093691fed2939a32, type: 2}
+  - {fileID: 11400000, guid: 1ee8f33ab8228cc43a9d14bc1ee30733, type: 2}
+  overlayPathTiles: []
+  spawnRate: 0.75
   maxBaseSpawn: 4
   maxPathSpawn: 1
   mainCamera: {fileID: 840498589}
@@ -665,7 +658,7 @@ GameObject:
   - component: {fileID: 1547223153}
   - component: {fileID: 1547223152}
   m_Layer: 0
-  m_Name: HFStruct01
+  m_Name: DLStruct01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -702,25 +695,14 @@ MonoBehaviour:
   scrollSpeed: 5
   rows: 20
   cols: 12
-  wideStructTiles:
-  - {fileID: 11400000, guid: 061a318c105564d9dba6a60153bb6bf3, type: 2}
-  skinnyStructTiles:
-  - {fileID: 11400000, guid: 321e97aebaaf54011a7ef5840efe9ea4, type: 2}
-  - {fileID: 11400000, guid: 321e97aebaaf54011a7ef5840efe9ea4, type: 2}
-  - {fileID: 11400000, guid: 321e97aebaaf54011a7ef5840efe9ea4, type: 2}
-  - {fileID: 11400000, guid: 321e97aebaaf54011a7ef5840efe9ea4, type: 2}
-  - {fileID: 11400000, guid: eba9455118239453b95e10b9c0891860, type: 2}
-  - {fileID: 11400000, guid: b999a6e54bdd14cc38378e8db4230633, type: 2}
-  rareStructTilesLeft:
-  - {fileID: 11400000, guid: 21bec2466827442a0aab57c7089b4278, type: 2}
-  - {fileID: 11400000, guid: 0531922501af149cabfe6effd971ffd9, type: 2}
-  rareStructTilesRight:
-  - {fileID: 11400000, guid: 21bec2466827442a0aab57c7089b4278, type: 2}
-  - {fileID: 11400000, guid: 0531922501af149cabfe6effd971ffd9, type: 2}
+  wideStructTiles: []
+  skinnyStructTiles: []
+  rareStructTilesLeft: []
+  rareStructTilesRight: []
   spawnRate: 1
   maxSpawn: 20
   rareBuffer: 5
-  destroyTime: 10
+  structLifespan: 10
   mainCamera: {fileID: 840498589}
 --- !u!210 &1547223153
 SortingGroup:
@@ -893,7 +875,7 @@ GameObject:
   - component: {fileID: 1956461644}
   - component: {fileID: 1956461646}
   m_Layer: 0
-  m_Name: HFBase01
+  m_Name: DLBase01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3476,10 +3458,10 @@ MonoBehaviour:
   scrollSpeed: 5
   rows: 20
   cols: 12
-  pathTile: {fileID: 11400000, guid: 354dfe5924d8c45c4a0047c46d394734, type: 2}
-  pathLETile: {fileID: 11400000, guid: 0b721765dc11d4aee8416ca95009e20c, type: 2}
-  pathRETile: {fileID: 11400000, guid: d4686cc66cbd4453a92d820e0d922036, type: 2}
-  baseTile: {fileID: 11400000, guid: b455bab7e3e2a434fb53eaa725002315, type: 2}
+  pathTile: {fileID: 11400000, guid: d0944aa4e7eb0904795e85e62fb0482f, type: 2}
+  pathLETile: {fileID: 11400000, guid: 9fde0e5ca2f2a084ca03c4c3ddc36c5e, type: 2}
+  pathRETile: {fileID: 11400000, guid: e0bcc2f610e67ae4684016e9ce633ed5, type: 2}
+  baseTile: {fileID: 11400000, guid: 6b99f817f27dbb24ea90a03fe9df85d6, type: 2}
   mainCamera: {fileID: 840498589}
 --- !u!1001 &731347070658723575
 PrefabInstance:
