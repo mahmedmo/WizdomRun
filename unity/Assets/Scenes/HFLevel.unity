@@ -174,10 +174,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0.18367347
-    width: 1.3310658
-    height: 1.3310658
+    x: 0.920398
+    y: 0
+    width: 1.3432835
+    height: 1.3446584
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 1366722138}
   - component: {fileID: 1366722137}
   m_Layer: 0
-  m_Name: HFOverlay
+  m_Name: HFOverlay01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -703,7 +703,8 @@ MonoBehaviour:
   rows: 20
   cols: 12
   wideStructTiles:
-  - {fileID: 11400000, guid: 061a318c105564d9dba6a60153bb6bf3, type: 2}
+  - {fileID: 11400000, guid: 5c7d04b6bcec06940a634358bd77f8a5, type: 2}
+  - {fileID: 11400000, guid: 266b027ada87ba04aa5f055a0e0e7f00, type: 2}
   skinnyStructTiles:
   - {fileID: 11400000, guid: 321e97aebaaf54011a7ef5840efe9ea4, type: 2}
   - {fileID: 11400000, guid: 321e97aebaaf54011a7ef5840efe9ea4, type: 2}
@@ -720,7 +721,7 @@ MonoBehaviour:
   spawnRate: 1
   maxSpawn: 20
   rareBuffer: 5
-  destroyTime: 10
+  structLifespan: 10
   mainCamera: {fileID: 840498589}
 --- !u!210 &1547223153
 SortingGroup:
