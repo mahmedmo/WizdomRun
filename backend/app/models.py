@@ -92,16 +92,3 @@ class Achievement(db.Model):
     campaignID = db.Column(db.Integer, db.ForeignKey('campaign.campaignID', ondelete="CASCADE"), nullable=False)
     title = db.Column(db.String(63), nullable=False)
     description = db.Column(db.Text)
-
-
-# test db connection
-# from app.extensions import db
-# from app.models import User, PlayerProgress
-
-# # Create a new user
-# new_user = User(user_id="user_123")
-# db.session.add(new_user)
-# db.session.commit()
-
-# User.query.all()
-
