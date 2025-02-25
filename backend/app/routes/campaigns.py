@@ -67,3 +67,30 @@ def delete_campaign(campaignID):
     db.session.delete(campaign)
     db.session.commit()
     return jsonify({"message": "Campaign deleted successfully"})
+
+@campaigns_bp.route("/single/<int:campaignID>", methods=["GET"])
+def get_campaign(campaignID):
+    campaign = Campaign.query.get(campaignID)
+    if not campaign:
+        return jsonify({"error": "Campaign not found"}), 404
+
+    return jsonify({
+        "campaignID": campaign.campaignID,
+        "title": campaign.title,
+        "campaignLength": campaign.campaignLength,
+        "currLevel": campaign.currLevel,
+        "remainingTries": campaign.remainingTries
+    })
+
+@campaigns_bp.route("/<int:campaignID>/restart", methods=["PATCH"])
+def restart_campaign(campaignID):
+    campaign = Campaign.query.get(campaignID)
+    if not campaign:
+        return jsonify({"error": "Campaign not found"}), 404
+
+    campaign.currLevel = 1
+    campaign.remainingTries = 2
+    campaign.lastUpdated = db.func.current_timestamp()
+
+    db.session.commit()
+    return jsonify({"message": "Campaign restarted successfully"})

@@ -30,3 +30,13 @@ def get_achievements(campaignID):
             "description": a.description
         } for a in achievements
     ])
+
+@achievements_bp.route("/delete/<int:achievementID>", methods=["DELETE"])
+def delete_achievement(achievementID):
+    achievement = Achievement.query.get(achievementID)
+    if not achievement:
+        return jsonify({"error": "Achievement not found"}), 404
+
+    db.session.delete(achievement)
+    db.session.commit()
+    return jsonify({"message": "Achievement deleted successfully"})

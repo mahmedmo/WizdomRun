@@ -81,7 +81,7 @@ class Spell(db.Model):
 class PlayerSpells(db.Model):
     __tablename__ = 'player_spells'
 
-    playerSpellID = db.Column(db.Integer, primary_key=True)
+    playerspellID = db.Column(db.Integer, primary_key=True)
     playerID = db.Column(db.Integer, db.ForeignKey('player_stats.campaignID'), nullable=False)
     spellID = db.Column(db.Integer, db.ForeignKey('spells.spellID'), nullable=False)
 

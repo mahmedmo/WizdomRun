@@ -132,8 +132,6 @@ _Details to be determined._
 - **Sahib Thethi:** AI Engineer.
 - **Charlie Lang:** Backend Engineer.
 
-# Game-Based Learning API
-
 ## Endpoints
 
 This API allows users to interact with the game-based learning system. It supports user management, campaign tracking, question answering, player stats, spells, and achievements.

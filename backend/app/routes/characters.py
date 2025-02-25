@@ -63,3 +63,13 @@ def update_character(characterID):
 
     db.session.commit()
     return jsonify({"message": "Character updated successfully"})
+
+@characters_bp.route("/delete/<int:characterID>", methods=["DELETE"])
+def delete_character(characterID):
+    character = PlayerCharacter.query.get(characterID)
+    if not character:
+        return jsonify({"error": "Character not found"}), 404
+
+    db.session.delete(character)
+    db.session.commit()
+    return jsonify({"message": "Character deleted successfully"})

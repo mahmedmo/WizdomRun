@@ -33,3 +33,21 @@ def delete_user(userID):
     db.session.delete(user)
     db.session.commit()
     return jsonify({"message": "User deleted successfully"}), 200
+
+@users_bp.route("/update/<int:userID>", methods=["PUT"])
+def update_user(userID):
+    data = request.get_json()
+    user = User.query.get(userID)
+    if not user:
+        return jsonify({"error": "User not found"}), 404
+
+    if "screenName" in data:
+        user.screenName = data["screenName"]
+
+    db.session.commit()
+    return jsonify({"message": "User updated successfully"})
+
+@users_bp.route("/", methods=["GET"])
+def get_all_users():
+    users = User.query.all()
+    return jsonify([{"userID": u.userID, "screenName": u.screenName} for u in users])
