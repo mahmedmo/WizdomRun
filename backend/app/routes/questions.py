@@ -125,3 +125,18 @@ def get_answers(questionID):
         }
         for ans in answers
     ])
+
+@questions_bp.route("/wrong_attempt/<int:questionID>", methods=["PUT"])
+def increment_wrong_attempt(questionID):
+    question = Question.query.get(questionID)
+    if not question:
+        return jsonify({"error": "Question not found"}), 404
+
+    question.wrongAttempts += 1
+    db.session.commit()
+    
+    return jsonify({
+        "message": "Wrong attempt recorded",
+        "questionID": questionID,
+        "wrongAttempts": question.wrongAttempts
+    })
