@@ -138,13 +138,21 @@ This API allows users to interact with the game-based learning system. It suppor
 
 ---
 
-## **User Endpoints**
+# Project: WizdomRun
 
-### **POST /users/create**
+# 📁 Collection: User
 
-Create a new user.
+undefined
 
-**Sample Request Body:**
+## End-point: Create User
+
+### Method: POST
+
+> ```
+> http://127.0.0.1:5000/users/create
+> ```
+
+### Body (**raw**)
 
 ```json
 {
@@ -152,69 +160,69 @@ Create a new user.
 }
 ```
 
-**Sample Response Status Code:**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-```
-Created 201
-```
+## End-point: Get User
 
-**Sample Response Body:**
+### Method: GET
 
-```json
-{
-  "userID": 1,
-  "screenName": "MageMaster",
-  "createdAt": "2025-02-20T12:00:00Z"
-}
-```
+> ```
+> http://127.0.0.1:5000/users/1
+> ```
 
-### **GET /users/{userID}**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-Retrieve user details by user ID.
+## End-point: Delete User
 
-**Sample Response Status Code:**
+### Method: DELETE
 
-```
-Ok 200
-```
+> ```
+> http://127.0.0.1:5000/users/6
+> ```
 
-**Sample Response Body:**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-```json
-{
-  "userID": 1,
-  "screenName": "MageMaster",
-  "createdAt": "2025-02-20T12:00:00Z"
-}
-```
+## End-point: Update User
 
-### **DELETE /users/{userID}**
+### Method: PUT
 
-Delete a user by user ID.
+> ```
+> http://127.0.0.1:5000/users/update/1
+> ```
 
-**Sample Response Status Code:**
-
-```
-Ok 200
-```
-
-**Sample Response Body:**
+### Body (**raw**)
 
 ```json
 {
-  "message": "User deleted successfully"
+  "screenName": "MageMasterUpdated"
 }
 ```
 
----
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## **Character Endpoints**
+## End-point: Get All Users
 
-### **POST /characters/create**
+### Method: GET
 
-Create a new character for a user.
+> ```
+> http://127.0.0.1:5000/users
+> ```
 
-**Sample Request Body:**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+# 📁 Collection: Character
+
+undefined
+
+## End-point: Create Character
+
+### Method: POST
+
+> ```
+> http://127.0.0.1:5000/characters/create
+> ```
+
+### Body (**raw**)
 
 ```json
 {
@@ -226,53 +234,27 @@ Create a new character for a user.
 }
 ```
 
-**Sample Response Status Code:**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-```
-Created 201
-```
+## End-point: Get Characters
 
-**Sample Response Body:**
+### Method: GET
 
-```json
-{
-  "characterID": 1,
-  "userID": 1,
-  "modelID": 2,
-  "hairID": 3,
-  "robeID": 1,
-  "bootID": 2
-}
-```
+> ```
+> http://127.0.0.1:5000/characters/1
+> ```
 
-### **GET /characters/{userID}**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-Retrieve a user's character details.
+## End-point: Update Character
 
-**Sample Response Status Code:**
+### Method: PUT
 
-```
-Ok 200
-```
+> ```
+> http://127.0.0.1:5000/characters/update/1
+> ```
 
-**Sample Response Body:**
-
-```json
-{
-  "characterID": 1,
-  "userID": 1,
-  "modelID": 2,
-  "hairID": 3,
-  "robeID": 1,
-  "bootID": 2
-}
-```
-
-### **PUT /characters/update/{characterID}**
-
-Update a character's appearance.
-
-**Sample Request Body:**
+### Body (**raw**)
 
 ```json
 {
@@ -281,29 +263,31 @@ Update a character's appearance.
 }
 ```
 
-**Sample Response Status Code:**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-```
-Ok 200
-```
+## End-point: Delete Character
 
-**Sample Response Body:**
+### Method: DELETE
 
-```json
-{
-  "message": "Character updated successfully"
-}
-```
+> ```
+> http://127.0.0.1:5000/characters/delete/4
+> ```
 
----
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## **Campaign Endpoints**
+# 📁 Collection: Campaign
 
-### **POST /campaigns/create**
+undefined
 
-Create a new campaign.
+## End-point: Create Campaign
 
-**Sample Request Body:**
+### Method: POST
+
+> ```
+> http://127.0.0.1:5000/campaigns/create
+> ```
+
+### Body (**raw**)
 
 ```json
 {
@@ -314,54 +298,27 @@ Create a new campaign.
 }
 ```
 
-**Sample Response Status Code:**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-```
-Created 201
-```
+## End-point: Get Campaigns
 
-**Sample Response Body:**
+### Method: GET
 
-```json
-{
-  "campaignID": 10,
-  "userID": 1,
-  "title": "Battle for Knowledge",
-  "campaignLength": "saga",
-  "currLevel": 1,
-  "remainingTries": 2
-}
-```
+> ```
+> http://127.0.0.1:5000/campaigns/1
+> ```
 
-### **GET /campaigns/{userID}**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-Retrieve all campaigns for a user.
+## End-point: Update Campaign
 
-**Sample Response Status Code:**
+### Method: PUT
 
-```
-Ok 200
-```
+> ```
+> http://127.0.0.1:5000/campaigns/update/1
+> ```
 
-**Sample Response Body:**
-
-```json
-[
-  {
-    "campaignID": 10,
-    "title": "Battle for Knowledge",
-    "campaignLength": "saga",
-    "currLevel": 1,
-    "remainingTries": 2
-  }
-]
-```
-
-### **PUT /campaigns/update/{campaignID}**
-
-Update campaign progress.
-
-**Sample Request Body:**
+### Body (**raw**)
 
 ```json
 {
@@ -370,120 +327,205 @@ Update campaign progress.
 }
 ```
 
-**Sample Response Status Code:**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-```
-Ok 200
-```
+## End-point: Delete Campaign
 
-**Sample Response Body:**
+### Method: DELETE
+
+> ```
+> http://127.0.0.1:5000/campaigns/delete/3
+> ```
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Get a Campaign
+
+### Method: GET
+
+> ```
+> http://127.0.0.1:5000/campaigns/single/1
+> ```
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Restart Camaign
+
+### Method: PATCH
+
+> ```
+> http://127.0.0.1:5000/campaigns/1/restart
+> ```
+
+### Body (**raw**)
 
 ```json
 {
-  "message": "Campaign updated successfully"
+  "remainingTries": 2,
+  "currLevel": 1
 }
 ```
 
-### **DELETE /campaigns/delete/{campaignID}**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-Delete a campaign.
+# 📁 Collection: Questions
 
-**Sample Response Status Code:**
+undefined
 
-```
-Ok 200
-```
+## End-point: Get Questions
 
-**Sample Response Body:**
+### Method: GET
+
+> ```
+> http://127.0.0.1:5000/questions/1
+> ```
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Answer Question
+
+### Method: PUT
+
+> ```
+> http://127.0.0.1:5000/questions/answer/2
+> ```
+
+### Body (**raw**)
 
 ```json
 {
-  "message": "Campaign deleted successfully"
+  "gotCorrect": true
 }
 ```
 
-## **Question Endpoints**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-### **GET /questions/{campaignID}**
+## End-point: Create Questions
 
-Retrieve all questions for a campaign.
+### Method: POST
 
-**Sample Response Status Code:**
+> ```
+> http://127.0.0.1:5000/questions/batch_create
+> ```
 
-```
-Ok 200
-```
-
-**Sample Response Body:**
+### Body (**raw**)
 
 ```json
 [
   {
-    "questionID": 5,
+    "campaignID": 1,
     "difficulty": "medium",
-    "question": "What is a binary tree?",
-    "options": ["A data structure", "A sorting algorithm", "A compiler"],
-    "gotCorrect": false,
-    "wrongAttempts": 1
+    "questionStr": "What is a binary tree?",
+    "answers": [
+      {
+        "answerStr": "A data structure",
+        "isCorrect": true
+      },
+      {
+        "answerStr": "A sorting algorithm",
+        "isCorrect": false
+      },
+      {
+        "answerStr": "A compiler",
+        "isCorrect": false
+      },
+      {
+        "answerStr": "A programming language",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "campaignID": 1,
+    "difficulty": "hard",
+    "questionStr": "What is the time complexity of quicksort on average?",
+    "answers": [
+      {
+        "answerStr": "O(n log n)",
+        "isCorrect": true
+      },
+      {
+        "answerStr": "O(n^2)",
+        "isCorrect": false
+      },
+      {
+        "answerStr": "O(log n)",
+        "isCorrect": false
+      },
+      {
+        "answerStr": "O(n)",
+        "isCorrect": false
+      }
+    ]
   }
 ]
 ```
 
-### **PUT /questions/answer/{questionID}**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-Submit an answer to a question.
+## End-point: Get a Question
 
-**Sample Request Body:**
+### Method: GET
 
-```json
-{
-  "isCorrect": true
-}
-```
+> ```
+> http://127.0.0.1:5000/questions/question/2
+> ```
 
-**Sample Response Status Code:**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-```
-Ok 200
-```
+## End-point: Delete Question
 
-**Sample Response Body:**
+### Method: DELETE
 
-```json
-{
-  "message": "Answer recorded successfully"
-}
-```
+> ```
+> http://127.0.0.1:5000/questions/delete/4
+> ```
 
-## **Player Stats Endpoints**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-### **GET /stats/{campaignID}**
+## End-point: Get Answers
 
-Retrieve player stats for a campaign.
+### Method: GET
 
-**Sample Response Status Code:**
+> ```
+> http://127.0.0.1:5000/questions/answers/2
+> ```
 
-```
-Ok 200
-```
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-**Sample Response Body:**
+## End-point: Wrong Attempt
 
-```json
-{
-  "campaignID": 10,
-  "attack": 4.5,
-  "hp": 90,
-  "mana": 50,
-  "affinity": "fire"
-}
-```
+### Method: PUT
 
-### **PUT /stats/update/{campaignID}**
+> ```
+> http://127.0.0.1:5000/questions/wrong_attempt/2
+> ```
 
-Update player stats.
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-**Sample Request Body:**
+# 📁 Collection: Player Stats
+
+undefined
+
+## End-point: Get Stats
+
+### Method: GET
+
+> ```
+> http://127.0.0.1:5000/stats/1
+> ```
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Update Stats
+
+### Method: PUT
+
+> ```
+> http://127.0.0.1:5000/stats//update/1
+> ```
+
+### Body (**raw**)
 
 ```json
 {
@@ -493,106 +535,61 @@ Update player stats.
 }
 ```
 
-**Sample Response Status Code:**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-```
-Ok 200
-```
+## End-point: Create Stats
 
-**Sample Response Body:**
+### Method: POST
 
-```json
-{
-  "message": "Player stats updated successfully"
-}
-```
+> ```
+> http://127.0.0.1:5000/stats/create
+> ```
 
-### **GET /stats/player_spells/{campaignID}**
-
-Retrieve all spells assigned to a player.
-
-**Sample Response Status Code:**
-
-```
-Ok 200
-```
-
-**Sample Response Body:**
-
-```json
-[
-  {
-    "playerSpellID": 1,
-    "spellID": 3,
-    "spellName": "Fireball",
-    "spellElement": "fire"
-  }
-]
-```
-
-## **Player Spells Endpoints**
-
-### **POST /stats/assign_spell**
-
-Assign a spell to a player in a specific campaign.
-
-**Request Body:**
+### Body (**raw**)
 
 ```json
 {
   "campaignID": 1,
-  "spellID": 3
+  "attack": 3.0,
+  "hp": 100,
+  "mana": 50,
+  "affinity": "fire"
 }
 ```
 
-**Sample Response Status Code:**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-```
-Created 201
-```
+## End-point: Replenish Mana
 
-**Sample Response Body:**
+### Method: PATCH
+
+> ```
+> http://127.0.0.1:5000/stats/replenish_mana/1
+> ```
+
+### Body (**raw**)
 
 ```json
 {
-  "message": "Spell assigned successfully"
+  "manaAmount": 20
 }
 ```
 
----
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-### **GET /stats/player_spells/{campaignID}**
+# 📁 Collection: Achievements
 
-Retrieve all spells assigned to a player.
+undefined
 
-**Sample Response Status Code:**
+## End-point: Unlock Achievement
 
-```
-Ok 200
-```
+### Method: POST
 
-**Sample Response Body:**
+> ```
+> http://127.0.0.1:5000/achievements/unlock
+> ```
 
-```json
-[
-  {
-    "playerSpellID": 1,
-    "spellID": 3,
-    "spellName": "Fireball",
-    "spellElement": "fire"
-  }
-]
-```
-
----
-
-## **Achievements Endpoints**
-
-### **POST /achievements/unlock**
-
-Unlock a new achievement for a player in a campaign.
-
-**Request Body:**
+### Body (**raw**)
 
 ```json
 {
@@ -602,40 +599,99 @@ Unlock a new achievement for a player in a campaign.
 }
 ```
 
-**Sample Response Status Code:**
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-```
-Created 201
-```
+## End-point: Get Achievments
 
-**Sample Response Body:**
+### Method: GET
+
+> ```
+> http://127.0.0.1:5000/achievements/1
+> ```
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Delete Achivement
+
+### Method: DELETE
+
+> ```
+> http://127.0.0.1:5000/achievements/4
+> ```
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+# 📁 Collection: Player Spells
+
+undefined
+
+## End-point: Unlock Spell
+
+### Method: POST
+
+> ```
+> http://127.0.0.1:5000/stats/assign_spell
+> ```
+
+### Body (**raw**)
 
 ```json
 {
-  "message": "Achievement unlocked"
+  "campaignID": 1,
+  "spellID": 1
 }
 ```
 
----
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-### **GET /achievements/{campaignID}**
+## End-point: Get Player Spells
 
-Retrieve all achievements for a specific campaign.
+### Method: GET
 
-**Sample Response Status Code:**
+> ```
+> http://127.0.0.1:5000/stats/player_spells/1
+> ```
 
-```
-Ok 200
-```
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-**Sample Response Body:**
+## End-point: Delete Player Spell
+
+### Method: DELETE
+
+> ```
+> http://127.0.0.1:5000/stats/player_spells/4
+> ```
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+# 📁 Collection: Spells
+
+undefined
+
+## End-point: Get Spells
+
+### Method: GET
+
+> ```
+> http://127.0.0.1:5000/stats/spells
+> ```
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Create Spell
+
+### Method: POST
+
+> ```
+> http://127.0.0.1:5000/stats/spells/create
+> ```
+
+### Body (**raw**)
 
 ```json
-[
-  {
-    "achievementID": 1,
-    "title": "First Blood",
-    "description": "Defeated the first enemy"
-  }
-]
+{
+  "spellName": "Lightning Strike",
+  "description": "A powerful lightning-based attack",
+  "spellElement": "air"
+}
 ```
