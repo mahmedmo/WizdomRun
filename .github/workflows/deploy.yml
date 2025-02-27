@@ -1,0 +1,22 @@
+name: Deploy to Render
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Trigger Render Deployment
+        run: |
+          curl -X POST "https://api.render.com/v1/services/srv-cv0cmhlsvqrc73aknpu0/deploys" \
+          -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY || 'default_api_key' }}" \
+          -H "Accept: application/json" \
+          -H "Content-Type: application/json" \
+          --data '{}'
