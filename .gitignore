@@ -1,0 +1,43 @@
+# Ignore environment variables
+.env
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment
+venv/
+.env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore database files (if using SQLite for local dev)
+*.sqlite3
+*.db
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temp files
+logs/
+*.log
+*.bak
+debug.log
+
+# Ignore Flask instance and migration files (optional)
+instance/
+migrations/
+
+# Ignore Docker and cloud-related files (optional)
+docker-compose.override.yml
+terraform.tfstate*
