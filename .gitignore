@@ -36,7 +36,7 @@ debug.log
 
 # Ignore Flask instance and migration files (optional)
 instance/
-migrations/
+
 
 # Ignore Docker and cloud-related files (optional)
 docker-compose.override.yml
