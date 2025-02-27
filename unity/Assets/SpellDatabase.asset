@@ -30,6 +30,6 @@ MonoBehaviour:
     spellPrefab: {fileID: 0}
   - spellID: 3
     spellName: Flame Ablaze
-    spellDamage: 15
+    spellDamage: 20
     spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
-    spellPrefab: {fileID: 0}
+    spellPrefab: {fileID: 2982405168553742680, guid: 1c3c05621a8db414281735f3efe6c352, type: 3}

@@ -4,7 +4,7 @@ using DG.Tweening;
 public class SpellMonitor : MonoBehaviour
 {
     [Header("Spell Behavior")]
-    [SerializeField] private float spellSpeed = 50.0f;   // Speed for continuous upward movement (after initial tween)
+    [SerializeField] private float spellSpeed = 50.0f;
     public float SpellSpeed
     {
         get { return spellSpeed; }
@@ -12,19 +12,14 @@ public class SpellMonitor : MonoBehaviour
     }
 
     [Header("Damage Scaling")]
-    [SerializeField] private int damage = 1;
-    public int Damage
-    {
-        get { return damage; }
-        set { damage = value; }
-    }
+    public int Damage { get; set; }
 
     [Header("Initial Animation Settings")]
     [SerializeField] private float scaleDuration = 0.5f;
     [SerializeField] private float moveDistance = 5f;
     [SerializeField] private float moveDuration = 1f;
 
-    [SerializeField] private float maxTravelDistance = 18f; // Destroy spell when it travels this far
+    [SerializeField] private float maxTravelDistance = 18f;
 
     private Vector3 originalScale;
     private Vector3 startPosition;
@@ -57,25 +52,12 @@ public class SpellMonitor : MonoBehaviour
 
     void Update()
     {
-        // If you want continuous upward movement (beyond the initial tween),
-        // simply keep moving up every frame:
+
         transform.Translate(Vector3.up * spellSpeed * Time.deltaTime, Space.World);
-        // Check the travel distance from the spawn point
         if (Vector3.Distance(startPosition, transform.position) >= maxTravelDistance)
         {
             Destroy(gameObject);
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("TOUCHED!!");
-
-        // If you want to damage enemies:
-        // if (other.CompareTag("Enemy"))
-        // {
-        //     // do damage logic
-        //     Destroy(gameObject);
-        // }
-    }
 }

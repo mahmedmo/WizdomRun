@@ -7,6 +7,8 @@ public class PlayerStats
     public int Mana { get; set; }
     public PlayerClass Affinity { get; set; }
 
-    public List<Spell> list { get; set; }
+    public HashSet<int> UnlockedList { get; set; } = new HashSet<int>();
+
+    public int[] Slots { get; set; } = new int[4];
 
 }

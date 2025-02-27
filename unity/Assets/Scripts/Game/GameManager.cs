@@ -33,15 +33,20 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        gameTime += Time.deltaTime;
+        if (!isPaused)
+        {
+            gameTime += Time.deltaTime;
+        }
     }
 
     public bool RunStart()
     {
         if (gameTime >= runStartDelay)
         {
-            PlayerMonitor.Instance.SetRun();
+            PlayerMonitor.Instance.SetState(PlayerState.Run);
             return true;
+        }else{
+            PlayerMonitor.Instance.SetState(PlayerState.Idle);
         }
 
         return false;
@@ -71,12 +76,14 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
+
     public void PauseMovement()
     {
         if (!isPaused)
         {
             isPaused = true;
-            PlayerMonitor.Instance.SetIdle();
+            // Set the player's state to Idle while paused.
+            PlayerMonitor.Instance?.SetState(PlayerState.Idle);
             Debug.Log("Game Paused");
         }
     }
@@ -86,7 +93,8 @@ public class GameManager : MonoBehaviour
         if (isPaused)
         {
             isPaused = false;
-            PlayerMonitor.Instance.SetRun();
+            // When resuming, switch the player's state back to Run.
+            PlayerMonitor.Instance?.SetState(PlayerState.Run);
             Debug.Log("Game Resumed");
         }
     }

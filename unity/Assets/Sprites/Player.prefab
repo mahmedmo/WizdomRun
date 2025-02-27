@@ -48,7 +48,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df1c3006a5f224677ab8fd745849cdaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDuration: 1
+  spellDatabase: {fileID: 11400000, guid: ed7fd2257714c47539eb6e25c5dde527, type: 2}
+  staffGlowIntensity: 10
+  staffGlowDuration: 0.5
+  particleGlowIntensity: 10
 --- !u!1 &2283940199192015934
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,6 +62,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6559516741658778272}
   - component: {fileID: 724071855694158911}
+  - component: {fileID: 5382812144484778571}
   m_Layer: 0
   m_Name: WizardShadow
   m_TagString: Untagged
@@ -136,6 +140,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5382812144484778571
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2283940199192015934}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1a4a1504daf16486ca9f39e7e532d707, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2323354139777444538
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +218,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -213,7 +239,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3874928171555066949, guid: 1132fd4a7dfb646d383cd16bc36d1648, type: 3}
+  m_Sprite: {fileID: -1865664170132617847, guid: 316854afe3e784b99a832cd8dcb68734, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

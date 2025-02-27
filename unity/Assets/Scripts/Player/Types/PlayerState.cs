@@ -1,1 +1,1 @@
-public enum PlayerState { Moving, Idle, Attacking, Hit }
+public enum PlayerState { Idle, Run, None }

@@ -15,10 +15,10 @@ public class EnemyMonitor : MonoBehaviour
     public float attackDuration = 0.5f;
 
     [Header("Damage Scaling")]
-    private int attackDamage = 10; // Damage dealt to the player when attacking
+    private int attackDamage = 10;
 
     [Header("Health Settings")]
-    public int health = 20; // Public health variable
+    public int health = 20;
 
     private Tilemap tilemap;
     private Rigidbody2D enemyRb;
@@ -34,7 +34,7 @@ public class EnemyMonitor : MonoBehaviour
 
         enemyRb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        enemySprite = GetComponent<SpriteRenderer>(); // Assuming a single SpriteRenderer on the enemy
+        enemySprite = GetComponent<SpriteRenderer>();
 
         enemyRb.linearVelocity = new Vector2(0, enemySpeed);
 
@@ -77,7 +77,7 @@ public class EnemyMonitor : MonoBehaviour
                 stateTimer += Time.deltaTime;
                 if (stateTimer >= attackDuration)
                 {
-                    PlayerMonitor.Instance.OnHit(attackDamage);
+                    PlayerMonitor.Instance?.OnHit(attackDamage);
                     SetState(EnemyState.Idle);
                 }
                 break;
@@ -90,15 +90,10 @@ public class EnemyMonitor : MonoBehaviour
         // If colliding with a spell (tagged "Magic")
         if (other.CompareTag("Magic"))
         {
-            TakeSpellDamage(5);
+            TakeSpellDamage(other.gameObject.GetComponent<SpellMonitor>().Damage);
         }
     }
 
-    /// <summary>
-    /// Called when the enemy is hit by a spell.
-    /// Subtracts health, flashes the enemy, and destroys it if health is 0 or below.
-    /// </summary>
-    /// <param name="damageAmount">Amount of damage taken (5 in this case).</param>
     public void TakeSpellDamage(int damageAmount)
     {
         health -= damageAmount;
