@@ -16,7 +16,7 @@ def load_paper(file_path):
     docs = loader.load()
     return docs
 
-def create_qa(context, num_q=5):
+def create_qa(context, num_q=5): #TODO: Add difficulty part
     # Prompt to create the questions
     q_a_prompt = f"""
     Create {num_q} multiple-choice questions (MCQs) based solely on the following notes:\n\n{context}\n\n 
@@ -48,7 +48,7 @@ def create_qa(context, num_q=5):
 
 def run_qa_session(docs, num, context_window):
     total_score = 0
-    qa_dict = {} #TODO: Need to store responses in Database
+    qa_dict = {} #TODO: Convert to JSON
     for i, page_num in enumerate(range(0, len(docs), context_window)):
         # Using context window to give specific context for the Q&A
         context = "".join([page.page_content for page in docs[page_num:page_num + context_window]])
@@ -83,7 +83,7 @@ def run_qa_session(docs, num, context_window):
                 "question": question,
                 "options": options,
                 "correct_answer": correct_answer,
-                "user_answer": user_answer #TODO: Do we need to store user answer?
+                "user_answer": user_answer #TODO: Do we need to store user answer? - Not yet
             }
 
             # Evaluate answer
