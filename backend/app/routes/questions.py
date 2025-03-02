@@ -2,11 +2,13 @@ from flask import Blueprint, request, jsonify
 from app.extensions import db
 from app.models import Question
 from app.models import Answer
+from ..firebase_auth import verify_firebase_token
 
 questions_bp = Blueprint("questions", __name__)
 
 @questions_bp.route("/<int:campaignID>", methods=["GET"])
-def get_questions(campaignID):
+@verify_firebase_token
+def get_questions(user, campaignID):
     questions = Question.query.filter_by(campaignID=campaignID).all()
     return jsonify([
         {
@@ -19,7 +21,8 @@ def get_questions(campaignID):
     ])
 
 @questions_bp.route("/answer/<int:questionID>", methods=["PUT"])
-def answer_question(questionID):
+@verify_firebase_token
+def answer_question(user, questionID):
     data = request.get_json()
     question = Question.query.get(questionID)
 
@@ -38,7 +41,8 @@ def answer_question(questionID):
     return jsonify({"message": "Answer recorded successfully"})
 
 @questions_bp.route("/batch_create", methods=["POST"])
-def batch_create_questions():
+@verify_firebase_token
+def batch_create_questions(user):
     data = request.get_json()
     if not isinstance(data, list):
         return jsonify({"error": "Expected a list of questions"}), 400
@@ -85,7 +89,8 @@ def batch_create_questions():
 
 
 @questions_bp.route("/question/<int:questionID>", methods=["GET"])
-def get_question(questionID):
+@verify_firebase_token
+def get_question(user, questionID):
     question = Question.query.get(questionID)
     if not question:
         return jsonify({"error": "Question not found"}), 404
@@ -100,7 +105,8 @@ def get_question(questionID):
     })
 
 @questions_bp.route("/delete/<int:questionID>", methods=["DELETE"])
-def delete_question(questionID):
+@verify_firebase_token
+def delete_question(user, questionID):
     question = Question.query.get(questionID)
     if not question:
         return jsonify({"error": "Question not found"}), 404
@@ -110,7 +116,8 @@ def delete_question(questionID):
     return jsonify({"message": "Question deleted successfully"})
 
 @questions_bp.route("/answers/<int:questionID>", methods=["GET"])
-def get_answers(questionID):
+@verify_firebase_token
+def get_answers(user, questionID):
     answers = Answer.query.filter_by(questionID=questionID).all()
     
     if not answers:
@@ -127,7 +134,8 @@ def get_answers(questionID):
     ])
 
 @questions_bp.route("/wrong_attempt/<int:questionID>", methods=["PUT"])
-def increment_wrong_attempt(questionID):
+@verify_firebase_token
+def increment_wrong_attempt(user, questionID):
     question = Question.query.get(questionID)
     if not question:
         return jsonify({"error": "Question not found"}), 404

@@ -41,3 +41,5 @@ instance/
 # Ignore Docker and cloud-related files (optional)
 docker-compose.override.yml
 terraform.tfstate*
+
+firebase_admin.json

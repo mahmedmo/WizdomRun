@@ -1,11 +1,13 @@
 from flask import Blueprint, request, jsonify
 from app.extensions import db
 from app.models import Campaign
+from app.firebase_auth import verify_firebase_token
 
 campaigns_bp = Blueprint("campaigns", __name__)
 
 @campaigns_bp.route("/create", methods=["POST"])
-def create_campaign():
+@verify_firebase_token
+def create_campaign(user):
     data = request.get_json()
     if not all(key in data for key in ["userID", "title", "campaignLength", "currLevel"]):
         return jsonify({"error": "Missing required fields"}), 400
@@ -29,8 +31,9 @@ def create_campaign():
         "remainingTries": new_campaign.remainingTries
     }), 201
 
-@campaigns_bp.route("/<int:userID>", methods=["GET"])
-def get_campaigns(userID):
+@campaigns_bp.route("/<string:userID>", methods=["GET"])
+@verify_firebase_token
+def get_campaigns(user, userID):
     campaigns = Campaign.query.filter_by(userID=userID).all()
     return jsonify([
         {
@@ -43,7 +46,8 @@ def get_campaigns(userID):
     ])
 
 @campaigns_bp.route("/update/<int:campaignID>", methods=["PUT"])
-def update_campaign(campaignID):
+@verify_firebase_token
+def update_campaign(user, campaignID):
     data = request.get_json()
     campaign = Campaign.query.get(campaignID)
 
@@ -59,7 +63,8 @@ def update_campaign(campaignID):
     return jsonify({"message": "Campaign updated successfully"})
 
 @campaigns_bp.route("/delete/<int:campaignID>", methods=["DELETE"])
-def delete_campaign(campaignID):
+@verify_firebase_token
+def delete_campaign(user, campaignID):
     campaign = Campaign.query.get(campaignID)
     if not campaign:
         return jsonify({"error": "Campaign not found"}), 404
@@ -69,7 +74,8 @@ def delete_campaign(campaignID):
     return jsonify({"message": "Campaign deleted successfully"})
 
 @campaigns_bp.route("/single/<int:campaignID>", methods=["GET"])
-def get_campaign(campaignID):
+@verify_firebase_token
+def get_campaign(user, campaignID):
     campaign = Campaign.query.get(campaignID)
     if not campaign:
         return jsonify({"error": "Campaign not found"}), 404
@@ -83,7 +89,8 @@ def get_campaign(campaignID):
     })
 
 @campaigns_bp.route("/<int:campaignID>/restart", methods=["PATCH"])
-def restart_campaign(campaignID):
+@verify_firebase_token
+def restart_campaign(user, campaignID):
     campaign = Campaign.query.get(campaignID)
     if not campaign:
         return jsonify({"error": "Campaign not found"}), 404

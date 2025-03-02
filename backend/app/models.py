@@ -5,7 +5,7 @@ from sqlalchemy.orm import relationship
 class User(db.Model):
     __tablename__ = 'users'
 
-    userID = db.Column(db.Integer, primary_key=True)
+    userID = db.Column(db.String, primary_key=True)
     screenName = db.Column(db.String(31), unique=True, nullable=False)
     createdAt = db.Column(db.TIMESTAMP, server_default=func.now())
 
@@ -16,7 +16,7 @@ class PlayerCharacter(db.Model):
     __tablename__ = 'player_character'
 
     characterID = db.Column(db.Integer, primary_key=True)
-    userID = db.Column(db.Integer, db.ForeignKey('users.userID', ondelete="CASCADE"), nullable=False)
+    userID = db.Column(db.String, db.ForeignKey('users.userID', ondelete="CASCADE"), nullable=False)
     modelID = db.Column(db.Integer, nullable=False)
     hairID = db.Column(db.Integer)
     robeID = db.Column(db.Integer)
@@ -27,7 +27,7 @@ class Campaign(db.Model):
 
     campaignID = db.Column(db.Integer, primary_key=True)
     lastUpdated = db.Column(db.TIMESTAMP, server_default=func.now())
-    userID = db.Column(db.Integer, db.ForeignKey('users.userID', ondelete="CASCADE"), nullable=False)
+    userID = db.Column(db.String, db.ForeignKey('users.userID', ondelete="CASCADE"), nullable=False)
     title = db.Column(db.String(127), unique=True, nullable=False)
     campaignLength = db.Column(Enum('quest', 'odyssey', 'saga', name='length_type'), nullable=False)
     currLevel = db.Column(db.Integer, nullable=False)
