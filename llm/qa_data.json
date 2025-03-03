@@ -1,0 +1,38 @@
+[
+    {
+        "question": "Q1: What is the primary purpose of refactoring in software development? (Easy)  ",
+        "options": [
+            "A) To change the external behavior of the code  ",
+            "B) To improve overall quality and maintainability of code  ",
+            "C) To introduce new features  ",
+            "D) To decrease the software size  "
+        ],
+        "correct_answer": "B",
+        "user_answer": "B",
+        "difficulty": "Easy"
+    },
+    {
+        "question": "Q1: What is one of the indicators that refactoring may be needed in code? (Medium)  ",
+        "options": [
+            "A) A method has an excellent name  ",
+            "B) A loop is too long or too deeply nested  ",
+            "C) Data members are private  ",
+            "D) A class has high cohesion  "
+        ],
+        "correct_answer": "B",
+        "user_answer": "B",
+        "difficulty": "Medium"
+    },
+    {
+        "question": "Q1: Which of the following is NOT considered a common code smell associated with long methods? (Hard)  ",
+        "options": [
+            "A) Public attribute  ",
+            "B) Magic number  ",
+            "C) Unused variable  ",
+            "D) Long variable names  "
+        ],
+        "correct_answer": "D",
+        "user_answer": "A",
+        "difficulty": "Hard"
+    }
+]
