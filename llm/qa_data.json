@@ -1,38 +1,370 @@
 [
     {
-        "question": "Q1: What is the primary purpose of refactoring in software development? (Easy)  ",
-        "options": [
-            "A) To change the external behavior of the code  ",
-            "B) To improve overall quality and maintainability of code  ",
-            "C) To introduce new features  ",
-            "D) To decrease the software size  "
-        ],
-        "correct_answer": "B",
-        "user_answer": "B",
-        "difficulty": "Easy"
+        "campaignID": 1,
+        "difficulty": "easy",
+        "questionStr": "What type of supervised learning aims to predict a discrete class label?",
+        "answers": [
+            {
+                "answerStr": "Reinforcement Learning",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Classification",
+                "isCorrect": true
+            },
+            {
+                "answerStr": "Clustering",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Regression",
+                "isCorrect": false
+            }
+        ]
     },
     {
-        "question": "Q1: What is one of the indicators that refactoring may be needed in code? (Medium)  ",
-        "options": [
-            "A) A method has an excellent name  ",
-            "B) A loop is too long or too deeply nested  ",
-            "C) Data members are private  ",
-            "D) A class has high cohesion  "
-        ],
-        "correct_answer": "B",
-        "user_answer": "B",
-        "difficulty": "Medium"
+        "campaignID": 1,
+        "difficulty": "easy",
+        "questionStr": "Which formula represents the prediction for a simple linear regression?",
+        "answers": [
+            {
+                "answerStr": "\u0177 = (1/n) \u03a3(yi - \u0177i)\u00b2",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "\u0177 = w[0] * x[0] + w[1] * x[1] + b > 0",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "\u0177 = w[0] * x[0] + b",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "\u0177 = \u03b20 + \u03b21x",
+                "isCorrect": true
+            }
+        ]
     },
     {
-        "question": "Q1: Which of the following is NOT considered a common code smell associated with long methods? (Hard)  ",
-        "options": [
-            "A) Public attribute  ",
-            "B) Magic number  ",
-            "C) Unused variable  ",
-            "D) Long variable names  "
-        ],
-        "correct_answer": "D",
-        "user_answer": "A",
-        "difficulty": "Hard"
+        "campaignID": 1,
+        "difficulty": "easy",
+        "questionStr": "What is the purpose of regularization in linear models like Ridge Regression?",
+        "answers": [
+            {
+                "answerStr": "To predict categorical outcomes",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "To increase the complexity of the model",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "To ensure coefficients are close to zero",
+                "isCorrect": true
+            },
+            {
+                "answerStr": "To maximize the residual sum of squares",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "easy",
+        "questionStr": "Which metric is used to evaluate the accuracy of a classification model?",
+        "answers": [
+            {
+                "answerStr": "Median Absolute Error",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "F1 score",
+                "isCorrect": true
+            },
+            {
+                "answerStr": "R\u00b2 score",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Mean Squared Error",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "medium",
+        "questionStr": "What type of linear regression model uses a constraint to minimize the magnitude of coefficients?",
+        "answers": [
+            {
+                "answerStr": "Logistic Regression",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Ridge Regression",
+                "isCorrect": true
+            },
+            {
+                "answerStr": "Lasso Regression",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Polynomial Regression",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "medium",
+        "questionStr": "In the context of supervised learning, what term describes the collection of input/output pairs used to build a machine learning model?",
+        "answers": [
+            {
+                "answerStr": "Validation Set",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Sample Set",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Test Set",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Training Set",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "medium",
+        "questionStr": "Which of the following statements is true about the logistic regression model in classification tasks?",
+        "answers": [
+            {
+                "answerStr": "It does not require a thresholding step.",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "It is only applicable for multiclass classification.",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "It predicts a continuous output variable.",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "It estimates the probability of class membership for binary outcomes.",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "medium",
+        "questionStr": "What approach is commonly used to extend binary classification algorithms to handle multiple classes?",
+        "answers": [
+            {
+                "answerStr": "One-vs.-rest",
+                "isCorrect": true
+            },
+            {
+                "answerStr": "Multinomial Logistic Regression",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Ensemble Learning",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "One-vs.-all",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "hard",
+        "questionStr": "Which type of regularization is used in Ridge Regression to control the magnitude of coefficients?",
+        "answers": [
+            {
+                "answerStr": "L1 regularization",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "L2 regularization",
+                "isCorrect": true
+            },
+            {
+                "answerStr": "ElasticNet regularization",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "No regularization",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "hard",
+        "questionStr": "In a multiple linear regression model, what does the term \\( b \\) represent?",
+        "answers": [
+            {
+                "answerStr": "A specific input feature",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "The slope of the line",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "The predicted value of the output variable",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "The y-intercept of the regression equation",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "hard",
+        "questionStr": "What is the key difference between logistic regression and linear regression?",
+        "answers": [
+            {
+                "answerStr": "Linear regression is more scalable than logistic regression.",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Logistic regression predicts continuous values, while linear regression predicts categorical labels.",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Logistic regression predicts binary outcomes, while linear regression predicts continuous outcomes.",
+                "isCorrect": true
+            },
+            {
+                "answerStr": "Logistic regression requires a larger dataset than linear regression.",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "hard",
+        "questionStr": "In the context of linear models for classification, what does it mean if the predicted value is less than zero?",
+        "answers": [
+            {
+                "answerStr": "The predicted class label is -1.",
+                "isCorrect": true
+            },
+            {
+                "answerStr": "The model is ill-defined.",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "The predicted probability is zero.",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "The model has overfit.",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "hard",
+        "questionStr": "What is a primary purpose of using linear models in the advertising example provided?",
+        "answers": [
+            {
+                "answerStr": "To estimate the exact amount of future sales without any error",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "To predict potential sales based on historical advertising data",
+                "isCorrect": true
+            },
+            {
+                "answerStr": "To maximize advertising budgets across all media",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "To analyze the relationship between advertising and consumer demographics",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "hard",
+        "questionStr": "In the context of linear regression, what does minimizing the mean squared error (MSE) accomplish?",
+        "answers": [
+            {
+                "answerStr": "It finds the best-fitting line that minimizes the discrepancies between actual and predicted values",
+                "isCorrect": true
+            },
+            {
+                "answerStr": "It ensures that coefficients are precisely calculated for each input feature",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "It standardizes the input features to have a mean of zero",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "It reduces the complexity of the model by limiting the number of features used",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "hard",
+        "questionStr": "Which characteristic distinguishes Lasso regression from Ridge regression?",
+        "answers": [
+            {
+                "answerStr": "Lasso regression is only suitable for binary classification, while Ridge can handle multiclass",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Lasso regression uses L2 regularization, while Ridge regression uses L1 regularization",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "Lasso regression can lead to some coefficients being exactly zero, whereas Ridge regression does not",
+                "isCorrect": true
+            },
+            {
+                "answerStr": "Lasso regression is computationally faster than Ridge regression in all scenarios",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "campaignID": 1,
+        "difficulty": "hard",
+        "questionStr": "Why might linear models struggle with high-dimensional data?",
+        "answers": [
+            {
+                "answerStr": "They cannot be used to predict categorical outcomes in high dimensional spaces",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "They require more samples to train effectively than non-linear models",
+                "isCorrect": false
+            },
+            {
+                "answerStr": "They are less interpretable when dealing with correlated features",
+                "isCorrect": true
+            },
+            {
+                "answerStr": "They always assume linear relationships, which may not hold true in high dimensions",
+                "isCorrect": false
+            }
+        ]
     }
 ]
