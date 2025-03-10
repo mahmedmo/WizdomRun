@@ -148,3 +148,39 @@ def increment_wrong_attempt(user, questionID):
         "questionID": questionID,
         "wrongAttempts": question.wrongAttempts
     })
+
+@questions_bp.route("/unanswered", methods=["GET"])
+@verify_firebase_token
+def get_unanswered_questions(user):
+    unanswered_questions = Question.query.filter_by(gotCorrect=False).all()
+    return jsonify([
+        {
+            "questionID": q.questionID,
+            "campaignID": q.campaignID,
+            "difficulty": q.difficulty,
+            "questionStr": q.questionStr,
+            "wrongAttempts": q.wrongAttempts
+        }
+        for q in unanswered_questions
+    ])
+
+@questions_bp.route("/difficulty/<string:difficulty>", methods=["GET"])
+@verify_firebase_token
+def get_questions_by_difficulty(user, difficulty):
+    valid_difficulties = {"easy", "medium", "hard"}
+    
+    if difficulty.lower() not in valid_difficulties:
+        return jsonify({"error": "Invalid difficulty level"}), 400
+
+    questions = Question.query.filter_by(difficulty=difficulty.lower()).all()
+    
+    return jsonify([
+        {
+            "questionID": q.questionID,
+            "campaignID": q.campaignID,
+            "questionStr": q.questionStr,
+            "gotCorrect": q.gotCorrect,
+            "wrongAttempts": q.wrongAttempts
+        }
+        for q in questions
+    ])
