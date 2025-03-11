@@ -1,5 +1,7 @@
 import os
+import json
 import openai
+import random
 from dotenv import load_dotenv
 from langchain.document_loaders import PyPDFLoader
 
@@ -16,28 +18,28 @@ def load_paper(file_path):
     docs = loader.load()
     return docs
 
-def create_qa(context, num_q=5): #TODO: Add difficulty part
-    # Prompt to create the questions
+def create_qa(context, num_q, difficulty, previous_questions):
+    previous_questions_str = "\n".join(previous_questions) if previous_questions else "None"
     q_a_prompt = f"""
-    Create {num_q} multiple-choice questions (MCQs) based solely on the following notes:\n\n{context}\n\n 
-    Each question should have 4 answer choices labeled A, B, C, and D.  
-    Format the output as follows:
+    Create exactly {num_q} multiple-choice questions (MCQs) based solely on the following notes:\n\n{context}\n\n
+    Each question must have exactly 4 answer choices labeled A, B, C, and D.
+    The difficulty level for all questions is: {difficulty}.
+    Do not generate additional questions beyond the specified number ({num_q}).
+    Ensure the questions:
+    - Cover different topics and sections from the entire document, not just a small portion.
+    - Are completely distinct and not reworded versions of the following previous questions:\n{previous_questions_str}\n
+    - Explore unique aspects of the content that haven’t been addressed yet.
+    - Randomize the position of the correct answer between A, B, C, and D.
+    Format the output strictly as follows, with precisely {num_q} questions:
 
-    Q1: <question text>
+    Q1: <question text> ({difficulty})
     A) <option 1>
     B) <option 2>
     C) <option 3>
     D) <option 4>
     Answer: <correct option>
 
-    Q2: <question text>
-    A) <option 1>
-    B) <option 2>
-    C) <option 3>
-    D) <option 4>
-    Answer: <correct option>
-
-    Ensure that the correct answer appears randomly in different options 1, 2, 3, or 4 rather than just at position B. Let's begin:
+    Ensure that the correct answer appears randomly in different options A, B, C, or D rather than just at position B. Let's begin:
     """
     response = client.chat.completions.create(
         model="gpt-4o-mini",
@@ -46,81 +48,60 @@ def create_qa(context, num_q=5): #TODO: Add difficulty part
     )
     return response.choices[0].message.content
 
-def run_qa_session(docs, num, context_window):
-    total_score = 0
-    qa_dict = {} #TODO: Convert to JSON
-    for i, page_num in enumerate(range(0, len(docs), context_window)):
-        # Using context window to give specific context for the Q&A
-        context = "".join([page.page_content for page in docs[page_num:page_num + context_window]])
-        q_a = create_qa(context, num)
-        
-        q_a_list = q_a.strip().split("\n\n")  # Each MCQ is separated by a double newline
-        
-        scores_list = []
+def run_qa_session(docs, num_rounds, campaign_id):
+    difficulties = ["Easy", "Medium", "Hard"]
+    qa_list = []
+    context = "".join([page.page_content for page in docs])
+    save_path = os.path.dirname(os.path.abspath(__file__))
+    previous_questions = []
+
+    for round_num in range(num_rounds):
+        difficulty = difficulties[min(round_num, len(difficulties)-1)]
+        q_a = create_qa(context, num_rounds, difficulty, previous_questions)
+        q_a_list = q_a.strip().split("\n\n")[:num_rounds]
+
         for qa in q_a_list:
             lines = qa.strip().split("\n")
-            if len(lines) < 6: #Question + 4 options + answer 
+            if len(lines) < 6:
                 continue
-            
-            question = lines[0]  # Extract question
-            options = lines[1:5]  # Extract the 4 answer choices
-            correct_answer = lines[5].split("Answer:")[-1].strip().upper()  # Extract correct answer letter
 
-            # Display question and choices
-            print(question)
+            question = lines[0].split(f" ({difficulty})")[0].replace("Q", "").replace(":", "").strip()
+            question = ' '.join(question.split()[1:])
+            options = lines[1:5]
+            correct_answer = lines[5].split("Answer:")[-1].strip().upper()
+
+            if question in previous_questions:
+                continue
+
+            random.shuffle(options)
+
+            answers = []
             for option in options:
-                print(option)
+                option_letter = option[0]
+                option_text = option[2:].strip()
+                answers.append({
+                    "answerStr": option_text,
+                    "isCorrect": option_letter == correct_answer
+                })
 
-            # Get user input (ensuring they enter A, B, C, or D)
-            while True:
-                user_answer = input("Your answer (A, B, C, or D): ").strip().upper()
-                if user_answer in ["A", "B", "C", "D"]:
-                    break
-                print("Invalid input. Please enter A, B, C, or D.")
+            qa_list.append({
+                "campaignID": campaign_id,
+                "difficulty": difficulty.lower(),
+                "questionStr": question,
+                "answers": answers
+            })
+            previous_questions.append(question)
 
-            # Store user response
-            qa_dict[f"Round {i}"] = {
-                "question": question,
-                "options": options,
-                "correct_answer": correct_answer,
-                "user_answer": user_answer #TODO: Do we need to store user answer? - Not yet
-            }
-
-            # Evaluate answer
-            is_correct = (user_answer == correct_answer)
-            score = 1 if is_correct else 0
-            scores_list.append(score)
-
-            #evaluate user input
-            if is_correct:
-                total_score += 1
-                print("✅ Correct!")
-            else:
-                total_score -= 1
-                print(f"❌ Incorrect! The correct answer was: {correct_answer}")
-
-        # Calculate round score
-        print(f"CURRENT SCORE: {total_score}")
-        print("*********")
-
-        # Continue or quit
-        continue_input = input("Press Enter to continue to the next round or 'q' to quit: ")
-        if continue_input.lower() == "q":
-            break
-
-    return total_score, qa_dict
-
-
+    json_file_path = os.path.join(save_path, 'qa_data.json')
+    with open(json_file_path, 'w') as f:
+        json.dump(qa_list, f, indent=4)
 
 def main():
-    file_path = "./llm/refactoring.pdf"
+    file_path = "./llm/Linear_Models.pdf"
     docs = load_paper(file_path)
-    num = 1
-    context_window = 4
-    qa_dict = run_qa_session(docs, num, context_window)
-    print("The Q&A data: ", qa_dict)
+    num_rounds = 4
+    campaign_id = 1
+    run_qa_session(docs, num_rounds, campaign_id)
 
 if __name__ == "__main__":
     main()
-
-
