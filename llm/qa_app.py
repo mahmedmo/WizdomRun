@@ -97,7 +97,7 @@ def run_qa_session(docs, num_rounds, campaign_id):
         json.dump(qa_list, f, indent=4)
 
 def main():
-    file_path = "C:/Users/sahib/Desktop/Sahib-Thethi_Third-Year(Winter)/SENG401/Project/WizdomRun/llm/Linear_Models.pdf"
+    file_path = "./llm/Linear_Models.pdf"
     docs = load_paper(file_path)
     num_rounds = 4
     campaign_id = 1
