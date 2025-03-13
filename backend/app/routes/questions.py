@@ -2,7 +2,13 @@ from flask import Blueprint, request, jsonify
 from app.extensions import db
 from app.models import Question
 from app.models import Answer
+from app.models import Campaign
 from ..firebase_auth import verify_firebase_token
+import os
+import sys
+from werkzeug.utils import secure_filename
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../llm")))
+from qa_app import run_qa_session
 
 questions_bp = Blueprint("questions", __name__)
 
@@ -42,8 +48,7 @@ def answer_question(user, questionID):
 
 @questions_bp.route("/batch_create", methods=["POST"])
 @verify_firebase_token
-def batch_create_questions(user):
-    data = request.get_json()
+def batch_create_questions(user, data):
     if not isinstance(data, list):
         return jsonify({"error": "Expected a list of questions"}), 400
 
@@ -184,3 +189,55 @@ def get_questions_by_difficulty(user, difficulty):
         }
         for q in questions
     ])
+
+@questions_bp.route("/create", methods=["POST"])
+@verify_firebase_token
+def create_questions(user):
+    if "file" not in request.files:
+        return jsonify({"error": "No file provided"}), 400
+
+    pdf_file = request.files["file"]
+    if pdf_file.filename == "":
+        return jsonify({"error": "Empty file uploaded"}), 400
+
+    # ✅ Get campaignID from request JSON
+    campaign_id = request.form.get("campaignID")
+    
+    if not campaign_id:
+        return jsonify({"error": "Missing campaignID"}), 400
+
+    # ✅ Validate the campaign belongs to the user
+    current_campaign = Campaign.query.filter_by(userID=user.userID, campaignID=campaign_id).first()
+
+    if not current_campaign:
+        return jsonify({"error": "Invalid campaign or unauthorized access"}), 403
+
+    # ✅ Set num_rounds dynamically based on campaign length
+    campaign_length_map = {"quest": 5, "odyssey": 10, "saga": 15}
+    num_rounds = campaign_length_map.get(current_campaign.campaignLength, 5)  # Default to 5 if missing
+
+    # Secure filename and save temporarily
+    filename = secure_filename(pdf_file.filename)
+    temp_dir = os.getenv("TEMP", "C:\\tmp")  # Use system temp folder
+    temp_pdf_path = os.path.join(temp_dir, filename)
+
+    print(f"Saving uploaded PDF to: {temp_pdf_path}")
+
+    pdf_file.save(temp_pdf_path)
+
+    try:
+        # ✅ Directly call the function from qa_app.py
+        questions_data = run_qa_session(temp_pdf_path, num_rounds, campaign_id)
+
+        if not questions_data:
+            return jsonify({"error": "No questions generated"}), 500
+
+        # ✅ Pass generated questions to batch_create_questions to insert them
+        return batch_create_questions(questions_data)
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+    finally:
+        if os.path.exists(temp_pdf_path):
+            os.remove(temp_pdf_path)  # ✅ Clean up temp file
