@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed0879f0ebc194488b9b9bbe15ebb047, type: 3}
+  m_Name: CutsceneDatabase
+  m_EditorClassIdentifier: 
+  cutsceneList:
+  - cutsceneId: 0
+    cutsceneType: 0
+    firstEncounter: 1
+    campaignLevel: 1
+    dialogue:
+      npcId: 0
+      dialogueText:
+      - Hey, hey you! You're finally awake!
+      - No time for naps! The kingdom is in mortal peril!
+      - Every other wizard skipped town the second trouble arrived.
+      - But not you, oh mighty wizard! Your courage is unmatched!
+      - "\u2026Actually, come to think of it, you probably just overslept."
+      - "Anyways\u2026 I need you! My friends were <color=purple>mush-napped</color>!"
+      - Taken by the dreaded wizard <b><color=red>Sporelock the Rotten</color></b>
+        and his goons!
+      - "He\u2019s turned the whole kingdom into his evil lair!"
+      - "Hey, I\u2019m just a mushroom, take your complaints somewhere else!"
+      - "But this guy <b><color=red>Sporelock</color></b> is real rotten, he's casting
+        nasty spells, hoarding treasure, and worst of all\u2014"
+      - He BANNED sleeping in!!!
+      - "Right?! That\u2019s why you have to help!"
+      - Rescue my friends, defeat <b><color=red>Sporelock</color></b>, and save the
+        kingdom!
+      - "You are the last wizard left\u2026 by default."
+      - Yes! No! Maybe! Just go already!
+      - The path is straight ahead, it'll be a long journey... so hurry!
+      - "Before <color=red>Sporelock</color> turns my friends into\u2026 mushroom
+        soup!"
+      - <color=green>Are you ready?</color>
+      choiceSets:
+      - choiceIdx: 0
+        choices:
+        - text: "Ugh\u2026 five more minutes\u2026"
+          icon: {fileID: -1639921405, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: What? Who? Where? Am I being arrested?
+          icon: {fileID: 475879906, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: Wow, a talking mushroom! I must still be dreaming.
+          icon: {fileID: -920820585, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+      - choiceIdx: 4
+        choices:
+        - text: That sounds like me.
+          icon: {fileID: 1159699158, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: A great wizard needs their rest, thank you very much.
+          icon: {fileID: 1086140582, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: "Wait, the kingdom\u2019s in peril? Can I go back to sleep?"
+          icon: {fileID: 634586970, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+      - choiceIdx: 7
+        choices:
+        - text: Sporelock? What kind of name is that?
+          icon: {fileID: -703907239, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: Mush-napped? Got anymore corny puns?
+          icon: {fileID: 287269116, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: Wait, an evil wizard? Should I be offended?
+          icon: {fileID: 287598078, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+      - choiceIdx: 10
+        choices:
+        - text: That MONSTER!
+          icon: {fileID: -1506599027, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: Eh, I'm more of an early morning guy myself.
+          icon: {fileID: 1778957453, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: This just got personal.
+          icon: {fileID: 940592262, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+      - choiceIdx: 13
+        choices:
+        - text: "That\u2019s me, just the backup huh?"
+          icon: {fileID: 475879906, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: Ugh, fine, but I expect a good reward.
+          icon: {fileID: 70470234, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: If I save your friends, will you stop yelling?
+          icon: {fileID: 1086140582, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+      - choiceIdx: 17
+        choices:
+        - text: Time to make these scoundrels pay!
+          icon: {fileID: -575941945, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: Heh, should be a cake walk, lets go.
+          icon: {fileID: -575941945, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+  - cutsceneId: 1
+    cutsceneType: 0
+    firstEncounter: 0
+    campaignLevel: 1
+    dialogue:
+      npcId: 0
+      dialogueText:
+      - Hey, hey you! Huh? You're already back?
+      - You DIED? Then how are you here?
+      - Actually, don't answer that, you're a wizard, it was probably magic or something,
+        right?
+      - Hmm... maybe I should've given you some guidance before I sent you off...
+      - 'So heres a tip: If you run out of <color=#40E0D0>mana</color>, use your
+        <color=purple>knowledge spell</color>!'
+      - It looks like a <color=#40E0D0>blue</color> question mark...
+      - "It\u2019ll quiz you on your knowledge of the world\u2014so pay attention!"
+      - "Answer correctly, and you\u2019ll recharge your mana in no time!"
+      - Simple, right?
+      - "Every great wizard starts out clueless, uh, I mean curious. You\u2019ll
+        master this in no time!"
+      - 'Oh, and one more thing: Enemies sometimes drop <color=yellow>shiny gold
+        coins</color> when defeated...'
+      - "Hang onto them! You never know when you\u2019ll <color=purple>find something
+        worth spending them on</color>!"
+      - Well... thats all from me. <color=green>Are you ready?</color>
+      choiceSets:
+      - choiceIdx: 2
+        choices:
+        - text: Yep, definitely magic.
+          icon: {fileID: -2002038736, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: I have no idea to be honest.
+          icon: {fileID: 1159699158, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+      - choiceIdx: 8
+        choices:
+        - text: Huh? A question? You mean I have to learn!?
+          icon: {fileID: -764098077, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: It's over for me...
+          icon: {fileID: -2028770755, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: Seems easy enough!
+          icon: {fileID: -1754271001, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+      - choiceIdx: 12
+        choices:
+        - text: This time, things WILL be different!
+          icon: {fileID: 1414700209, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}
+        - text: Heh, I won't hold back this time...
+          icon: {fileID: 1414700209, guid: 67d53ae2855ef4b39ba1fd0ce2a99c73, type: 3}

@@ -14,7 +14,7 @@ public class NPCSpawner : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.Instance != null && GameManager.Instance.IsPaused)
+        if (GameManager.Instance != null && GameManager.Instance.isPaused)
             return;
 
         if (GameManager.Instance != null && GameManager.Instance.CanNPCSpawn())
@@ -60,6 +60,5 @@ public class NPCSpawner : MonoBehaviour
             npc.AddComponent<NPCMonitor>();
         }
         npc.GetComponent<NPCMonitor>().NPCSpeed = -npcSpeed;
-        npc.GetComponent<NPCMonitor>().parentSpawner = this;
     }
 }

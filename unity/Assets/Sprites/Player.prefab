@@ -48,10 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df1c3006a5f224677ab8fd745849cdaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerDead: 0
   spellDatabase: {fileID: 11400000, guid: ed7fd2257714c47539eb6e25c5dde527, type: 2}
-  staffGlowIntensity: 10
-  staffGlowDuration: 0.5
-  particleGlowIntensity: 10
 --- !u!1 &2283940199192015934
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,7 +60,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6559516741658778272}
   - component: {fileID: 724071855694158911}
-  - component: {fileID: 5382812144484778571}
+  - component: {fileID: 499824795914088483}
+  - component: {fileID: 5895517073275690949}
   m_Layer: 0
   m_Name: WizardShadow
   m_TagString: Untagged
@@ -128,7 +127,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2000
   m_Sprite: {fileID: 4093480436322176185, guid: 64a9a28c7e21f42e1b17d8bb4c195f3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -140,7 +139,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5382812144484778571
+--- !u!95 &499824795914088483
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -150,7 +149,7 @@ Animator:
   m_GameObject: {fileID: 2283940199192015934}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1a4a1504daf16486ca9f39e7e532d707, type: 2}
+  m_Controller: {fileID: 9100000, guid: 18395917835a7458a928ba62e1aeb5db, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -162,6 +161,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!210 &5895517073275690949
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2283940199192015934}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1 &2323354139777444538
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +184,7 @@ GameObject:
   - component: {fileID: 8687400188172382445}
   - component: {fileID: 3202267216070756831}
   - component: {fileID: 1660939610197505938}
+  - component: {fileID: 9110339271186060064}
   m_Layer: 0
   m_Name: WizardStaff
   m_TagString: Untagged
@@ -238,8 +250,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -1865664170132617847, guid: 316854afe3e784b99a832cd8dcb68734, type: 3}
+  m_SortingOrder: 2000
+  m_Sprite: {fileID: -3874928171555066949, guid: 1132fd4a7dfb646d383cd16bc36d1648, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -260,7 +272,7 @@ Animator:
   m_GameObject: {fileID: 2323354139777444538}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0e6b4d7a4bfd04ff2a2c03017406c47e, type: 2}
+  m_Controller: {fileID: 9100000, guid: a8e518c78384d4b24bf4a1374e6ae7d6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -272,6 +284,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!210 &9110339271186060064
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2323354139777444538}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1 &3027275263222003326
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +307,7 @@ GameObject:
   - component: {fileID: 9002663678720824514}
   - component: {fileID: 6345737723791791340}
   - component: {fileID: 3682968920808823645}
+  - component: {fileID: 3405442425789695595}
   m_Layer: 0
   m_Name: WizardHat
   m_TagString: Untagged
@@ -348,7 +373,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2000
   m_Sprite: {fileID: -1589676655, guid: 16d808737cea846449c102f319c997d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -370,7 +395,7 @@ Animator:
   m_GameObject: {fileID: 3027275263222003326}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 583d6f81725694f54b813df68299f80d, type: 2}
+  m_Controller: {fileID: 9100000, guid: d284d2964301849ef9f5b95ea82ca206, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -382,6 +407,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!210 &3405442425789695595
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3027275263222003326}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!1 &4568787329701504106
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,6 +430,7 @@ GameObject:
   - component: {fileID: 7397131326440823749}
   - component: {fileID: 7976429991854693337}
   - component: {fileID: 5307202396569745399}
+  - component: {fileID: 7800181604802342252}
   m_Layer: 0
   m_Name: Wizard
   m_TagString: Untagged
@@ -458,7 +496,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2000
   m_Sprite: {fileID: -1871506716, guid: c8b0567cd4b4a44d89ec0045daff48c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -492,3 +530,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!210 &7800181604802342252
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4568787329701504106}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0

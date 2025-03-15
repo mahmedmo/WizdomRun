@@ -48,7 +48,7 @@ public class TStructRegen : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.Instance != null && GameManager.Instance.IsPaused)
+        if (GameManager.Instance != null && GameManager.Instance.isPaused)
             return;
 
         if (!GameManager.Instance.RunStart()) return;

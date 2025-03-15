@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 5801852883224546473}
   - component: {fileID: 2014972526981966177}
   - component: {fileID: 1444397861844015007}
-  - component: {fileID: 6024729342196052015}
-  - component: {fileID: 4319844419782758566}
   - component: {fileID: -7029465229224526182}
   m_Layer: 0
   m_Name: FireBolt
@@ -113,38 +111,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6024729342196052015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2982405168553742680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2624ab92592624027a5f8db5062f4bbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spellSpeed: 10
-  damage: 1
-  scaleDuration: 0.5
-  moveDistance: 5
-  moveDuration: 1
-  maxTravelDistance: 20
---- !u!114 &4319844419782758566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2982405168553742680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8261e6f2e5fac44da64da2b23939e9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colorDefault: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-  colorSelected: {r: 0.25, g: 0.65, b: 0.8, a: 1}
 --- !u!61 &-7029465229224526182
 BoxCollider2D:
   m_ObjectHideFlags: 0

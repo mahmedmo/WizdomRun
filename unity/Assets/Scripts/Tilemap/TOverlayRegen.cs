@@ -34,7 +34,7 @@ public class TOverlayRegen : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.Instance != null && GameManager.Instance.IsPaused)
+        if (GameManager.Instance != null && GameManager.Instance.isPaused)
             return;
         // Check GameTime
         if (!GameManager.Instance.RunStart()) return;

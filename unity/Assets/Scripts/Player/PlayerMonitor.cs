@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class PlayerMonitor : MonoBehaviour
 {
@@ -18,25 +19,45 @@ public class PlayerMonitor : MonoBehaviour
     private List<SpriteRenderer> spriteRenderers = new List<SpriteRenderer>();
     private Dictionary<SpriteRenderer, Color> originalColors = new Dictionary<SpriteRenderer, Color>();
 
-    private bool playerDead = false;
+    public bool playerDead = false;
     // Player Observations
     private PlayerStats playerStats = new PlayerStats()
     {
         HP = 100,
-        Affinity = PlayerClass.Air,
+        Mana = 100,
+        Affinity = PlayerClass.Fire,
         UnlockedList = new HashSet<int> { 0, 1, 2, 3 },
         Slots = new int[] { 2, 3, -1, -1 }
     };
-    private int currHealth = 100;
+    private float currHealth;
+    private int currMana;
 
     public SpellDatabase spellDatabase;
     private float attackDuration = 0.5f;
 
     private SpriteRenderer wizardStaffRenderer;
-    [SerializeField] private float staffGlowIntensity = 5f;
-    [SerializeField] private float staffGlowDuration = 0.5f;
-    [SerializeField] private float particleGlowIntensity = 5f;
+    private float staffGlowIntensity = 5f;
+    private float staffGlowDuration = 0.5f;
+    private float particleGlowIntensity = 5f;
 
+    // Reset the player monitor state to its initial values
+    public void ResetPlayerState()
+    {
+        currentState = PlayerState.None;
+        isAttacking = false;
+        attackStateTimer = 0f;
+        staffAfterState = "";
+        playerDead = false;
+        currHealth = playerStats.HP;
+        currMana = playerStats.Mana;
+        foreach (Animator anim in wizardAnimators)
+        {
+            anim.Rebind();
+        }
+        wizardStaffAnimator.Rebind();
+        wizardShadowAnimator.Rebind();
+        Debug.Log("PlayerMonitor state reset!");
+    }
 
     void Awake()
     {
@@ -70,6 +91,7 @@ public class PlayerMonitor : MonoBehaviour
                     wizardAnimators.Add(anim);
                 }
             }
+            ResetPlayerState();
         }
         else
         {
@@ -81,32 +103,51 @@ public class PlayerMonitor : MonoBehaviour
     {
         InterfaceManager.Instance?.DrawSlots(playerStats.Slots);
     }
+
+    public int[] GetPlayerSlots()
+    {
+        return playerStats.Slots;
+    }
     public void CastSpell(int slotId)
     {
         if (playerDead) return;
+
         // Find spell
-        SpellData spellData = spellDatabase.spells.Find(s => s.spellID == playerStats.Slots[slotId]);
+        SpellData spellData = spellDatabase.spellList.Find(s => s.id == playerStats.Slots[slotId]);
         if (spellData == null)
         {
             Debug.LogError("Spell with ID " + slotId + " not found in the database!");
             return;
         }
 
+        // Check if sufficient mana
+        if (currMana - spellData.manaCost < 0)
+        {
+            InterfaceManager.Instance.FlashOOM();
+            return;
+        }
+
+        currMana -= spellData.manaCost;
+        currMana = Mathf.Clamp(currMana, 0, playerStats.Mana);
+        InterfaceManager.Instance.DrawMana(playerStats.Mana, currMana);
+
+        InterfaceManager.Instance.SpellCooldown(slotId, 2f);
+
         // Fire the attack animation
         isAttacking = true;
         attackStateTimer = 0;
-        setStaffAnim("IsAttack");
+        SetStaffAnim("IsAttack");
 
         // Spawn the spell
-        Quaternion prefabRotation = spellData.spellPrefab.transform.rotation;
-        Vector3 prefabPosition = spellData.spellPrefab.transform.position;
+        Quaternion prefabRotation = spellData.prefab.transform.rotation;
+        Vector3 prefabPosition = spellData.prefab.transform.position;
         Vector3 spawnPosition = new Vector3(
             transform.position.x,
             prefabPosition.y,
             prefabPosition.z
         );
         GameObject spellObject = Instantiate(
-            spellData.spellPrefab,
+            spellData.prefab,
             spawnPosition,
             prefabRotation
         );
@@ -125,15 +166,15 @@ public class PlayerMonitor : MonoBehaviour
             psRenderer.material.SetColor("_EmissionColor", finalParticleColor);
         }
 
-        // Pass damage values
-        SpellMonitor spellMonitor = spellObject.GetComponent<SpellMonitor>();
-        if (spellMonitor != null)
-        {
-            spellMonitor.Damage = spellData.spellDamage;
-        }
+        // Pass spell's attributes
+        SpellMonitor spellMonitor = spellObject.AddComponent<SpellMonitor>();
+        spellMonitor.Damage = spellData.damage;
+        spellMonitor.Speed = spellData.speed;
+        spellMonitor.Airborne = spellData.airborne;
+
     }
 
-    public void OnHit(int damage)
+    public void OnHit(float damage)
     {
         if (playerDead) return;
         StartCoroutine(FlashCoroutine());
@@ -143,8 +184,7 @@ public class PlayerMonitor : MonoBehaviour
         InterfaceManager.Instance.DrawHealth(playerStats.HP, currHealth);
         if (currHealth <= 0 && !playerDead)
         {
-            wizardDeath();
-            playerDead = true;
+            WizardDeath();
         }
     }
 
@@ -169,14 +209,14 @@ public class PlayerMonitor : MonoBehaviour
         {
             case PlayerState.Idle:
                 Debug.Log("Player is Idle");
-                setWizardAnim("IsIdle");
-                if (!isAttacking) setStaffAnim("IsIdle");
+                SetWizardAnim("IsIdle");
+                if (!isAttacking) SetStaffAnim("IsIdle");
                 staffAfterState = "IsIdle";
                 break;
             case PlayerState.Run:
                 Debug.Log("Player is Running");
-                setWizardAnim("IsRun");
-                if (!isAttacking) setStaffAnim("IsRun");
+                SetWizardAnim("IsRun");
+                if (!isAttacking) SetStaffAnim("IsRun");
                 staffAfterState = "IsRun";
                 break;
 
@@ -191,20 +231,17 @@ public class PlayerMonitor : MonoBehaviour
             if (attackStateTimer >= attackDuration)
             {
                 Debug.Log("Attack finished, returning to: " + staffAfterState);
-                setStaffAnim(staffAfterState);
+                SetStaffAnim(staffAfterState);
                 isAttacking = false;
             }
         }
     }
-
-    void setStaffAnim(string anim)
+    void SetStaffAnim(string anim)
     {
-
         wizardStaffAnimator.SetBool("IsIdle", false);
         wizardStaffAnimator.SetBool("IsRun", false);
         wizardStaffAnimator.SetBool("IsAttack", false);
         wizardStaffAnimator.SetBool(anim, true);
-        Debug.Log(anim + " was set to true.");
 
         // If attacking, animate the staff's glow
         if (anim == "IsAttack" && wizardStaffRenderer != null)
@@ -222,10 +259,8 @@ public class PlayerMonitor : MonoBehaviour
                     wizardStaffRenderer.material.DOColor(Color.black, "_EmissionColor", staffGlowDuration);
                 });
         }
-
     }
-
-    void setWizardAnim(string anim)
+    void SetWizardAnim(string anim)
     {
         foreach (Animator wizAnim in wizardAnimators)
         {
@@ -234,8 +269,7 @@ public class PlayerMonitor : MonoBehaviour
             wizAnim.SetBool(anim, true);
         }
     }
-
-    void wizardDeath()
+    void WizardDeath()
     {
         InterfaceManager.Instance?.DrawGameOver();
         foreach (Animator wizAnim in wizardAnimators)
@@ -244,6 +278,7 @@ public class PlayerMonitor : MonoBehaviour
         }
         wizardStaffAnimator.SetTrigger("Death");
         wizardShadowAnimator.SetTrigger("Death");
+        playerDead = true;
     }
     private Color GetAffinityColor(PlayerClass affinity)
     {

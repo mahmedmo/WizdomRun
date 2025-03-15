@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17655d7654d440b187606db6a492a14, type: 3}
+  m_Name: SpellDatabase
+  m_EditorClassIdentifier: 
+  spellList:
+  - id: 0
+    name: Fire Bolt
+    damage: 2
+    speed: 10
+    manaCost: 10
+    icon: {fileID: -1498638762, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 2982405168553742680, guid: 1c3c05621a8db414281735f3efe6c352, type: 3}
+  - id: 1
+    name: Fire Bolt
+    damage: 5
+    speed: 10
+    manaCost: 20
+    icon: {fileID: -653189991, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 2982405168553742680, guid: 1c3c05621a8db414281735f3efe6c352, type: 3}
+  - id: 2
+    name: Fire Bolt
+    damage: 10
+    speed: 10
+    manaCost: 30
+    icon: {fileID: -2084968794, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 2982405168553742680, guid: 1c3c05621a8db414281735f3efe6c352, type: 3}
+  - id: 3
+    name: Fire Bolt
+    damage: 20
+    speed: 10
+    manaCost: 40
+    icon: {fileID: 554194882, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 2982405168553742680, guid: 1c3c05621a8db414281735f3efe6c352, type: 3}

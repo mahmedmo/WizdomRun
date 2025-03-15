@@ -1,22 +1,38 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
     public float gameTime { get; private set; } = 0f;
-
-    public float runStartDelay = 5.0f;
     public float rareSpawnDelay = 15.0f;
-    public float npcSpawnDelay = 10.0f;
-    public float enemySpawnDelay = 10.0f;
 
     private float rareSpawnTimer = 0.0f;
     private float npcSpawnTimer = 0.0f;
     private float enemySpawnTimer = 0.0f;
 
-    private bool isPaused = false;
-    public bool IsPaused { get { return isPaused; } }
+    public bool isPaused { get; set; } = true;
+    public bool shownIntro;
+
+
+    public void ResetGameState()
+    {
+        gameTime = 0f;
+        rareSpawnTimer = 0f;
+        npcSpawnTimer = 0f;
+        enemySpawnTimer = 0f;
+        isPaused = true;
+        shownIntro = false;
+        InterfaceManager.Instance.HideInterface();
+        DialogueManager.Instance.HideDialogue();
+        DialogueManager.Instance.HideChoices();
+        CutsceneManager.Instance.AllocateCutscenes();
+        Debug.Log("GameManager state reset!");
+    }
 
     void Awake()
     {
@@ -30,25 +46,40 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    void Start()
+    {
+        ResetGameState();
+    }
     void Update()
     {
         if (!isPaused)
         {
             gameTime += Time.deltaTime;
-        }
-    }
+            LevelManager.Instance.levelProgress = (gameTime * 10);
+            if (!shownIntro && gameTime >= LevelManager.Instance.introDelay)
+            {
+                shownIntro = true;
+                InterfaceManager.Instance.FadeIntro();
+            }
 
+        }
+        if (LevelManager.Instance.enemyCount == 0 && isPaused && LevelManager.Instance.levelStart) StartCoroutine(ResumeAfterDelay(1f));
+
+    }
+    private IEnumerator ResumeAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        ResumeMovement();
+    }
     public bool RunStart()
     {
-        if (gameTime >= runStartDelay)
+        if (!isPaused)
         {
             PlayerMonitor.Instance.SetState(PlayerState.Run);
             return true;
-        }else{
-            PlayerMonitor.Instance.SetState(PlayerState.Idle);
         }
 
+        PlayerMonitor.Instance.SetState(PlayerState.Idle);
         return false;
     }
 
@@ -62,7 +93,7 @@ public class GameManager : MonoBehaviour
 
     public bool CanNPCSpawn()
     {
-        if (gameTime - npcSpawnTimer < npcSpawnDelay) return false;
+        if (gameTime - npcSpawnTimer < LevelManager.Instance.npcSpawnDelay) return false;
         Debug.Log("NPC Spawned! Time:" + gameTime);
         npcSpawnTimer = gameTime;
         return true;
@@ -70,12 +101,11 @@ public class GameManager : MonoBehaviour
 
     public bool CanEnemySpawn()
     {
-        if (gameTime - enemySpawnTimer < enemySpawnDelay) return false;
+        if (gameTime - enemySpawnTimer < LevelManager.Instance.enemySpawnDelay) return false;
         Debug.Log("Enemy Spawned! Time:" + gameTime);
         enemySpawnTimer = gameTime;
         return true;
     }
-
 
     public void PauseMovement()
     {
@@ -98,4 +128,33 @@ public class GameManager : MonoBehaviour
             Debug.Log("Game Resumed");
         }
     }
+    public void TryAgain()
+    {
+
+        // Fade to black over 2 seconds
+        InterfaceManager.Instance.FadeToBlack(2f, () =>
+        {
+            // When fade is complete, load the scene
+            SceneManager.LoadScene("HFLevel");
+            StartCoroutine(ResetAfterSceneLoad());
+        });
+    }
+
+    private IEnumerator ResetAfterSceneLoad()
+    {
+        // Waits until the end of frame
+        yield return new WaitForEndOfFrame();
+
+        // Calls resets after the scene is loaded.
+        PlayerMonitor.Instance.ResetPlayerState();
+        InterfaceManager.Instance.ResetInterface();
+        LevelManager.Instance.ResetLevel();
+        LevelManager.Instance.firstEncounter = false;
+        ResetGameState();
+
+        // Fade from black to reveal the new scene.
+        InterfaceManager.Instance.FadeFromBlack(4f);
+    }
+
+
 }
