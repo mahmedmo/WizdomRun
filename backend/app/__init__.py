@@ -1,14 +1,14 @@
 from flask import Flask
-from app.config import Config
-from app.extensions import db, migrate
+from .config import Config        
+from .extensions import db, migrate
 import logging
-from app.routes.users import users_bp
-from app.routes.campaigns import campaigns_bp
-from app.routes.questions import questions_bp
-from app.routes.stats import stats_bp
-from app.routes.achievements import achievements_bp
-from app.routes.characters import characters_bp
-from app.routes.auth import auth_bp
+from .routes.users import users_bp
+from .routes.campaigns import campaigns_bp
+from .routes.questions import questions_bp
+from .routes.stats import stats_bp
+from .routes.achievements import achievements_bp
+from .routes.characters import characters_bp
+from .routes.auth import auth_bp
 
 def create_app():
     app = Flask(__name__)
@@ -28,4 +28,3 @@ def create_app():
     app.register_blueprint(characters_bp, url_prefix="/characters")
     app.register_blueprint(auth_bp, url_prefix="/auth")
     return app
-
