@@ -2,11 +2,19 @@ from flask import Blueprint, request, jsonify
 from app.extensions import db
 from app.models import Question
 from app.models import Answer
+from app.models import Campaign
+from ..firebase_auth import verify_firebase_token
+import os
+import sys
+from werkzeug.utils import secure_filename
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../llm")))
+from qa_app import run_qa_session
 
 questions_bp = Blueprint("questions", __name__)
 
 @questions_bp.route("/<int:campaignID>", methods=["GET"])
-def get_questions(campaignID):
+@verify_firebase_token
+def get_questions(user, campaignID):
     questions = Question.query.filter_by(campaignID=campaignID).all()
     return jsonify([
         {
@@ -19,7 +27,8 @@ def get_questions(campaignID):
     ])
 
 @questions_bp.route("/answer/<int:questionID>", methods=["PUT"])
-def answer_question(questionID):
+@verify_firebase_token
+def answer_question(user, questionID):
     data = request.get_json()
     question = Question.query.get(questionID)
 
@@ -38,8 +47,8 @@ def answer_question(questionID):
     return jsonify({"message": "Answer recorded successfully"})
 
 @questions_bp.route("/batch_create", methods=["POST"])
-def batch_create_questions():
-    data = request.get_json()
+@verify_firebase_token
+def batch_create_questions(user, data):
     if not isinstance(data, list):
         return jsonify({"error": "Expected a list of questions"}), 400
 
@@ -85,7 +94,8 @@ def batch_create_questions():
 
 
 @questions_bp.route("/question/<int:questionID>", methods=["GET"])
-def get_question(questionID):
+@verify_firebase_token
+def get_question(user, questionID):
     question = Question.query.get(questionID)
     if not question:
         return jsonify({"error": "Question not found"}), 404
@@ -100,7 +110,8 @@ def get_question(questionID):
     })
 
 @questions_bp.route("/delete/<int:questionID>", methods=["DELETE"])
-def delete_question(questionID):
+@verify_firebase_token
+def delete_question(user, questionID):
     question = Question.query.get(questionID)
     if not question:
         return jsonify({"error": "Question not found"}), 404
@@ -110,7 +121,8 @@ def delete_question(questionID):
     return jsonify({"message": "Question deleted successfully"})
 
 @questions_bp.route("/answers/<int:questionID>", methods=["GET"])
-def get_answers(questionID):
+@verify_firebase_token
+def get_answers(user, questionID):
     answers = Answer.query.filter_by(questionID=questionID).all()
     
     if not answers:
@@ -127,7 +139,8 @@ def get_answers(questionID):
     ])
 
 @questions_bp.route("/wrong_attempt/<int:questionID>", methods=["PUT"])
-def increment_wrong_attempt(questionID):
+@verify_firebase_token
+def increment_wrong_attempt(user, questionID):
     question = Question.query.get(questionID)
     if not question:
         return jsonify({"error": "Question not found"}), 404
@@ -140,3 +153,91 @@ def increment_wrong_attempt(questionID):
         "questionID": questionID,
         "wrongAttempts": question.wrongAttempts
     })
+
+@questions_bp.route("/unanswered", methods=["GET"])
+@verify_firebase_token
+def get_unanswered_questions(user):
+    unanswered_questions = Question.query.filter_by(gotCorrect=False).all()
+    return jsonify([
+        {
+            "questionID": q.questionID,
+            "campaignID": q.campaignID,
+            "difficulty": q.difficulty,
+            "questionStr": q.questionStr,
+            "wrongAttempts": q.wrongAttempts
+        }
+        for q in unanswered_questions
+    ])
+
+@questions_bp.route("/difficulty/<string:difficulty>", methods=["GET"])
+@verify_firebase_token
+def get_questions_by_difficulty(user, difficulty):
+    valid_difficulties = {"easy", "medium", "hard"}
+    
+    if difficulty.lower() not in valid_difficulties:
+        return jsonify({"error": "Invalid difficulty level"}), 400
+
+    questions = Question.query.filter_by(difficulty=difficulty.lower()).all()
+    
+    return jsonify([
+        {
+            "questionID": q.questionID,
+            "campaignID": q.campaignID,
+            "questionStr": q.questionStr,
+            "gotCorrect": q.gotCorrect,
+            "wrongAttempts": q.wrongAttempts
+        }
+        for q in questions
+    ])
+
+@questions_bp.route("/create", methods=["POST"])
+@verify_firebase_token
+def create_questions(user):
+    if "file" not in request.files:
+        return jsonify({"error": "No file provided"}), 400
+
+    pdf_file = request.files["file"]
+    if pdf_file.filename == "":
+        return jsonify({"error": "Empty file uploaded"}), 400
+
+    # ✅ Get campaignID from request JSON
+    campaign_id = request.form.get("campaignID")
+    
+    if not campaign_id:
+        return jsonify({"error": "Missing campaignID"}), 400
+
+    # ✅ Validate the campaign belongs to the user
+    current_campaign = Campaign.query.filter_by(userID=user.userID, campaignID=campaign_id).first()
+
+    if not current_campaign:
+        return jsonify({"error": "Invalid campaign or unauthorized access"}), 403
+
+    # ✅ Set num_rounds dynamically based on campaign length
+    campaign_length_map = {"quest": 5, "odyssey": 10, "saga": 15}
+    num_rounds = campaign_length_map.get(current_campaign.campaignLength, 5)  # Default to 5 if missing
+
+    # Secure filename and save temporarily
+    filename = secure_filename(pdf_file.filename)
+    temp_dir = os.getenv("TEMP", "C:\\tmp")  # Use system temp folder
+    temp_pdf_path = os.path.join(temp_dir, filename)
+
+    print(f"Saving uploaded PDF to: {temp_pdf_path}")
+
+    pdf_file.save(temp_pdf_path)
+
+    try:
+        # ✅ Directly call the function from qa_app.py
+        questions_data = run_qa_session(temp_pdf_path, num_rounds, campaign_id)
+
+        if not questions_data:
+            return jsonify({"error": "No questions generated"}), 500
+
+        # ✅ Pass generated questions to batch_create_questions to insert them
+        return batch_create_questions(questions_data)
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+    finally:
+        if os.path.exists(temp_pdf_path):
+            os.remove(temp_pdf_path)  # ✅ Clean up temp file

@@ -1,11 +1,13 @@
 from flask import Blueprint, request, jsonify
 from app.extensions import db
 from app.models import PlayerStats, PlayerSpells, Spell
+from ..firebase_auth import verify_firebase_token
 
 stats_bp = Blueprint("stats", __name__)
 
 @stats_bp.route("/<int:campaignID>", methods=["GET"])
-def get_player_stats(campaignID):
+@verify_firebase_token
+def get_player_stats(user, campaignID):
     stats = PlayerStats.query.get(campaignID)
     if not stats:
         return jsonify({"error": "Player stats not found"}), 404
@@ -19,7 +21,8 @@ def get_player_stats(campaignID):
     })
 
 @stats_bp.route("/update/<int:campaignID>", methods=["PUT"])
-def update_player_stats(campaignID):
+@verify_firebase_token
+def update_player_stats(user, campaignID):
     data = request.get_json()
     stats = PlayerStats.query.get(campaignID)
 
@@ -37,12 +40,14 @@ def update_player_stats(campaignID):
     return jsonify({"message": "Player stats updated successfully"})
 
 @stats_bp.route("/spells", methods=["GET"])
-def get_spells():
+@verify_firebase_token
+def get_spells(user):
     spells = Spell.query.all()
     return jsonify([{"spellID": s.spellID, "name": s.spellName, "element": s.spellElement} for s in spells])
 
 @stats_bp.route("/assign_spell", methods=["POST"])
-def assign_spell():
+@verify_firebase_token
+def assign_spell(user):
     data = request.get_json()
     if not all(key in data for key in ["campaignID", "spellID"]):
         return jsonify({"error": "Missing required fields"}), 400
@@ -54,7 +59,8 @@ def assign_spell():
     return jsonify({"message": "Spell assigned successfully"})
 
 @stats_bp.route("/player_spells/<int:campaignID>", methods=["GET"])
-def get_player_spells(campaignID):
+@verify_firebase_token
+def get_player_spells(user, campaignID):
     spells = db.session.query(PlayerSpells, Spell).join(Spell, PlayerSpells.spellID == Spell.spellID).filter(PlayerSpells.playerID == campaignID).all()
     
     if not spells:
@@ -72,7 +78,8 @@ def get_player_spells(campaignID):
 
 
 @stats_bp.route("/create", methods=["POST"])
-def create_player_stats():
+@verify_firebase_token
+def create_player_stats(user):
     data = request.get_json()
     new_stats = PlayerStats(
         campaignID=data["campaignID"],
@@ -86,7 +93,8 @@ def create_player_stats():
     return jsonify({"message": "Player stats created successfully"})
 
 @stats_bp.route("/player_spells/delete/<int:playerSpellID>", methods=["DELETE"])
-def delete_player_spell(playerSpellID):
+@verify_firebase_token
+def delete_player_spell(user, playerSpellID):
     spell = PlayerSpells.query.get(playerSpellID)
     if not spell:
         return jsonify({"error": "Spell not found"}), 404
@@ -96,7 +104,8 @@ def delete_player_spell(playerSpellID):
     return jsonify({"message": "Spell removed successfully"})
 
 @stats_bp.route("/spells/create", methods=["POST"])
-def create_spell():
+@verify_firebase_token
+def create_spell(user):
     data = request.get_json()
     new_spell = Spell(
         spellName=data["spellName"],
@@ -108,7 +117,8 @@ def create_spell():
     return jsonify({"message": "Spell created successfully"})
 
 @stats_bp.route("/replenish_mana/<int:campaignID>", methods=["PATCH"])
-def replenish_mana(campaignID):
+@verify_firebase_token
+def replenish_mana(user, campaignID):
     data = request.get_json()
     
     if "manaAmount" not in data:

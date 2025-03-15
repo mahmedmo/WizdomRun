@@ -8,6 +8,7 @@ from app.routes.questions import questions_bp
 from app.routes.stats import stats_bp
 from app.routes.achievements import achievements_bp
 from app.routes.characters import characters_bp
+from app.routes.auth import auth_bp
 
 def create_app():
     app = Flask(__name__)
@@ -25,5 +26,6 @@ def create_app():
     app.register_blueprint(stats_bp, url_prefix="/stats")
     app.register_blueprint(achievements_bp, url_prefix="/achievements")
     app.register_blueprint(characters_bp, url_prefix="/characters")
+    app.register_blueprint(auth_bp, url_prefix="/auth")
     return app
 

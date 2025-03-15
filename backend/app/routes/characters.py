@@ -1,11 +1,13 @@
 from flask import Blueprint, request, jsonify
 from app.extensions import db
 from app.models import PlayerCharacter
+from ..firebase_auth import verify_firebase_token
 
 characters_bp = Blueprint("characters", __name__)
 
 @characters_bp.route("/create", methods=["POST"])
-def create_character():
+@verify_firebase_token
+def create_character(user):
     data = request.get_json()
     if not all(key in data for key in ["userID", "modelID"]):  # modelID is required, others are optional
         return jsonify({"error": "Missing required fields"}), 400
@@ -29,8 +31,9 @@ def create_character():
         "bootID": new_character.bootID
     }), 201
 
-@characters_bp.route("/<int:userID>", methods=["GET"])
-def get_character(userID):
+@characters_bp.route("/<string:userID>", methods=["GET"])
+@verify_firebase_token
+def get_character(user, userID):
     character = PlayerCharacter.query.filter_by(userID=userID).first()
     if not character:
         return jsonify({"error": "Character not found"}), 404
@@ -45,7 +48,8 @@ def get_character(userID):
     })
 
 @characters_bp.route("/update/<int:characterID>", methods=["PUT"])
-def update_character(characterID):
+@verify_firebase_token
+def update_character(user, characterID):
     data = request.get_json()
     character = PlayerCharacter.query.get(characterID)
 
@@ -65,7 +69,8 @@ def update_character(characterID):
     return jsonify({"message": "Character updated successfully"})
 
 @characters_bp.route("/delete/<int:characterID>", methods=["DELETE"])
-def delete_character(characterID):
+@verify_firebase_token
+def delete_character(user, characterID):
     character = PlayerCharacter.query.get(characterID)
     if not character:
         return jsonify({"error": "Character not found"}), 404

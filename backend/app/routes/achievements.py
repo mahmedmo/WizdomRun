@@ -1,11 +1,13 @@
 from flask import Blueprint, request, jsonify
 from app.extensions import db
 from app.models import Achievement
+from app.firebase_auth import verify_firebase_token
 
 achievements_bp = Blueprint("achievements", __name__)
 
 @achievements_bp.route("/unlock", methods=["POST"])
-def unlock_achievement():
+@verify_firebase_token
+def unlock_achievement(user):
     data = request.get_json()
     if not all(key in data for key in ["campaignID", "title", "description"]):
         return jsonify({"error": "Missing required fields"}), 400
@@ -21,7 +23,8 @@ def unlock_achievement():
     return jsonify({"message": "Achievement unlocked"})
 
 @achievements_bp.route("/<int:campaignID>", methods=["GET"])
-def get_achievements(campaignID):
+@verify_firebase_token
+def get_achievements(user, campaignID):
     achievements = Achievement.query.filter_by(campaignID=campaignID).all()
     return jsonify([
         {
@@ -32,7 +35,8 @@ def get_achievements(campaignID):
     ])
 
 @achievements_bp.route("/delete/<int:achievementID>", methods=["DELETE"])
-def delete_achievement(achievementID):
+@verify_firebase_token
+def delete_achievement(user, achievementID):
     achievement = Achievement.query.get(achievementID)
     if not achievement:
         return jsonify({"error": "Achievement not found"}), 404
