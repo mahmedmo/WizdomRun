@@ -1,13 +1,14 @@
-Flask==2.0.2
-SQLAlchemy==1.4.25
-Flask-RESTful==0.3.9
-Flask-Migrate==3.1.0
-Flask-SQLAlchemy==2.5.1
-Flask-Cors==3.0.10
-requests==2.26.0
-pytest==6.2.5
-gunicorn==20.1.0
-psycopg2-binary==2.9.5
-python-dotenv==0.19.1
-werkzeug==2.0.3
+Flask
+SQLAlchemy
+Flask-RESTful
+Flask-Migrate
+Flask-SQLAlchemy
+Flask-Cors
+requests
+gunicorn
+psycopg2-binary
+python-dotenv
+werkzeug
+openai
+langchain-community
 
