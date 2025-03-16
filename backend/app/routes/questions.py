@@ -200,25 +200,24 @@ def create_questions(user):
     if pdf_file.filename == "":
         return jsonify({"error": "Empty file uploaded"}), 400
 
-    # ✅ Get campaignID from request JSON
     campaign_id = request.form.get("campaignID")
     
     if not campaign_id:
         return jsonify({"error": "Missing campaignID"}), 400
 
-    # ✅ Validate the campaign belongs to the user
     current_campaign = Campaign.query.filter_by(userID=user.userID, campaignID=campaign_id).first()
 
     if not current_campaign:
         return jsonify({"error": "Invalid campaign or unauthorized access"}), 403
 
-    # ✅ Set num_rounds dynamically based on campaign length
     campaign_length_map = {"quest": 5, "odyssey": 10, "saga": 15}
-    num_rounds = campaign_length_map.get(current_campaign.campaignLength, 5)  # Default to 5 if missing
+    num_rounds = campaign_length_map.get(current_campaign.campaignLength, 5)
 
-    # Secure filename and save temporarily
     filename = secure_filename(pdf_file.filename)
-    temp_dir = os.getenv("TEMP", "C:\\tmp")  # Use system temp folder
+
+    temp_dir = os.getenv("TEMP") if os.name == "nt" else "/tmp"
+    os.makedirs(temp_dir, exist_ok=True)
+
     temp_pdf_path = os.path.join(temp_dir, filename)
 
     print(f"Saving uploaded PDF to: {temp_pdf_path}")
@@ -226,13 +225,11 @@ def create_questions(user):
     pdf_file.save(temp_pdf_path)
 
     try:
-        # ✅ Directly call the function from qa_app.py
         questions_data = run_qa_session(temp_pdf_path, num_rounds, campaign_id)
 
         if not questions_data:
             return jsonify({"error": "No questions generated"}), 500
 
-        # ✅ Pass generated questions to batch_create_questions to insert them
         return batch_create_questions(questions_data)
 
     except Exception as e:
@@ -240,4 +237,4 @@ def create_questions(user):
 
     finally:
         if os.path.exists(temp_pdf_path):
-            os.remove(temp_pdf_path)  # ✅ Clean up temp file
+            os.remove(temp_pdf_path)
