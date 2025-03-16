@@ -7,6 +7,21 @@ from firebase_admin import auth
 
 auth_bp = Blueprint("auth", __name__)
 
+@auth_bp.route("/login", methods=["POST"])
+def login():
+    data = request.json
+    id_token = data.get("idToken")
+    if not id_token:
+        return jsonify({"error": "Missing idToken"}), 400
+
+    try:
+        # Verify the ID token from Unity
+        decoded_token = auth.verify_id_token(id_token)
+        user_id = decoded_token.get("uid")
+        return jsonify({"userID": user_id}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
+        
 @auth_bp.route("/signup", methods=["POST"])
 def signup():
     data = request.json
