@@ -1,0 +1,1612 @@
+fileFormatVersion: 2
+guid: 00ade4143b24945ce8c253ba7b18b6d2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1347335598810014562
+    second: libassetpack-tiled_0
+  - first:
+      213: -2991784112202066352
+    second: libassetpack-tiled_1
+  - first:
+      213: 7562071239902097661
+    second: libassetpack-tiled_2
+  - first:
+      213: 7884434577139374878
+    second: libassetpack-tiled_3
+  - first:
+      213: -3668606451183642190
+    second: libassetpack-tiled_4
+  - first:
+      213: 7379901530519815145
+    second: libassetpack-tiled_5
+  - first:
+      213: -8901701552369382620
+    second: libassetpack-tiled_6
+  - first:
+      213: 3073602554295877186
+    second: libassetpack-tiled_7
+  - first:
+      213: 4560428305050179684
+    second: libassetpack-tiled_8
+  - first:
+      213: 8675400021536737875
+    second: libassetpack-tiled_9
+  - first:
+      213: 6248776014870995198
+    second: libassetpack-tiled_10
+  - first:
+      213: -5702326942611180085
+    second: libassetpack-tiled_11
+  - first:
+      213: 6871276447553606636
+    second: libassetpack-tiled_12
+  - first:
+      213: 8003743875321738290
+    second: libassetpack-tiled_13
+  - first:
+      213: 5417962110111649222
+    second: libassetpack-tiled_14
+  - first:
+      213: -796741991087247476
+    second: libassetpack-tiled_15
+  - first:
+      213: -6367016132024835740
+    second: libassetpack-tiled_16
+  - first:
+      213: -5038100499744222704
+    second: libassetpack-tiled_17
+  - first:
+      213: 7525347552297111101
+    second: libassetpack-tiled_18
+  - first:
+      213: 8214128557657210929
+    second: libassetpack-tiled_19
+  - first:
+      213: 5166933413650264062
+    second: libassetpack-tiled_20
+  - first:
+      213: 7237734970645089166
+    second: libassetpack-tiled_21
+  - first:
+      213: 3574037756407161869
+    second: libassetpack-tiled_22
+  - first:
+      213: 1128266471787657982
+    second: libassetpack-tiled_23
+  - first:
+      213: -4919765116338765758
+    second: libassetpack-tiled_24
+  - first:
+      213: 9079429209113936628
+    second: libassetpack-tiled_25
+  - first:
+      213: -6454788881421586990
+    second: libassetpack-tiled_26
+  - first:
+      213: 8056573630387349766
+    second: libassetpack-tiled_27
+  - first:
+      213: 2081071855924430813
+    second: libassetpack-tiled_28
+  - first:
+      213: -592510510889625968
+    second: libassetpack-tiled_29
+  - first:
+      213: 3674824670784906113
+    second: libassetpack-tiled_30
+  - first:
+      213: 5463347926573780101
+    second: libassetpack-tiled_31
+  - first:
+      213: 2635578140971347498
+    second: libassetpack-tiled_32
+  - first:
+      213: -8471438018957778165
+    second: libassetpack-tiled_33
+  - first:
+      213: 8905142867217290338
+    second: libassetpack-tiled_34
+  - first:
+      213: 3486627857685232991
+    second: libassetpack-tiled_35
+  - first:
+      213: 7195794589501236559
+    second: libassetpack-tiled_36
+  - first:
+      213: 2471213866792777289
+    second: libassetpack-tiled_37
+  - first:
+      213: 7151674775910219766
+    second: libassetpack-tiled_38
+  - first:
+      213: 1914651705553019624
+    second: libassetpack-tiled_39
+  - first:
+      213: -4666775638144523040
+    second: libassetpack-tiled_40
+  - first:
+      213: 1175317356616059307
+    second: libassetpack-tiled_41
+  - first:
+      213: 3509691463099998549
+    second: libassetpack-tiled_42
+  - first:
+      213: -8518672330765540117
+    second: libassetpack-tiled_43
+  - first:
+      213: 6527610360290115059
+    second: libassetpack-tiled_44
+  - first:
+      213: 4623234787606742475
+    second: libassetpack-tiled_45
+  - first:
+      213: -6263064486775697565
+    second: libassetpack-tiled_46
+  - first:
+      213: -4923281688195343218
+    second: libassetpack-tiled_47
+  - first:
+      213: -562623059354611977
+    second: libassetpack-tiled_48
+  - first:
+      213: 175581517461172504
+    second: libassetpack-tiled_49
+  - first:
+      213: -3643841128954696121
+    second: libassetpack-tiled_50
+  - first:
+      213: 3067300254333382047
+    second: libassetpack-tiled_51
+  - first:
+      213: 4373643054350695925
+    second: libassetpack-tiled_52
+  - first:
+      213: -4671863912046110183
+    second: libassetpack-tiled_53
+  - first:
+      213: -113440269813944621
+    second: libassetpack-tiled_54
+  - first:
+      213: 8224526713247492723
+    second: libassetpack-tiled_55
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TSElementalist_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 480
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85770951595494a2293b5d18811b9fb8
+      internalID: 1321418439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 480
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef3acb0a90bf468582ac6e387054890
+      internalID: -1767510015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 384
+        width: 58
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba982f77b524642f8a50f2087ca6e56b
+      internalID: -1512600293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_3
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 462
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f29843faf39489d984e2303de2b750
+      internalID: -439988454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 456
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e711cb539b0401f840b6693d594ae4
+      internalID: 885679456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_5
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 480
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca03e7070cc604e308637874a0ab25a2
+      internalID: -457982378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_6
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 480
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e6374c122d146cb8d294f8a2f6f44e
+      internalID: 575527772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_7
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 484
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3030a4dd042bb4d90b33b762305c6a2d
+      internalID: -9516404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_8
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 485
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13c1a60ff5f94359b611d24aa446056
+      internalID: -1317788580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_9
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 432
+        width: 168
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7973d2677f946c0abf4a1859961953
+      internalID: -952460564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_10
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 432
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2549332bc75a4aecaa8725e70b9057b
+      internalID: 517575420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_11
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 351
+        width: 71
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40dd7adee803546f8bbf49831050b961
+      internalID: 1941926979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_12
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 24
+        width: 536
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0cbe61bb64e42999dae1a7e6801cc4
+      internalID: 1573833451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_13
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 456
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a750755c8132e450c9ede31225be6c10
+      internalID: 1894552052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_14
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 408
+        width: 36
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151c564448f044cf0b95be036c34c1a8
+      internalID: 197712055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_15
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 456
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c03fc5d02f24777aaec27b53adbbff
+      internalID: -103381617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_16
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 459
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9466925b534491cb7f1905b677e719
+      internalID: -1863161031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_17
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 457
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ec88c921e974bfc9b79b70094b32f9
+      internalID: 1539127645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_18
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 408
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5471dbc1dba144e19d5235c5c09de73
+      internalID: 1926196535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_19
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 432
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03265dc3fee954da38b0573b1975f774
+      internalID: 306833473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_20
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 432
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e5508e1b2f94a5ea61a48b48efda3b
+      internalID: 1426426059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_21
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 435
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe171762747845ebafe3ca52a2bd087
+      internalID: 1389354872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_22
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 434
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce0ab97846944aa09f6639d378e42a6
+      internalID: 2052827114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 384
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526bc9e04c808417caad2e5605d35d8e
+      internalID: 1721123385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449f5d0415ff740ea9ea66d48af2f029
+      internalID: -1355918697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_25
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 408
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98929fdb44aec418ea440c5678c025e0
+      internalID: 220607024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_26
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 411
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0375f36de4b4445b120406bfa38388
+      internalID: -1120280058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_27
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 413
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb953ea9dccf40419fb8424fb91b251
+      internalID: 260017606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_28
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 360
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4ef0c910f7c4191a1da8e4ba06afc7
+      internalID: -545325442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_29
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 384
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf58ad9f25d9477db2c4d018da64638
+      internalID: -1566439180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_30
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 391
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f076089873d41698b90b026f2c4145
+      internalID: 1906360478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_31
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 384
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a138a9d26cf143949b24e4027690cb6
+      internalID: 1727688986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_32
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 342
+        width: 126
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fff7389d4794b41b490a6807e7906d
+      internalID: -1645846972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_33
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 360
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16ba6c0b42f84232948ff495e29e3a8
+      internalID: 602458970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_34
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 336
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2d26f6538ee44338706c8090b4e912
+      internalID: 1667025722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_35
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 336
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020397f7116a843dcb3a0b10ae2a6bf6
+      internalID: -1139899481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_36
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 336
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7e4f9e0bdd34c38b2ab1350f549fca
+      internalID: 1408081273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_37
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 336
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8327ca5b4dc1f477fa981750dc0f5b9d
+      internalID: -173176102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_38
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10efb435dd6ef4948a2427522c767f4f
+      internalID: -1656812646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_39
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 336
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d70ce7250a44adda1248e67340201d
+      internalID: 1821808777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_40
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 336
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c950c2dbd31914d14b4142cced77f80e
+      internalID: 95219403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_41
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 360
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7919dd7a9dbec45369624ee21c108d21
+      internalID: -665098259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 360
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510d8f8a5d8ee475495ab4001ab7abe7
+      internalID: 1413461185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_43
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 360
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bcc122eca3a41788ca0e7eb7e1eac4
+      internalID: -1493358302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_44
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 264
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbedb40534fc4d59aa4c74aff712b55
+      internalID: -1457349307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b02ce7dec42426db4a6ea37e994296
+      internalID: -971604228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_46
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 192
+        width: 92
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9048ffd3e9d4d7d912d17f9eccb6ac
+      internalID: 697717746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_47
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 168
+        width: 23
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76e826ed07cc48fe9aa8096ba4050f0
+      internalID: 972152982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_48
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 216
+        width: 164
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180970faaa50543d6ac3346ce038e4c0
+      internalID: 302753847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_49
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 192
+        width: 191
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ce4eb18a0314cb2a299ad115bb13fd
+      internalID: -1354027465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_50
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 183
+        width: 71
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939284eb2eba14acfaee127c7cc506f8
+      internalID: 1957014435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_51
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 168
+        width: 24
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0730f12c21c0455ab26b280b35bbc60
+      internalID: -2057735309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_52
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 24
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cac293312f9f48c2b2aa1a8030ce97b
+      internalID: -1393520597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_53
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 24
+        width: 88
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7454cdae4fa415598a9d8f8325d432
+      internalID: -573421349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_54
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 24
+        width: 88
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d693f70aa129f489e84c63e73e002a99
+      internalID: -1459590202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TSElementalist_55
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 24
+        width: 88
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2400c49e4d04491a9fbe61d13cc63f
+      internalID: -521834491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0abf3144581d04392a6a80185ed53ed0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TSElementalist_0: 1321418439
+      TSElementalist_1: -1767510015
+      TSElementalist_10: 517575420
+      TSElementalist_11: 1941926979
+      TSElementalist_12: 1573833451
+      TSElementalist_13: 1894552052
+      TSElementalist_14: 197712055
+      TSElementalist_15: -103381617
+      TSElementalist_16: -1863161031
+      TSElementalist_17: 1539127645
+      TSElementalist_18: 1926196535
+      TSElementalist_19: 306833473
+      TSElementalist_2: -1512600293
+      TSElementalist_20: 1426426059
+      TSElementalist_21: 1389354872
+      TSElementalist_22: 2052827114
+      TSElementalist_23: 1721123385
+      TSElementalist_24: -1355918697
+      TSElementalist_25: 220607024
+      TSElementalist_26: -1120280058
+      TSElementalist_27: 260017606
+      TSElementalist_28: -545325442
+      TSElementalist_29: -1566439180
+      TSElementalist_3: -439988454
+      TSElementalist_30: 1906360478
+      TSElementalist_31: 1727688986
+      TSElementalist_32: -1645846972
+      TSElementalist_33: 602458970
+      TSElementalist_34: 1667025722
+      TSElementalist_35: -1139899481
+      TSElementalist_36: 1408081273
+      TSElementalist_37: -173176102
+      TSElementalist_38: -1656812646
+      TSElementalist_39: 1821808777
+      TSElementalist_4: 885679456
+      TSElementalist_40: 95219403
+      TSElementalist_41: -665098259
+      TSElementalist_42: 1413461185
+      TSElementalist_43: -1493358302
+      TSElementalist_44: -1457349307
+      TSElementalist_45: -971604228
+      TSElementalist_46: 697717746
+      TSElementalist_47: 972152982
+      TSElementalist_48: 302753847
+      TSElementalist_49: -1354027465
+      TSElementalist_5: -457982378
+      TSElementalist_50: 1957014435
+      TSElementalist_51: -2057735309
+      TSElementalist_52: -1393520597
+      TSElementalist_53: -573421349
+      TSElementalist_54: -1459590202
+      TSElementalist_55: -521834491
+      TSElementalist_6: 575527772
+      TSElementalist_7: -9516404
+      TSElementalist_8: -1317788580
+      TSElementalist_9: -952460564
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

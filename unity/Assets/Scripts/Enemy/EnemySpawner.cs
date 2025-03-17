@@ -7,7 +7,6 @@ public class EnemySpawner : MonoBehaviour
     public EnemyDatabase enemyDatabase;
     public Tilemap tilemap;
 
-    private bool sortAlt = false;
     public int enemySpacing = 2;
 
     void Start()
@@ -18,9 +17,10 @@ public class EnemySpawner : MonoBehaviour
     {
         if (LevelManager.Instance.enemyCount > LevelManager.Instance.maxEnemyCount || GameManager.Instance.isPaused)
             return;
-
+        
         if (GameManager.Instance.CanEnemySpawn())
             SpawnEnemy();
+        
     }
 
     // Filters the enemy database list to return an

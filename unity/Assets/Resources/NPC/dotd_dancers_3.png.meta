@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 74568fa8f0fd0443fa0c3f67015682c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3900403530401392658
+    second: dotd_dancers_3_0
+  - first:
+      213: 90819646777860952
+    second: dotd_dancers_3_1
+  - first:
+      213: -5732945374707422438
+    second: dotd_dancers_3_2
+  - first:
+      213: 9190830742632855361
+    second: dotd_dancers_3_3
+  - first:
+      213: 6315289547958170005
+    second: dotd_dancers_3_4
+  - first:
+      213: -5373708955520905595
+    second: dotd_dancers_3_5
+  - first:
+      213: 6946422048178928232
+    second: dotd_dancers_3_6
+  - first:
+      213: 5445609065367413426
+    second: dotd_dancers_3_7
+  - first:
+      213: -5169680566227345262
+    second: dotd_dancers_3_8
+  - first:
+      213: -117487484598836060
+    second: dotd_dancers_3_9
+  - first:
+      213: 3191019305010230896
+    second: dotd_dancers_3_10
+  - first:
+      213: -7687478491342923458
+    second: dotd_dancers_3_11
+  - first:
+      213: 1603983008664202628
+    second: dotd_dancers_3_12
+  - first:
+      213: -8152822724145015239
+    second: dotd_dancers_3_13
+  - first:
+      213: -3212870187287816691
+    second: dotd_dancers_3_14
+  - first:
+      213: 3648292407636571424
+    second: dotd_dancers_3_15
+  - first:
+      213: 7553549806474609723
+    second: dotd_dancers_3_16
+  - first:
+      213: -7130331290090878956
+    second: dotd_dancers_3_17
+  - first:
+      213: 4023936763617798079
+    second: dotd_dancers_3_18
+  - first:
+      213: -357846415512673230
+    second: dotd_dancers_3_19
+  - first:
+      213: -6589253035153775201
+    second: dotd_dancers_3_20
+  - first:
+      213: -2040444965801879470
+    second: dotd_dancers_3_21
+  - first:
+      213: -2107901038335173011
+    second: dotd_dancers_3_22
+  - first:
+      213: -3190648517921909088
+    second: dotd_dancers_3_23
+  - first:
+      213: 804072355655799039
+    second: dotd_dancers_3_24
+  - first:
+      213: -1749533301322984203
+    second: dotd_dancers_3_25
+  - first:
+      213: 6803771654925686601
+    second: dotd_dancers_3_26
+  - first:
+      213: 7287918491587802232
+    second: dotd_dancers_3_27
+  - first:
+      213: -1762061172138151617
+    second: dotd_dancers_3_28
+  - first:
+      213: 8420496907660498047
+    second: dotd_dancers_3_29
+  - first:
+      213: 1999032467023187416
+    second: dotd_dancers_3_30
+  - first:
+      213: -970474836845504685
+    second: dotd_dancers_3_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dotd_dancers_3_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 759
+        width: 57
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7deb187abfed9c0800000000000000
+      internalID: -3900403530401392658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_1
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 759
+        width: 69
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85322d0dcf7a24100800000000000000
+      internalID: 90819646777860952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_2
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 756
+        width: 96
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b68df5e8c7070b0800000000000000
+      internalID: -5732945374707422438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_3
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 759
+        width: 87
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147fe558dd36c8f70800000000000000
+      internalID: 9190830742632855361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 651
+        width: 57
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591b8cf426a64a750800000000000000
+      internalID: 6315289547958170005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_5
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 651
+        width: 69
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e47d31d20cc65b0800000000000000
+      internalID: -5373708955520905595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_6
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 648
+        width: 96
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a75a19c06a66060800000000000000
+      internalID: 6946422048178928232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_7
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 651
+        width: 87
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b22fd6c790b29b40800000000000000
+      internalID: 5445609065367413426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 543
+        width: 57
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29067c74aea9148b0800000000000000
+      internalID: -5169680566227345262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_9
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 543
+        width: 69
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4aee651c99e5ef0800000000000000
+      internalID: -117487484598836060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_10
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 540
+        width: 96
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0767c82b627c84c20800000000000000
+      internalID: 3191019305010230896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_11
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 543
+        width: 87
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e399c09ca07905590800000000000000
+      internalID: -7687478491342923458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 435
+        width: 57
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d21315c0e724610800000000000000
+      internalID: 1603983008664202628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_13
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 435
+        width: 69
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9369a9a8dea5bde80800000000000000
+      internalID: -8152822724145015239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_14
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 432
+        width: 96
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06544156979963d0800000000000000
+      internalID: -3212870187287816691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_15
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 435
+        width: 87
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025bee18d9651a230800000000000000
+      internalID: 3648292407636571424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_16
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 330
+        width: 84
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34c320578993d860800000000000000
+      internalID: 7553549806474609723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_17
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 330
+        width: 84
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 418c7434879fb0d90800000000000000
+      internalID: -7130331290090878956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_18
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 324
+        width: 84
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7e212ba25e7d730800000000000000
+      internalID: 4023936763617798079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_19
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 324
+        width: 84
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234683fb49ca80bf0800000000000000
+      internalID: -357846415512673230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_20
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 222
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95ae70a6454e84a0800000000000000
+      internalID: -6589253035153775201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_21
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 222
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25815a54d12eea3e0800000000000000
+      internalID: -2040444965801879470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_22
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 216
+        width: 84
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6eda5c7c2b3fb2e0800000000000000
+      internalID: -2107901038335173011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_23
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 216
+        width: 84
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a65326e31a88b3d0800000000000000
+      internalID: -3190648517921909088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_24
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 114
+        width: 84
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0539c1c83a82b00800000000000000
+      internalID: 804072355655799039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_25
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 114
+        width: 84
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f45deb5bb868b7e0800000000000000
+      internalID: -1749533301322984203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_26
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 108
+        width: 84
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94797b0b54adb6e50800000000000000
+      internalID: 6803771654925686601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_27
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 108
+        width: 84
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874771b4143e32560800000000000000
+      internalID: 7287918491587802232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_28
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 6
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31723223b6eb87e0800000000000000
+      internalID: -1762061172138151617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_29
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 6
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f741165e25d9bd470800000000000000
+      internalID: 8420496907660498047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_30
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 0
+        width: 84
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ddc36bff6dfdbb10800000000000000
+      internalID: 1999032467023187416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dotd_dancers_3_31
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 0
+        width: 84
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3575e56174e2882f0800000000000000
+      internalID: -970474836845504685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6ca2d3a82da8540689363814519bff5d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dotd_dancers_3_0: -3900403530401392658
+      dotd_dancers_3_1: 90819646777860952
+      dotd_dancers_3_10: 3191019305010230896
+      dotd_dancers_3_11: -7687478491342923458
+      dotd_dancers_3_12: 1603983008664202628
+      dotd_dancers_3_13: -8152822724145015239
+      dotd_dancers_3_14: -3212870187287816691
+      dotd_dancers_3_15: 3648292407636571424
+      dotd_dancers_3_16: 7553549806474609723
+      dotd_dancers_3_17: -7130331290090878956
+      dotd_dancers_3_18: 4023936763617798079
+      dotd_dancers_3_19: -357846415512673230
+      dotd_dancers_3_2: -5732945374707422438
+      dotd_dancers_3_20: -6589253035153775201
+      dotd_dancers_3_21: -2040444965801879470
+      dotd_dancers_3_22: -2107901038335173011
+      dotd_dancers_3_23: -3190648517921909088
+      dotd_dancers_3_24: 804072355655799039
+      dotd_dancers_3_25: -1749533301322984203
+      dotd_dancers_3_26: 6803771654925686601
+      dotd_dancers_3_27: 7287918491587802232
+      dotd_dancers_3_28: -1762061172138151617
+      dotd_dancers_3_29: 8420496907660498047
+      dotd_dancers_3_3: 9190830742632855361
+      dotd_dancers_3_30: 1999032467023187416
+      dotd_dancers_3_31: -970474836845504685
+      dotd_dancers_3_4: 6315289547958170005
+      dotd_dancers_3_5: -5373708955520905595
+      dotd_dancers_3_6: 6946422048178928232
+      dotd_dancers_3_7: 5445609065367413426
+      dotd_dancers_3_8: -5169680566227345262
+      dotd_dancers_3_9: -117487484598836060
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

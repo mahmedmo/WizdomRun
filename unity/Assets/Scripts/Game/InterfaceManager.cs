@@ -268,6 +268,7 @@ public class InterfaceManager : MonoBehaviour
     }
     public void DrawGameOver()
     {
+        QuestionManager.Instance.gameObject.SetActive(false);
         Image overlayImage = gameOverOverlay.GetComponent<Image>();
 
         overlayImage.color = new Color(1f, 0f, 0f, 0f);

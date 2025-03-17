@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     private float npcSpawnTimer = 0.0f;
     private float enemySpawnTimer = 0.0f;
 
+    public bool PauseEnemyMovement { get; private set; }
     public bool isPaused { get; set; } = true;
     public bool shownIntro;
 
@@ -49,6 +50,18 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         ResetGameState();
+    }
+    public void FreezeGame()
+    {
+        isPaused = true;
+        PauseEnemyMovement = true;
+
+    }
+    public void UnFreezeGame()
+    {
+        isPaused = false;
+        PauseEnemyMovement = false;
+
     }
     void Update()
     {

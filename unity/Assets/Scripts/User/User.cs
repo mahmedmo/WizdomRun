@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 public class User
 {
-    public int UserID { get; set; }
+    public string UserID { get; set; }
     public string ScreenName { get; set; }
     public List<Campaign> CampaignList { get; set; }
 
-    public PlayerCharacter PlayerChar { get; set; }
+    // public PlayerCharacter PlayerChar { get; set; }
 
 
 }

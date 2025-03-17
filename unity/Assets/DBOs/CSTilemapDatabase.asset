@@ -12,4 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115269aba67f94772970c9763c4df88b, type: 3}
   m_Name: CSTilemapDatabase
   m_EditorClassIdentifier: 
-  csTilemaps: []
+  cutsceneAreas:
+  - cutsceneId: 0
+    levelId: 0
+    cutsceneType: 3
+    tilemap: {fileID: 8754715718460209844, guid: 45330aab828ff40edbce401e733d8c26, type: 3}
+  - cutsceneId: 0
+    levelId: 0
+    cutsceneType: 4
+    tilemap: {fileID: 5054801269195175677, guid: cf0d7c7fd51fe41888b8dc3889879084, type: 3}
+  - cutsceneId: 0
+    levelId: 0
+    cutsceneType: 5
+    tilemap: {fileID: 5090281931485886517, guid: f11780ffdfdaf45979d9845cb244278c, type: 3}
+  - cutsceneId: 0
+    levelId: 0
+    cutsceneType: 6
+    tilemap: {fileID: 3798815902700718445, guid: c84ff9c9571e84bf6bf6a2d546db95a7, type: 3}

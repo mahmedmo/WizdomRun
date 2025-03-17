@@ -43,7 +43,11 @@ public class EnemyMonitor : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+        if (GameManager.Instance.PauseEnemyMovement && GameManager.Instance.isPaused)
+        {
+            enemyRb.linearVelocity = Vector2.zero;
+            return;
+        }
         if (PlayerMonitor.Instance!.playerDead)
         {
             SetState(EnemyState.Idle);

@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "336991471329",
+    "project_id": "wizdomrun",
+    "storage_bucket": "wizdomrun.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336991471329:ios:f5d352c982dec7e32c19a0",
+        "android_client_info": {
+          "package_name": "com.wizinc.wizdomrun"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-6b7rGr3hk3cOPxL65kieKAXtgJrT6dA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

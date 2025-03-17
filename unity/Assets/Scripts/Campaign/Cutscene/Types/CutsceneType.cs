@@ -1,1 +1,1 @@
-public enum CutsceneType {Start, Dialogue, Boss, Chest, Witch, Alchemist, Smithee, Elementalist, Enhancer }
+public enum CutsceneType { Start, Dialogue, Boss, Witch, Alchemist, Smithee, Elementalist }

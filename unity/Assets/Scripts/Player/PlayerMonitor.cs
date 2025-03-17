@@ -108,6 +108,12 @@ public class PlayerMonitor : MonoBehaviour
     {
         return playerStats.Slots;
     }
+    public void BoostMana(int amount)
+    {
+        currMana += amount;
+        currMana = Mathf.Clamp(currMana, 0, playerStats.Mana);
+        InterfaceManager.Instance.DrawMana(playerStats.Mana, currMana);
+    }
     public void CastSpell(int slotId)
     {
         if (playerDead) return;
