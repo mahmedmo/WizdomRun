@@ -41,7 +41,8 @@ def get_campaigns(user, userID):
             "title": c.title,
             "campaignLength": c.campaignLength,
             "currLevel": c.currLevel,
-            "remainingTries": c.remainingTries
+            "remainingTries": c.remainingTries,
+            "lastUpdated": c.lastUpdated
         } for c in campaigns
     ])
 
@@ -58,6 +59,7 @@ def update_campaign(user, campaignID):
         campaign.currLevel = data["currLevel"]
     if "remainingTries" in data:
         campaign.remainingTries = data["remainingTries"]
+    campaign.lastUpdated = db.func.current_timestamp()
 
     db.session.commit()
     return jsonify({"message": "Campaign updated successfully"})

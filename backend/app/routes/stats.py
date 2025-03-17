@@ -35,6 +35,8 @@ def update_player_stats(user, campaignID):
         stats.hp = data["hp"]
     if "mana" in data:
         stats.mana = data["mana"]
+    if "affinity" in data:
+        stats.affinity = data["affinity"]
 
     db.session.commit()
     return jsonify({"message": "Player stats updated successfully"})
@@ -45,18 +47,25 @@ def get_spells(user):
     spells = Spell.query.all()
     return jsonify([{"spellID": s.spellID, "name": s.spellName, "element": s.spellElement} for s in spells])
 
-@stats_bp.route("/assign_spell", methods=["POST"])
+@stats_bp.route("/assign_spells", methods=["POST"])
 @verify_firebase_token
-def assign_spell(user):
+def assign_spells(user):
     data = request.get_json()
-    if not all(key in data for key in ["campaignID", "spellID"]):
-        return jsonify({"error": "Missing required fields"}), 400
+    
+    if "campaignID" not in data or "spellIDs" not in data or not isinstance(data["spellIDs"], list) or len(data["spellIDs"]) != 4:
+        return jsonify({"error": "Request must contain 'campaignID' and exactly 4 'spellIDs'"}), 400
+    
+    campaignID = data["campaignID"]
+    new_spell_ids = set(data["spellIDs"])
+    
+    PlayerSpells.query.filter_by(playerID=campaignID).delete()
 
-    new_spell = PlayerSpells(playerID=data["campaignID"], spellID=data["spellID"])
-    db.session.add(new_spell)
+    new_spells = [PlayerSpells(playerID=campaignID, spellID=spell_id) for spell_id in new_spell_ids]
+    db.session.bulk_save_objects(new_spells)
     db.session.commit()
 
-    return jsonify({"message": "Spell assigned successfully"})
+    return jsonify({"message": "Spells assigned successfully"})
+
 
 @stats_bp.route("/player_spells/<int:campaignID>", methods=["GET"])
 @verify_firebase_token
