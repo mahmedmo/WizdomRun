@@ -18,70 +18,58 @@ MonoBehaviour:
     spellDamage: 2
     spellSprite: {fileID: 1418967119, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
     spellPrefab: {fileID: 2534370782770770243, guid: 4e62809e4146e4b95ab1e89e46683b54, type: 3}
-    affinity: 0
   - spellID: 1
     spellName: Fire Bolt
     spellDamage: 5
     spellSprite: {fileID: 1280968822, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
     spellPrefab: {fileID: 2982405168553742680, guid: 1c3c05621a8db414281735f3efe6c352, type: 3}
-    affinity: 0
   - spellID: 2
     spellName: Incinerating Touch
     spellDamage: 10
     spellSprite: {fileID: -1835888537, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
     spellPrefab: {fileID: 0}
-    affinity: 0
   - spellID: 3
     spellName: Flame Ablaze
     spellDamage: 15
     spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
     spellPrefab: {fileID: 0}
-    affinity: 0
   - spellID: 4
     spellName: WaterGun
     spellDamage: 15
     spellSprite: {fileID: 883856421, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
     spellPrefab: {fileID: 5016841037979373571, guid: 7bb7230c5792c4349a638215fa873866, type: 3}
-    affinity: 1
   - spellID: 5
     spellName: WaterPulse
     spellDamage: 15
     spellSprite: {fileID: -204227609, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
     spellPrefab: {fileID: 4681748126748895126, guid: 73ec7375340d5d342a4f9f1899266ffb, type: 3}
-    affinity: 1
   - spellID: 6
     spellName: Whirlpool
     spellDamage: 15
     spellSprite: {fileID: 1505369742, guid: 91d023353efa34bafbe1fefc06c974c6, type: 3}
     spellPrefab: {fileID: 2534370782770770243, guid: aad11d3192353e448877fadb7da2d6a1, type: 3}
-    affinity: 1
   - spellID: 7
     spellName: WaterShuriken
     spellDamage: 15
     spellSprite: {fileID: -1649050011, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
     spellPrefab: {fileID: 240891122572525353, guid: 99b67bdd036720046aedc1bc91512957, type: 3}
-    affinity: 1
   - spellID: 8
     spellName: Spark
     spellDamage: 15
     spellSprite: {fileID: 299838888, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
     spellPrefab: {fileID: 332467273974930091, guid: a10a90c2ccf7a2346b7c3f627ed5d8c1, type: 3}
-    affinity: 3
   - spellID: 9
     spellName: Thunderbolt
     spellDamage: 15
     spellSprite: {fileID: -793228513, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
     spellPrefab: {fileID: 7043992466491040102, guid: 54e4c06be023a20459d2cd7aac085928, type: 3}
-    affinity: 3
   - spellID: 10
     spellName: Electroweb
     spellDamage: 15
     spellSprite: {fileID: 1940916512, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
     spellPrefab: {fileID: 2753076291878324361, guid: 6aabd2d5d4ae8a7419ff6a9314a672f8, type: 3}
-    affinity: 3
   - spellID: 11
     spellName: Thunder
     spellDamage: 15
     spellSprite: {fileID: 306869915, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
     spellPrefab: {fileID: 3982974035701504997, guid: 0c8e4b54fdcb9d84a80bb3bb3e453735, type: 3}
-    affinity: 3

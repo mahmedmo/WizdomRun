@@ -16,7 +16,6 @@ public class SpellData
 
     public Sprite spellSprite;
     public GameObject spellPrefab;
-    public PlayerClass affinity;
 
 
 }
