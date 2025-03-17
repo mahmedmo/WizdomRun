@@ -174,10 +174,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 2.6486487
+    x: 0
     y: 0
-    width: 0.79307437
-    height: 0.79320836
+    width: 1
+    height: 0.9991561
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -307,12 +307,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1020399228}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbf848f9a59e24721a22eef3a1e9dc5d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0eb022f14e32543d6b7b8e4b57cf1095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   runStartDelay: 5
-  rareSpawnDelay: 10
+  rareSpawnDelay: 15
   npcSpawnDelay: 10
+  enemySpawnDelay: 10
 --- !u!4 &1020399230
 Transform:
   m_ObjectHideFlags: 0
@@ -360,7 +361,6 @@ MonoBehaviour:
   tilemap: {fileID: 1366722140}
   npcSpeed: 5
   npcPrefabs: []
-  lifespan: 12
 --- !u!4 &1134425647
 Transform:
   m_ObjectHideFlags: 0
@@ -724,7 +724,6 @@ MonoBehaviour:
   spawnRate: 0.5
   maxSpawn: 3
   rareBuffer: 3
-  structLifespan: 10
   mainCamera: {fileID: 840498589}
 --- !u!210 &1547223153
 SortingGroup:
@@ -3627,6 +3626,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5773114951630182828, guid: 9e9fcaaac428a4bf5800d4f922699876, type: 3}
+      propertyPath: spellDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: ed7fd2257714c47539eb6e25c5dde527, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
