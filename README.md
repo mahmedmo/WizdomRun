@@ -149,16 +149,16 @@ undefined
 ### Method: POST
 
 > ```
-> http://127.0.0.1:5000/auth/signup
+> https://wizdomrun.onrender.com/auth/signup
 > ```
 
 ### Body (**raw**)
 
 ```json
 {
-  "email": "email@email.com",
-  "password": "password",
-  "screenName": "magemaster"
+  "email": "testemail",
+  "password": "testpassword",
+  "screenName": "winningwizard"
 }
 ```
 
@@ -169,14 +169,8 @@ undefined
 ### Method: GET
 
 > ```
-> http://127.0.0.1:5000/users/JoDqF0Ii36e9kqSJwRgNKCmTrTf1
+> https://wizdomrun.onrender.com/users/JoDqF0Ii36e9kqSJwRgNKCmTrTf1
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -185,14 +179,8 @@ undefined
 ### Method: DELETE
 
 > ```
-> http://127.0.0.1:5000/users/JoDqF0Ii36e9kqSJwRgNKCmTrTf1
+> https://wizdomrun.onrender.com/users/JoDqF0Ii36e9kqSJwRgNKCmTrTf1
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -201,22 +189,16 @@ undefined
 ### Method: PUT
 
 > ```
-> http://127.0.0.1:5000/users/update/JoDqF0Ii36e9kqSJwRgNKCmTrTf1
+> https://wizdomrun.onrender.com/users/update/JoDqF0Ii36e9kqSJwRgNKCmTrTf1
 > ```
 
 ### Body (**raw**)
 
 ```json
 {
-  "screenName": "MageMasterUpdated"
+  "screenName": "MageMaster"
 }
 ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -225,14 +207,8 @@ undefined
 ### Method: GET
 
 > ```
-> http://127.0.0.1:5000/users
+> https://wizdomrun.onrender.com/users
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -245,7 +221,7 @@ undefined
 ### Method: POST
 
 > ```
-> http://127.0.0.1:5000/characters/create
+> https://wizdomrun.onrender.com/characters/create
 > ```
 
 ### Body (**raw**)
@@ -260,12 +236,6 @@ undefined
 }
 ```
 
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
-
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: Get Characters
@@ -273,14 +243,8 @@ undefined
 ### Method: GET
 
 > ```
-> http://127.0.0.1:5000/characters/JoDqF0Ii36e9kqSJwRgNKCmTrTf1
+> https://wizdomrun.onrender.com/characters/JoDqF0Ii36e9kqSJwRgNKCmTrTf1
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -289,7 +253,7 @@ undefined
 ### Method: PUT
 
 > ```
-> http://127.0.0.1:5000/characters/update/1
+> https://wizdomrun.onrender.com/characters/update/1
 > ```
 
 ### Body (**raw**)
@@ -301,12 +265,6 @@ undefined
 }
 ```
 
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
-
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: Delete Character
@@ -314,14 +272,8 @@ undefined
 ### Method: DELETE
 
 > ```
-> http://127.0.0.1:5000/characters/delete/4
+> https://wizdomrun.onrender.com/characters/delete/4
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -334,25 +286,19 @@ undefined
 ### Method: POST
 
 > ```
-> http://127.0.0.1:5000/campaigns/create
+> https://wizdomrun.onrender.com/campaigns/create
 > ```
 
 ### Body (**raw**)
 
 ```json
 {
-  "userID": "JoDqF0Ii36e9kqSJwRgNKCmTrTf1",
-  "title": "Battle for Knowledge",
-  "campaignLength": "saga",
+  "userID": "zZiZq1h0NzYmOiwA2ojdPujc24u1",
+  "title": "Refactoring",
+  "campaignLength": "quest",
   "currLevel": 1
 }
 ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -361,14 +307,8 @@ undefined
 ### Method: GET
 
 > ```
-> http://127.0.0.1:5000/campaigns/JoDqF0Ii36e9kqSJwRgNKCmTrTf1
+> https://wizdomrun.onrender.com/campaigns/zZiZq1h0NzYmOiwA2ojdPujc24u1
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -377,7 +317,7 @@ undefined
 ### Method: PUT
 
 > ```
-> http://127.0.0.1:5000/campaigns/update/1
+> https://wizdomrun.onrender.com/campaigns/update/1
 > ```
 
 ### Body (**raw**)
@@ -389,12 +329,6 @@ undefined
 }
 ```
 
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
-
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: Delete Campaign
@@ -402,14 +336,8 @@ undefined
 ### Method: DELETE
 
 > ```
-> http://127.0.0.1:5000/campaigns/delete/3
+> https://wizdomrun.onrender.com/campaigns/delete/3
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -418,14 +346,8 @@ undefined
 ### Method: GET
 
 > ```
-> http://127.0.0.1:5000/campaigns/single/1
+> https://wizdomrun.onrender.com/campaigns/single/1
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -434,7 +356,7 @@ undefined
 ### Method: PATCH
 
 > ```
-> http://127.0.0.1:5000/campaigns/1/restart
+> https://wizdomrun.onrender.com/campaigns/1/restart
 > ```
 
 ### Body (**raw**)
@@ -445,12 +367,6 @@ undefined
   "currLevel": 1
 }
 ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -463,14 +379,8 @@ undefined
 ### Method: GET
 
 > ```
-> http://127.0.0.1:5000/questions/1
+> https://wizdomrun.onrender.com/questions/1
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -479,7 +389,7 @@ undefined
 ### Method: PUT
 
 > ```
-> http://127.0.0.1:5000/questions/answer/2
+> https://wizdomrun.onrender.com/questions/answer/2
 > ```
 
 ### Body (**raw**)
@@ -490,81 +400,6 @@ undefined
 }
 ```
 
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: Create Questions
-
-### Method: POST
-
-> ```
-> http://127.0.0.1:5000/questions/batch_create
-> ```
-
-### Body (**raw**)
-
-```json
-[
-  {
-    "campaignID": 1,
-    "difficulty": "medium",
-    "questionStr": "What is a binary tree?",
-    "answers": [
-      {
-        "answerStr": "A data structure",
-        "isCorrect": true
-      },
-      {
-        "answerStr": "A sorting algorithm",
-        "isCorrect": false
-      },
-      {
-        "answerStr": "A compiler",
-        "isCorrect": false
-      },
-      {
-        "answerStr": "A programming language",
-        "isCorrect": false
-      }
-    ]
-  },
-  {
-    "campaignID": 1,
-    "difficulty": "hard",
-    "questionStr": "What is the time complexity of quicksort on average?",
-    "answers": [
-      {
-        "answerStr": "O(n log n)",
-        "isCorrect": true
-      },
-      {
-        "answerStr": "O(n^2)",
-        "isCorrect": false
-      },
-      {
-        "answerStr": "O(log n)",
-        "isCorrect": false
-      },
-      {
-        "answerStr": "O(n)",
-        "isCorrect": false
-      }
-    ]
-  }
-]
-```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
-
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: Get a Question
@@ -572,14 +407,8 @@ undefined
 ### Method: GET
 
 > ```
-> http://127.0.0.1:5000/questions/question/2
+> https://wizdomrun.onrender.com/questions/question/2
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -588,14 +417,8 @@ undefined
 ### Method: DELETE
 
 > ```
-> http://127.0.0.1:5000/questions/delete/2
+> https://wizdomrun.onrender.com/questions/delete/19
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -604,14 +427,8 @@ undefined
 ### Method: GET
 
 > ```
-> http://127.0.0.1:5000/questions/answers/2
+> https://wizdomrun.onrender.com/questions/answers/2
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -620,14 +437,25 @@ undefined
 ### Method: PUT
 
 > ```
-> http://127.0.0.1:5000/questions/wrong_attempt/2
+> https://wizdomrun.onrender.com/questions/wrong_attempt/2
 > ```
 
-### 🔑 Authentication bearer
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
+## End-point: Create LLM Questions
+
+### Method: POST
+
+> ```
+> https://wizdomrun.onrender.com/questions/create
+> ```
+
+### Body formdata
+
+| Param      | value                         | Type |
+| ---------- | ----------------------------- | ---- |
+| file       | /path/to/file/refactoring.pdf | file |
+| campaignID | 1                             | text |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -640,14 +468,8 @@ undefined
 ### Method: GET
 
 > ```
-> http://127.0.0.1:5000/stats/1
+> https://wizdomrun.onrender.com/stats/1
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -656,7 +478,7 @@ undefined
 ### Method: PUT
 
 > ```
-> http://127.0.0.1:5000/stats//update/1
+> https://wizdomrun.onrender.com/stats//update/1
 > ```
 
 ### Body (**raw**)
@@ -669,12 +491,6 @@ undefined
 }
 ```
 
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
-
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: Create Stats
@@ -682,26 +498,20 @@ undefined
 ### Method: POST
 
 > ```
-> http://127.0.0.1:5000/stats/create
+> https://wizdomrun.onrender.com/stats/create
 > ```
 
 ### Body (**raw**)
 
 ```json
 {
-  "campaignID": 1,
+  "campaignID": 2,
   "attack": 3.0,
   "hp": 100,
   "mana": 50,
   "affinity": "fire"
 }
 ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -710,7 +520,7 @@ undefined
 ### Method: PATCH
 
 > ```
-> http://127.0.0.1:5000/stats/replenish_mana/1
+> https://wizdomrun.onrender.com/stats/replenish_mana/1
 > ```
 
 ### Body (**raw**)
@@ -720,12 +530,6 @@ undefined
   "manaAmount": 20
 }
 ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -738,7 +542,7 @@ undefined
 ### Method: POST
 
 > ```
-> http://127.0.0.1:5000/achievements/unlock
+> https://wizdomrun.onrender.com/achievements/unlock
 > ```
 
 ### Body (**raw**)
@@ -751,12 +555,6 @@ undefined
 }
 ```
 
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
-
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: Get Achievments
@@ -764,14 +562,8 @@ undefined
 ### Method: GET
 
 > ```
-> http://127.0.0.1:5000/achievements/1
+> https://wizdomrun.onrender.com/achievements/1
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -780,14 +572,8 @@ undefined
 ### Method: DELETE
 
 > ```
-> http://127.0.0.1:5000/achievements/4
+> https://wizdomrun.onrender.com/achievements/4
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -800,7 +586,7 @@ undefined
 ### Method: POST
 
 > ```
-> http://127.0.0.1:5000/stats/assign_spell
+> https://wizdomrun.onrender.com/stats/assign_spell
 > ```
 
 ### Body (**raw**)
@@ -812,12 +598,6 @@ undefined
 }
 ```
 
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
-
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: Get Player Spells
@@ -825,14 +605,8 @@ undefined
 ### Method: GET
 
 > ```
-> http://127.0.0.1:5000/stats/player_spells/1
+> https://wizdomrun.onrender.com/stats/player_spells/1
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -841,14 +615,8 @@ undefined
 ### Method: DELETE
 
 > ```
-> http://127.0.0.1:5000/stats/player_spells/4
+> https://wizdomrun.onrender.com/stats/player_spells/4
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -861,14 +629,8 @@ undefined
 ### Method: GET
 
 > ```
-> http://127.0.0.1:5000/stats/spells
+> https://wizdomrun.onrender.com/stats/spells
 > ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -877,7 +639,7 @@ undefined
 ### Method: POST
 
 > ```
-> http://127.0.0.1:5000/stats/spells/create
+> https://wizdomrun.onrender.com/stats/spells/create
 > ```
 
 ### Body (**raw**)
@@ -889,9 +651,3 @@ undefined
   "spellElement": "air"
 }
 ```
-
-### 🔑 Authentication bearer
-
-| Param | value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Type   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
-| token | eyJhbGciOiJSUzI1NiIsImtpZCI6ImRjNjI2MmYzZTk3NzIzOWMwMDUzY2ViODY0Yjc3NDBmZjMxZmNkY2MiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vd2l6ZG9tcnVuIiwiYXVkIjoid2l6ZG9tcnVuIiwiYXV0aF90aW1lIjoxNzQwOTU1NzI0LCJ1c2VyX2lkIjoiSm9EcUYwSWkzNmU5a3FTSndSZ05LQ21UclRmMSIsInN1YiI6IkpvRHFGMElpMzZlOWtxU0p3UmdOS0NtVHJUZjEiLCJpYXQiOjE3NDA5NTU3MjQsImV4cCI6MTc0MDk1OTMyNCwiZW1haWwiOiJjaGFybGllbGFuZy5za2lAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImNoYXJsaWVsYW5nLnNraUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.acheho6bNue-l9XpvsB*N7z-DrXL_fEB4UP9sMnF-9tR--oSM737w45VcmjgOS3vz3DUh7C55ud7E7ihGaXqRLmu0TC5EnZJp8mjPRGE-eJ-LZZU63dWmVuATEtFr8fDasXY6hlLWoEhXqF4Iswhq15shPAG9VsNBHs0SAC-G1BUV8oG8XQn6uT2wQ9jN-2b10DRXl_LkKT*-wR8E45iUljiSSIUOymwp1LJSqsA00ZaqRU2pF3D3BinYpqixpxc7XRTp1G0I4z6ocKF7k-xGgBRadRbyW-6-EVe5Ifo1J7KdqtL4eODu68v8JiiRA4ByZw-GeFXsduhS9ci7_o17Q | string |
