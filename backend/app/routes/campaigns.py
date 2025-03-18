@@ -98,7 +98,7 @@ def restart_campaign(user, campaignID):
         return jsonify({"error": "Campaign not found"}), 404
 
     campaign.currLevel = 1
-    campaign.remainingTries = 2
+    campaign.remainingTries = 3
     campaign.lastUpdated = db.func.current_timestamp()
 
     db.session.commit()
