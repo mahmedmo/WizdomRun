@@ -35,7 +35,7 @@ def signup():
     # Check if a user with the provided screenName already exists
     existing_user = User.query.filter_by(screenName=screen_name).first()
     if existing_user:
-        return jsonify({"error": "Name already taken."}), 400
+        return jsonify({"error": "Name already in use."}), 400
 
     try:
         # Create user in Firebase, will raise an exception if something goes wrong
@@ -47,4 +47,4 @@ def signup():
 
         return jsonify({"message": "User created successfully", "userID": firebase_user.uid}), 201
     except Exception as e:
-        return jsonify({"error": str(e)}), 400
+         return jsonify({"error": "Email already in use."}), 400
