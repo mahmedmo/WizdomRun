@@ -73,3 +73,13 @@ MonoBehaviour:
     spellDamage: 15
     spellSprite: {fileID: 306869915, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
     spellPrefab: {fileID: 3982974035701504997, guid: 0c8e4b54fdcb9d84a80bb3bb3e453735, type: 3}
+  - spellID: 12
+    spellName: Blizzard
+    spellDamage: 15
+    spellSprite: {fileID: 306869915, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 78577149953304913, guid: 17ba0fc1c9b7cd34ba7152aaa39668fa, type: 3}
+  - spellID: 13
+    spellName: Snowstorm
+    spellDamage: 15
+    spellSprite: {fileID: 306869915, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 5759398580205094636, guid: 6d34e5f5f95997f459ca6ee2fc94cf64, type: 3}
