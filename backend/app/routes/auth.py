@@ -32,7 +32,13 @@ def signup():
     if not email or not password or not screen_name:
         return jsonify({"error": "Missing fields"}), 400
 
+    # Check if a user with the provided screenName already exists
+    existing_user = User.query.filter_by(screenName=screen_name).first()
+    if existing_user:
+        return jsonify({"error": "Name already in use."}), 400
+
     try:
+        # Create user in Firebase, will raise an exception if something goes wrong
         firebase_user = auth.create_user(email=email, password=password)
 
         new_user = User(userID=firebase_user.uid, screenName=screen_name)
@@ -41,4 +47,4 @@ def signup():
 
         return jsonify({"message": "User created successfully", "userID": firebase_user.uid}), 201
     except Exception as e:
-        return jsonify({"error": str(e)}), 400
+         return jsonify({"error": "Email already in use."}), 400
