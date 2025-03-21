@@ -38,38 +38,39 @@
 ## Cave Level:
   - Bat
   - Rat
+  - Spider
   - Troll
-  - 
 
 ## Corrupted Level (dark, gloomy, satanic, skeletons):
-  - 
-  - 
-  - 
-  - 
+  - Crow
+  - SkullTriple
+  - WolfB
+  - Devil
 
 ## Enchanted Level (fairies):
-  - 
-  - 
-  - 
-  - 
+  - Boar
+  - Ant
+  - ElementalAir
+  - SlimeKing
 
-## Icey Forest Level:
-  - 
-  - 
-  - 
-  - 
+## Icy Forest Level:
+  - Snowman
+  - FrozenIcer
+  - FrozenWidow
+  - FrozenScorpion
 
 ## Cloud Level:
-  - 
-  - 
-  - 
-  - 
+  - Seagull
+  - ElementalAir
+  - Snowman
+  - Arcteix
 
 ## B/W Level:
-  - 
-  - 
-  - 
-  - 
+  - SkullTriple
+  - PantherD
+  - WolfB
+  - WitchDoctor
+  - Warlock? (not made)
 
 
 
