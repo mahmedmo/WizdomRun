@@ -18,18 +18,190 @@ MonoBehaviour:
     spellDamage: 2
     spellSprite: {fileID: 1418967119, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
     spellPrefab: {fileID: 2534370782770770243, guid: 4e62809e4146e4b95ab1e89e46683b54, type: 3}
+    affinity: 0
   - spellID: 1
     spellName: Fire Bolt
     spellDamage: 5
     spellSprite: {fileID: 1280968822, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
     spellPrefab: {fileID: 2982405168553742680, guid: 1c3c05621a8db414281735f3efe6c352, type: 3}
+    affinity: 0
   - spellID: 2
     spellName: Incinerating Touch
     spellDamage: 10
     spellSprite: {fileID: -1835888537, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
     spellPrefab: {fileID: 0}
+    affinity: 0
   - spellID: 3
     spellName: Flame Ablaze
     spellDamage: 15
     spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
     spellPrefab: {fileID: 0}
+    affinity: 0
+  - spellID: 4
+    spellName: Rock Throw
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 8942607262678282298, guid: 9d82131cf14a2614b81a9bc1f9da61cc, type: 3}
+    affinity: 2
+  - spellID: 5
+    spellName: Rock Wave
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 8905990672419216080, guid: c8760c8faace64a4a92f779cd6ed3f71, type: 3}
+    affinity: 2
+  - spellID: 6
+    spellName: Sandworm
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 6683717515056599842, guid: 0664a60e5d23a4b438102ddd1ce0ef06, type: 3}
+    affinity: 2
+  - spellID: 7
+    spellName: Crystal Shot
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 80407182734441112, guid: ec68456759b3b004fa9362365a8869e0, type: 3}
+    affinity: 2
+  - spellID: 8
+    spellName: Roots
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 6242633871870760664, guid: f42085f80747cb447a5c00e5c7316fa7, type: 3}
+    affinity: 2
+  - spellID: 9
+    spellName: Barricade
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 7418369030281838476, guid: 1d0fb096e4efcc449a6af3d2895c3b5f, type: 3}
+    affinity: 2
+  - spellID: 10
+    spellName: Blooming Fire
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 4070900842189001513, guid: 78bdf163e2219d843b26b129dc9fa947, type: 3}
+    affinity: 0
+  - spellID: 11
+    spellName: Burning Halo
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 3022598260551307455, guid: 00c4545efd7731d46a5de52f4fd19da7, type: 3}
+    affinity: 0
+  - spellID: 12
+    spellName: Explode
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 2122517980186032761, guid: 1943bd8ae4f70c8428731e832c55d629, type: 3}
+    affinity: 0
+  - spellID: 13
+    spellName: Flame Burst
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 1308542465583815614, guid: a52f39e54eec74e4a80e126022382488, type: 3}
+    affinity: 0
+  - spellID: 14
+    spellName: Flaming Orb
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 3140164890510218695, guid: 1b3fae4cb40846346afc54e6fea5c414, type: 3}
+    affinity: 0
+  - spellID: 15
+    spellName: Crimson Slice
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 423664967528648469, guid: efcd633fb0b23434e9ce575968c870fc, type: 3}
+    affinity: 0
+  - spellID: 16
+    spellName: Haunting Flame
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 3889029557589672461, guid: ca982d2206f82844387ccb22805ade92, type: 3}
+    affinity: 0
+  - spellID: 17
+    spellName: Jack O Lantern
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 3372180944208073764, guid: f277c4032f8ae6e408caf6378651d2ce, type: 3}
+    affinity: 0
+  - spellID: 18
+    spellName: Slow Burn
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 2414076910320197057, guid: f347a3ec57668704d9286fdec0608a1d, type: 3}
+    affinity: 0
+  - spellID: 19
+    spellName: Sparkling Star
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 8594771104143032512, guid: 65d41258c2df68b43bf3dad8acb9654f, type: 3}
+    affinity: 0
+  - spellID: 20
+    spellName: Twin Flames
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 4882366386443027926, guid: 06ed89468a05b8c4dbc997890dbe3a3f, type: 3}
+    affinity: 0
+  - spellID: 21
+    spellName: Rock Crush
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 11183732222806883, guid: cb9227b3021eaa84a834083b3eeff040, type: 3}
+    affinity: 2
+  - spellID: 22
+    spellName: Earth Spike
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 7135818049917380198, guid: 771cabcb5d38f2f4cb4e2180688bf4f6, type: 3}
+    affinity: 2
+  - spellID: 23
+    spellName: Roots
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 6242633871870760664, guid: f42085f80747cb447a5c00e5c7316fa7, type: 3}
+    affinity: 2
+  - spellID: 24
+    spellName: Iron Spikes
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 8941171499758395032, guid: f36a1f7898acb604fa3b00c9ffd609aa, type: 3}
+    affinity: 2
+  - spellID: 25
+    spellName: Electron Bolt
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 7697348948859645989, guid: 852717d50f075d04490ed307334857bd, type: 3}
+    affinity: 3
+  - spellID: 26
+    spellName: Rock-upine
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 1915571735818609048, guid: 270beaf9a9897bf4b9a2abd0b4a3c54c, type: 3}
+    affinity: 2
+  - spellID: 27
+    spellName: Water Spike
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 5053970486211709439, guid: 2352e3fc18007a049beb3dc97d3723cb, type: 3}
+    affinity: 1
+  - spellID: 28
+    spellName: Wave Crash
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 2771607099426965612, guid: 69cd2b5eb07327a48a6a5bebf1e7fad0, type: 3}
+    affinity: 1
+  - spellID: 29
+    spellName: Flash
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 8926667335975046591, guid: 9f2b0dc5a34871e45bf3bb52eb0af07c, type: 3}
+    affinity: 3
+  - spellID: 30
+    spellName: LightningStrike
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 3163586191213139221, guid: f9f29ebbf515ca24f882a850cbb2fc1b, type: 3}
+    affinity: 3
+  - spellID: 31
+    spellName: LightningRod
+    spellDamage: 15
+    spellSprite: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    spellPrefab: {fileID: 7537646596077383262, guid: 0f85d95c9553fb7438dc9a523c848591, type: 3}
+    affinity: 3

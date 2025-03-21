@@ -1,0 +1,621 @@
+fileFormatVersion: 2
+guid: 4d53de3325fd16641a1b777fb1c1fce9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 109974394813500834
+    second: 286_0
+  - first:
+      213: -8206688521234639449
+    second: 286_1
+  - first:
+      213: 2206960983241670814
+    second: 286_2
+  - first:
+      213: -9080712552897284144
+    second: 286_3
+  - first:
+      213: 8615150615004147210
+    second: 286_4
+  - first:
+      213: -5525786398294752056
+    second: 286_5
+  - first:
+      213: -8652933287047009674
+    second: 286_6
+  - first:
+      213: -829694139039216655
+    second: 286_7
+  - first:
+      213: -9217466108483007117
+    second: 286_8
+  - first:
+      213: 7801704503390059813
+    second: 286_9
+  - first:
+      213: 3790177403829809174
+    second: 286_10
+  - first:
+      213: -7357520107714754133
+    second: 286_11
+  - first:
+      213: 2595443879210476628
+    second: 286_12
+  - first:
+      213: -517400970475331514
+    second: 286_13
+  - first:
+      213: 1566231569461572243
+    second: 286_14
+  - first:
+      213: -3296612454781241076
+    second: 286_15
+  - first:
+      213: 1012724867612607317
+    second: 286_16
+  - first:
+      213: 4356121142781729389
+    second: 286_17
+  - first:
+      213: 3892287655105583907
+    second: 286_18
+  - first:
+      213: -2851010761936160048
+    second: 286_19
+  - first:
+      213: -6894118200540028575
+    second: 286_20
+  - first:
+      213: 2061792067946112606
+    second: 286_21
+  - first:
+      213: -7746677273937350306
+    second: 286_22
+  - first:
+      213: 2723947437271197161
+    second: 286_23
+  - first:
+      213: 705907806401951532
+    second: 286_24
+  - first:
+      213: -7226830113220240773
+    second: 286_25
+  - first:
+      213: 2559028116630646808
+    second: 286_26
+  - first:
+      213: 5782859845262709072
+    second: 286_27
+  - first:
+      213: 1990131593206620771
+    second: 286_28
+  - first:
+      213: -9172024556290875474
+    second: 286_29
+  - first:
+      213: 789986540513844997
+    second: 286_30
+  - first:
+      213: -6722961185418983636
+    second: 286_31
+  - first:
+      213: -3108464942349407008
+    second: 286_32
+  - first:
+      213: 6133218518272680364
+    second: 286_33
+  - first:
+      213: 5664882135585573598
+    second: 286_34
+  - first:
+      213: 5187525172483524748
+    second: 286_35
+  - first:
+      213: -3750615477034058755
+    second: 286_36
+  - first:
+      213: 2333637284628853299
+    second: 286_37
+  - first:
+      213: 4337795062384758650
+    second: 286_38
+  - first:
+      213: 4270075533342897873
+    second: 286_39
+  - first:
+      213: 7859579597315802887
+    second: 286_40
+  - first:
+      213: 7355174109102556785
+    second: 286_41
+  - first:
+      213: 1750113567642095750
+    second: 286_42
+  - first:
+      213: -7597392339033082701
+    second: 286_43
+  - first:
+      213: 5343538331617118082
+    second: 286_44
+  - first:
+      213: 4562951988134022442
+    second: 286_45
+  - first:
+      213: 6398257596562176783
+    second: 286_46
+  - first:
+      213: 7350976474274043637
+    second: 286_47
+  - first:
+      213: 6907369880716179687
+    second: 286_48
+  - first:
+      213: 6545590861018336157
+    second: 286_49
+  - first:
+      213: 3648112670856868528
+    second: 286_50
+  - first:
+      213: -5460323978018027879
+    second: 286_51
+  - first:
+      213: 4253570596240371199
+    second: 286_52
+  - first:
+      213: 799423406715969454
+    second: 286_53
+  - first:
+      213: 5410540939163876492
+    second: 286_54
+  - first:
+      213: -4503682873548746478
+    second: 286_55
+  - first:
+      213: 7044363310881096278
+    second: 286_56
+  - first:
+      213: -5335455841460974698
+    second: 286_57
+  - first:
+      213: 5871630259187576132
+    second: 286_58
+  - first:
+      213: 6958523342134789100
+    second: 286_59
+  - first:
+      213: -920505811725733954
+    second: 286_60
+  - first:
+      213: 3856766854616582923
+    second: 286_61
+  - first:
+      213: 8417071964570872195
+    second: 286_62
+  - first:
+      213: -5608149866197077194
+    second: 286_63
+  - first:
+      213: -1106371844985313448
+    second: 286_64
+  - first:
+      213: 2024129873744262889
+    second: 286_65
+  - first:
+      213: 6655913890130701280
+    second: 286_66
+  - first:
+      213: -4179546896910814518
+    second: 286_67
+  - first:
+      213: 6456936607933025995
+    second: 286_68
+  - first:
+      213: 8289391495413942661
+    second: 286_69
+  - first:
+      213: 5691812257085615255
+    second: 286_70
+  - first:
+      213: 734903983148531803
+    second: 286_71
+  - first:
+      213: 6988962220617370021
+    second: 286_72
+  - first:
+      213: -6009752432860931928
+    second: 286_73
+  - first:
+      213: 3332106583502007768
+    second: 286_74
+  - first:
+      213: 5132909810484539781
+    second: 286_75
+  - first:
+      213: -1424168977638612577
+    second: 286_76
+  - first:
+      213: 8819424763397594864
+    second: 286_77
+  - first:
+      213: 2011893940771293034
+    second: 286_78
+  - first:
+      213: 5455587817641607148
+    second: 286_79
+  - first:
+      213: -464339271276365864
+    second: 286_80
+  - first:
+      213: -9086726153809565653
+    second: 286_81
+  - first:
+      213: 9097153940101445832
+    second: 286_82
+  - first:
+      213: 3225403122764203716
+    second: 286_83
+  - first:
+      213: 7498702915281453840
+    second: 286_84
+  - first:
+      213: 4343341174244741131
+    second: 286_85
+  - first:
+      213: -3121486018601170839
+    second: 286_86
+  - first:
+      213: -8334065813516508821
+    second: 286_87
+  - first:
+      213: 7474408447904753089
+    second: 286_88
+  - first:
+      213: -3369668817427386055
+    second: 286_89
+  - first:
+      213: -4731285524765967774
+    second: 286_90
+  - first:
+      213: 413183535442986510
+    second: 286_91
+  - first:
+      213: 3415778556686298453
+    second: 286_92
+  - first:
+      213: 1247865275727875393
+    second: 286_93
+  - first:
+      213: 2834510762703361021
+    second: 286_94
+  - first:
+      213: 4902815254988309760
+    second: 286_95
+  - first:
+      213: 5485978195949264546
+    second: 286_96
+  - first:
+      213: -7148742193566864680
+    second: 286_97
+  - first:
+      213: -8199694024394030065
+    second: 286_98
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BloomingFire_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 523
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f3b491b7c33e84daf668fa961d81ac
+      internalID: 1700643262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloomingFire_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 522
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5efb1b60356ea43bcf1916fa03575b
+      internalID: 391356566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloomingFire_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 523
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e68c4c0a0a6674e90924ea5a8ff8f7
+      internalID: 1029346936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloomingFire_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 522
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b993bd8c95f86d2489a4b713de74e170
+      internalID: 883666739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloomingFire_4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 523
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c6b8bdaa058cb4dbb55a8e62d24677
+      internalID: 462228925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloomingFire_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 524
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600d9a631604a6241a668a870234676e
+      internalID: -643770758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloomingFire_6
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 525
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd4bb853ca54e14889ff7b29030e69f
+      internalID: 724567136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloomingFire_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 530
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d885021b8d97b45921965f20c13b3f
+      internalID: 2068578365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloomingFire_8
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 530
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d180f150fa64b949b2e284ad8a87a7c
+      internalID: 104174452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1bde94fbe9ece334a80bed3e7e571f8f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BloomingFire_0: 1700643262
+      BloomingFire_1: 391356566
+      BloomingFire_2: 1029346936
+      BloomingFire_3: 883666739
+      BloomingFire_4: 462228925
+      BloomingFire_5: -643770758
+      BloomingFire_6: 724567136
+      BloomingFire_7: 2068578365
+      BloomingFire_8: 104174452
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
