@@ -17,7 +17,7 @@ def create_campaign(user):
         title=data["title"],
         campaignLength=data["campaignLength"],
         currLevel=data["currLevel"],
-        remainingTries=2  # Default value
+        remainingTries=3  # Default value
     )
     db.session.add(new_campaign)
     db.session.commit()
