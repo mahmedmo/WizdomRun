@@ -7,6 +7,7 @@ public class EnemyMonitor : MonoBehaviour
     public float Speed { get; set; }
     public int Damage { get; set; }
     public int Health { get; set; }
+    public int GoldDrop { get; set; }
     public bool Airborne { get; set; }
 
     [Header("Animation Durations")]
@@ -24,7 +25,7 @@ public class EnemyMonitor : MonoBehaviour
 
     void Start()
     {
-        tilemap = GameObject.Find("Struct01").GetComponent<Tilemap>();
+        tilemap = GameObject.Find("LStruct01").GetComponent<Tilemap>();
 
         enemyRb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -43,7 +44,7 @@ public class EnemyMonitor : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (GameManager.Instance.PauseEnemyMovement && GameManager.Instance.isPaused)
+        if (GameManager.Instance.IsFrozen)
         {
             enemyRb.linearVelocity = Vector2.zero;
             return;
@@ -52,7 +53,7 @@ public class EnemyMonitor : MonoBehaviour
         {
             SetState(EnemyState.Idle);
         }
-
+        // State machine for Enemy, checks for other enemies to indicate pause, if no enemy, attacks.
         switch (currentState)
         {
             case EnemyState.Run:
@@ -67,7 +68,6 @@ public class EnemyMonitor : MonoBehaviour
                 {
                     enemyRb.linearVelocity = new Vector2(0, Speed);
                 }
-                // Position Enemy object in front of the player in the tilemap
                 if (transform.position.y <= tilemap.origin.y + 4.5f)
                 {
                     enemyRb.linearVelocity = Vector2.zero;
@@ -117,28 +117,20 @@ public class EnemyMonitor : MonoBehaviour
     }
 
     // Helper method to check for nearby enemies
-    private bool IsEnemyBelow(float rayDistance = 2f, float safeSeparation = 0.5f)
+    private bool IsEnemyBelow(float rayDistance = 2f, float safeSeparation = 1f)
     {
-        // Using enemyRb.position ensures we use the Rigidbody2D position
         Vector2 origin = enemyRb.position;
         Vector2 direction = Vector2.down;
 
-        // Create a layer mask for layer 6 (Enemies layer)
-        int enemyLayerMask = 1 << 6;
+        RaycastHit2D[] hits = Physics2D.RaycastAll(origin, direction, rayDistance);
 
-        // Get all hits along the ray
-        RaycastHit2D[] hits = Physics2D.RaycastAll(origin, direction, rayDistance, enemyLayerMask);
-
-        // Debug draw the ray (visible in Scene view)
         Debug.DrawRay(origin, direction * rayDistance, Color.red, 0.1f);
 
-        // Find the closest enemy (if any)
         float closestDistance = float.MaxValue;
         foreach (RaycastHit2D hit in hits)
         {
             if (hit.collider != null && hit.collider.gameObject != gameObject && hit.collider.CompareTag("Enemy"))
             {
-                // Only update if this hit is closer than any we've seen before
                 if (hit.distance < closestDistance)
                 {
                     closestDistance = hit.distance;
@@ -146,7 +138,6 @@ public class EnemyMonitor : MonoBehaviour
             }
         }
 
-        // If we found an enemy and it's within the safe separation distance, return true
         if (closestDistance != float.MaxValue && closestDistance <= safeSeparation)
         {
             return true;
@@ -155,65 +146,103 @@ public class EnemyMonitor : MonoBehaviour
         return false;
     }
 
-    // Handle collisions (using 2D triggers)
+    // Enemy collision detector (For player spells)
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // If colliding with a spell (tagged "Magic")
         if (other.CompareTag("Magic"))
         {
-            if (Airborne && !other.gameObject.GetComponent<SpellMonitor>().Airborne) return;
+            if (Airborne && !other.gameObject.GetComponent<SpellMonitor>().Airborne)
+            {
+                DodgeSpellDamage();
+                return;
+            }
             int damageTaken = other.gameObject.GetComponent<SpellMonitor>().Damage;
 
             Debug.Log("HIT " + damageTaken);
             TakeSpellDamage(damageTaken);
         }
     }
+    public void DodgeSpellDamage()
+    {
+        StartCoroutine(FlashBlueCoroutine());
+    }
 
     public void TakeSpellDamage(int damageAmount)
     {
         Health -= damageAmount;
-        StartCoroutine(FlashCoroutine());
+        StartCoroutine(FlashRedCoroutine());
 
         if (Health <= 0)
         {
+            LevelManager.Instance.AddGold(GoldDrop);
             SetState(EnemyState.Death);
         }
     }
 
 
-    // A simple coroutine to flash the enemy (changes its color briefly)
-    private IEnumerator FlashCoroutine()
+    // Flashes the sprite with red to indicate damage
+    private IEnumerator FlashRedCoroutine()
     {
-        // Use the SpriteRenderer's current color as the original color.
         Color originalColor = enemySprite.color;
+        Color flashColor = Color.red;
 
         MaterialPropertyBlock mpb = new MaterialPropertyBlock();
         enemySprite.GetPropertyBlock(mpb);
 
-        // Immediately set the color to red.
-        mpb.SetColor("_Color", Color.red);
+        mpb.SetColor("_Color", flashColor);
         enemySprite.SetPropertyBlock(mpb);
+        enemySprite.color = flashColor;
 
-        // Wait for 0.2 seconds.
         yield return new WaitForSeconds(0.2f);
 
-        // Lerp back to original color over 0.4 seconds.
         float flashDuration = 0.4f;
         float t = 0f;
         while (t < flashDuration)
         {
             t += Time.deltaTime;
-            Color lerpedColor = Color.Lerp(Color.red, originalColor, t / flashDuration);
+            Color lerpedColor = Color.Lerp(flashColor, originalColor, t / flashDuration);
             mpb.SetColor("_Color", lerpedColor);
             enemySprite.SetPropertyBlock(mpb);
+            enemySprite.color = lerpedColor;
             yield return null;
         }
-        // Ensure final color is restored.
+
         mpb.SetColor("_Color", originalColor);
         enemySprite.SetPropertyBlock(mpb);
+        enemySprite.color = originalColor;
+    }
+    // Flashes the sprite with blue to indicate dodge
+    private IEnumerator FlashBlueCoroutine()
+    {
+        Color flashColor = new Color(0f, 248f / 255f, 255f / 255f);
+        Color originalColor = enemySprite.color;
+
+        MaterialPropertyBlock mpb = new MaterialPropertyBlock();
+        enemySprite.GetPropertyBlock(mpb);
+
+        mpb.SetColor("_Color", flashColor);
+        enemySprite.SetPropertyBlock(mpb);
+        enemySprite.color = flashColor;
+
+        yield return new WaitForSeconds(0.5f);
+
+        float flashDuration = 0.4f;
+        float t = 0f;
+        while (t < flashDuration)
+        {
+            t += Time.deltaTime;
+            Color lerpedColor = Color.Lerp(flashColor, originalColor, t / flashDuration);
+            mpb.SetColor("_Color", lerpedColor);
+            enemySprite.SetPropertyBlock(mpb);
+            enemySprite.color = lerpedColor;
+            yield return null;
+        }
+        mpb.SetColor("_Color", originalColor);
+        enemySprite.SetPropertyBlock(mpb);
+        enemySprite.color = originalColor;
     }
 
-    // Helper method to change states and trigger corresponding animations
+    // Enemy state machine
     void SetState(EnemyState newState)
     {
         currentState = newState;

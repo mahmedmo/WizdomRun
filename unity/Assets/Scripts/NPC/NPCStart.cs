@@ -3,21 +3,13 @@ using UnityEngine.Tilemaps;
 
 public class NPCStart : MonoBehaviour
 {
-    public GameObject chatIcon;
     private Rigidbody2D rb;
     private Tilemap tilemap;
     void Start()
     {
-        chatIcon.SetActive(true);
         rb = GetComponent<Rigidbody2D>();
         if (rb != null) rb.linearVelocity = Vector2.zero;
-        tilemap = GameObject.Find("Struct01").GetComponent<Tilemap>();
-    }
-
-    void OnMouseDown()
-    {
-        chatIcon.SetActive(false);
-        LevelManager.Instance.StartCS();
+        tilemap = GameObject.Find("LStruct01").GetComponent<Tilemap>();
     }
 
     void Update()

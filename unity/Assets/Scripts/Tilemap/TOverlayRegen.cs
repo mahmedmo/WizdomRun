@@ -48,6 +48,7 @@ public class TOverlayRegen : MonoBehaviour
 
     void CheckBounds()
     {
+        if (mainCamera == null) GameObject.Find("MainCamera").GetComponent<Camera>();
         float topOfMapWorldY = tilemap.CellToWorld(new Vector3Int(0, topRowPos.y, 0)).y;
         float bottomOfMapWorldY = tilemap.CellToWorld(new Vector3Int(0, bottomRowPos.y, 0)).y;
 

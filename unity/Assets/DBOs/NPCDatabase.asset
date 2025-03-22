@@ -14,5 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcList:
   - name: Mooshy
-    portrait: {fileID: -714506129, guid: 96b0213c99bd84243824d1ccc3638b03, type: 3}
-    prefab: {fileID: 2470982854224663223, guid: 1e06a2cc4ab524d1c93e5bea0285a228, type: 3}
+    portrait: {fileID: 6348826427997607072, guid: a905796a5b71f4e8990e3b6ce63a3bd7, type: 3}
+    prefab: {fileID: 3679668559695731252, guid: 1feb674a1fda5480ca3367918c8314b1, type: 3}
+  - name: Marrowlin the Merchant
+    portrait: {fileID: 835424119, guid: 1ff9a958d3de147abbd3e1a504fe7b9c, type: 3}
+    prefab: {fileID: 0}
+  - name: Lumish
+    portrait: {fileID: 6862132243647512469, guid: 0bd2c75d12bf14afbbb9fc90bd470650, type: 3}
+    prefab: {fileID: 0}
+  - name: Suki
+    portrait: {fileID: 7451974940309637468, guid: e6dababa0c9ee418580cef3e3d2e8ddf, type: 3}
+    prefab: {fileID: 0}
+  - name: Momo
+    portrait: {fileID: -6514358730168950071, guid: 86300e5fccfd94c26ba0580a4dbfe885, type: 3}
+    prefab: {fileID: 0}
+  - name: Fungbert
+    portrait: {fileID: -9112198580422970853, guid: 88e6ac9035bc54f3fba94fcac9046cb2, type: 3}
+    prefab: {fileID: 0}
+  - name: Lolo
+    portrait: {fileID: 1322389331632802829, guid: b63d78d192a59495fb1019d696b6b4f4, type: 3}
+    prefab: {fileID: 0}
+  - name: Koko
+    portrait: {fileID: 171165263305644672, guid: 58fe7ba8896174ee3ab0e787160a8de2, type: 3}
+    prefab: {fileID: 0}
+  - name: Zuzu
+    portrait: {fileID: -6857078257765493125, guid: 2495400857c574b5098c3e49fb5ebf79, type: 3}
+    prefab: {fileID: 0}
+  - name: Pabu
+    portrait: {fileID: 5310950861756542798, guid: ef2e57d8eb0a4494196452342b0f083a, type: 3}
+    prefab: {fileID: 0}
+  - name: Bumi
+    portrait: {fileID: 284024416803724932, guid: 3f0194211b5d0411b8de9dfb602d0fd0, type: 3}
+    prefab: {fileID: 0}

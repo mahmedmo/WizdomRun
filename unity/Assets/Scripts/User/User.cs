@@ -5,7 +5,4 @@ public class User
     public string ScreenName { get; set; }
     public List<Campaign> CampaignList { get; set; }
 
-    // public PlayerCharacter PlayerChar { get; set; }
-
-
 }

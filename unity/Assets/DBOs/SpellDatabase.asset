@@ -14,30 +14,290 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellList:
   - id: 0
-    name: Fire Bolt
-    damage: 2
-    speed: 10
-    manaCost: 10
-    icon: {fileID: -1498638762, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
-    prefab: {fileID: 2982405168553742680, guid: 1c3c05621a8db414281735f3efe6c352, type: 3}
-  - id: 1
-    name: Fire Bolt
+    name: Zap
     damage: 5
-    speed: 10
-    manaCost: 20
-    icon: {fileID: -653189991, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
-    prefab: {fileID: 2982405168553742680, guid: 1c3c05621a8db414281735f3efe6c352, type: 3}
-  - id: 2
-    name: Fire Bolt
+    speed: 50
+    manaCost: 10
+    airborne: 1
+    icon: {fileID: 545504189, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 6182661620665985854, guid: d406cae17ccab4ebc975f02437927640, type: 3}
+  - id: 1
+    name: Splash
     damage: 10
-    speed: 10
-    manaCost: 30
-    icon: {fileID: -2084968794, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
-    prefab: {fileID: 2982405168553742680, guid: 1c3c05621a8db414281735f3efe6c352, type: 3}
+    speed: 25
+    manaCost: 20
+    airborne: 0
+    icon: {fileID: 775121594, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 8740986510635189190, guid: aac19b38d10a5459f9ea4edad780e177, type: 3}
+  - id: 2
+    name: Mana Breeze
+    damage: 10
+    speed: 25
+    manaCost: 25
+    airborne: 1
+    icon: {fileID: 1351334435, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 4067909616222790387, guid: cfe2003a57c884238bd65ba1f0020b21, type: 3}
   - id: 3
+    name: Mana Toss
+    damage: 30
+    speed: 20
+    manaCost: 50
+    airborne: 1
+    icon: {fileID: 350940235, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 1701670158949306590, guid: 07187c83c99cc4cf6a98c39bf4669548, type: 3}
+  - id: 4
     name: Fire Bolt
-    damage: 20
-    speed: 10
-    manaCost: 40
-    icon: {fileID: 554194882, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    damage: 15
+    speed: 45
+    manaCost: 12
+    airborne: 1
+    icon: {fileID: 609624066, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
     prefab: {fileID: 2982405168553742680, guid: 1c3c05621a8db414281735f3efe6c352, type: 3}
+  - id: 5
+    name: Burning Halo
+    damage: 20
+    speed: 50
+    manaCost: 12
+    airborne: 1
+    icon: {fileID: -394528612, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 3022598260551307455, guid: 00c4545efd7731d46a5de52f4fd19da7, type: 3}
+  - id: 6
+    name: Slow Burn
+    damage: 18
+    speed: 40
+    manaCost: 15
+    airborne: 0
+    icon: {fileID: -1498638762, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 2414076910320197057, guid: f347a3ec57668704d9286fdec0608a1d, type: 3}
+  - id: 7
+    name: Crimson Slice
+    damage: 12
+    speed: 55
+    manaCost: 13
+    airborne: 0
+    icon: {fileID: 554194882, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 423664967528648469, guid: efcd633fb0b23434e9ce575968c870fc, type: 3}
+  - id: 8
+    name: Flaming Orb
+    damage: 35
+    speed: 60
+    manaCost: 25
+    airborne: 1
+    icon: {fileID: -263282761, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 3140164890510218695, guid: 1b3fae4cb40846346afc54e6fea5c414, type: 3}
+  - id: 9
+    name: Blooming Fire
+    damage: 35
+    speed: 65
+    manaCost: 28
+    airborne: 1
+    icon: {fileID: -1493228063, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 4070900842189001513, guid: 78bdf163e2219d843b26b129dc9fa947, type: 3}
+  - id: 10
+    name: Sparking Star
+    damage: 38
+    speed: 50
+    manaCost: 30
+    airborne: 0
+    icon: {fileID: 1280968822, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 8594771104143032512, guid: 65d41258c2df68b43bf3dad8acb9654f, type: 3}
+  - id: 11
+    name: Bursting Flame
+    damage: 32
+    speed: 70
+    manaCost: 27
+    airborne: 0
+    icon: {fileID: 253030714, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 1308542465583815614, guid: a52f39e54eec74e4a80e126022382488, type: 3}
+  - id: 12
+    name: Water Gun
+    damage: 13
+    speed: 48
+    manaCost: 9
+    airborne: 1
+    icon: {fileID: -1576209129, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 5016841037979373571, guid: 7bb7230c5792c4349a638215fa873866, type: 3}
+  - id: 13
+    name: Water Spike
+    damage: 17
+    speed: 43
+    manaCost: 11
+    airborne: 1
+    icon: {fileID: -1280256762, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 5053970486211709439, guid: 2352e3fc18007a049beb3dc97d3723cb, type: 3}
+  - id: 14
+    name: Whirlpool
+    damage: 15
+    speed: 60
+    manaCost: 12
+    airborne: 0
+    icon: {fileID: -211250294, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 2534370782770770243, guid: aad11d3192353e448877fadb7da2d6a1, type: 3}
+  - id: 15
+    name: Water Shuriken
+    damage: 10
+    speed: 55
+    manaCost: 10
+    airborne: 0
+    icon: {fileID: -1649050011, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    prefab: {fileID: 240891122572525353, guid: 99b67bdd036720046aedc1bc91512957, type: 3}
+  - id: 16
+    name: Blizzard
+    damage: 32
+    speed: 62
+    manaCost: 22
+    airborne: 1
+    icon: {fileID: 414514540, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 78577149953304913, guid: 17ba0fc1c9b7cd34ba7152aaa39668fa, type: 3}
+  - id: 17
+    name: Snowstorm
+    damage: 35
+    speed: 55
+    manaCost: 24
+    airborne: 1
+    icon: {fileID: -1704119362, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 5759398580205094636, guid: 6d34e5f5f95997f459ca6ee2fc94cf64, type: 3}
+  - id: 18
+    name: Wave Crash
+    damage: 30
+    speed: 75
+    manaCost: 26
+    airborne: 0
+    icon: {fileID: 965897625, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 2771607099426965612, guid: 69cd2b5eb07327a48a6a5bebf1e7fad0, type: 3}
+  - id: 19
+    name: Water Pulse
+    damage: 27
+    speed: 68
+    manaCost: 23
+    airborne: 0
+    icon: {fileID: -1091840133, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 4681748126748895126, guid: 73ec7375340d5d342a4f9f1899266ffb, type: 3}
+  - id: 20
+    name: Iron Spikes
+    damage: 20
+    speed: 42
+    manaCost: 14
+    airborne: 1
+    icon: {fileID: -2089637643, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 8941171499758395032, guid: f36a1f7898acb604fa3b00c9ffd609aa, type: 3}
+  - id: 21
+    name: Rock Throw
+    damage: 14
+    speed: 47
+    manaCost: 11
+    airborne: 1
+    icon: {fileID: -1505625151, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 8942607262678282298, guid: 9d82131cf14a2614b81a9bc1f9da61cc, type: 3}
+  - id: 22
+    name: Rock Wave
+    damage: 18
+    speed: 45
+    manaCost: 13
+    airborne: 0
+    icon: {fileID: -1400117088, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 8905990672419216080, guid: c8760c8faace64a4a92f779cd6ed3f71, type: 3}
+  - id: 23
+    name: Barricade
+    damage: 16
+    speed: 50
+    manaCost: 12
+    airborne: 0
+    icon: {fileID: 2108120109, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 7418369030281838476, guid: 1d0fb096e4efcc449a6af3d2895c3b5f, type: 3}
+  - id: 24
+    name: Rock Crush
+    damage: 40
+    speed: 58
+    manaCost: 28
+    airborne: 1
+    icon: {fileID: -195669322, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 11183732222806883, guid: cb9227b3021eaa84a834083b3eeff040, type: 3}
+  - id: 25
+    name: Earth Spike
+    damage: 33
+    speed: 60
+    manaCost: 24
+    airborne: 1
+    icon: {fileID: 1848923080, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 7135818049917380198, guid: 771cabcb5d38f2f4cb4e2180688bf4f6, type: 3}
+  - id: 26
+    name: Crystal Shot
+    damage: 38
+    speed: 55
+    manaCost: 27
+    airborne: 0
+    icon: {fileID: -1435159348, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 80407182734441112, guid: ec68456759b3b004fa9362365a8869e0, type: 3}
+  - id: 27
+    name: Sandworm
+    damage: 34
+    speed: 63
+    manaCost: 25
+    airborne: 0
+    icon: {fileID: 1683099867, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 6683717515056599842, guid: 0664a60e5d23a4b438102ddd1ce0ef06, type: 3}
+  - id: 28
+    name: Lightning Strike
+    damage: 17
+    speed: 65
+    manaCost: 12
+    airborne: 1
+    icon: {fileID: -1245799598, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 3163586191213139221, guid: f9f29ebbf515ca24f882a850cbb2fc1b, type: 3}
+  - id: 29
+    name: Lightning Rod
+    damage: 14
+    speed: 70
+    manaCost: 10
+    airborne: 1
+    icon: {fileID: 175353102, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 7537646596077383262, guid: 0f85d95c9553fb7438dc9a523c848591, type: 3}
+  - id: 30
+    name: Flash
+    damage: 20
+    speed: 55
+    manaCost: 15
+    airborne: 0
+    icon: {fileID: 1163453666, guid: 04c5410d0716145aebbfa16d7ffd7c11, type: 3}
+    prefab: {fileID: 8926667335975046591, guid: 9f2b0dc5a34871e45bf3bb52eb0af07c, type: 3}
+  - id: 31
+    name: Spark
+    damage: 13
+    speed: 60
+    manaCost: 11
+    airborne: 0
+    icon: {fileID: 399822350, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    prefab: {fileID: 332467273974930091, guid: a10a90c2ccf7a2346b7c3f627ed5d8c1, type: 3}
+  - id: 32
+    name: Electroweb
+    damage: 36
+    speed: 75
+    manaCost: 26
+    airborne: 1
+    icon: {fileID: 306869915, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    prefab: {fileID: 2753076291878324361, guid: 6aabd2d5d4ae8a7419ff6a9314a672f8, type: 3}
+  - id: 33
+    name: ElectronBolt
+    damage: 38
+    speed: 80
+    manaCost: 28
+    airborne: 1
+    icon: {fileID: 299838888, guid: 64acf6e7b06574d128982d55c3882a57, type: 3}
+    prefab: {fileID: 7697348948859645989, guid: 852717d50f075d04490ed307334857bd, type: 3}
+  - id: 34
+    name: ThunderBolt
+    damage: 40
+    speed: 68
+    manaCost: 30
+    airborne: 0
+    icon: {fileID: -1293946659, guid: 91d023353efa34bafbe1fefc06c974c6, type: 3}
+    prefab: {fileID: 7043992466491040102, guid: 54e4c06be023a20459d2cd7aac085928, type: 3}
+  - id: 35
+    name: Thunder
+    damage: 32
+    speed: 72
+    manaCost: 25
+    airborne: 0
+    icon: {fileID: 1147476748, guid: 91d023353efa34bafbe1fefc06c974c6, type: 3}
+    prefab: {fileID: 3982974035701504997, guid: 0c8e4b54fdcb9d84a80bb3bb3e453735, type: 3}

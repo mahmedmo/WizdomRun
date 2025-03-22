@@ -3,177 +3,357 @@ using UnityEngine.Networking;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+
 public class QuestionService : BaseService
 {
-    // Uploads a PDF file to create questions for a campaign.
+    // Uploads a PDF file to create questions for a campaign (3-tries as an issue could arise from the PDF file itself)
     public IEnumerator CreateQuestionsFromPDF(string pdfFilePath, int campaignID, string firebaseToken, System.Action onSuccess, System.Action<string> onError)
     {
-        string url = $"{baseUrl}/questions/create";
-        WWWForm form = new WWWForm();
-        form.AddField("campaignID", campaignID.ToString());
+        int tries = 0;
+        bool requestSuccess = false;
+        string lastError = "";
 
-        // Read file data.
-        byte[] fileData = File.ReadAllBytes(pdfFilePath);
-        string fileName = Path.GetFileName(pdfFilePath);
-        // "file" is the key expected by your endpoint.
-        form.AddBinaryData("file", fileData, fileName, "application/pdf");
-
-        UnityWebRequest request = UnityWebRequest.Post(url, form);
-        request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
-
-        yield return request.SendWebRequest();
-
-#if UNITY_2020_1_OR_NEWER
-            if(request.result != UnityWebRequest.Result.Success)
-#else
-        if (request.isNetworkError || request.isHttpError)
-#endif
+        while (tries < 3 && !requestSuccess)
         {
-            onError?.Invoke(request.error);
+            string url = $"{baseUrl}/questions/create";
+            WWWForm form = new WWWForm();
+            form.AddField("campaignID", campaignID.ToString());
+
+            // Read file data.
+            byte[] fileData = File.ReadAllBytes(pdfFilePath);
+            string fileName = Path.GetFileName(pdfFilePath);
+            form.AddBinaryData("file", fileData, fileName, "application/pdf");
+
+            UnityWebRequest request = UnityWebRequest.Post(url, form);
+            request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
+
+            yield return request.SendWebRequest();
+
+            if (request.result != UnityWebRequest.Result.Success)
+            {
+                lastError = request.error;
+                tries++;
+                if (tries < 3)
+                    yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                requestSuccess = true;
+            }
         }
+
+        if (!requestSuccess)
+            onError?.Invoke(lastError);
         else
-        {
             onSuccess?.Invoke();
-        }
     }
 
-    // Optionally, if you need to re-fetch questions:
     public IEnumerator GetQuestions(int campaignID, string firebaseToken, System.Action<List<Question>> onSuccess, System.Action<string> onError)
     {
-        string url = $"{baseUrl}/questions/{campaignID}";
-        UnityWebRequest request = UnityWebRequest.Get(url);
-        request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
+        bool requestSuccess = false;
+        string lastError = "";
 
-        yield return SendRequest(request,
-            response =>
+        while (!requestSuccess)
+        {
+            string url = $"{baseUrl}/questions/{campaignID}";
+            UnityWebRequest request = UnityWebRequest.Get(url);
+            request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
+
+            bool done = false;
+            yield return SendRequest(request,
+                response =>
+                {
+                    QuestionListWrapper wrapper = JsonUtility.FromJson<QuestionListWrapper>("{\"questions\":" + response + "}");
+                    onSuccess?.Invoke(wrapper.questions);
+                    requestSuccess = true;
+                    done = true;
+                },
+                error =>
+                {
+                    lastError = error;
+                    done = true;
+                }
+            );
+            yield return new WaitUntil(() => done);
+            if (!requestSuccess)
             {
-                QuestionListWrapper wrapper = JsonUtility.FromJson<QuestionListWrapper>("{\"questions\":" + response + "}");
-                onSuccess?.Invoke(wrapper.questions);
-            },
-            error => { onError?.Invoke(error); }
-        );
+                yield return new WaitForSeconds(1f);
+            }
+        }
+
+        if (!requestSuccess)
+            onError?.Invoke(lastError);
     }
 
-    // Answer a question.
     public IEnumerator AnswerQuestion(int questionID, bool gotCorrect, string firebaseToken, System.Action onSuccess, System.Action<string> onError)
     {
-        string url = $"{baseUrl}/questions/answer/{questionID}";
-        string jsonData = $"{{\"gotCorrect\":{gotCorrect.ToString().ToLower()}}}";
-        UnityWebRequest request = UnityWebRequest.Put(url, jsonData);
-        request.SetRequestHeader("Content-Type", "application/json");
-        request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
-        yield return SendRequest(request,
-            response => { onSuccess?.Invoke(); },
-            error => { onError?.Invoke(error); }
-        );
+        bool requestSuccess = false;
+        string lastError = "";
+
+        while (!requestSuccess)
+        {
+            string url = $"{baseUrl}/questions/answer/{questionID}";
+            string jsonData = $"{{\"gotCorrect\":{gotCorrect.ToString().ToLower()}}}";
+            UnityWebRequest request = UnityWebRequest.Put(url, jsonData);
+            request.SetRequestHeader("Content-Type", "application/json");
+            request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
+
+            bool done = false;
+            yield return SendRequest(request,
+                response =>
+                {
+                    onSuccess?.Invoke();
+                    requestSuccess = true;
+                    done = true;
+                },
+                error =>
+                {
+                    lastError = error;
+                    done = true;
+                }
+            );
+            yield return new WaitUntil(() => done);
+            if (!requestSuccess)
+            {
+                yield return new WaitForSeconds(1f);
+            }
+        }
+
+        if (!requestSuccess)
+            onError?.Invoke(lastError);
     }
 
-    // Batch create questions (expects a JSON array string as input).
+    // Batch create questions (expects a JSON array string as input) with a 3-try policy.
     public IEnumerator BatchCreateQuestions(string jsonBatchData, string firebaseToken, System.Action onSuccess, System.Action<string> onError)
     {
-        string url = $"{baseUrl}/questions/batch_create";
-        UnityWebRequest request = new UnityWebRequest(url, "POST");
-        byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonBatchData);
-        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-        request.downloadHandler = new DownloadHandlerBuffer();
-        request.SetRequestHeader("Content-Type", "application/json");
-        request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
-        yield return SendRequest(request,
-            response => { onSuccess?.Invoke(); },
-            error => { onError?.Invoke(error); }
-        );
+        int tries = 0;
+        bool requestSuccess = false;
+        string lastError = "";
+
+        while (tries < 3 && !requestSuccess)
+        {
+            string url = $"{baseUrl}/questions/batch_create";
+            UnityWebRequest request = new UnityWebRequest(url, "POST");
+            byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonBatchData);
+            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+            request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
+
+            bool done = false;
+            yield return SendRequest(request,
+                response =>
+                {
+                    onSuccess?.Invoke();
+                    requestSuccess = true;
+                    done = true;
+                },
+                error =>
+                {
+                    lastError = error;
+                    done = true;
+                }
+            );
+            yield return new WaitUntil(() => done);
+            if (!requestSuccess)
+            {
+                tries++;
+                if (tries < 3)
+                    yield return new WaitForSeconds(1f);
+            }
+        }
+
+        if (!requestSuccess)
+            onError?.Invoke(lastError);
     }
 
-    // Get a single question.
     public IEnumerator GetQuestion(int questionID, string firebaseToken, System.Action<Question> onSuccess, System.Action<string> onError)
     {
-        string url = $"{baseUrl}/questions/question/{questionID}";
-        UnityWebRequest request = UnityWebRequest.Get(url);
-        request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
-        yield return SendRequest(request,
-            response =>
+        bool requestSuccess = false;
+        string lastError = "";
+
+        while (!requestSuccess)
+        {
+            string url = $"{baseUrl}/questions/question/{questionID}";
+            UnityWebRequest request = UnityWebRequest.Get(url);
+            request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
+
+            bool done = false;
+            yield return SendRequest(request,
+                response =>
+                {
+                    Question question = JsonUtility.FromJson<Question>(response);
+                    onSuccess?.Invoke(question);
+                    requestSuccess = true;
+                    done = true;
+                },
+                error =>
+                {
+                    lastError = error;
+                    done = true;
+                }
+            );
+            yield return new WaitUntil(() => done);
+            if (!requestSuccess)
             {
-                Question question = JsonUtility.FromJson<Question>(response);
-                onSuccess?.Invoke(question);
-            },
-            error => { onError?.Invoke(error); }
-        );
+                yield return new WaitForSeconds(1f);
+            }
+        }
+
+        if (!requestSuccess)
+            onError?.Invoke(lastError);
     }
 
-    // Delete a question.
-    public IEnumerator DeleteQuestion(int questionID, string firebaseToken, System.Action onSuccess, System.Action<string> onError)
-    {
-        string url = $"{baseUrl}/questions/delete/{questionID}";
-        UnityWebRequest request = UnityWebRequest.Delete(url);
-        request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
-        yield return SendRequest(request,
-            response => { onSuccess?.Invoke(); },
-            error => { onError?.Invoke(error); }
-        );
-    }
-
-    // Get answers for a question.
     public IEnumerator GetAnswers(int questionID, string firebaseToken, System.Action<List<Answer>> onSuccess, System.Action<string> onError)
     {
-        string url = $"{baseUrl}/questions/answers/{questionID}";
-        UnityWebRequest request = UnityWebRequest.Get(url);
-        request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
-        yield return SendRequest(request,
-            response =>
+        bool requestSuccess = false;
+        string lastError = "";
+
+        while (!requestSuccess)
+        {
+            string url = $"{baseUrl}/questions/answers/{questionID}";
+            UnityWebRequest request = UnityWebRequest.Get(url);
+            request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
+
+            bool done = false;
+            yield return SendRequest(request,
+                response =>
+                {
+                    AnswerListWrapper wrapper = JsonUtility.FromJson<AnswerListWrapper>("{\"answers\":" + response + "}");
+                    onSuccess?.Invoke(wrapper.answers);
+                    requestSuccess = true;
+                    done = true;
+                },
+                error =>
+                {
+                    lastError = error;
+                    done = true;
+                }
+            );
+            yield return new WaitUntil(() => done);
+            if (!requestSuccess)
             {
-                AnswerListWrapper wrapper = JsonUtility.FromJson<AnswerListWrapper>("{\"answers\":" + response + "}");
-                onSuccess?.Invoke(wrapper.answers);
-            },
-            error => { onError?.Invoke(error); }
-        );
+                yield return new WaitForSeconds(1f);
+            }
+        }
+
+        if (!requestSuccess)
+            onError?.Invoke(lastError);
     }
 
-    // Increment the wrong attempt counter for a question.
     public IEnumerator IncrementWrongAttempt(int questionID, string firebaseToken, System.Action onSuccess, System.Action<string> onError)
     {
-        string url = $"{baseUrl}/questions/wrong_attempt/{questionID}";
-        UnityWebRequest request = UnityWebRequest.Put(url, "");
-        request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
-        yield return SendRequest(request,
-            response => { onSuccess?.Invoke(); },
-            error => { onError?.Invoke(error); }
-        );
+        bool requestSuccess = false;
+        string lastError = "";
+
+        while (!requestSuccess)
+        {
+            string url = $"{baseUrl}/questions/wrong_attempt/{questionID}";
+            UnityWebRequest request = UnityWebRequest.Put(url, "");
+            request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
+
+            bool done = false;
+            yield return SendRequest(request,
+                response =>
+                {
+                    onSuccess?.Invoke();
+                    requestSuccess = true;
+                    done = true;
+                },
+                error =>
+                {
+                    lastError = error;
+                    done = true;
+                }
+            );
+            yield return new WaitUntil(() => done);
+            if (!requestSuccess)
+            {
+                yield return new WaitForSeconds(1f);
+            }
+        }
+
+        if (!requestSuccess)
+            onError?.Invoke(lastError);
     }
 
-    // Get unanswered questions.
     public IEnumerator GetUnansweredQuestions(string firebaseToken, System.Action<List<Question>> onSuccess, System.Action<string> onError)
     {
-        string url = $"{baseUrl}/questions/unanswered";
-        UnityWebRequest request = UnityWebRequest.Get(url);
-        request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
-        yield return SendRequest(request,
-            response =>
+        bool requestSuccess = false;
+        string lastError = "";
+
+        while (!requestSuccess)
+        {
+            string url = $"{baseUrl}/questions/unanswered";
+            UnityWebRequest request = UnityWebRequest.Get(url);
+            request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
+
+            bool done = false;
+            yield return SendRequest(request,
+                response =>
+                {
+                    QuestionListWrapper wrapper = JsonUtility.FromJson<QuestionListWrapper>("{\"questions\":" + response + "}");
+                    onSuccess?.Invoke(wrapper.questions);
+                    requestSuccess = true;
+                    done = true;
+                },
+                error =>
+                {
+                    lastError = error;
+                    done = true;
+                }
+            );
+            yield return new WaitUntil(() => done);
+            if (!requestSuccess)
             {
-                QuestionListWrapper wrapper = JsonUtility.FromJson<QuestionListWrapper>("{\"questions\":" + response + "}");
-                onSuccess?.Invoke(wrapper.questions);
-            },
-            error => { onError?.Invoke(error); }
-        );
+                yield return new WaitForSeconds(1f);
+            }
+        }
+
+        if (!requestSuccess)
+            onError?.Invoke(lastError);
     }
 
-    // Get questions filtered by difficulty.
+    // Get questions filtered by difficulty
     public IEnumerator GetQuestionsByDifficulty(string difficulty, string firebaseToken, System.Action<List<Question>> onSuccess, System.Action<string> onError)
     {
-        string url = $"{baseUrl}/questions/difficulty/{difficulty}";
-        UnityWebRequest request = UnityWebRequest.Get(url);
-        request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
-        yield return SendRequest(request,
-            response =>
+        bool requestSuccess = false;
+        string lastError = "";
+
+        while (!requestSuccess)
+        {
+            string url = $"{baseUrl}/questions/difficulty/{difficulty}";
+            UnityWebRequest request = UnityWebRequest.Get(url);
+            request.SetRequestHeader("Authorization", "Bearer " + firebaseToken);
+
+            bool done = false;
+            yield return SendRequest(request,
+                response =>
+                {
+                    QuestionListWrapper wrapper = JsonUtility.FromJson<QuestionListWrapper>("{\"questions\":" + response + "}");
+                    onSuccess?.Invoke(wrapper.questions);
+                    requestSuccess = true;
+                    done = true;
+                },
+                error =>
+                {
+                    lastError = error;
+                    done = true;
+                }
+            );
+            yield return new WaitUntil(() => done);
+            if (!requestSuccess)
             {
-                QuestionListWrapper wrapper = JsonUtility.FromJson<QuestionListWrapper>("{\"questions\":" + response + "}");
-                onSuccess?.Invoke(wrapper.questions);
-            },
-            error => { onError?.Invoke(error); }
-        );
+                yield return new WaitForSeconds(1f);
+            }
+        }
+
+        if (!requestSuccess)
+            onError?.Invoke(lastError);
     }
 
+    // Response Objects
 
-    // Local classes for JSON parsing.
     [System.Serializable]
     public class Question
     {

@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: 53a96f1dbb79845f6aefe3cd44705780
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4913475437204116278
+    second: Dungeon_Zork_Fly_Attack 1_0
+  - first:
+      213: -6958547143628870663
+    second: Dungeon_Zork_Fly_Attack 1_1
+  - first:
+      213: -2264882237589617074
+    second: Dungeon_Zork_Fly_Attack 1_2
+  - first:
+      213: 4936315252489890528
+    second: Dungeon_Zork_Fly_Attack 1_3
+  - first:
+      213: 4068304381158408298
+    second: Dungeon_Zork_Fly_Attack 1_4
+  - first:
+      213: 3931900121069915517
+    second: Dungeon_Zork_Fly_Attack 1_5
+  - first:
+      213: -5065992746044871057
+    second: Dungeon_Zork_Fly_Attack 1_6
+  - first:
+      213: -1880797236159401245
+    second: Dungeon_Zork_Fly_Attack 1_7
+  - first:
+      213: -2296029105629772629
+    second: Dungeon_Zork_Fly_Attack 1_8
+  - first:
+      213: -4777596274897052333
+    second: Dungeon_Zork_Fly_Attack 1_9
+  - first:
+      213: -7845283202303917997
+    second: Dungeon_Zork_Fly_Attack 1_10
+  - first:
+      213: -2319553982085543640
+    second: Dungeon_Zork_Fly_Attack 1_11
+  - first:
+      213: -1955865711227265764
+    second: Dungeon_Zork_Fly_Attack 1_12
+  - first:
+      213: 239955565440705585
+    second: Dungeon_Zork_Fly_Attack 1_13
+  - first:
+      213: 8738689470481546447
+    second: Dungeon_Zork_Fly_Attack 1_14
+  - first:
+      213: 2613180129993260308
+    second: Dungeon_Zork_Fly_Attack 1_15
+  - first:
+      213: -6698276715759495479
+    second: Dungeon_Zork_Fly_Attack 1_16
+  - first:
+      213: 3937541640942783112
+    second: Dungeon_Zork_Fly_Attack 1_17
+  - first:
+      213: 867816797750365601
+    second: Dungeon_Zork_Fly_Attack 1_18
+  - first:
+      213: -5709093315712026269
+    second: Dungeon_Zork_Fly_Attack 1_19
+  - first:
+      213: 7101761591484421445
+    second: Dungeon_Zork_Fly_Attack 1_20
+  - first:
+      213: 3217658026291405965
+    second: Dungeon_Zork_Fly_Attack 1_21
+  - first:
+      213: -1576097059603050130
+    second: Dungeon_Zork_Fly_Attack 1_22
+  - first:
+      213: 9088532875979318747
+    second: Dungeon_Zork_Fly_Attack 1_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 435
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633982f90eb203440800000000000000
+      internalID: 4913475437204116278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 436
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb2137ad364e6f90800000000000000
+      internalID: -6958547143628870663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_2
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 436
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e460162da958190e0800000000000000
+      internalID: -2264882237589617074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_3
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 436
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eaa0048190518440800000000000000
+      internalID: 4936315252489890528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_4
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 436
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60cc15a745857830800000000000000
+      internalID: 4068304381158408298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_5
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 435
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d00b8f35ae09630800000000000000
+      internalID: 3931900121069915517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_6
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 308
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e2a41307af1b9b0800000000000000
+      internalID: -5065992746044871057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 308
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2be2ce0e016e5e0800000000000000
+      internalID: -1880797236159401245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_8
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 308
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4cafc71bdd220e0800000000000000
+      internalID: -2296029105629772629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_9
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 309
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d1882308192bdb0800000000000000
+      internalID: -4777596274897052333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_10
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 309
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350065c5e74ff1390800000000000000
+      internalID: -7845283202303917997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_11
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 309
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829c27c51f94fcfd0800000000000000
+      internalID: -2319553982085543640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_12
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 180
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d9eed8f7e5bd4e0800000000000000
+      internalID: -1955865711227265764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_13
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 180
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 134a8ffb05e745300800000000000000
+      internalID: 239955565440705585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_14
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 180
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fccbf7a16cf064970800000000000000
+      internalID: 8738689470481546447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_15
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 181
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d7b56ab71e34420800000000000000
+      internalID: 2613180129993260308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_16
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 181
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c692e5e0d0fa03a0800000000000000
+      internalID: -6698276715759495479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_17
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 181
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a04bca245f4a630800000000000000
+      internalID: 3937541640942783112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_18
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 48
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad070897ca1b0c00800000000000000
+      internalID: 867816797750365601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_19
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 49
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3697d6f90e935c0b0800000000000000
+      internalID: -5709093315712026269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_20
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 49
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54511fb6a868e8260800000000000000
+      internalID: 7101761591484421445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_21
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 49
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84a8c15dea67ac20800000000000000
+      internalID: 3217658026291405965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_22
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 49
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6192d62314902ae0800000000000000
+      internalID: -1576097059603050130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Zork_Fly_Attack 1_23
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 49
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5e4326f74f02e70800000000000000
+      internalID: 9088532875979318747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

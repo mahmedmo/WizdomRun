@@ -9,12 +9,19 @@ public class DialogueManager : MonoBehaviour
     public DialogueTyper dialogueTyper;
     public GameObject touchButtonOverlay;
     public GameObject portrait;
+    public GameObject npcInfo;
+
+    public TextMeshProUGUI npcName;
     public GameObject dialogueStatus;
     public Sprite dialogueProgress;
     public Sprite dialogueDone;
+    public GameObject skipBtn;
     public NPCDatabase npcDatabase;
+    public NPCDatabase savedNPCDatabase;
+
     public Transform[] npcDialogue;
     public Transform[] playerChoices;
+
     private Dialogue dialogue;
     private CutsceneType cutsceneType;
 
@@ -26,7 +33,6 @@ public class DialogueManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -35,19 +41,23 @@ public class DialogueManager : MonoBehaviour
     }
     public void ShowDialogue()
     {
+        InterfaceManager.Instance.HideInterface();
         for (int i = 0; i < npcDialogue.Length; i++)
         {
             npcDialogue[i].gameObject.SetActive(true);
         }
-        Debug.Log("SHOW");
+        npcInfo.SetActive(true);
+        skipBtn.SetActive(true);
     }
     public void HideDialogue()
     {
+        InterfaceManager.Instance.ShowInterface();
         for (int i = 0; i < npcDialogue.Length; i++)
         {
             npcDialogue[i].gameObject.SetActive(false);
         }
-        Debug.Log("HIDE");
+        npcInfo.SetActive(false);
+        skipBtn.SetActive(false);
     }
     public void HideChoices()
     {
@@ -55,9 +65,9 @@ public class DialogueManager : MonoBehaviour
         {
             playerChoices[i].gameObject.SetActive(false);
         }
-
     }
 
+    // Finds the choice for the associated choice index
     public void ShowChoices()
     {
         for (int i = 0; i < dialogue.choiceSets[currChoiceIdx].choices.Length; i++)
@@ -68,20 +78,32 @@ public class DialogueManager : MonoBehaviour
             choiceIcon.sprite = dialogue.choiceSets[currChoiceIdx].choices[i].icon;
             playerChoices[i].gameObject.SetActive(true);
         }
-
     }
+
+    // Assigns the dialogue, the portrait for the npc speaking as well as resetting indexes/GameObjects
     public void SetDialogue(Dialogue dlg, CutsceneType ct)
     {
         touchButtonOverlay.SetActive(false);
         dialogue = dlg;
         cutsceneType = ct;
-        portrait.GetComponent<Image>().sprite = npcDatabase.npcList[dialogue.npcId].portrait;
+        if (ct == CutsceneType.Saved)
+        {
+            portrait.GetComponent<Image>().sprite = savedNPCDatabase.npcList[CampaignManager.Instance.GetLevel() - 1].portrait;
+            npcName.text = savedNPCDatabase.npcList[CampaignManager.Instance.GetLevel() - 1].name;
+        }
+        else
+        {
+            portrait.GetComponent<Image>().sprite = npcDatabase.npcList[dialogue.npcId].portrait;
+            npcName.text = npcDatabase.npcList[dialogue.npcId].name;
+        }
+
         currDialogueIdx = 0;
         currChoiceIdx = 0;
         dialogueStatus.GetComponent<Image>().sprite = dialogueProgress;
         StartDialogue();
     }
 
+    // Outputs the indexed dialogue as it were typed
     public void StartDialogue()
     {
 
@@ -96,7 +118,7 @@ public class DialogueManager : MonoBehaviour
                 FindNextChoice();
                 return;
             }
-            // Wait for continue interaction
+            // Wait for user's tap
             touchButtonOverlay.SetActive(true);
         });
     }
@@ -118,6 +140,17 @@ public class DialogueManager : MonoBehaviour
         touchButtonOverlay.SetActive(false);
         StartDialogue();
     }
+
+    // Skips to the final dialogue index
+    public void OnSkipDialogue()
+    {
+        currDialogueIdx = dialogue.dialogueText.Length - 2;
+        currChoiceIdx = dialogue.choiceSets.Length - 1;
+        HideChoices();
+        NextDialogue();
+        skipBtn.SetActive(false);
+    }
+
     public void OnChoicePressed()
     {
         if (currDialogueIdx != dialogue.dialogueText.Length - 1)
@@ -126,10 +159,17 @@ public class DialogueManager : MonoBehaviour
             NextDialogue();
             return;
         }
+        // Route handler for final choices in a dialogue sequence
         switch (cutsceneType)
         {
             case CutsceneType.Start:
                 LevelManager.Instance.StartLevel();
+                break;
+            case CutsceneType.Saved:
+                LevelManager.Instance.LoadNextLevel();
+                break;
+            case CutsceneType.Elementalist:
+                LevelManager.Instance.StartEShop();
                 break;
         }
     }

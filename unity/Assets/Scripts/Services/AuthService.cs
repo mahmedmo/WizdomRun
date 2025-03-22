@@ -1,16 +1,23 @@
-using Firebase;
-using Firebase.Auth;
 using UnityEngine;
 using UnityEngine.Networking;
-using System.Collections;
+using Firebase;
+using Firebase.Auth;
 using Firebase.Extensions;
+using System.Collections;
 
+// Response Objects
 [System.Serializable]
 public class AuthResponse
 {
-    public string message; // Optional: for signup messages
+    public string message;
 
     public string userID;
+}
+
+[System.Serializable]
+public class ErrorResponse
+{
+    public string error;
 }
 
 public class AuthService : BaseService
@@ -30,7 +37,7 @@ public class AuthService : BaseService
 
     IEnumerator SendSignupToBackend(string email, string password, string screenName)
     {
-        string url = "https://wizdomrun.onrender.com/auth/signup";
+        string url = $"{baseUrl}/auth/signup";
         string jsonPayload = "{\"email\":\"" + email + "\", \"password\":\"" + password + "\", \"screenName\":\"" + screenName + "\"}";
         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonPayload);
 
@@ -41,21 +48,38 @@ public class AuthService : BaseService
 
         yield return request.SendWebRequest();
 
+        string responseText = request.downloadHandler.text;
+        Debug.Log("Raw JSON response: " + responseText);
+
         if (request.result != UnityWebRequest.Result.Success)
         {
-            string errorMsg = "Signup backend error: " + request.error;
-            Debug.LogError(errorMsg);
+            string errorMsg = "";
+            if (!string.IsNullOrEmpty(responseText) && responseText.TrimStart().StartsWith("{"))
+            {
+                ErrorResponse errorResponse = JsonUtility.FromJson<ErrorResponse>(responseText);
+                errorMsg = errorResponse.error;
+            }
+            else
+            {
+                errorMsg = "Unknown error occured.";
+            }
             AuthManager.Instance.OnAuthError(errorMsg);
         }
         else
         {
-            Debug.Log("Signup backend response: " + request.downloadHandler.text);
-            // Parse the response to extract the userID.
-            AuthResponse response = JsonUtility.FromJson<AuthResponse>(request.downloadHandler.text);
-            // Since the user was created in the backend, we now log the user in to get a Firebase token.
-            // We assume the email and password used for signup are valid for login.
-            Login(email, password);
+            if (string.IsNullOrEmpty(responseText) || !responseText.TrimStart().StartsWith("{"))
+            {
+                AuthManager.Instance.OnAuthError("Signup response is not valid JSON.");
+            }
+            else
+            {
+                AuthResponse response = JsonUtility.FromJson<AuthResponse>(responseText);
+                Debug.Log("Parsed response message: " + response.message);
+                Login(email, password);
+            }
         }
+
+        MainMenuManager.Instance?.OnLoadDone();
     }
 
     public void Login(string email, string password)
@@ -86,7 +110,6 @@ public class AuthService : BaseService
                 string idToken = tokenTask.Result;
                 Debug.Log("ID token: " + idToken);
                 AuthManager.Instance.OnAuthAwait();
-                // Send the token to the backend to verify and retrieve the userID.
                 StartCoroutine(SendTokenToBackend(idToken));
             });
         });
@@ -94,7 +117,7 @@ public class AuthService : BaseService
 
     IEnumerator SendTokenToBackend(string idToken)
     {
-        string url = "https://wizdomrun.onrender.com/auth/login";
+        string url = $"{baseUrl}/auth/login";
         string jsonPayload = "{\"idToken\":\"" + idToken + "\"}";
         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonPayload);
 
@@ -115,9 +138,7 @@ public class AuthService : BaseService
         else
         {
             Debug.Log("Login backend response: " + request.downloadHandler.text);
-            // Parse the response to extract the userID.
             AuthResponse response = JsonUtility.FromJson<AuthResponse>(request.downloadHandler.text);
-            // Update AuthManager with the backend userID.
             AuthManager.Instance.OnAuthSuccess(response.userID, idToken);
         }
     }

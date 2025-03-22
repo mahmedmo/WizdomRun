@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5908b975d15477aa86e2f1f9ae078c, type: 3}
+  m_Name: BossDatabase
+  m_EditorClassIdentifier: 
+  bossList:
+  - id: 0
+    campaignLevel: 1
+    name: Great Treant
+    damage: 5
+    health: 50
+    goldDrop: 100
+    airborne: 0
+    prefab: {fileID: 4361517662080096027, guid: 57fd88dee21269548b94143c245fd93e, type: 3}
+  - id: 1
+    campaignLevel: 2
+    name: Seaman of the Deep
+    damage: 5
+    health: 50
+    goldDrop: 200
+    airborne: 0
+    prefab: {fileID: 1631732386781564733, guid: 1f05e083fa12c4fe9be6f4a2dc4f3ba1, type: 3}
+  - id: 2
+    campaignLevel: 3
+    name: Puppet Master
+    damage: 5
+    health: 50
+    goldDrop: 300
+    airborne: 0
+    prefab: {fileID: 2547265847203112700, guid: 7ffa7a58601ec420b934d94bed697f33, type: 3}
+  - id: 3
+    campaignLevel: 4
+    name: Ravenous Troll
+    damage: 5
+    health: 100
+    goldDrop: 400
+    airborne: 0
+    prefab: {fileID: 3951664054417824059, guid: 6790066aa9d704144bcbb2897a09b284, type: 3}
+  - id: 4
+    campaignLevel: 5
+    name: Frost Giant
+    damage: 5
+    health: 100
+    goldDrop: 500
+    airborne: 0
+    prefab: {fileID: 6064227801935213528, guid: b4714e62cb8625a4488e41532928cd65, type: 3}
+  - id: 5
+    campaignLevel: 6
+    name: THE DOCTOR
+    damage: 10
+    health: 150
+    goldDrop: 600
+    airborne: 0
+    prefab: {fileID: 4658509677038128944, guid: 21854647ca7324c4d86116dcf2f71f13, type: 3}
+  - id: 6
+    campaignLevel: 7
+    name: Molten Knight
+    damage: 20
+    health: 120
+    goldDrop: 700
+    airborne: 0
+    prefab: {fileID: 667418609193218362, guid: 548225a84ea37454da0ad5bcbb1188e5, type: 3}
+  - id: 7
+    campaignLevel: 8
+    name: Grandena of the Cloud
+    damage: 30
+    health: 100
+    goldDrop: 800
+    airborne: 0
+    prefab: {fileID: 5611905194072814619, guid: f5b2663c872bc48bb97e7cb509d35c78, type: 3}
+  - id: 8
+    campaignLevel: 9
+    name: KING OF SLIMES
+    damage: 20
+    health: 120
+    goldDrop: 900
+    airborne: 0
+    prefab: {fileID: 8256181762555398481, guid: 3ffeccb70cfcbfd45be68e480eb4a245, type: 3}
+  - id: 9
+    campaignLevel: 10
+    name: Sporelock the Rotten
+    damage: 10
+    health: 200
+    goldDrop: 100
+    airborne: 0
+    prefab: {fileID: 7849530218391247664, guid: 904505aa4a2e8430ab94a19d8b745647, type: 3}

@@ -1,15 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 using TMPro;
 using System;
+using System.Collections;
+
 public class DialogueTyper : MonoBehaviour
 {
-    // Reference to the text component (could be UnityEngine.UI.Text or TMPro.TextMeshProUGUI)
     public TextMeshProUGUI dialogueText;
+
     // Time between each character appearing
     public float typingSpeed = 0.05f;
-    // Public method to start typing a dialogue line.
+
     public void DisplayDialogue(string dialogue, Action onFinished)
     {
         StopAllCoroutines();
@@ -25,7 +26,7 @@ public class DialogueTyper : MonoBehaviour
         while (index < dialogue.Length)
         {
             // Check for rich text tags: if the current character starts a tag,
-            // you can skip waiting for the tag content.
+            // skip waiting for the tag content.
             if (dialogue[index] == '<')
             {
                 // Find the end of the tag

@@ -3,10 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
-
+using System;
 public class PlayerMonitor : MonoBehaviour
 {
     public static PlayerMonitor Instance { get; private set; }
+    public AffinityDatabase affinityDatabase;
+    public SpriteRenderer wizardHat;
+    public SpriteRenderer wizardStaff;
+
     private PlayerState currentState = PlayerState.None;
     private bool isAttacking = false;
     private float attackStateTimer = 0f;
@@ -20,17 +24,12 @@ public class PlayerMonitor : MonoBehaviour
     private Dictionary<SpriteRenderer, Color> originalColors = new Dictionary<SpriteRenderer, Color>();
 
     public bool playerDead = false;
-    // Player Observations
-    private PlayerStats playerStats = new PlayerStats()
-    {
-        HP = 100,
-        Mana = 100,
-        Affinity = PlayerClass.Fire,
-        UnlockedList = new HashSet<int> { 0, 1, 2, 3 },
-        Slots = new int[] { 2, 3, -1, -1 }
-    };
+    private int currGold;
     private float currHealth;
     private int currMana;
+    private StatsService.PlayerStats staticPlayerStats;
+    private List<int> staticSpellSlots;
+    public PlayerStats currPlayerStats;
 
     public SpellDatabase spellDatabase;
     private float attackDuration = 0.5f;
@@ -40,58 +39,204 @@ public class PlayerMonitor : MonoBehaviour
     private float staffGlowDuration = 0.5f;
     private float particleGlowIntensity = 5f;
 
+    public int GetGold()
+    {
+        return currGold;
+    }
+    public void SpendGold(int amount)
+    {
+        currGold -= amount;
+    }
+    public void AddGold(int amount)
+    {
+        currGold += amount;
+    }
+
     // Reset the player monitor state to its initial values
     public void ResetPlayerState()
     {
-        currentState = PlayerState.None;
+        // Get player stats from the backend as a reference point for players stats
+        staticPlayerStats = CampaignManager.Instance.currPlayerStats;
+        staticSpellSlots = CampaignManager.Instance.currSpellSlots;
+        currPlayerStats = new PlayerStats()
+        {
+            HP = 100,
+            Mana = 100,
+            Gold = staticPlayerStats.mana,
+            Affinity = MapAffinity(staticPlayerStats.affinity),
+            Slots = staticSpellSlots,
+        };
         isAttacking = false;
         attackStateTimer = 0f;
         staffAfterState = "";
         playerDead = false;
-        currHealth = playerStats.HP;
-        currMana = playerStats.Mana;
+        currHealth = currPlayerStats.HP;
+        currMana = currPlayerStats.Mana;
+        currGold = currPlayerStats.Gold;
+        currentState = PlayerState.None;
+        SetAffinity(currPlayerStats.Affinity);
         foreach (Animator anim in wizardAnimators)
         {
             anim.Rebind();
         }
         wizardStaffAnimator.Rebind();
         wizardShadowAnimator.Rebind();
-        Debug.Log("PlayerMonitor state reset!");
+    }
+    // Maps the backend affinity to an enmy PlayerClass
+    private static PlayerClass MapAffinity(string affinity)
+    {
+        if (string.IsNullOrEmpty(affinity))
+        {
+            return PlayerClass.None;
+        }
+
+        if (Enum.TryParse<PlayerClass>(affinity, true, out var result))
+        {
+            return result;
+        }
+
+        return PlayerClass.None;
+    }
+    public PlayerClass? GetAffinity()
+    {
+        if (currPlayerStats.Affinity != null)
+            return currPlayerStats.Affinity;
+        return PlayerClass.None;
+
+    }
+    public void SetAffinity(PlayerClass? playerClass)
+    {
+        if (playerClass == null) playerClass = PlayerClass.None;
+        currPlayerStats.Affinity = playerClass;
+        Affinity affinity = affinityDatabase.affinityList.Find(a => a.playerClass == playerClass);
+        wizardHat.sprite = affinity.hat;
+        wizardStaff.sprite = affinity.staff;
+        UpdateSpellSlotsForAffinity();
+        InterfaceManager.Instance?.DrawSlots(currPlayerStats.Slots);
     }
 
+    // Spell slots for affinities goes like: 0-3 base 4-7 fire base,
+    // 8-11 fire advanced, 12-15 water base, 16-19 water advanced,
+    // 20-23 earth base, 24-27 earth base, 28-31 air, 32-35 air advanced
+    public void UpdateSpellSlotsForAffinity()
+    {
+        // No affinity check (just 0, 1, 2, 3, 4)
+        if (currPlayerStats.Affinity == null || currPlayerStats.Affinity == PlayerClass.None)
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                currPlayerStats.Slots[i] = i;
+            }
+            return;
+        }
+
+        // Determine the base values for the current affinity.
+        int basicStart = 0, advancedStart = 0;
+        switch (currPlayerStats.Affinity ?? PlayerClass.None)
+        {
+            case PlayerClass.Fire:
+                basicStart = 4; advancedStart = 8;
+                break;
+            case PlayerClass.Water:
+                basicStart = 12; advancedStart = 16;
+                break;
+            case PlayerClass.Earth:
+                basicStart = 20; advancedStart = 24;
+                break;
+            case PlayerClass.Air:
+                basicStart = 28; advancedStart = 32;
+                break;
+            default:
+                break;
+        }
+
+        for (int i = 0; i < 4; i++)
+        {
+            bool potency = false;
+            switch (i)
+            {
+                case 0:
+                    potency = HasPotencyOne();
+                    break;
+                case 1:
+                    potency = HasPotencyTwo();
+                    break;
+                case 2:
+                    potency = HasPotencyThree();
+                    break;
+                case 3:
+                    potency = HasPotencyFour();
+                    break;
+            }
+
+            if (potency)
+            {
+                currPlayerStats.Slots[i] = advancedStart + i;
+            }
+            else
+            {
+                currPlayerStats.Slots[i] = basicStart + i;
+            }
+        }
+    }
+    // Adds four to get the upgraded spell (position in database + backend)
+    public void SetPotencyOne()
+    {
+        currPlayerStats.Slots[0] += 4;
+        InterfaceManager.Instance?.DrawSlots(currPlayerStats.Slots);
+
+    }
+    public void SetPotencyTwo()
+    {
+        currPlayerStats.Slots[1] += 4;
+        InterfaceManager.Instance?.DrawSlots(currPlayerStats.Slots);
+    }
+    public void SetPotencyThree()
+    {
+        currPlayerStats.Slots[2] += 4;
+        InterfaceManager.Instance?.DrawSlots(currPlayerStats.Slots);
+    }
+    public void SetPotencyFour()
+    {
+        currPlayerStats.Slots[3] += 4;
+        InterfaceManager.Instance?.DrawSlots(currPlayerStats.Slots);
+    }
+    public bool IsAdvancedSpell(int spellId)
+    {
+        bool fireAdvanced = spellId >= 8 && spellId < 12;
+        bool waterAdvanced = spellId >= 16 && spellId < 20;
+        bool earthAdvanced = spellId >= 24 && spellId < 28;
+        bool airAdvanced = spellId >= 32 && spellId < 36;
+        return fireAdvanced || waterAdvanced || earthAdvanced || airAdvanced;
+    }
+    public bool HasPotencyOne()
+    {
+
+        return IsAdvancedSpell(currPlayerStats.Slots[0]);
+
+    }
+    public bool HasPotencyTwo()
+    {
+        return IsAdvancedSpell(currPlayerStats.Slots[1]);
+
+    }
+    public bool HasPotencyThree()
+    {
+        return IsAdvancedSpell(currPlayerStats.Slots[2]);
+
+    }
+    public bool HasPotencyFour()
+    {
+        return IsAdvancedSpell(currPlayerStats.Slots[3]);
+
+    }
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
 
-            // Respectively assign to animator and sprite renderer
-            foreach (Transform child in transform)
-            {
-                GameObject go = child.gameObject;
-                SpriteRenderer sr = go.GetComponent<SpriteRenderer>();
-                spriteRenderers.Add(sr);
-                originalColors[sr] = sr.color;
 
-                Animator anim = go.GetComponent<Animator>();
-                if (go.name == "WizardStaff")
-                {
-                    wizardStaffAnimator = anim;
-                    wizardStaffRenderer = sr;
-
-                }
-                else if (go.name == "WizardShadow")
-                {
-                    wizardShadowAnimator = anim;
-                    continue;
-                }
-                else
-                {
-                    wizardAnimators.Add(anim);
-                }
-            }
-            ResetPlayerState();
         }
         else
         {
@@ -101,25 +246,52 @@ public class PlayerMonitor : MonoBehaviour
 
     void Start()
     {
-        InterfaceManager.Instance?.DrawSlots(playerStats.Slots);
+        // Respectively assign to animator and sprite renderer
+        foreach (Transform child in transform)
+        {
+            GameObject go = child.gameObject;
+            SpriteRenderer sr = go.GetComponent<SpriteRenderer>();
+            if (sr != null)
+            {
+                spriteRenderers.Add(sr);
+                originalColors[sr] = sr.color;
+            }
+
+            Animator anim = go.GetComponent<Animator>();
+            if (go.name == "WizardStaff")
+            {
+                wizardStaffAnimator = anim;
+                wizardStaffRenderer = sr;
+            }
+            else if (go.name == "WizardShadow")
+            {
+                wizardShadowAnimator = anim;
+            }
+            else if (anim != null)
+            {
+                wizardAnimators.Add(anim);
+            }
+        }
+        ResetPlayerState();
+        InterfaceManager.Instance?.DrawSlots(currPlayerStats.Slots);
     }
 
-    public int[] GetPlayerSlots()
+    public List<int> GetPlayerSlots()
     {
-        return playerStats.Slots;
+        return currPlayerStats.Slots;
     }
     public void BoostMana(int amount)
     {
         currMana += amount;
-        currMana = Mathf.Clamp(currMana, 0, playerStats.Mana);
-        InterfaceManager.Instance.DrawMana(playerStats.Mana, currMana);
+        currMana = Mathf.Clamp(currMana, 0, currPlayerStats.Mana);
+        InterfaceManager.Instance.DrawMana(currPlayerStats.Mana, currMana);
     }
     public void CastSpell(int slotId)
     {
-        if (playerDead) return;
+        if (playerDead || GameManager.Instance.IsFrozen) return;
 
         // Find spell
-        SpellData spellData = spellDatabase.spellList.Find(s => s.id == playerStats.Slots[slotId]);
+        SpellData spellData = spellDatabase.spellList.Find(s => s.id == currPlayerStats.Slots[slotId]);
         if (spellData == null)
         {
             Debug.LogError("Spell with ID " + slotId + " not found in the database!");
@@ -134,8 +306,8 @@ public class PlayerMonitor : MonoBehaviour
         }
 
         currMana -= spellData.manaCost;
-        currMana = Mathf.Clamp(currMana, 0, playerStats.Mana);
-        InterfaceManager.Instance.DrawMana(playerStats.Mana, currMana);
+        currMana = Mathf.Clamp(currMana, 0, currPlayerStats.Mana);
+        InterfaceManager.Instance.DrawMana(currPlayerStats.Mana, currMana);
 
         InterfaceManager.Instance.SpellCooldown(slotId, 2f);
 
@@ -143,7 +315,11 @@ public class PlayerMonitor : MonoBehaviour
         isAttacking = true;
         attackStateTimer = 0;
         SetStaffAnim("IsAttack");
-
+        // If in boss fight hide spells
+        if (LevelManager.Instance.bossCSFlag)
+        {
+            InterfaceManager.Instance.HideSpells();
+        }
         // Spawn the spell
         Quaternion prefabRotation = spellData.prefab.transform.rotation;
         Vector3 prefabPosition = spellData.prefab.transform.position;
@@ -168,7 +344,7 @@ public class PlayerMonitor : MonoBehaviour
             psRenderer.material.EnableKeyword("_EMISSION");
 
             // Compute the final color based on Affinity and intensity
-            Color finalParticleColor = GetAffinityColor(playerStats.Affinity) * particleGlowIntensity;
+            Color finalParticleColor = GetAffinityColor(currPlayerStats.Affinity) * particleGlowIntensity;
             psRenderer.material.SetColor("_EmissionColor", finalParticleColor);
         }
 
@@ -186,8 +362,8 @@ public class PlayerMonitor : MonoBehaviour
         StartCoroutine(FlashCoroutine());
 
         currHealth -= damage;
-        currHealth = Mathf.Clamp(currHealth, 0, playerStats.HP);
-        InterfaceManager.Instance.DrawHealth(playerStats.HP, currHealth);
+        currHealth = Mathf.Clamp(currHealth, 0, currPlayerStats.HP);
+        InterfaceManager.Instance.DrawHealth(currPlayerStats.HP, currHealth);
         if (currHealth <= 0 && !playerDead)
         {
             WizardDeath();
@@ -230,7 +406,11 @@ public class PlayerMonitor : MonoBehaviour
     }
     void Update()
     {
-        // Attacking  duration.
+        if (GameManager.Instance.IsFrozen)
+        {
+            return;
+        }
+        // Attacking duration.
         if (isAttacking)
         {
             attackStateTimer += Time.deltaTime;
@@ -256,7 +436,7 @@ public class PlayerMonitor : MonoBehaviour
             wizardStaffRenderer.material.EnableKeyword("_EMISSION");
 
             // Calculate the emission color from the player's Affinity
-            Color targetEmission = GetAffinityColor(playerStats.Affinity) * staffGlowIntensity;
+            Color targetEmission = GetAffinityColor(currPlayerStats.Affinity) * staffGlowIntensity;
 
             // Animate to the target color, then back to black
             wizardStaffRenderer.material.DOColor(targetEmission, "_EmissionColor", staffGlowDuration)
@@ -277,7 +457,8 @@ public class PlayerMonitor : MonoBehaviour
     }
     void WizardDeath()
     {
-        InterfaceManager.Instance?.DrawGameOver();
+        CampaignManager.Instance.GameOver();
+        InterfaceManager.Instance.DrawGameOver();
         foreach (Animator wizAnim in wizardAnimators)
         {
             wizAnim.SetTrigger("Death");
@@ -286,13 +467,13 @@ public class PlayerMonitor : MonoBehaviour
         wizardShadowAnimator.SetTrigger("Death");
         playerDead = true;
     }
-    private Color GetAffinityColor(PlayerClass affinity)
+    private Color GetAffinityColor(PlayerClass? affinity)
     {
         switch (affinity)
         {
             case PlayerClass.Fire:
                 // Fiery red/orange
-                return new Color(1f, 0.45f, 0f);
+                return new Color(1f, 0, 0f);
             case PlayerClass.Water:
                 // Sky blue
                 return new Color(0.53f, 0.81f, 0.98f);

@@ -48,6 +48,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df1c3006a5f224677ab8fd745849cdaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  affinityDatabase: {fileID: 11400000, guid: e29d50bd1eb1a437e983d321a897232b, type: 2}
+  wizardHat: {fileID: 6345737723791791340}
+  wizardStaff: {fileID: 3202267216070756831}
   playerDead: 0
   spellDatabase: {fileID: 11400000, guid: ed7fd2257714c47539eb6e25c5dde527, type: 2}
 --- !u!1 &2283940199192015934
@@ -251,7 +254,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2000
-  m_Sprite: {fileID: -3874928171555066949, guid: 1132fd4a7dfb646d383cd16bc36d1648, type: 3}
+  m_Sprite: {fileID: -441858130, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -374,7 +377,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2000
-  m_Sprite: {fileID: -1589676655, guid: 16d808737cea846449c102f319c997d4, type: 3}
+  m_Sprite: {fileID: -120713605, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

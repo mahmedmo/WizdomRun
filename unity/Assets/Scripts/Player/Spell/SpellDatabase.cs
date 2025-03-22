@@ -19,5 +19,4 @@ public class SpellData
     public Sprite icon;
     public GameObject prefab;
 
-
 }

@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: 38be2d7b73dafdf4a9a7866ca9e2b14e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5187500139020514547
+    second: Frozen_Widow_Attack_0
+  - first:
+      213: 5422842605306933948
+    second: Frozen_Widow_Attack_1
+  - first:
+      213: 344730521346504404
+    second: Frozen_Widow_Attack_2
+  - first:
+      213: -6790996586532940264
+    second: Frozen_Widow_Attack_3
+  - first:
+      213: -8538572612086505417
+    second: Frozen_Widow_Attack_4
+  - first:
+      213: -2774172280611362194
+    second: Frozen_Widow_Attack_5
+  - first:
+      213: 9084047398756245303
+    second: Frozen_Widow_Attack_6
+  - first:
+      213: -7320686568099805133
+    second: Frozen_Widow_Attack_7
+  - first:
+      213: -7328741141855663621
+    second: Frozen_Widow_Attack_8
+  - first:
+      213: 7015012462366879751
+    second: Frozen_Widow_Attack_9
+  - first:
+      213: 6864143317232505785
+    second: Frozen_Widow_Attack_10
+  - first:
+      213: -7116189024334529249
+    second: Frozen_Widow_Attack_11
+  - first:
+      213: 3931488624364581390
+    second: Frozen_Widow_Attack_12
+  - first:
+      213: 6871313236778892372
+    second: Frozen_Widow_Attack_13
+  - first:
+      213: 781064312984096298
+    second: Frozen_Widow_Attack_14
+  - first:
+      213: -2742908686761528796
+    second: Frozen_Widow_Attack_15
+  - first:
+      213: 2630866120791260306
+    second: Frozen_Widow_Attack_16
+  - first:
+      213: -6325939295437029036
+    second: Frozen_Widow_Attack_17
+  - first:
+      213: 5302598660052223306
+    second: Frozen_Widow_Attack_18
+  - first:
+      213: 9163872546306284369
+    second: Frozen_Widow_Attack_19
+  - first:
+      213: 130316384201139785
+    second: Frozen_Widow_Attack_20
+  - first:
+      213: 2695847800770364382
+    second: Frozen_Widow_Attack_21
+  - first:
+      213: -6925982698244191455
+    second: Frozen_Widow_Attack_22
+  - first:
+      213: 5996445963916529547
+    second: Frozen_Widow_Attack_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Frozen_Widow_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 434
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f47b9254e3bdf740800000000000000
+      internalID: 5187500139020514547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_Widow_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 434
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb27c2a3e9ec14b40800000000000000
+      internalID: 5422842605306933948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_Widow_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 435
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6f71c259ab8c400800000000000000
+      internalID: 344730521346504404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_Widow_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 435
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81650d4b59881c1a0800000000000000
+      internalID: -6790996586532940264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_Widow_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 435
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73064b7d275e08980800000000000000
+      internalID: -8538572612086505417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frozen_Widow_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 434
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6aac6c42092089d0800000000000000
+      internalID: -2774172280611362194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c2f902dfaf9332c418f7bd9122b8365d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Frozen_Widow_Attack_0: 5187500139020514547
+      Frozen_Widow_Attack_1: 5422842605306933948
+      Frozen_Widow_Attack_10: 6864143317232505785
+      Frozen_Widow_Attack_11: -7116189024334529249
+      Frozen_Widow_Attack_12: 3931488624364581390
+      Frozen_Widow_Attack_13: 6871313236778892372
+      Frozen_Widow_Attack_14: 781064312984096298
+      Frozen_Widow_Attack_15: -2742908686761528796
+      Frozen_Widow_Attack_16: 2630866120791260306
+      Frozen_Widow_Attack_17: -6325939295437029036
+      Frozen_Widow_Attack_18: 5302598660052223306
+      Frozen_Widow_Attack_19: 9163872546306284369
+      Frozen_Widow_Attack_2: 344730521346504404
+      Frozen_Widow_Attack_20: 130316384201139785
+      Frozen_Widow_Attack_21: 2695847800770364382
+      Frozen_Widow_Attack_22: -6925982698244191455
+      Frozen_Widow_Attack_23: 5996445963916529547
+      Frozen_Widow_Attack_3: -6790996586532940264
+      Frozen_Widow_Attack_4: -8538572612086505417
+      Frozen_Widow_Attack_5: -2774172280611362194
+      Frozen_Widow_Attack_6: 9084047398756245303
+      Frozen_Widow_Attack_7: -7320686568099805133
+      Frozen_Widow_Attack_8: -7328741141855663621
+      Frozen_Widow_Attack_9: 7015012462366879751
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

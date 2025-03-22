@@ -1,0 +1,1281 @@
+fileFormatVersion: 2
+guid: ac3b3bec88e7d4558b46f2cffc21b05b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4485113168533781666
+    second: LavaTiles 1_0
+  - first:
+      213: 7561528994926205572
+    second: LavaTiles 1_1
+  - first:
+      213: 3923912331221415966
+    second: LavaTiles 1_2
+  - first:
+      213: -5596269936677679408
+    second: LavaTiles 1_3
+  - first:
+      213: -2972884507583124790
+    second: LavaTiles 1_4
+  - first:
+      213: 3759658993590944582
+    second: LavaTiles 1_5
+  - first:
+      213: 54560483587588258
+    second: LavaTiles 1_6
+  - first:
+      213: -3658874802315646272
+    second: LavaTiles 1_7
+  - first:
+      213: 8073766056177165704
+    second: LavaTiles 1_8
+  - first:
+      213: 7640726361457002928
+    second: LavaTiles 1_9
+  - first:
+      213: -4333222946769040406
+    second: LavaTiles 1_10
+  - first:
+      213: -8098479104168213877
+    second: LavaTiles 1_11
+  - first:
+      213: 4092228687410111521
+    second: LavaTiles 1_12
+  - first:
+      213: -6337901967115971846
+    second: LavaTiles 1_13
+  - first:
+      213: 7735073816197636365
+    second: LavaTiles 1_14
+  - first:
+      213: 7328128313663002437
+    second: LavaTiles 1_15
+  - first:
+      213: 2141249228348899455
+    second: LavaTiles 1_16
+  - first:
+      213: 6135178510449639365
+    second: LavaTiles 1_17
+  - first:
+      213: -2096418625522792811
+    second: LavaTiles 1_18
+  - first:
+      213: -2416713911413524433
+    second: LavaTiles 1_19
+  - first:
+      213: 8440997423611544324
+    second: LavaTiles 1_20
+  - first:
+      213: 1029470863983537798
+    second: LavaTiles 1_21
+  - first:
+      213: -4351789983234080014
+    second: LavaTiles 1_22
+  - first:
+      213: -3046700417152569159
+    second: LavaTiles 1_23
+  - first:
+      213: -5412077116990044403
+    second: LavaTiles 1_24
+  - first:
+      213: -7480136505618613766
+    second: LavaTiles 1_25
+  - first:
+      213: -1894097137095811589
+    second: LavaTiles 1_26
+  - first:
+      213: -3549989585111937339
+    second: LavaTiles 1_27
+  - first:
+      213: 7466815517411813591
+    second: LavaTiles 1_28
+  - first:
+      213: -1063940175171505761
+    second: LavaTiles 1_29
+  - first:
+      213: -6747702782634792606
+    second: LavaTiles 1_30
+  - first:
+      213: -6425773411033665109
+    second: LavaTiles 1_31
+  - first:
+      213: 7530173731935653136
+    second: LavaTiles 1_32
+  - first:
+      213: -1771665024448359214
+    second: LavaTiles 1_33
+  - first:
+      213: 7322177129038208525
+    second: LavaTiles 1_34
+  - first:
+      213: 2445711354312577106
+    second: LavaTiles 1_35
+  - first:
+      213: 1009254696972641793
+    second: LavaTiles 1_36
+  - first:
+      213: 3201413989775434679
+    second: LavaTiles 1_37
+  - first:
+      213: 9091692485918437597
+    second: LavaTiles 1_38
+  - first:
+      213: 2655447795425246012
+    second: LavaTiles 1_39
+  - first:
+      213: -1836026544678710536
+    second: LavaTiles 1_40
+  - first:
+      213: 3423238549324027413
+    second: LavaTiles 1_41
+  - first:
+      213: 1564876675417732070
+    second: LavaTiles 1_42
+  - first:
+      213: 6472806896734632960
+    second: LavaTiles 1_43
+  - first:
+      213: -4222046334885048668
+    second: LavaTiles 1_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LavaTiles 1_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 223
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e530e1c165da1c1c0800000000000000
+      internalID: -4485113168533781666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 383
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a9465ee82ffe860800000000000000
+      internalID: 7561528994926205572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_2
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 383
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e183a38b979847630800000000000000
+      internalID: 3923912331221415966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_3
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 383
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de0125942e0652b0800000000000000
+      internalID: -5596269936677679408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_4
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 383
+        width: 114
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acaee379a413eb6d0800000000000000
+      internalID: -2972884507583124790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 303
+        width: 162
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64347956fedfc2430800000000000000
+      internalID: 3759658993590944582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_6
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 319
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a003038876d1c000800000000000000
+      internalID: 54560483587588258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_7
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 319
+        width: 34
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca295ab0c0193dc0800000000000000
+      internalID: -3658874802315646272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_8
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 223
+        width: 114
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885eb029377cb0070800000000000000
+      internalID: 8073766056177165704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_9
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 223
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b98b98b420590a60800000000000000
+      internalID: 7640726361457002928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_10
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 271
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb824530bc4dd3c0800000000000000
+      internalID: -4333222946769040406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_11
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 271
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82412f892c6c9f80800000000000000
+      internalID: -8098479104168213877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_12
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 287
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1242eb44f448ac830800000000000000
+      internalID: 4092228687410111521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_13
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 223
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af29dc49dbf3b08a0800000000000000
+      internalID: -6337901967115971846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_14
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 223
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01a2e557a0885b60800000000000000
+      internalID: 7735073816197636365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 239
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5479d5c00edb2b560800000000000000
+      internalID: 7328128313663002437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_16
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 89
+        width: 274
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70c05f04de37bd10800000000000000
+      internalID: 2141249228348899455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_17
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 143
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cff5f48958842550800000000000000
+      internalID: 6135178510449639365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_18
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 159
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596833d0e5608e2e0800000000000000
+      internalID: -2096418625522792811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_19
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 159
+        width: 46
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28b37a708b167ed0800000000000000
+      internalID: -2416713911413524433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_20
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 111
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4038a583f62742570800000000000000
+      internalID: 8440997423611544324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_21
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 111
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e6a52eb4a694e00800000000000000
+      internalID: 1029470863983537798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_22
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 111
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f2ca3821165b93c0800000000000000
+      internalID: -4351789983234080014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_23
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 111
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0369adc12f7b5d0800000000000000
+      internalID: -3046700417152569159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_24
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 45
+        width: 66
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07c9c8598074e4b0800000000000000
+      internalID: -5412077116990044403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_25
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 63
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9bb27ca77313890800000000000000
+      internalID: -7480136505618613766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_26
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 45
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfdd15d60b0d6b5e0800000000000000
+      internalID: -1894097137095811589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_27
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 23
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce011fe747ebbec0800000000000000
+      internalID: -3549989585111937339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_28
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 65
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8a4b6f6257f9760800000000000000
+      internalID: 7466815517411813591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_29
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 31
+        width: 7
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91b2a43c002c31f0800000000000000
+      internalID: -1063940175171505761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_30
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 31
+        width: 7
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269632fe1185b52a0800000000000000
+      internalID: -6747702782634792606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_31
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 71
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1303cb02113d6a0800000000000000
+      internalID: -6425773411033665109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_32
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 65
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d8005dc1d808860800000000000000
+      internalID: 7530173731935653136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_33
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 50
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d495c40c08c967e0800000000000000
+      internalID: -1771665024448359214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_34
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 31
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0edfc6ed499d9560800000000000000
+      internalID: 7322177129038208525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_35
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250d0f0d489e0f120800000000000000
+      internalID: 2445711354312577106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_36
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 47
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106e2f4bcc7910e00800000000000000
+      internalID: 1009254696972641793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_37
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 47
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3e787df05bd6c20800000000000000
+      internalID: 3201413989775434679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_38
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 55
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0b146652e2c2e70800000000000000
+      internalID: 9091692485918437597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_39
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 47
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b7ae563bb0ad420800000000000000
+      internalID: 2655447795425246012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_40
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 47
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2dc36d59f1586e0800000000000000
+      internalID: -1836026544678710536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_41
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 49
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516d1e1d259c18f20800000000000000
+      internalID: 3423238549324027413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_42
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 31
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e371939b0f87b510800000000000000
+      internalID: 1564876675417732070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_43
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 39
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cf093049704d950800000000000000
+      internalID: 6472806896734632960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LavaTiles 1_44
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 33
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aecfef4a374865c0800000000000000
+      internalID: -4222046334885048668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,16 +1,16 @@
 using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 
 public class UserManager : MonoBehaviour
 {
     public static UserManager Instance { get; private set; }
 
-    // The currently logged in user.
     private User currentUser;
     public User CurrentUser { get { return currentUser; } }
 
-    // Services for user and campaign endpoints.
     private UserService userService;
     private CampaignService campaignService;
 
@@ -21,7 +21,6 @@ public class UserManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            // Get or add the UserService component.
             userService = GetComponent<UserService>();
 
             campaignService = GetComponent<CampaignService>();
@@ -33,42 +32,35 @@ public class UserManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    /// <summary>
-    /// Loads the user data and then loads their campaigns.
-    /// </summary>
-    /// <param name="userID">The user's ID</param>
+
+    // Calls an async function to gather user and campaign data
     public void LoadUser(string userId)
     {
         StartCoroutine(userService.GetUser(userId, AuthManager.Instance.AuthToken, OnUserLoaded, OnUserLoadError));
     }
+
     public void Logout()
     {
         currentUser = null;
         Destroy(gameObject);
     }
 
-    // Called when the user is successfully loaded.
     private void OnUserLoaded(UserService.User userResponse)
     {
-        if (userResponse != null)
-        {
-            // Populate our User object.
-            currentUser = new User()
-            {
-                UserID = userResponse.userID,
-                ScreenName = userResponse.screenName,
-                CampaignList = new List<Campaign>()
-            };
+        if (userResponse == null) return;
 
-            Debug.Log("User loaded: " + currentUser.ScreenName);
-            Debug.Log("User loaded: " + currentUser.UserID);
-            // Now load the user's campaigns.
-            StartCoroutine(campaignService.GetCampaigns(currentUser.UserID, AuthManager.Instance.AuthToken, OnCampaignsLoaded, OnCampaignsError));
-        }
-        else
+        currentUser = new User()
         {
-            Debug.LogError("User response was null.");
-        }
+            UserID = userResponse.userID,
+            ScreenName = userResponse.screenName,
+            CampaignList = new List<Campaign>()
+        };
+
+        Debug.Log("User loaded: " + currentUser.ScreenName);
+        Debug.Log("User loaded: " + currentUser.UserID);
+
+        StartCoroutine(campaignService.GetCampaigns(currentUser.UserID, AuthManager.Instance.AuthToken, OnCampaignsLoaded, OnCampaignsError));
+
     }
 
     private void OnUserLoadError(string error)
@@ -76,21 +68,20 @@ public class UserManager : MonoBehaviour
         Debug.LogError("Error loading user: " + error);
     }
 
-    // Called when the campaigns are loaded.
-    private void OnCampaignsLoaded(List<CampaignService.CampaignDBO> campaigns)
+    public event System.Action OnCampaignsLoadedEvent;
+
+    private void OnCampaignsLoaded(List<CampaignService.Campaign> campaigns)
     {
         currentUser.CampaignList = new List<Campaign>();
 
-        // Convert each campaign from the service response into our UserManager Campaign type.
         foreach (var camp in campaigns)
         {
             Campaign campaign = new Campaign()
             {
                 CampaignID = camp.campaignID,
-                LastUpdated = camp.lastUpdated,
+                LastUpdated = ConvertDateTime(camp.lastUpdated),
                 UserID = camp.userID,
                 Title = camp.title,
-                // Convert the string campaignLength (from the API) into our CampaignLength enum.
                 CampaignLength = (CampaignLength)System.Enum.Parse(typeof(CampaignLength), camp.campaignLength, true),
                 CurrLevel = camp.currLevel,
                 RemainingTries = camp.remainingTries,
@@ -101,8 +92,27 @@ public class UserManager : MonoBehaviour
             currentUser.CampaignList.Add(campaign);
         }
         Debug.Log("Campaigns loaded: " + currentUser.CampaignList.Count);
+
+
+        OnCampaignsLoadedEvent?.Invoke();
     }
 
+    // Helper method to convert backend's date value to local time
+    private string ConvertDateTime(string dateTime)
+    {
+        DateTime utcDateTime = DateTime.ParseExact(dateTime,
+                                                   "ddd, dd MMM yyyy HH:mm:ss 'GMT'",
+                                                   CultureInfo.InvariantCulture,
+                                                   DateTimeStyles.AssumeUniversal);
+
+        // Convert to local timezone
+        DateTime localDateTime = utcDateTime.ToLocalTime();
+
+        // Force MM/DD/YYYY h:mm tt format (ensuring slashes and no leading zero in hours)
+        string formattedDateTime = localDateTime.ToString("MM/dd/yyyy h:mm tt", CultureInfo.InvariantCulture);
+
+        return formattedDateTime;
+    }
     private void OnCampaignsError(string error)
     {
         Debug.LogError("Error loading campaigns: " + error);

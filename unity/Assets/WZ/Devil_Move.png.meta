@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 5d8cbcad66653104893b0be9fee20208
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7297157356697048334
+    second: Devil_Move_0
+  - first:
+      213: 7675888131788569128
+    second: Devil_Move_1
+  - first:
+      213: 4041384479700566170
+    second: Devil_Move_2
+  - first:
+      213: -6399671711086769967
+    second: Devil_Move_3
+  - first:
+      213: 8380137046778234882
+    second: Devil_Move_4
+  - first:
+      213: 5091969235316931767
+    second: Devil_Move_5
+  - first:
+      213: -2358823037343721577
+    second: Devil_Move_6
+  - first:
+      213: 181765537712255950
+    second: Devil_Move_7
+  - first:
+      213: 8341852640756463498
+    second: Devil_Move_8
+  - first:
+      213: 7762557295963654603
+    second: Devil_Move_9
+  - first:
+      213: 6333075227933860579
+    second: Devil_Move_10
+  - first:
+      213: 1878532443276668820
+    second: Devil_Move_11
+  - first:
+      213: 7722408516406356661
+    second: Devil_Move_12
+  - first:
+      213: -5764636245245700513
+    second: Devil_Move_13
+  - first:
+      213: 3329313943396693031
+    second: Devil_Move_14
+  - first:
+      213: -6874059324227472976
+    second: Devil_Move_15
+  - first:
+      213: 3968027411753328935
+    second: Devil_Move_16
+  - first:
+      213: -4258881729609986841
+    second: Devil_Move_17
+  - first:
+      213: -2380176061321527183
+    second: Devil_Move_18
+  - first:
+      213: -3387847423430859809
+    second: Devil_Move_19
+  - first:
+      213: -1956246594130912936
+    second: Devil_Move_20
+  - first:
+      213: 4668147545929696506
+    second: Devil_Move_21
+  - first:
+      213: -2709883015465387030
+    second: Devil_Move_22
+  - first:
+      213: -3481905087452195297
+    second: Devil_Move_23
+  - first:
+      213: 5352780638908309611
+    second: Devil_Move_24
+  - first:
+      213: 8093639430503249821
+    second: Devil_Move_25
+  - first:
+      213: 44901795325635067
+    second: Devil_Move_26
+  - first:
+      213: -7026951639080493417
+    second: Devil_Move_27
+  - first:
+      213: -2531187075356833096
+    second: Devil_Move_28
+  - first:
+      213: 2515001524366540619
+    second: Devil_Move_29
+  - first:
+      213: 3563094296039708627
+    second: Devil_Move_30
+  - first:
+      213: 8457843995867447524
+    second: Devil_Move_31
+  - first:
+      213: -4260010797198385663
+    second: Devil_Move_32
+  - first:
+      213: -3876145289388976250
+    second: Devil_Move_33
+  - first:
+      213: -8526105714998642252
+    second: Devil_Move_34
+  - first:
+      213: -7108801406272605398
+    second: Devil_Move_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Devil_Move_0
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 431
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e055e0434f5b44560800000000000000
+      internalID: 7297157356697048334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 431
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82af4e6569b368a60800000000000000
+      internalID: 7675888131788569128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 431
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a904459a5c1e51830800000000000000
+      internalID: 4041384479700566170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_3
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 431
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d88e855c7ccf27a0800000000000000
+      internalID: -6399671711086769967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_4
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 431
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208ce428e3a3c4470800000000000000
+      internalID: 8380137046778234882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_5
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 431
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc78468a0f4aa640800000000000000
+      internalID: 5091969235316931767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_6
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 313
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7979e13f1f6c34fd0800000000000000
+      internalID: -2358823037343721577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 303
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec33fb32bc2c58200800000000000000
+      internalID: 181765537712255950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_8
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 313
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8771fc97c634c370800000000000000
+      internalID: 8341852640756463498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_9
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 303
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9c78e9bb42abb60800000000000000
+      internalID: 7762557295963654603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_10
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 313
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2e2d0ad5a93e750800000000000000
+      internalID: 6333075227933860579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_11
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 303
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f6d84ed43e11a10800000000000000
+      internalID: 1878532443276668820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_12
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 312
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba2ade61a18b2b60800000000000000
+      internalID: 7722408516406356661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_13
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 303
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56d9c690e5efffa0800000000000000
+      internalID: -5764636245245700513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_14
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 312
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7243aed5469143e20800000000000000
+      internalID: 3329313943396693031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_15
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 303
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1b576077f6a90a0800000000000000
+      internalID: -6874059324227472976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_16
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 312
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721e19058e3411730800000000000000
+      internalID: 3968027411753328935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_17
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 303
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec0236a1a965e4c0800000000000000
+      internalID: -4258881729609986841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_18
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 175
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170ca02ab7ae7fed0800000000000000
+      internalID: -2380176061321527183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_19
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 185
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd36e2dc7b2fbf0d0800000000000000
+      internalID: -3387847423430859809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_20
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 175
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85952c756140ad4e0800000000000000
+      internalID: -1956246594130912936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_21
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 185
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4404ac57798c040800000000000000
+      internalID: 4668147545929696506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_22
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 175
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb325841cf846ad0800000000000000
+      internalID: -2709883015465387030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_23
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 185
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1659c855c9cdafc0800000000000000
+      internalID: -3481905087452195297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_24
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 175
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60e7be71a5e84a40800000000000000
+      internalID: 5352780638908309611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_25
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 184
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97bd3b1e22625070800000000000000
+      internalID: 8093639430503249821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_26
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 175
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf96928e1f58f9000800000000000000
+      internalID: 44901795325635067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_27
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 184
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e12c2f6b04b7e90800000000000000
+      internalID: -7026951639080493417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_28
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 175
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bacb4904ca6fdcd0800000000000000
+      internalID: -2531187075356833096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_29
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 184
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ffe65bf8417e220800000000000000
+      internalID: 2515001524366540619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_30
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 47
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7daa85267a27130800000000000000
+      internalID: 3563094296039708627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_31
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 47
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0895b7d4c406570800000000000000
+      internalID: 8457843995867447524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_32
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 47
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e59ad10c661e4c0800000000000000
+      internalID: -4260010797198385663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_33
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 47
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6879a20656a253ac0800000000000000
+      internalID: -3876145289388976250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_34
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 47
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9f31486003da980800000000000000
+      internalID: -8526105714998642252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Move_35
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 47
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23f258f8c6785d90800000000000000
+      internalID: -7108801406272605398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Devil_Move_0: 7297157356697048334
+      Devil_Move_1: 7675888131788569128
+      Devil_Move_10: 6333075227933860579
+      Devil_Move_11: 1878532443276668820
+      Devil_Move_12: 7722408516406356661
+      Devil_Move_13: -5764636245245700513
+      Devil_Move_14: 3329313943396693031
+      Devil_Move_15: -6874059324227472976
+      Devil_Move_16: 3968027411753328935
+      Devil_Move_17: -4258881729609986841
+      Devil_Move_18: -2380176061321527183
+      Devil_Move_19: -3387847423430859809
+      Devil_Move_2: 4041384479700566170
+      Devil_Move_20: -1956246594130912936
+      Devil_Move_21: 4668147545929696506
+      Devil_Move_22: -2709883015465387030
+      Devil_Move_23: -3481905087452195297
+      Devil_Move_24: 5352780638908309611
+      Devil_Move_25: 8093639430503249821
+      Devil_Move_26: 44901795325635067
+      Devil_Move_27: -7026951639080493417
+      Devil_Move_28: -2531187075356833096
+      Devil_Move_29: 2515001524366540619
+      Devil_Move_3: -6399671711086769967
+      Devil_Move_30: 3563094296039708627
+      Devil_Move_31: 8457843995867447524
+      Devil_Move_32: -4260010797198385663
+      Devil_Move_33: -3876145289388976250
+      Devil_Move_34: -8526105714998642252
+      Devil_Move_35: -7108801406272605398
+      Devil_Move_4: 8380137046778234882
+      Devil_Move_5: 5091969235316931767
+      Devil_Move_6: -2358823037343721577
+      Devil_Move_7: 181765537712255950
+      Devil_Move_8: 8341852640756463498
+      Devil_Move_9: 7762557295963654603
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

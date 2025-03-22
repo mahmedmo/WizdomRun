@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 157e1aa531f244ae0b33fd2042616203, type: 3}
+  m_Name: MusicDatabase
+  m_EditorClassIdentifier: 
+  levelMusics:
+  - level: 1
+    normalMusic: {fileID: 8300000, guid: 0bdcb873d8e4c429b9debbf4831c4b32, type: 3}
+    bossMusic: {fileID: 8300000, guid: 58fc9bc34b2b04b01bbb0243d7d59b65, type: 3}
+  - level: 2
+    normalMusic: {fileID: 8300000, guid: 80ef4834cfcb74261bb6f7456168ea9b, type: 3}
+    bossMusic: {fileID: 8300000, guid: 8890d5832b69b4b6ab160f2fa537c61c, type: 3}
+  - level: 3
+    normalMusic: {fileID: 8300000, guid: 5d1238b81473b4b61b4230e499779097, type: 3}
+    bossMusic: {fileID: 8300000, guid: d77347bf91b25403b9d92c8fba0dab36, type: 3}
+  - level: 4
+    normalMusic: {fileID: 8300000, guid: 6a49c257355c344d8a0f109b86ddd810, type: 3}
+    bossMusic: {fileID: 8300000, guid: 9d7d3da103ddc40b381c61b95dc22f25, type: 3}
+  - level: 5
+    normalMusic: {fileID: 8300000, guid: ee7c645b960a0476a9706eaae14f829c, type: 3}
+    bossMusic: {fileID: 8300000, guid: 968c3645272b14b62b0db5629a9ca007, type: 3}
+  - level: 6
+    normalMusic: {fileID: 8300000, guid: 72ea7eac00ce1453bb29309d29e223d3, type: 3}
+    bossMusic: {fileID: 8300000, guid: 48454b2b2f9c84f3face373b5b3b16c7, type: 3}
+  - level: 7
+    normalMusic: {fileID: 8300000, guid: 45a91cc30743a4155b21bd94d5f52633, type: 3}
+    bossMusic: {fileID: 8300000, guid: 7f8f3c2fa895e47968fcdae91fe5501d, type: 3}
+  - level: 8
+    normalMusic: {fileID: 8300000, guid: 9fde710b2ad9c4fc1909e8f7b72c4f5b, type: 3}
+    bossMusic: {fileID: 8300000, guid: 737cb625298214fffafddc4e1815a6f9, type: 3}
+  - level: 9
+    normalMusic: {fileID: 8300000, guid: e674853c93e984080a7ada30d2f8efba, type: 3}
+    bossMusic: {fileID: 8300000, guid: 40877b808da884d3bb961064d55a01e7, type: 3}
+  - level: 10
+    normalMusic: {fileID: 8300000, guid: df4156af0f29641cfb14a1d5a43d72d3, type: 3}
+    bossMusic: {fileID: 8300000, guid: 5a35fcead05874eaea93c2f59c0006a6, type: 3}

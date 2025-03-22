@@ -8,9 +8,7 @@ public class BaseService : MonoBehaviour
 {
     protected const string baseUrl = "https://wizdomrun.onrender.com";
 
-    /// <summary>
-    /// Helper method to send a UnityWebRequest and return the response text.
-    /// </summary>
+    // Template Unity web request
     protected IEnumerator SendRequest(UnityWebRequest request, System.Action<string> onSuccess, System.Action<string> onError)
     {
         yield return request.SendWebRequest();

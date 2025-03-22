@@ -14,6 +14,33 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HFLevel.unity
     guid: 358f0e0ef30a94532af9bd195ece49dc
+  - enabled: 1
+    path: Assets/Scenes/BeachLevel.unity
+    guid: 5a909c34c3a290e4b86d0c9c7ed7a143
+  - enabled: 1
+    path: Assets/Scenes/CaveLevel.unity
+    guid: c58dd3ca547701b4786c578e6e8a67c7
+  - enabled: 1
+    path: Assets/Scenes/CorruptionLevel.unity
+    guid: d894c6ebdcc71c94280687e9aa60fd38
+  - enabled: 1
+    path: Assets/Scenes/DesertLevel.unity
+    guid: 0443bc6e10695c94eb81f90e019e9cab
+  - enabled: 1
+    path: Assets/Scenes/EnchantedLevel.unity
+    guid: 92d26eceeca8b284480cc2cb59808219
+  - enabled: 1
+    path: Assets/Scenes/FrozenLevel.unity
+    guid: 314eb66602519bf4189bdb5262c4136d
+  - enabled: 1
+    path: Assets/Scenes/GraveLevel.unity
+    guid: 87203256952a6dc4db91a4615bc43653
+  - enabled: 1
+    path: Assets/Scenes/LavaLevel.unity
+    guid: 094f4510263590a469070528b30e6e17
+  - enabled: 1
+    path: Assets/Scenes/SkyLevel.unity
+    guid: d4934378f5a89e34f82609217a08ad38
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

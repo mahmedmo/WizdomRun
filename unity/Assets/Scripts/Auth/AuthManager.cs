@@ -1,16 +1,15 @@
 using UnityEngine;
 using Firebase;
 using Firebase.Auth;
+using System.Collections;
 
 public class AuthManager : MonoBehaviour
 {
     public static AuthManager Instance { get; private set; }
     private string userId;
     private string authToken;
-
     public string UserId { get { return userId; } }
-    public string AuthToken { get { return authToken; } } // Fixed getter
-
+    public string AuthToken { get { return authToken; } }
     private AuthService authService;
 
     void Awake()
@@ -19,6 +18,7 @@ public class AuthManager : MonoBehaviour
         {
             Instance = this;
             userId = null;
+            Firebase.FirebaseApp.LogLevel = Firebase.LogLevel.Error;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -26,55 +26,57 @@ public class AuthManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    void Start()
+    {
+        authService = gameObject.GetComponent<AuthService>();
+    }
+
+    // Clears credentials
     public void Logout()
     {
         userId = null;
         authToken = null;
     }
-    void Start()
-    {
-        authService = gameObject.GetComponent<AuthService>();
-        if (authService == null)
-        {
-            Debug.LogError("AuthService not found in the scene!");
-        }
-    }
 
     public void Signup(string name, string email, string password)
     {
-        Debug.Log("AuthManager: Initiating signup for " + email);
         authService.Signup(email, password, name);
     }
 
     public void Login(string email, string password)
     {
-        Debug.Log("AuthManager: Initiating login for " + email);
         authService.Login(email, password);
     }
+
+    // Starts loading screen during auth
     public void OnAuthAwait()
     {
         MainMenuManager.Instance?.OnLoadStart();
     }
-    // Called on successful authentication with the definitive userID from the backend.
+
+    // AuthService success callback
     public void OnAuthSuccess(string id, string token)
     {
         userId = id;
         authToken = token;
         Debug.Log("AuthManager: User authenticated with ID: " + userId + " and token: " + authToken);
-        MainMenuManager.Instance?.OnLoadDone();
+        StartCoroutine(LoadDelay(1.5f));
         MainMenuManager.Instance?.LoadUserMenu();
     }
 
-    // Called when any error occurs.
+    // async function that adds a buffer for a loading screen
+    private IEnumerator LoadDelay(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        if (MainMenuManager.Instance != null) MainMenuManager.Instance.OnLoadDone();
+    }
+
+    // AuthService error callback
     public void OnAuthError(string errorMsg)
     {
-        MainMenuManager.Instance?.OnLoadDone();
         Debug.LogError("AuthManager Error: " + errorMsg);
+        StartCoroutine(LoadDelay(1.5f));
         MainMenuManager.Instance?.DisplayFirebaseError(errorMsg);
     }
 
-    public string GetUserId()
-    {
-        return userId;
-    }
 }

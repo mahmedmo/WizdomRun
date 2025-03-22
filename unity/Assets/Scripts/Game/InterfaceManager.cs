@@ -1,22 +1,39 @@
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
 using UnityEngine.SceneManagement;
-
+using DG.Tweening;
+using TMPro;
+using System.Collections.Generic;
 public class InterfaceManager : MonoBehaviour
 {
     public static InterfaceManager Instance { get; private set; }
     public GameObject Interface;
+    public TextMeshProUGUI playerGoldText;
     public GameObject healthBar;
     public GameObject manaBar;
+    public GameObject bossBar;
+    public GameObject bossInfo;
+    public TextMeshProUGUI bossNameText;
     public GameObject progressBar;
     public GameObject progressPlayer;
     public GameObject progressEnd;
+    public GameObject continueButton;
     public GameObject gameOverOverlay;
     public GameObject gameOver;
+    public TextMeshProUGUI remainingTriesText;
+    public TextMeshProUGUI tryAgainText;
     public GameObject introBannerPrefab;
     public GameObject[] spellSlots = new GameObject[4];
+    public GameObject questionSpell;
     public CanvasGroup oom;
+    public GameObject startPopup;
+    public GameObject bossPopup;
+
+    public GameObject playerTurn;
+    public GameObject enemyTurn;
+
+    public GameObject settingsMenu;
+
     public CanvasGroup levelLoadOverlay;
     public CanvasGroup introBanner;
 
@@ -46,30 +63,52 @@ public class InterfaceManager : MonoBehaviour
             Interface.SetActive(true);
         }
     }
+
+    public void SettingsMenuPopIn()
+    {
+        settingsMenu.transform.localScale = Vector3.zero;
+        settingsMenu.SetActive(true);
+        settingsMenu.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
+    }
+
+    public void OnNoReturn()
+    {
+        settingsMenu.transform.DOScale(Vector3.zero, 0.5f)
+            .SetEase(Ease.InBack)
+            .OnComplete(() =>
+            {
+                settingsMenu.SetActive(false);
+            });
+    }
+
+    public void OnYesReturn()
+    {
+        GameManager.Instance.OnMainMenu();
+    }
+    // Sets UI objects back to original states
     public void ResetInterface()
     {
         resetBar(healthBar);
+        resetBar(bossBar);
         resetBar(manaBar);
         progressBar.GetComponent<Image>().fillAmount = 0f;
         progressPlayer.GetComponent<RectTransform>().anchoredPosition = playerProgressStartPos;
-
-        // Set Game Over back to red and invisible
         gameOverOverlay.GetComponent<Image>().color = new Color(1f, 0f, 0f, 0f);
         gameOver.GetComponent<CanvasGroup>().alpha = 0f;
         gameOver.SetActive(false);
-
+        continueButton.SetActive(false);
         oom.gameObject.SetActive(false);
-
-        DrawSlots(PlayerMonitor.Instance!.GetPlayerSlots());
+        bossInfo.SetActive(false);
         Debug.Log("InterfaceManager state reset!");
     }
 
     private void assignObjs()
     {
-        DontDestroyOnLoad(gameObject);
         Interface = GameObject.Find("LevelInterface");
         healthBar = GameObject.Find("Health");
         manaBar = GameObject.Find("Mana");
+        bossBar = GameObject.Find("BossHealth");
+        bossInfo = GameObject.Find("BossInfo");
         progressBar = GameObject.Find("Progress");
         progressPlayer = GameObject.Find("PlayerIcon");
         progressEnd = GameObject.Find("EndIcon");
@@ -79,6 +118,7 @@ public class InterfaceManager : MonoBehaviour
         spellSlots[1] = GameObject.Find("Spell02");
         spellSlots[2] = GameObject.Find("Spell03");
         spellSlots[3] = GameObject.Find("Spell04");
+        playerGoldText = GameObject.Find("GoldText").GetComponent<TextMeshProUGUI>();
         oom = GameObject.Find("OOM").GetComponent<CanvasGroup>();
         levelLoadOverlay = GameObject.Find("LevelLoadOverlay").GetComponent<CanvasGroup>();
         introBanner = GameObject.Find("Intro").GetComponent<CanvasGroup>();
@@ -93,7 +133,6 @@ public class InterfaceManager : MonoBehaviour
             Instance = this;
             assignObjs();
             ResetInterface();
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -104,7 +143,8 @@ public class InterfaceManager : MonoBehaviour
 
     void Start()
     {
-        // Optionally, if the overlay is already active (alpha == 1), then start a gradual fade-in:
+        GetGold();
+
         if (levelLoadOverlay != null && levelLoadOverlay.alpha >= 1f)
         {
             // Gradually fade from black to clear over 2 seconds.
@@ -123,33 +163,131 @@ public class InterfaceManager : MonoBehaviour
             UpdateProgressBar();
         }
     }
+    public void OnContinuePress()
+    {
+        continueButton.SetActive(false);
+        LevelManager.Instance.inCutscene = false;
+        AnimateStartPopup();
+        GameManager.Instance.ResumeMovement();
+    }
+
+    public void AnimateContinueButton()
+    {
+        continueButton.SetActive(true);
+
+        CanvasGroup cg = continueButton.GetComponent<CanvasGroup>();
+        if (cg == null)
+        {
+            cg = continueButton.AddComponent<CanvasGroup>();
+        }
+
+        cg.alpha = 0f;
+        cg.DOFade(1f, 1f).SetLoops(-1, LoopType.Yoyo);
+    }
+    // Gold Handlers
+    public void GetGold()
+    {
+        playerGoldText.text = PlayerMonitor.Instance.GetGold().ToString();
+    }
+    public void SetGold(int amount)
+    {
+        playerGoldText.text = amount.ToString();
+    }
+    public void AddGold(int amount, float duration = 0.5f)
+    {
+        int startGold = int.Parse(playerGoldText.text);
+        int targetGold = startGold + amount;
+
+        DOTween.To(() => startGold, x =>
+        {
+            startGold = x;
+            playerGoldText.text = startGold.ToString();
+        }, targetGold, duration);
+    }
+
+    public void SpendGold(int amount, float duration = 0.5f)
+    {
+        int startGold = int.Parse(playerGoldText.text);
+        int targetGold = startGold - amount;
+
+        DOTween.To(() => startGold, x =>
+        {
+            startGold = x;
+            playerGoldText.text = startGold.ToString();
+        }, targetGold, duration);
+    }
+
+    public void PlayerTurn()
+    {
+        HideSpells();
+        enemyTurn.SetActive(false);
+
+        playerTurn.transform.localScale = Vector3.zero;
+        playerTurn.SetActive(true);
+
+        Sequence playerTurnSequence = DOTween.Sequence();
+        playerTurnSequence.Append(playerTurn.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack));
+        playerTurnSequence.AppendInterval(1f);
+        playerTurnSequence.Append(playerTurn.transform.DOScale(0f, 0.5f).SetEase(Ease.InBack));
+        playerTurnSequence.OnComplete(() =>
+        {
+            ShowSpells();
+            playerTurn.SetActive(false);
+        });
+
+    }
+    public void ShowSpells()
+    {
+        foreach (GameObject slot in spellSlots)
+        {
+            slot.GetComponent<Button>().interactable = true;
+        }
+        questionSpell.GetComponent<Button>().interactable = true;
+    }
+    public void HideSpells()
+    {
+        foreach (GameObject slot in spellSlots)
+        {
+            slot.GetComponent<Button>().interactable = false;
+        }
+        questionSpell.GetComponent<Button>().interactable = false;
+    }
+
+
+    public void EnemyTurn()
+    {
+        playerTurn.SetActive(false);
+
+        enemyTurn.transform.localScale = Vector3.zero;
+        enemyTurn.SetActive(true);
+
+        Sequence enemyTurnSequence = DOTween.Sequence();
+        enemyTurnSequence.Append(enemyTurn.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack));
+        enemyTurnSequence.AppendInterval(1f);
+        enemyTurnSequence.Append(enemyTurn.transform.DOScale(0f, 0.5f).SetEase(Ease.InBack));
+        enemyTurnSequence.OnComplete(() => enemyTurn.SetActive(false));
+
+        HideSpells();
+    }
     public void UpdateProgressBar()
     {
-        // Calculate fillAmount (0 to 1) based on gameTime and maxProgress.
         float fillAmount = Mathf.Clamp01(LevelManager.Instance.levelProgress / maxProgress);
 
-        // Update the progress bar's Image fill amount.
         Image progressImage = progressBar.GetComponent<Image>();
         progressImage.fillAmount = fillAmount;
 
-        // Get the RectTransforms.
         RectTransform playerRect = progressPlayer.GetComponent<RectTransform>();
         RectTransform endRect = progressEnd.GetComponent<RectTransform>();
 
-        // Calculate the maximum offset from the starting position.
-        // This is the distance from the starting position (as set in the Inspector)
-        // to the progressEnd's anchored position.
         float maxOffset = endRect.anchoredPosition.x - playerProgressStartPos.x;
 
-        // Compute the new X by adding a fraction of the max offset to the starting X.
         float newX = playerProgressStartPos.x + (maxOffset * fillAmount);
 
-        // Update the player's anchored position, keeping the original Y.
         playerRect.anchoredPosition = new Vector2(newX, playerRect.anchoredPosition.y);
     }
-    public void DrawSlots(int[] slots)
+    public void DrawSlots(List<int> slots)
     {
-        for (int i = 0; i < slots.Length; i++)
+        for (int i = 0; i < slots.Count; i++)
         {
             if (slots[i] == -1)
             {
@@ -162,15 +300,20 @@ public class InterfaceManager : MonoBehaviour
         }
     }
 
-    // Updates health bar with new value
+    // Bar Handlers
+    // Updates bar with new value with animation
     public void DrawHealth(float totalHealth, float currHealth)
     {
         Vector3 scale = healthBar.transform.localScale;
         float ratio = currHealth / totalHealth;
         healthBar.transform.DOScaleX(ratio, 0.5f).SetEase(Ease.OutQuad);
     }
-
-    // Updates mana bar with new value
+    public void DrawBossHealth(float totalBossHealth, float currBossHealth)
+    {
+        Vector3 scale = bossBar.transform.localScale;
+        float ratio = currBossHealth / totalBossHealth;
+        bossBar.transform.DOScaleX(ratio, 0.5f).SetEase(Ease.OutQuad);
+    }
     public void DrawMana(int totalMana, int currMana)
     {
         Vector3 scale = manaBar.transform.localScale;
@@ -179,33 +322,87 @@ public class InterfaceManager : MonoBehaviour
     }
     private void InstantiateIntroBanner()
     {
-        // Optionally, choose a parent for organization (e.g., your Canvas).
         Transform parent = introBanner.gameObject.transform;
         introBannerPrefab = Instantiate(LevelManager.Instance.intro, parent, false);
     }
     public void FadeIntro()
     {
         InstantiateIntroBanner();
-        // Ensure the intro banner is active.
         introBanner.gameObject.SetActive(true);
 
-        // Create a DOTween sequence.
         Sequence introSequence = DOTween.Sequence();
 
-        // Fade in over 1 second.
         introSequence.Append(introBanner.DOFade(1f, 1f).SetEase(Ease.Linear));
 
-        // Hold for 2 seconds.
-        introSequence.AppendInterval(2f);
+        introSequence.AppendInterval(1.5f);
 
-        // Fade out over 1 second.
         introSequence.Append(introBanner.DOFade(0f, 1f).SetEase(Ease.Linear));
 
-        // Once complete, optionally disable the canvas group.
         introSequence.OnComplete(() =>
         {
             Destroy(introBannerPrefab);
         });
+    }
+    public void AnimateStartPopup()
+    {
+        HideSpells();
+        startPopup.transform.localScale = Vector3.zero;
+        startPopup.SetActive(true);
+
+        Sequence popupSequence = DOTween.Sequence();
+
+        popupSequence.Append(startPopup.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack));
+
+        popupSequence.AppendInterval(3f);
+
+        popupSequence.Append(startPopup.transform.DOScale(0f, 0.5f).SetEase(Ease.InBack));
+
+        popupSequence.OnComplete(() =>
+        {
+            startPopup.SetActive(false);
+            LevelManager.Instance.inCutscene = false;
+            ShowSpells();
+        });
+
+    }
+
+    public void AnimateBossPopup()
+    {
+        HideSpells();
+        bossPopup.transform.localScale = Vector3.zero;
+        bossPopup.SetActive(true);
+
+        Sequence popupSequence = DOTween.Sequence();
+
+        popupSequence.Append(bossPopup.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack));
+
+        popupSequence.AppendInterval(1f);
+
+        popupSequence.Append(bossPopup.transform.DOScale(0f, 0.5f).SetEase(Ease.InBack));
+
+        popupSequence.OnComplete(() =>
+        {
+            PlayerTurn();
+            bossPopup.SetActive(false);
+        });
+    }
+    public void ShowBossDataPopIn(string bossName)
+    {
+        bossNameText.text = bossName;
+        bossInfo.transform.localScale = Vector3.zero;
+        bossInfo.SetActive(true);
+        Sequence popupSequence = DOTween.Sequence();
+
+        popupSequence.Append(bossInfo.transform.DOScale(1f, 0.5f).SetEase(Ease.OutBack));
+
+    }
+    public void ShowBossDataPopOut()
+    {
+        Sequence popupSequence = DOTween.Sequence();
+        popupSequence.Append(bossInfo.transform.DOScale(0f, 0.5f).SetEase(Ease.InBack));
+
+        popupSequence.OnComplete(() => bossInfo.SetActive(false));
+
     }
 
     // Flashes screen with "Out of Mana" message
@@ -213,26 +410,21 @@ public class InterfaceManager : MonoBehaviour
     {
         if (oomFlashFlag) return;
 
-        // Signals that OOM animation is in progress
         oomFlashFlag = true;
 
-        // Activate the OOM object
         oom.gameObject.SetActive(true);
 
         CanvasGroup cg = oom.GetComponent<CanvasGroup>();
 
-        // Ensure the OOM object starts fully transparent.
         cg.alpha = 0f;
 
         Sequence flashSequence = DOTween.Sequence();
-        // 5 cycles of fading in and fading out.
         for (int i = 0; i < 5; i++)
         {
-            flashSequence.Append(cg.DOFade(1f, 0.2f));  // Fade in.
-            flashSequence.Append(cg.DOFade(0f, 0.2f));  // Fade out.
+            flashSequence.Append(cg.DOFade(1f, 0.2f));
+            flashSequence.Append(cg.DOFade(0f, 0.2f));
         }
 
-        // When the sequence completes, ensure the object is fully faded out and deactivate it.
         flashSequence.OnComplete(() =>
         {
             cg.alpha = 0f;
@@ -244,31 +436,39 @@ public class InterfaceManager : MonoBehaviour
     // Disables a spell for a specified duration
     public void SpellCooldown(int slotIndex, float duration)
     {
-        // Find the CooldownOverlay child on the spell slot.
         Transform overlayTransform = spellSlots[slotIndex].transform.Find("CooldownOverlay");
         Image overlayImage = overlayTransform.GetComponent<Image>();
         overlayImage.gameObject.SetActive(true);
 
         Button slotButton = spellSlots[slotIndex].GetComponent<Button>();
 
-        // Disable the button
         slotButton.interactable = false;
 
-        // Reset fill amount to full.
         overlayImage.fillAmount = 1f;
 
-        // Animate the fill amount from full to empty over 'duration' seconds.
         overlayImage.DOFillAmount(0f, duration)
             .SetEase(Ease.Linear)
             .OnComplete(() =>
             {
                 overlayImage.gameObject.SetActive(false);
-                slotButton.interactable = true;
+                if (!LevelManager.Instance.bossCSFlag) slotButton.interactable = true;
             });
     }
+
+    // Overlays the GameOver screen
     public void DrawGameOver()
     {
         QuestionManager.Instance.gameObject.SetActive(false);
+        remainingTriesText.text = CampaignManager.Instance.currCampaign.RemainingTries.ToString();
+        if (CampaignManager.Instance.currCampaign.RemainingTries == 0)
+        {
+            tryAgainText.text = "Restart";
+
+        }
+        else
+        {
+            tryAgainText.text = "Try Again";
+        }
         Image overlayImage = gameOverOverlay.GetComponent<Image>();
 
         overlayImage.color = new Color(1f, 0f, 0f, 0f);
@@ -291,14 +491,11 @@ public class InterfaceManager : MonoBehaviour
     {
         isFadingFlag = true;
 
-        // Ensure the overlay is active
         if (!levelLoadOverlay.gameObject.activeSelf)
             levelLoadOverlay.gameObject.SetActive(true);
 
-        // Start fully opaque.
         levelLoadOverlay.alpha = 1f;
 
-        // Animate to transparent.
         levelLoadOverlay.DOFade(0f, duration)
         .SetEase(Ease.Linear)
         .OnComplete(() =>
@@ -309,19 +506,15 @@ public class InterfaceManager : MonoBehaviour
         });
     }
 
-    // Call this function to fade to black (for example, on game over).
     public Tween FadeToBlack(float duration, System.Action onComplete = null)
     {
         isFadingFlag = true;
 
-        // Activate the overlay
         if (!levelLoadOverlay.gameObject.activeSelf)
             levelLoadOverlay.gameObject.SetActive(true);
 
-        // Start fully transparent.
         levelLoadOverlay.alpha = 0f;
 
-        // Create the tween that fades to opaque.
         Tween fadeTween = levelLoadOverlay.DOFade(1f, duration)
             .SetEase(Ease.Linear)
             .OnComplete(() =>

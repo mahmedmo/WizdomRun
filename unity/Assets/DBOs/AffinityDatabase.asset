@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6eb00227db2544588bcbe9c75969c3a, type: 3}
+  m_Name: AffinityDatabase
+  m_EditorClassIdentifier: 
+  affinityList:
+  - id: 0
+    playerClass: 4
+    staff: {fileID: -441858130, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+    hat: {fileID: -120713605, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+  - id: 1
+    playerClass: 0
+    staff: {fileID: -1767882751, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+    hat: {fileID: -190123625, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+  - id: 2
+    playerClass: 1
+    staff: {fileID: 642802187, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+    hat: {fileID: 1498412839, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+  - id: 3
+    playerClass: 2
+    staff: {fileID: -1320489758, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+    hat: {fileID: 790613390, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+  - id: 4
+    playerClass: 3
+    staff: {fileID: -768505446, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+    hat: {fileID: 400064032, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}

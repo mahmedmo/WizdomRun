@@ -15,8 +15,10 @@ public class GameManager : MonoBehaviour
     private float npcSpawnTimer = 0.0f;
     private float enemySpawnTimer = 0.0f;
 
-    public bool PauseEnemyMovement { get; private set; }
+    public bool IsFrozen { get; private set; }
     public bool isPaused { get; set; } = true;
+    public bool lastPauseState { get; set; } = true;
+
     public bool shownIntro;
 
 
@@ -29,7 +31,6 @@ public class GameManager : MonoBehaviour
         isPaused = true;
         shownIntro = false;
         InterfaceManager.Instance.HideInterface();
-        DialogueManager.Instance.HideDialogue();
         DialogueManager.Instance.HideChoices();
         CutsceneManager.Instance.AllocateCutscenes();
         Debug.Log("GameManager state reset!");
@@ -40,7 +41,6 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -53,18 +53,19 @@ public class GameManager : MonoBehaviour
     }
     public void FreezeGame()
     {
+        lastPauseState = isPaused;
         isPaused = true;
-        PauseEnemyMovement = true;
+        IsFrozen = true;
 
     }
     public void UnFreezeGame()
     {
-        isPaused = false;
-        PauseEnemyMovement = false;
-
+        isPaused = lastPauseState;
+        IsFrozen = false;
     }
     void Update()
     {
+        if (IsFrozen || LevelManager.Instance.inCutscene) return;
         if (!isPaused)
         {
             gameTime += Time.deltaTime;
@@ -147,26 +148,51 @@ public class GameManager : MonoBehaviour
         // Fade to black over 2 seconds
         InterfaceManager.Instance.FadeToBlack(2f, () =>
         {
+            if (CampaignManager.Instance.GetRemainingTries() <= 0)
+            {
+                CampaignManager.Instance.RestartCampaign();
+            }
             // When fade is complete, load the scene
-            SceneManager.LoadScene("HFLevel");
-            StartCoroutine(ResetAfterSceneLoad());
+            CampaignManager.Instance.LoadMappedLevel();
         });
     }
-
-    private IEnumerator ResetAfterSceneLoad()
+    public static void DestroyPersistentObjectsMM()
     {
-        // Waits until the end of frame
-        yield return new WaitForEndOfFrame();
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.scene.name == "DontDestroyOnLoad")
+            {
+                if (obj.GetComponent<AuthManager>() != null || obj.name == "Firebase Services")
+                    continue;
 
-        // Calls resets after the scene is loaded.
-        PlayerMonitor.Instance.ResetPlayerState();
-        InterfaceManager.Instance.ResetInterface();
-        LevelManager.Instance.ResetLevel();
-        LevelManager.Instance.firstEncounter = false;
-        ResetGameState();
+                Destroy(obj);
+            }
+        }
+    }
+    public static void DestroyPersistentObjectsLevel()
+    {
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.scene.name == "DontDestroyOnLoad")
+            {
+                if (obj.GetComponent<AuthManager>() != null || obj.name == "Firebase Services")
+                    continue;
 
-        // Fade from black to reveal the new scene.
-        InterfaceManager.Instance.FadeFromBlack(4f);
+                Destroy(obj);
+            }
+        }
+    }
+    // Called when returning to main menu
+    public void Cleanup()
+    {
+        DestroyPersistentObjectsMM();
+    }
+    public void OnMainMenu()
+    {
+        Cleanup();
+        SceneManager.LoadScene("UserMenu");
     }
 
 

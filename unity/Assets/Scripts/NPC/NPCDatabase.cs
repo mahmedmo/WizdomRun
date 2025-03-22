@@ -11,8 +11,6 @@ public class NPCDatabase : ScriptableObject
 public class NPC
 {
     public string name;
-
     public Sprite portrait;
-
     public GameObject prefab;
 }
