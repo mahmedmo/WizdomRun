@@ -81,21 +81,9 @@ Learning complex terminology often feels like a tedious chore, draining motivati
 
 ---
 
-## Requirements
+## Requirements, Design, Testing
 
-_Details to be determined._
-
----
-
-## Design
-
-_Details to be determined._
-
----
-
-## Testing
-
-_Details to be determined._
+All these documents are located in the documentation folder in the root directory. 
 
 ---
 
@@ -111,10 +99,11 @@ _Details to be determined._
 
 ### ⚙️ LLM Integration (2x Team Members)
 
-- **LLM Communication (MH):** Integrates Deepseek with two specialized models:
-  - **deepseek-reasoner:** For initial note analysis and knowledge extraction.
-  - **deepseek-chat:** Processes the output to generate final Q&A formats.
-- **Storage:** Engineered responses are stored in the database.
+- **LLM Communication (MH):** Integrates OpenAI's GPT-4o-mini to generate multiple-choice questions (MCQs) from research documents.
+  - **Document Loading:** Uses PyPDFLoader to extract content from PDFs.
+  - **Question Generation:** GPT-4o-mini analyzes the extracted content and generates diverse MCQs with randomized answer placements.
+  - **Difficulty Scaling:** Questions are generated in Easy, Medium, and Hard difficulty levels to ensure comprehensive coverage.
+- **Storage:** The generated questions and answers are structured into a JSON format for database storage, maintaining campaign-specific IDs.
 
 ### 🗄️ Backend (1x Team Member)
 
