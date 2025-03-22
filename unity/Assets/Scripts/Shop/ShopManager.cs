@@ -22,17 +22,17 @@ public class ShopManager : MonoBehaviour
     private int selectedShopItemId = -1;
 
     public bool shopOpen { get; set; } = false;
+    private bool openedFlag = false;
 
     void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
-
     void Start()
     {
+        openedFlag = false;
         shopInterface.SetActive(false);
-        PopulateShopItems();
         buyShopButton.gameObject.SetActive(false);
     }
 
@@ -282,7 +282,9 @@ public class ShopManager : MonoBehaviour
     public void AnimateShopPopup()
     {
         InterfaceManager.Instance.HideInterface();
+        if (!openedFlag) PopulateShopItems();
         shopOpen = true;
+        openedFlag = true;
         shopInterface.SetActive(true);
         shopInterface.transform.localScale = Vector3.zero;
 
