@@ -51,7 +51,7 @@ public class LevelManager : MonoBehaviour
     {
         if (inCutscene) return;
 
-        if (levelProgress >= 100 && !elemCSFlag)
+        if (levelProgress >= CutsceneManager.Instance.allocatedCutscene.spawnProgress && !elemCSFlag)
         {
             inCutscene = true;
             elemCSFlag = true;
