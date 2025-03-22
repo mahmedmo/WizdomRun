@@ -32,7 +32,7 @@ Learning complex terminology often feels like a tedious chore, draining motivati
 
 ### 🎨 Character Creation & Tutorial (MH)
 
-- **Character Creation:** After account creation, users choose and customize their wizard (CH).
+- **Character Creation:** After account creation, users choose and customize their wizard through different spell classes (CH).
 - **Tutorial:** Explains game mechanics:
   - How to import notes for study.
   - How to navigate and play the game.
