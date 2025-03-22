@@ -89,9 +89,9 @@ All these documents are located in the documentation folder in the root director
 
 ### 📺 Frontend (3x Team Members)
 
-- **RUnity Integration (MH)**
+- **Unity Integration (MH)**
   - **Deployment:** Cross-platform (iOS, Android, Web).
-  - **Division of Labor:** Unity manages core gameplay; React Native handles UI (splash, authentication, note imports).
+  - **Division of Labor:** Unity manages core gameplay and UI (splash, authentication, note imports).
 - **Splash Screen & Auth (MH):** Powered by Firebase.
 - **Local Note Import (MH):** Uses file system access for offline uploads, minimizing database load and ensuring privacy.
 
