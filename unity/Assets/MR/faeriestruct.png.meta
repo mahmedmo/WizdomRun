@@ -1,0 +1,753 @@
+fileFormatVersion: 2
+guid: 7ededdc57cc70d943bcd1ea3c208df88
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2408475127966003572
+    second: FaerieForest_PetricakeGamesPNG_0
+  - first:
+      213: 6697942109148385216
+    second: FaerieForest_PetricakeGamesPNG_1
+  - first:
+      213: -1002133576997850486
+    second: FaerieForest_PetricakeGamesPNG_2
+  - first:
+      213: -4927840274914212617
+    second: FaerieForest_PetricakeGamesPNG_3
+  - first:
+      213: 6582506723887906557
+    second: FaerieForest_PetricakeGamesPNG_4
+  - first:
+      213: 7085118048570585851
+    second: FaerieForest_PetricakeGamesPNG_5
+  - first:
+      213: 7897597521876591641
+    second: FaerieForest_PetricakeGamesPNG_6
+  - first:
+      213: 7644443963497839380
+    second: FaerieForest_PetricakeGamesPNG_7
+  - first:
+      213: -9108262875772604240
+    second: FaerieForest_PetricakeGamesPNG_8
+  - first:
+      213: -5607354515514968809
+    second: FaerieForest_PetricakeGamesPNG_9
+  - first:
+      213: 2310682198747583209
+    second: FaerieForest_PetricakeGamesPNG_10
+  - first:
+      213: 3313757886910133446
+    second: FaerieForest_PetricakeGamesPNG_11
+  - first:
+      213: -8310358022384960368
+    second: FaerieForest_PetricakeGamesPNG_12
+  - first:
+      213: -7360518840804400369
+    second: FaerieForest_PetricakeGamesPNG_13
+  - first:
+      213: 6666436873702388989
+    second: FaerieForest_PetricakeGamesPNG_14
+  - first:
+      213: -7444232296419650608
+    second: FaerieForest_PetricakeGamesPNG_15
+  - first:
+      213: 1105180687827683001
+    second: FaerieForest_PetricakeGamesPNG_16
+  - first:
+      213: 6077989512774117442
+    second: FaerieForest_PetricakeGamesPNG_17
+  - first:
+      213: 4982327322104646290
+    second: FaerieForest_PetricakeGamesPNG_18
+  - first:
+      213: 2617434057177582991
+    second: FaerieForest_PetricakeGamesPNG_19
+  - first:
+      213: 5811407185073613205
+    second: FaerieForest_PetricakeGamesPNG_20
+  - first:
+      213: 8987960470369044419
+    second: FaerieForest_PetricakeGamesPNG_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FaerieForest_PetricakeGamesPNG_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b032b01c23f89180800000000000000
+      internalID: -9108262875772604240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_0
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62160ac8961ad04c913d897bd8536b1
+      internalID: 1237347350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 96
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4fecfede3a5d14ab2e8e9c1e738c18
+      internalID: 1532313522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_2
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 96
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec472864c03d7b4ba9345895707084b
+      internalID: 1406139426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 96
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0319f83c8e52c49b9afe3c0b325ff7
+      internalID: 1748690053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_4
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 65
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01ab51d3fcc15d409224e4cad82c0e1
+      internalID: -1284708800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 65
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79142c70c75707409af15d665cbf1d5
+      internalID: -1732459958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_6
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 9
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21a94b266307d3488b2263e5b3530bd
+      internalID: -489573075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_7
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 34
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a871bdd1ca3e2ec42848dcf7c964da3c
+      internalID: 779612120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_8
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 34
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf78542a8d9a597449afe80e1b26842e
+      internalID: -486663455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_9
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 16
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb50205eddb2164cbeb51038139f8f1
+      internalID: 922083181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_10
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 17
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4e539a2909435468027d6078f69eaa
+      internalID: 1777128051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_11
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 17
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcb32d48091f964fb87df117ec92d5a
+      internalID: 78850755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_12
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 128
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af0b0227ece1654c94cd62557616f24
+      internalID: 2040198522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_13
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 98
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9069c11d10d580d49809cf5090da66a0
+      internalID: -1813636480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_14
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 112
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baca7ed77375bde47a8b1f9a56ec2dc4
+      internalID: -500527114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faeriestruct_15
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 81
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0a175dfdda4414b8af482a944f18fb
+      internalID: 139015284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e137af0894b898947b93146928274ef8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FaerieForest_PetricakeGamesPNG_0: 2408475127966003572
+      FaerieForest_PetricakeGamesPNG_1: 6697942109148385216
+      FaerieForest_PetricakeGamesPNG_10: 2310682198747583209
+      FaerieForest_PetricakeGamesPNG_100: 635596931
+      FaerieForest_PetricakeGamesPNG_101: 707528077
+      FaerieForest_PetricakeGamesPNG_102: -1012642754
+      FaerieForest_PetricakeGamesPNG_103: 321353492
+      FaerieForest_PetricakeGamesPNG_104: -1455462695
+      FaerieForest_PetricakeGamesPNG_105: 20251631
+      FaerieForest_PetricakeGamesPNG_106: -187508336
+      FaerieForest_PetricakeGamesPNG_107: 1255353673
+      FaerieForest_PetricakeGamesPNG_108: 569320131
+      FaerieForest_PetricakeGamesPNG_109: 1401278566
+      FaerieForest_PetricakeGamesPNG_11: 3313757886910133446
+      FaerieForest_PetricakeGamesPNG_110: 100968936
+      FaerieForest_PetricakeGamesPNG_111: -549623114
+      FaerieForest_PetricakeGamesPNG_112: -1315712024
+      FaerieForest_PetricakeGamesPNG_113: -1253217461
+      FaerieForest_PetricakeGamesPNG_114: 1922364606
+      FaerieForest_PetricakeGamesPNG_115: 310177013
+      FaerieForest_PetricakeGamesPNG_116: 1240223051
+      FaerieForest_PetricakeGamesPNG_117: 159926151
+      FaerieForest_PetricakeGamesPNG_118: -583523230
+      FaerieForest_PetricakeGamesPNG_119: -2058655714
+      FaerieForest_PetricakeGamesPNG_12: -8310358022384960368
+      FaerieForest_PetricakeGamesPNG_120: 816459240
+      FaerieForest_PetricakeGamesPNG_121: -603491093
+      FaerieForest_PetricakeGamesPNG_122: -1086820032
+      FaerieForest_PetricakeGamesPNG_123: -1409833405
+      FaerieForest_PetricakeGamesPNG_124: 1660674488
+      FaerieForest_PetricakeGamesPNG_125: 2057229422
+      FaerieForest_PetricakeGamesPNG_126: -577235663
+      FaerieForest_PetricakeGamesPNG_127: 752911517
+      FaerieForest_PetricakeGamesPNG_128: 1455727285
+      FaerieForest_PetricakeGamesPNG_129: 1073876582
+      FaerieForest_PetricakeGamesPNG_13: -7360518840804400369
+      FaerieForest_PetricakeGamesPNG_130: -1229320980
+      FaerieForest_PetricakeGamesPNG_131: -988536327
+      FaerieForest_PetricakeGamesPNG_132: 1113394236
+      FaerieForest_PetricakeGamesPNG_133: -2113240636
+      FaerieForest_PetricakeGamesPNG_134: 925026483
+      FaerieForest_PetricakeGamesPNG_135: 1905087772
+      FaerieForest_PetricakeGamesPNG_136: 2128796307
+      FaerieForest_PetricakeGamesPNG_137: -1806954781
+      FaerieForest_PetricakeGamesPNG_138: -91267813
+      FaerieForest_PetricakeGamesPNG_139: -1630015478
+      FaerieForest_PetricakeGamesPNG_14: 6666436873702388989
+      FaerieForest_PetricakeGamesPNG_140: -545827719
+      FaerieForest_PetricakeGamesPNG_141: -1006201227
+      FaerieForest_PetricakeGamesPNG_142: -64342794
+      FaerieForest_PetricakeGamesPNG_143: -504007540
+      FaerieForest_PetricakeGamesPNG_144: 1584688402
+      FaerieForest_PetricakeGamesPNG_145: 89062053
+      FaerieForest_PetricakeGamesPNG_146: -1752600916
+      FaerieForest_PetricakeGamesPNG_147: 1196738322
+      FaerieForest_PetricakeGamesPNG_148: 873694669
+      FaerieForest_PetricakeGamesPNG_149: -2057169395
+      FaerieForest_PetricakeGamesPNG_15: -7444232296419650608
+      FaerieForest_PetricakeGamesPNG_150: -786149688
+      FaerieForest_PetricakeGamesPNG_151: 478488538
+      FaerieForest_PetricakeGamesPNG_152: -676506772
+      FaerieForest_PetricakeGamesPNG_153: 800003273
+      FaerieForest_PetricakeGamesPNG_154: 795379343
+      FaerieForest_PetricakeGamesPNG_155: 953861850
+      FaerieForest_PetricakeGamesPNG_156: 1855357602
+      FaerieForest_PetricakeGamesPNG_157: -1893866790
+      FaerieForest_PetricakeGamesPNG_158: 169519333
+      FaerieForest_PetricakeGamesPNG_159: -1997898353
+      FaerieForest_PetricakeGamesPNG_16: 1105180687827683001
+      FaerieForest_PetricakeGamesPNG_160: -207062721
+      FaerieForest_PetricakeGamesPNG_161: -367643233
+      FaerieForest_PetricakeGamesPNG_162: -1854638013
+      FaerieForest_PetricakeGamesPNG_163: -1867924448
+      FaerieForest_PetricakeGamesPNG_164: -1407202235
+      FaerieForest_PetricakeGamesPNG_165: 1244134647
+      FaerieForest_PetricakeGamesPNG_166: 542332948
+      FaerieForest_PetricakeGamesPNG_167: -1331332691
+      FaerieForest_PetricakeGamesPNG_168: 2059254435
+      FaerieForest_PetricakeGamesPNG_169: -1740291448
+      FaerieForest_PetricakeGamesPNG_17: 6077989512774117442
+      FaerieForest_PetricakeGamesPNG_170: 2115302101
+      FaerieForest_PetricakeGamesPNG_171: 701104279
+      FaerieForest_PetricakeGamesPNG_172: 369497965
+      FaerieForest_PetricakeGamesPNG_173: -1593116752
+      FaerieForest_PetricakeGamesPNG_174: -2041252812
+      FaerieForest_PetricakeGamesPNG_175: -1162781176
+      FaerieForest_PetricakeGamesPNG_176: -1211458150
+      FaerieForest_PetricakeGamesPNG_177: 1647569836
+      FaerieForest_PetricakeGamesPNG_178: 2096738496
+      FaerieForest_PetricakeGamesPNG_179: 852747123
+      FaerieForest_PetricakeGamesPNG_18: 4982327322104646290
+      FaerieForest_PetricakeGamesPNG_19: 2617434057177582991
+      FaerieForest_PetricakeGamesPNG_2: -1002133576997850486
+      FaerieForest_PetricakeGamesPNG_20: 5811407185073613205
+      FaerieForest_PetricakeGamesPNG_21: 8987960470369044419
+      FaerieForest_PetricakeGamesPNG_22: -584822146
+      FaerieForest_PetricakeGamesPNG_23: 720484766
+      FaerieForest_PetricakeGamesPNG_24: 855882664
+      FaerieForest_PetricakeGamesPNG_25: 521698114
+      FaerieForest_PetricakeGamesPNG_26: -879821131
+      FaerieForest_PetricakeGamesPNG_27: -1358163255
+      FaerieForest_PetricakeGamesPNG_28: 1038126600
+      FaerieForest_PetricakeGamesPNG_29: 1140742043
+      FaerieForest_PetricakeGamesPNG_3: -4927840274914212617
+      FaerieForest_PetricakeGamesPNG_30: -752437883
+      FaerieForest_PetricakeGamesPNG_31: -1721640542
+      FaerieForest_PetricakeGamesPNG_32: 845712604
+      FaerieForest_PetricakeGamesPNG_33: 410357763
+      FaerieForest_PetricakeGamesPNG_34: 1593721142
+      FaerieForest_PetricakeGamesPNG_35: -101553831
+      FaerieForest_PetricakeGamesPNG_36: -2083040531
+      FaerieForest_PetricakeGamesPNG_37: 1888880353
+      FaerieForest_PetricakeGamesPNG_38: -2074962631
+      FaerieForest_PetricakeGamesPNG_39: -745888490
+      FaerieForest_PetricakeGamesPNG_4: 6582506723887906557
+      FaerieForest_PetricakeGamesPNG_40: -1404252040
+      FaerieForest_PetricakeGamesPNG_41: -487394651
+      FaerieForest_PetricakeGamesPNG_42: 1755890041
+      FaerieForest_PetricakeGamesPNG_43: 1163595260
+      FaerieForest_PetricakeGamesPNG_44: -894807858
+      FaerieForest_PetricakeGamesPNG_45: 354088389
+      FaerieForest_PetricakeGamesPNG_46: 802013282
+      FaerieForest_PetricakeGamesPNG_47: -92202063
+      FaerieForest_PetricakeGamesPNG_48: 295825020
+      FaerieForest_PetricakeGamesPNG_49: -1187856200
+      FaerieForest_PetricakeGamesPNG_5: 7085118048570585851
+      FaerieForest_PetricakeGamesPNG_50: 583179830
+      FaerieForest_PetricakeGamesPNG_51: -493289501
+      FaerieForest_PetricakeGamesPNG_52: 1827341954
+      FaerieForest_PetricakeGamesPNG_53: -389438236
+      FaerieForest_PetricakeGamesPNG_54: 755794426
+      FaerieForest_PetricakeGamesPNG_55: 956406371
+      FaerieForest_PetricakeGamesPNG_56: 120955936
+      FaerieForest_PetricakeGamesPNG_57: -1782215003
+      FaerieForest_PetricakeGamesPNG_58: 2137902226
+      FaerieForest_PetricakeGamesPNG_59: 548055548
+      FaerieForest_PetricakeGamesPNG_6: 7897597521876591641
+      FaerieForest_PetricakeGamesPNG_60: -534350671
+      FaerieForest_PetricakeGamesPNG_61: 583014934
+      FaerieForest_PetricakeGamesPNG_62: 1041439025
+      FaerieForest_PetricakeGamesPNG_63: 594815352
+      FaerieForest_PetricakeGamesPNG_64: 269794045
+      FaerieForest_PetricakeGamesPNG_65: -73169826
+      FaerieForest_PetricakeGamesPNG_66: -1326438670
+      FaerieForest_PetricakeGamesPNG_67: -1609736596
+      FaerieForest_PetricakeGamesPNG_68: 1957145564
+      FaerieForest_PetricakeGamesPNG_69: -2017200310
+      FaerieForest_PetricakeGamesPNG_7: 7644443963497839380
+      FaerieForest_PetricakeGamesPNG_70: 1804106672
+      FaerieForest_PetricakeGamesPNG_71: 417475135
+      FaerieForest_PetricakeGamesPNG_72: 1940918923
+      FaerieForest_PetricakeGamesPNG_73: -212922563
+      FaerieForest_PetricakeGamesPNG_74: 963850796
+      FaerieForest_PetricakeGamesPNG_75: -1136692379
+      FaerieForest_PetricakeGamesPNG_76: -1569761649
+      FaerieForest_PetricakeGamesPNG_77: 786468243
+      FaerieForest_PetricakeGamesPNG_78: -1895199995
+      FaerieForest_PetricakeGamesPNG_79: -1559978273
+      FaerieForest_PetricakeGamesPNG_8: -9108262875772604240
+      FaerieForest_PetricakeGamesPNG_80: -1343337636
+      FaerieForest_PetricakeGamesPNG_81: 728554035
+      FaerieForest_PetricakeGamesPNG_82: 1213700141
+      FaerieForest_PetricakeGamesPNG_83: -793437373
+      FaerieForest_PetricakeGamesPNG_84: -761177720
+      FaerieForest_PetricakeGamesPNG_85: -364301563
+      FaerieForest_PetricakeGamesPNG_86: -459430982
+      FaerieForest_PetricakeGamesPNG_87: 1504578059
+      FaerieForest_PetricakeGamesPNG_88: -613972733
+      FaerieForest_PetricakeGamesPNG_89: 381539257
+      FaerieForest_PetricakeGamesPNG_9: -5607354515514968809
+      FaerieForest_PetricakeGamesPNG_90: 988381791
+      FaerieForest_PetricakeGamesPNG_91: -1075660471
+      FaerieForest_PetricakeGamesPNG_92: 252729171
+      FaerieForest_PetricakeGamesPNG_93: 1290113348
+      FaerieForest_PetricakeGamesPNG_94: 1885760081
+      FaerieForest_PetricakeGamesPNG_95: 1236799639
+      FaerieForest_PetricakeGamesPNG_96: 931894797
+      FaerieForest_PetricakeGamesPNG_97: 124990881
+      FaerieForest_PetricakeGamesPNG_98: 178898212
+      FaerieForest_PetricakeGamesPNG_99: 564137298
+      faeriestruct_0: 1237347350
+      faeriestruct_1: 1532313522
+      faeriestruct_10: 1777128051
+      faeriestruct_11: 78850755
+      faeriestruct_12: 2040198522
+      faeriestruct_13: -1813636480
+      faeriestruct_14: -500527114
+      faeriestruct_15: 139015284
+      faeriestruct_2: 1406139426
+      faeriestruct_3: 1748690053
+      faeriestruct_4: -1284708800
+      faeriestruct_5: -1732459958
+      faeriestruct_6: -489573075
+      faeriestruct_7: 779612120
+      faeriestruct_8: -486663455
+      faeriestruct_9: 922083181
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: a43de9b8c4f974d60974dd3c81b4eead
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 747182479872808959
+    second: Birds_Eagle_Bald_Attack 1_0
+  - first:
+      213: 3004075802861639672
+    second: Birds_Eagle_Bald_Attack 1_1
+  - first:
+      213: -7002893837901450501
+    second: Birds_Eagle_Bald_Attack 1_2
+  - first:
+      213: 4948315056552677181
+    second: Birds_Eagle_Bald_Attack 1_3
+  - first:
+      213: 7099243826582412026
+    second: Birds_Eagle_Bald_Attack 1_4
+  - first:
+      213: 5015590142570237207
+    second: Birds_Eagle_Bald_Attack 1_5
+  - first:
+      213: 6445118127381959046
+    second: Birds_Eagle_Bald_Attack 1_6
+  - first:
+      213: 6493340315883302472
+    second: Birds_Eagle_Bald_Attack 1_7
+  - first:
+      213: 3035020129901146094
+    second: Birds_Eagle_Bald_Attack 1_8
+  - first:
+      213: -7089752321384189008
+    second: Birds_Eagle_Bald_Attack 1_9
+  - first:
+      213: 793642368120911452
+    second: Birds_Eagle_Bald_Attack 1_10
+  - first:
+      213: 5788880624431072267
+    second: Birds_Eagle_Bald_Attack 1_11
+  - first:
+      213: 5245488510493899117
+    second: Birds_Eagle_Bald_Attack 1_12
+  - first:
+      213: 8538759053219068831
+    second: Birds_Eagle_Bald_Attack 1_13
+  - first:
+      213: 2391856515332776371
+    second: Birds_Eagle_Bald_Attack 1_14
+  - first:
+      213: -5485463991553252893
+    second: Birds_Eagle_Bald_Attack 1_15
+  - first:
+      213: 1033157472446047977
+    second: Birds_Eagle_Bald_Attack 1_16
+  - first:
+      213: -3980727567349769772
+    second: Birds_Eagle_Bald_Attack 1_17
+  - first:
+      213: 979966126476463646
+    second: Birds_Eagle_Bald_Attack 1_18
+  - first:
+      213: -7463757924687248580
+    second: Birds_Eagle_Bald_Attack 1_19
+  - first:
+      213: 4820632203304745833
+    second: Birds_Eagle_Bald_Attack 1_20
+  - first:
+      213: -7858068642723001940
+    second: Birds_Eagle_Bald_Attack 1_21
+  - first:
+      213: 5197024007744336677
+    second: Birds_Eagle_Bald_Attack 1_22
+  - first:
+      213: 4892287480342518395
+    second: Birds_Eagle_Bald_Attack 1_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 425
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7d637b1868e5a00800000000000000
+      internalID: 747182479872808959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 420
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f71ae3c60f90b920800000000000000
+      internalID: 3004075802861639672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_2
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 419
+        width: 53
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2bc184829b0de90800000000000000
+      internalID: -7002893837901450501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 422
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f0a8e9352fba440800000000000000
+      internalID: 4948315056552677181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 429
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa545995a4958260800000000000000
+      internalID: 7099243826582412026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_5
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 433
+        width: 47
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d89d239a4fa9540800000000000000
+      internalID: 5015590142570237207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_6
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 310
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68158060ac8a17950800000000000000
+      internalID: 6445118127381959046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_7
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 308
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e62f53d9afc1a50800000000000000
+      internalID: 6493340315883302472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_8
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 307
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eefeae85abe8e1a20800000000000000
+      internalID: 3035020129901146094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_9
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 309
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3f46aa3d32c9d90800000000000000
+      internalID: -7089752321384189008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_10
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 307
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56fb866785930b00800000000000000
+      internalID: 793642368120911452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_11
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 310
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b040b52d14c365050800000000000000
+      internalID: 5788880624431072267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_12
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 182
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69b16d2208bbc840800000000000000
+      internalID: 5245488510493899117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_13
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 180
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bf5cd5e14cf7670800000000000000
+      internalID: 8538759053219068831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_14
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 179
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b12d1ef3d4913120800000000000000
+      internalID: 2391856515332776371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_15
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 181
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1a54b1097bfd3b0800000000000000
+      internalID: -5485463991553252893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_16
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 179
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6ef2e4f33865e00800000000000000
+      internalID: 1033157472446047977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_17
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 182
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d913884e5d91c8c0800000000000000
+      internalID: -3980727567349769772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_18
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 54
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e8b8cfff9899d00800000000000000
+      internalID: 979966126476463646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_19
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 58
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33828156b76b6890800000000000000
+      internalID: -7463757924687248580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_20
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 70
+        width: 53
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96bb9c6b27356e240800000000000000
+      internalID: 4820632203304745833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_21
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 65
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca90cd9043882f290800000000000000
+      internalID: -7858068642723001940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_22
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 58
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52337ceccc98f1840800000000000000
+      internalID: 5197024007744336677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Birds_Eagle_Bald_Attack 1_23
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 52
+        width: 47
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a18ecfa85e4e340800000000000000
+      internalID: 4892287480342518395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Birds_Eagle_Bald_Attack 1_0: 747182479872808959
+      Birds_Eagle_Bald_Attack 1_1: 3004075802861639672
+      Birds_Eagle_Bald_Attack 1_10: 793642368120911452
+      Birds_Eagle_Bald_Attack 1_11: 5788880624431072267
+      Birds_Eagle_Bald_Attack 1_12: 5245488510493899117
+      Birds_Eagle_Bald_Attack 1_13: 8538759053219068831
+      Birds_Eagle_Bald_Attack 1_14: 2391856515332776371
+      Birds_Eagle_Bald_Attack 1_15: -5485463991553252893
+      Birds_Eagle_Bald_Attack 1_16: 1033157472446047977
+      Birds_Eagle_Bald_Attack 1_17: -3980727567349769772
+      Birds_Eagle_Bald_Attack 1_18: 979966126476463646
+      Birds_Eagle_Bald_Attack 1_19: -7463757924687248580
+      Birds_Eagle_Bald_Attack 1_2: -7002893837901450501
+      Birds_Eagle_Bald_Attack 1_20: 4820632203304745833
+      Birds_Eagle_Bald_Attack 1_21: -7858068642723001940
+      Birds_Eagle_Bald_Attack 1_22: 5197024007744336677
+      Birds_Eagle_Bald_Attack 1_23: 4892287480342518395
+      Birds_Eagle_Bald_Attack 1_3: 4948315056552677181
+      Birds_Eagle_Bald_Attack 1_4: 7099243826582412026
+      Birds_Eagle_Bald_Attack 1_5: 5015590142570237207
+      Birds_Eagle_Bald_Attack 1_6: 6445118127381959046
+      Birds_Eagle_Bald_Attack 1_7: 6493340315883302472
+      Birds_Eagle_Bald_Attack 1_8: 3035020129901146094
+      Birds_Eagle_Bald_Attack 1_9: -7089752321384189008
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

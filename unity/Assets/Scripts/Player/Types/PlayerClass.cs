@@ -1,1 +1,1 @@
-public enum PlayerClass { Fire, Water, Earth, Air}
+public enum PlayerClass { Fire, Water, Earth, Air, None }

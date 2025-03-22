@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 060b93da5f9b94abbba72a3b5a125317
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7925365631615797310
+    second: Beast_C 1_0
+  - first:
+      213: -5853134691954532417
+    second: Beast_C 1_1
+  - first:
+      213: 4480747958410941552
+    second: Beast_C 1_2
+  - first:
+      213: -2583894014741979006
+    second: Beast_C 1_3
+  - first:
+      213: 8787746097705373631
+    second: Beast_C 1_4
+  - first:
+      213: 1189760406456856382
+    second: Beast_C 1_5
+  - first:
+      213: 465926818089680025
+    second: Beast_C 1_6
+  - first:
+      213: 816614231434914214
+    second: Beast_C 1_7
+  - first:
+      213: -4180841497052023516
+    second: Beast_C 1_8
+  - first:
+      213: 8911529781023320906
+    second: Beast_C 1_9
+  - first:
+      213: -2360552883207144434
+    second: Beast_C 1_10
+  - first:
+      213: -2248301355778227041
+    second: Beast_C 1_11
+  - first:
+      213: -5704539746474106160
+    second: Beast_C 1_12
+  - first:
+      213: 4241764522805593889
+    second: Beast_C 1_13
+  - first:
+      213: -4920650148875101626
+    second: Beast_C 1_14
+  - first:
+      213: 6417396866149649677
+    second: Beast_C 1_15
+  - first:
+      213: -3929951672636340915
+    second: Beast_C 1_16
+  - first:
+      213: 3543845102028371997
+    second: Beast_C 1_17
+  - first:
+      213: 7274285101953288848
+    second: Beast_C 1_18
+  - first:
+      213: -645297030161604411
+    second: Beast_C 1_19
+  - first:
+      213: 3379210780466606536
+    second: Beast_C 1_20
+  - first:
+      213: 3807517728957399037
+    second: Beast_C 1_21
+  - first:
+      213: -7783318311016348132
+    second: Beast_C 1_22
+  - first:
+      213: -9022745059733046336
+    second: Beast_C 1_23
+  - first:
+      213: 2917167880802827752
+    second: Beast_C 1_24
+  - first:
+      213: 5051942992864004836
+    second: Beast_C 1_25
+  - first:
+      213: -3449178258466136347
+    second: Beast_C 1_26
+  - first:
+      213: -5353885362500759574
+    second: Beast_C 1_27
+  - first:
+      213: 5080227740913189224
+    second: Beast_C 1_28
+  - first:
+      213: 9003169924769986813
+    second: Beast_C 1_29
+  - first:
+      213: -8050331061585054629
+    second: Beast_C 1_30
+  - first:
+      213: 7277993775024682123
+    second: Beast_C 1_31
+  - first:
+      213: -5270631181038087076
+    second: Beast_C 1_32
+  - first:
+      213: -4479575895338121603
+    second: Beast_C 1_33
+  - first:
+      213: 8544347560785666052
+    second: Beast_C 1_34
+  - first:
+      213: 2775708849304567644
+    second: Beast_C 1_35
+  - first:
+      213: 7057044164461341750
+    second: Beast_C 1_36
+  - first:
+      213: 7576514201814049265
+    second: Beast_C 1_37
+  - first:
+      213: -1741849107360786756
+    second: Beast_C 1_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beast_C 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 728
+        width: 49
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e388c833d0e8cfd60800000000000000
+      internalID: 7925365631615797310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 737
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbfd887420d75cea0800000000000000
+      internalID: -5853134691954532417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 728
+        width: 50
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07414253780de2e30800000000000000
+      internalID: 4480747958410941552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 737
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280eb0a651a242cd0800000000000000
+      internalID: -2583894014741979006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 671
+        width: 41
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbfcd02348854f970800000000000000
+      internalID: 8787746097705373631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_5
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 671
+        width: 41
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f6faa39c0e28010800000000000000
+      internalID: 1189760406456856382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 674
+        width: 35
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c3093f8fd477600800000000000000
+      internalID: 465926818089680025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_7
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 674
+        width: 35
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9e43f1152355b00800000000000000
+      internalID: 816614231434914214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_8
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 629
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425700a3fcaaaf5c0800000000000000
+      internalID: -4180841497052023516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_9
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 677
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ba53bde1d1cab70800000000000000
+      internalID: 8911529781023320906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 677
+        width: 193
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0cf9e2d8a1ad3fd0800000000000000
+      internalID: -2360552883207144434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_11
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 623
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f944fc434dd6cc0e0800000000000000
+      internalID: -2248301355778227041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 629
+        width: 49
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d26054135765d0b0800000000000000
+      internalID: -5704539746474106160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 629
+        width: 98
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1278ea21c56cdda30800000000000000
+      internalID: 4241764522805593889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_14
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 626
+        width: 146
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a9354a2c656bbb0800000000000000
+      internalID: -4920650148875101626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_15
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 629
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d0e8de27c2f0950800000000000000
+      internalID: 6417396866149649677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_16
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 629
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d450f0886c10679c0800000000000000
+      internalID: -3929951672636340915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 584
+        width: 49
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18b86d18544e2130800000000000000
+      internalID: 3543845102028371997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_18
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 593
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a87d862c373f460800000000000000
+      internalID: 7274285101953288848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_19
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 584
+        width: 50
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c06a9e15c17b07f0800000000000000
+      internalID: -645297030161604411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_20
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 593
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1f1ee0d4e55ee20800000000000000
+      internalID: 3379210780466606536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_21
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 527
+        width: 41
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfff18e833507d430800000000000000
+      internalID: 3807517728957399037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_22
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 527
+        width: 41
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16c312eb391cf390800000000000000
+      internalID: -7783318311016348132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_23
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 530
+        width: 35
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb73b73c25c8c280800000000000000
+      internalID: -9022745059733046336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_24
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 530
+        width: 35
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed7e655bbcdb7820800000000000000
+      internalID: 2917167880802827752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_25
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 485
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eace2bb26b1c1640800000000000000
+      internalID: 5051942992864004836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_26
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 533
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee102106ae0220d0800000000000000
+      internalID: -3449178258466136347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 533
+        width: 193
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef8afff0ad23b5b0800000000000000
+      internalID: -5353885362500759574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_28
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 323
+        width: 290
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8614733d638908640800000000000000
+      internalID: 5080227740913189224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 485
+        width: 49
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df83562885fa1fc70800000000000000
+      internalID: 9003169924769986813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_30
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 485
+        width: 98
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54fded4d8a774090800000000000000
+      internalID: -8050331061585054629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_31
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 482
+        width: 146
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84b9d527c0a00560800000000000000
+      internalID: 7277993775024682123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_32
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 485
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c549028add4fad6b0800000000000000
+      internalID: -5270631181038087076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_33
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 485
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7608fdf47955d1c0800000000000000
+      internalID: -4479575895338121603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 335
+        width: 385
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400ea1e26de939670800000000000000
+      internalID: 8544347560785666052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 97
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ff4bafd7c458620800000000000000
+      internalID: 2775708849304567644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_36
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 191
+        width: 194
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c26fa1748afe160800000000000000
+      internalID: 7057044164461341750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_37
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 191
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f124d2468f252960800000000000000
+      internalID: 7576514201814049265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beast_C 1_38
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 191
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6dd6f2775b3d7e0800000000000000
+      internalID: -1741849107360786756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Beast_C 1_0: 7925365631615797310
+      Beast_C 1_1: -5853134691954532417
+      Beast_C 1_10: -2360552883207144434
+      Beast_C 1_11: -2248301355778227041
+      Beast_C 1_12: -5704539746474106160
+      Beast_C 1_13: 4241764522805593889
+      Beast_C 1_14: -4920650148875101626
+      Beast_C 1_15: 6417396866149649677
+      Beast_C 1_16: -3929951672636340915
+      Beast_C 1_17: 3543845102028371997
+      Beast_C 1_18: 7274285101953288848
+      Beast_C 1_19: -645297030161604411
+      Beast_C 1_2: 4480747958410941552
+      Beast_C 1_20: 3379210780466606536
+      Beast_C 1_21: 3807517728957399037
+      Beast_C 1_22: -7783318311016348132
+      Beast_C 1_23: -9022745059733046336
+      Beast_C 1_24: 2917167880802827752
+      Beast_C 1_25: 5051942992864004836
+      Beast_C 1_26: -3449178258466136347
+      Beast_C 1_27: -5353885362500759574
+      Beast_C 1_28: 5080227740913189224
+      Beast_C 1_29: 9003169924769986813
+      Beast_C 1_3: -2583894014741979006
+      Beast_C 1_30: -8050331061585054629
+      Beast_C 1_31: 7277993775024682123
+      Beast_C 1_32: -5270631181038087076
+      Beast_C 1_33: -4479575895338121603
+      Beast_C 1_34: 8544347560785666052
+      Beast_C 1_35: 2775708849304567644
+      Beast_C 1_36: 7057044164461341750
+      Beast_C 1_37: 7576514201814049265
+      Beast_C 1_38: -1741849107360786756
+      Beast_C 1_4: 8787746097705373631
+      Beast_C 1_5: 1189760406456856382
+      Beast_C 1_6: 465926818089680025
+      Beast_C 1_7: 816614231434914214
+      Beast_C 1_8: -4180841497052023516
+      Beast_C 1_9: 8911529781023320906
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

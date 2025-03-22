@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 5b23c18ef40a541ff8b03604cb77bf1f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4767008274944084407
+    second: Dungeon_Rat_Large_Move 1_0
+  - first:
+      213: 373391815481712002
+    second: Dungeon_Rat_Large_Move 1_1
+  - first:
+      213: -6962881216202242593
+    second: Dungeon_Rat_Large_Move 1_2
+  - first:
+      213: -4478351029033384504
+    second: Dungeon_Rat_Large_Move 1_3
+  - first:
+      213: 7397216480584095345
+    second: Dungeon_Rat_Large_Move 1_4
+  - first:
+      213: 4244667175441733826
+    second: Dungeon_Rat_Large_Move 1_5
+  - first:
+      213: -8648608602752228751
+    second: Dungeon_Rat_Large_Move 1_6
+  - first:
+      213: 3152195903659691161
+    second: Dungeon_Rat_Large_Move 1_7
+  - first:
+      213: -6673506315374715802
+    second: Dungeon_Rat_Large_Move 1_8
+  - first:
+      213: -6738597902132090858
+    second: Dungeon_Rat_Large_Move 1_9
+  - first:
+      213: 9015418572796196848
+    second: Dungeon_Rat_Large_Move 1_10
+  - first:
+      213: 5155238577539429362
+    second: Dungeon_Rat_Large_Move 1_11
+  - first:
+      213: -6510948612015064639
+    second: Dungeon_Rat_Large_Move 1_12
+  - first:
+      213: -8576273713100054585
+    second: Dungeon_Rat_Large_Move 1_13
+  - first:
+      213: 299427283694607144
+    second: Dungeon_Rat_Large_Move 1_14
+  - first:
+      213: 4007644537262408337
+    second: Dungeon_Rat_Large_Move 1_15
+  - first:
+      213: -8327943367371879491
+    second: Dungeon_Rat_Large_Move 1_16
+  - first:
+      213: 2659902758762915798
+    second: Dungeon_Rat_Large_Move 1_17
+  - first:
+      213: -5982681805797744284
+    second: Dungeon_Rat_Large_Move 1_18
+  - first:
+      213: 1845980521868768984
+    second: Dungeon_Rat_Large_Move 1_19
+  - first:
+      213: -3867956997694083897
+    second: Dungeon_Rat_Large_Move 1_20
+  - first:
+      213: 5506187951162348217
+    second: Dungeon_Rat_Large_Move 1_21
+  - first:
+      213: 91477256268314333
+    second: Dungeon_Rat_Large_Move 1_22
+  - first:
+      213: -5184849262537362669
+    second: Dungeon_Rat_Large_Move 1_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 422
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9463c9a0b3f28ddb0800000000000000
+      internalID: -4767008274944084407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 422
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d53dbb0ed8e2500800000000000000
+      internalID: 373391815481712002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_2
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 421
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5860fbc60ee5f90800000000000000
+      internalID: -6962881216202242593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_3
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 421
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5c5f66773b9d1c0800000000000000
+      internalID: -4478351029033384504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_4
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 422
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17651eb623138a660800000000000000
+      internalID: 7397216480584095345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_5
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 422
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c817fd8e4618ea30800000000000000
+      internalID: 4244667175441733826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_6
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 303
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172e09f4c48f9f780800000000000000
+      internalID: -8648608602752228751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_7
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 303
+        width: 47
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99cc31c2979debb20800000000000000
+      internalID: 3152195903659691161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 303
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c93c92d51f263a0800000000000000
+      internalID: -6673506315374715802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_9
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 303
+        width: 51
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618693f19e0bb72a0800000000000000
+      internalID: -6738597902132090858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_10
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 303
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7f9fc1d633d1d70800000000000000
+      internalID: 9015418572796196848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_11
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 303
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3b0a23c261b8740800000000000000
+      internalID: 5155238577539429362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_12
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 175
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9f40edbb674a5a0800000000000000
+      internalID: -6510948612015064639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_13
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 175
+        width: 47
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf962a3f74faf880800000000000000
+      internalID: -8576273713100054585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_14
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 175
+        width: 49
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b5da03787c72400800000000000000
+      internalID: 299427283694607144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_15
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 175
+        width: 51
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1928f8529730e9730800000000000000
+      internalID: 4007644537262408337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_16
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 175
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb8a3671a33d6c80800000000000000
+      internalID: -8327943367371879491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_17
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 175
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d72521677fd9e420800000000000000
+      internalID: 2659902758762915798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_18
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 27
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461ab31689e39fca0800000000000000
+      internalID: -5982681805797744284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_19
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 28
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d63744118d3e9910800000000000000
+      internalID: 1845980521868768984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_20
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 30
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc25f99a91425ac0800000000000000
+      internalID: -3867956997694083897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_21
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 31
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2519fb4c8e96c40800000000000000
+      internalID: 5506187951162348217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_22
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 32
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd676e4741ef44100800000000000000
+      internalID: 91477256268314333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Rat_Large_Move 1_23
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 29
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313b384f017bb08b0800000000000000
+      internalID: -5184849262537362669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dungeon_Rat_Large_Move 1_0: -4767008274944084407
+      Dungeon_Rat_Large_Move 1_1: 373391815481712002
+      Dungeon_Rat_Large_Move 1_10: 9015418572796196848
+      Dungeon_Rat_Large_Move 1_11: 5155238577539429362
+      Dungeon_Rat_Large_Move 1_12: -6510948612015064639
+      Dungeon_Rat_Large_Move 1_13: -8576273713100054585
+      Dungeon_Rat_Large_Move 1_14: 299427283694607144
+      Dungeon_Rat_Large_Move 1_15: 4007644537262408337
+      Dungeon_Rat_Large_Move 1_16: -8327943367371879491
+      Dungeon_Rat_Large_Move 1_17: 2659902758762915798
+      Dungeon_Rat_Large_Move 1_18: -5982681805797744284
+      Dungeon_Rat_Large_Move 1_19: 1845980521868768984
+      Dungeon_Rat_Large_Move 1_2: -6962881216202242593
+      Dungeon_Rat_Large_Move 1_20: -3867956997694083897
+      Dungeon_Rat_Large_Move 1_21: 5506187951162348217
+      Dungeon_Rat_Large_Move 1_22: 91477256268314333
+      Dungeon_Rat_Large_Move 1_23: -5184849262537362669
+      Dungeon_Rat_Large_Move 1_3: -4478351029033384504
+      Dungeon_Rat_Large_Move 1_4: 7397216480584095345
+      Dungeon_Rat_Large_Move 1_5: 4244667175441733826
+      Dungeon_Rat_Large_Move 1_6: -8648608602752228751
+      Dungeon_Rat_Large_Move 1_7: 3152195903659691161
+      Dungeon_Rat_Large_Move 1_8: -6673506315374715802
+      Dungeon_Rat_Large_Move 1_9: -6738597902132090858
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,393 @@
+fileFormatVersion: 2
+guid: 22031ca461ea9d940b34a1181d95494c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4839385055302909732
+    second: Knight_Dark_Attack_0
+  - first:
+      213: -2174891626996396724
+    second: Knight_Dark_Attack_1
+  - first:
+      213: -8670574242920505600
+    second: Knight_Dark_Attack_2
+  - first:
+      213: 1280378201260777509
+    second: Knight_Dark_Attack_3
+  - first:
+      213: 3189210174376263147
+    second: Knight_Dark_Attack_4
+  - first:
+      213: 8087390227631612252
+    second: Knight_Dark_Attack_5
+  - first:
+      213: -2528061895552114390
+    second: Knight_Dark_Attack_6
+  - first:
+      213: 8931398023368269239
+    second: Knight_Dark_Attack_7
+  - first:
+      213: -466339532029150262
+    second: Knight_Dark_Attack_8
+  - first:
+      213: 8018666425210241624
+    second: Knight_Dark_Attack_9
+  - first:
+      213: -2999929849150260368
+    second: Knight_Dark_Attack_10
+  - first:
+      213: -1201566416826990690
+    second: Knight_Dark_Attack_11
+  - first:
+      213: -9164941684979060929
+    second: Knight_Dark_Attack_12
+  - first:
+      213: 5670899364682538470
+    second: Knight_Dark_Attack_13
+  - first:
+      213: 1209348582453582250
+    second: Knight_Dark_Attack_14
+  - first:
+      213: 4198594769145884934
+    second: Knight_Dark_Attack_15
+  - first:
+      213: 5385223409231118877
+    second: Knight_Dark_Attack_16
+  - first:
+      213: -6030556733345960217
+    second: Knight_Dark_Attack_17
+  - first:
+      213: -188802868088715360
+    second: Knight_Dark_Attack_18
+  - first:
+      213: 4934253898090583942
+    second: Knight_Dark_Attack_19
+  - first:
+      213: 4732902577113722108
+    second: Knight_Dark_Attack_20
+  - first:
+      213: 9088073500641807180
+    second: Knight_Dark_Attack_21
+  - first:
+      213: -4017238622535045297
+    second: Knight_Dark_Attack_22
+  - first:
+      213: -8312595345634820513
+    second: Knight_Dark_Attack_23
+  - first:
+      213: -4442592242613143555
+    second: Knight_Dark_Attack_24
+  - first:
+      213: -1669500385933630470
+    second: Knight_Dark_Attack_25
+  - first:
+      213: -8742579236087305000
+    second: Knight_Dark_Attack_26
+  - first:
+      213: 3845806375161027368
+    second: Knight_Dark_Attack_27
+  - first:
+      213: -2267885538431626388
+    second: Knight_Dark_Attack_28
+  - first:
+      213: -3050852045891087785
+    second: Knight_Dark_Attack_29
+  - first:
+      213: -7580764603565982082
+    second: Knight_Dark_Attack_30
+  - first:
+      213: 4518863380557008668
+    second: Knight_Dark_Attack_31
+  - first:
+      213: 3062100676055537392
+    second: Knight_Dark_Attack_32
+  - first:
+      213: -4177071291433699288
+    second: Knight_Dark_Attack_33
+  - first:
+      213: -1748124789516854585
+    second: Knight_Dark_Attack_34
+  - first:
+      213: -546277778391315745
+    second: Knight_Dark_Attack_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Knight_Dark_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 431
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0065faeec07dcb0800000000000000
+      internalID: -4839385055302909732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Dark_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 431
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d88eb969b31d1e0800000000000000
+      internalID: -2174891626996396724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Dark_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 419
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f521c2aaeeba780800000000000000
+      internalID: -8670574242920505600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Dark_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 419
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5206d48b031d4c110800000000000000
+      internalID: 1280378201260777509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Dark_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 418
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed32c5a1c9524c20800000000000000
+      internalID: 3189210174376263147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Dark_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 419
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07bbe4e42bb1e56d0800000000000000
+      internalID: -2999929849150260368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e5707ae243c8e9145b9925370d689402
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Knight_Dark_Attack_0: -4839385055302909732
+      Knight_Dark_Attack_1: -2174891626996396724
+      Knight_Dark_Attack_10: -2999929849150260368
+      Knight_Dark_Attack_11: -1201566416826990690
+      Knight_Dark_Attack_12: -9164941684979060929
+      Knight_Dark_Attack_13: 5670899364682538470
+      Knight_Dark_Attack_14: 1209348582453582250
+      Knight_Dark_Attack_15: 4198594769145884934
+      Knight_Dark_Attack_16: 5385223409231118877
+      Knight_Dark_Attack_17: -6030556733345960217
+      Knight_Dark_Attack_18: -188802868088715360
+      Knight_Dark_Attack_19: 4934253898090583942
+      Knight_Dark_Attack_2: -8670574242920505600
+      Knight_Dark_Attack_20: 4732902577113722108
+      Knight_Dark_Attack_21: 9088073500641807180
+      Knight_Dark_Attack_22: -4017238622535045297
+      Knight_Dark_Attack_23: -8312595345634820513
+      Knight_Dark_Attack_24: -4442592242613143555
+      Knight_Dark_Attack_25: -1669500385933630470
+      Knight_Dark_Attack_26: -8742579236087305000
+      Knight_Dark_Attack_27: 3845806375161027368
+      Knight_Dark_Attack_28: -2267885538431626388
+      Knight_Dark_Attack_29: -3050852045891087785
+      Knight_Dark_Attack_3: 1280378201260777509
+      Knight_Dark_Attack_30: -7580764603565982082
+      Knight_Dark_Attack_31: 4518863380557008668
+      Knight_Dark_Attack_32: 3062100676055537392
+      Knight_Dark_Attack_33: -4177071291433699288
+      Knight_Dark_Attack_34: -1748124789516854585
+      Knight_Dark_Attack_35: -546277778391315745
+      Knight_Dark_Attack_4: 3189210174376263147
+      Knight_Dark_Attack_5: 8087390227631612252
+      Knight_Dark_Attack_6: -2528061895552114390
+      Knight_Dark_Attack_7: 8931398023368269239
+      Knight_Dark_Attack_8: -466339532029150262
+      Knight_Dark_Attack_9: 8018666425210241624
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

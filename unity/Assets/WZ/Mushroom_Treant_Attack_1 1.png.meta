@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 72ddcd42927ad4e11a26e0ae37f9778f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6893593798966841651
+    second: Mushroom_Treant_Attack_1 1_0
+  - first:
+      213: 2419414844932644329
+    second: Mushroom_Treant_Attack_1 1_1
+  - first:
+      213: 3146014223288238251
+    second: Mushroom_Treant_Attack_1 1_2
+  - first:
+      213: -5295212276915511477
+    second: Mushroom_Treant_Attack_1 1_3
+  - first:
+      213: -958595177518817757
+    second: Mushroom_Treant_Attack_1 1_4
+  - first:
+      213: -7257875679564252507
+    second: Mushroom_Treant_Attack_1 1_5
+  - first:
+      213: 4348759852205020985
+    second: Mushroom_Treant_Attack_1 1_6
+  - first:
+      213: -6818416646670751396
+    second: Mushroom_Treant_Attack_1 1_7
+  - first:
+      213: 16244627027530035
+    second: Mushroom_Treant_Attack_1 1_8
+  - first:
+      213: -1110830115667837991
+    second: Mushroom_Treant_Attack_1 1_9
+  - first:
+      213: -1587309972192251595
+    second: Mushroom_Treant_Attack_1 1_10
+  - first:
+      213: -8827474425200396620
+    second: Mushroom_Treant_Attack_1 1_11
+  - first:
+      213: -8713380905363823321
+    second: Mushroom_Treant_Attack_1 1_12
+  - first:
+      213: 8584740739655236395
+    second: Mushroom_Treant_Attack_1 1_13
+  - first:
+      213: -4797688116125130175
+    second: Mushroom_Treant_Attack_1 1_14
+  - first:
+      213: 7389892128065281513
+    second: Mushroom_Treant_Attack_1 1_15
+  - first:
+      213: 1615670025347102773
+    second: Mushroom_Treant_Attack_1 1_16
+  - first:
+      213: -2380661472171407813
+    second: Mushroom_Treant_Attack_1 1_17
+  - first:
+      213: 3834834264150577002
+    second: Mushroom_Treant_Attack_1 1_18
+  - first:
+      213: -3000241252540717212
+    second: Mushroom_Treant_Attack_1 1_19
+  - first:
+      213: 1484961293120063226
+    second: Mushroom_Treant_Attack_1 1_20
+  - first:
+      213: 5785981273111092151
+    second: Mushroom_Treant_Attack_1 1_21
+  - first:
+      213: -5036358488851918492
+    second: Mushroom_Treant_Attack_1 1_22
+  - first:
+      213: 9218158420597928249
+    second: Mushroom_Treant_Attack_1 1_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 431
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331114d4907faaf50800000000000000
+      internalID: 6893593798966841651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_1
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 431
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed548c9bfc739120800000000000000
+      internalID: 2419414844932644329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_2
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 431
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba00c6d8443e8ab20800000000000000
+      internalID: 3146014223288238251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_3
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 428
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fd9284d70a386b0800000000000000
+      internalID: -5295212276915511477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_4
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 427
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e9690d3c262b2f0800000000000000
+      internalID: -958595177518817757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_5
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 427
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aa30a7f588d64b90800000000000000
+      internalID: -7257875679564252507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 303
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937192c7b06e95c30800000000000000
+      internalID: 4348759852205020985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 303
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5964947f2e1061a0800000000000000
+      internalID: -6818416646670751396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_8
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 303
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3311c77f666b93000800000000000000
+      internalID: 16244627027530035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_9
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 303
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dbffcd25e98590f0800000000000000
+      internalID: -1110830115667837991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_10
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 303
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531bb0f7dfdb8f9e0800000000000000
+      internalID: -1587309972192251595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_11
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 303
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6b51eb7c28e7580800000000000000
+      internalID: -8827474425200396620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 175
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7252e176b3ad31780800000000000000
+      internalID: -8713380905363823321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_13
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 175
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b79f30830232770800000000000000
+      internalID: 8584740739655236395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_14
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 175
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142af3fd3103b6db0800000000000000
+      internalID: -4797688116125130175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_15
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 175
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed59c5bcbb2e8660800000000000000
+      internalID: 7389892128065281513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_16
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 175
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5387f0fe3530c6610800000000000000
+      internalID: 1615670025347102773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_17
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 175
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36c3cc110136fed0800000000000000
+      internalID: -2380661472171407813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_18
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 47
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f01370271183530800000000000000
+      internalID: 3834834264150577002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_19
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 47
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46766dd0a700d56d0800000000000000
+      internalID: -3000241252540717212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_20
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 47
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af640adad64ab9410800000000000000
+      internalID: 1484961293120063226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_21
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 46
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb59dcff4feb4050800000000000000
+      internalID: 5785981273111092151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_22
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 46
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461557e53a24b1ab0800000000000000
+      internalID: -5036358488851918492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Treant_Attack_1 1_23
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 47
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931f30f5e3a7def70800000000000000
+      internalID: 9218158420597928249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mushroom_Treant_Attack_1 1_0: 6893593798966841651
+      Mushroom_Treant_Attack_1 1_1: 2419414844932644329
+      Mushroom_Treant_Attack_1 1_10: -1587309972192251595
+      Mushroom_Treant_Attack_1 1_11: -8827474425200396620
+      Mushroom_Treant_Attack_1 1_12: -8713380905363823321
+      Mushroom_Treant_Attack_1 1_13: 8584740739655236395
+      Mushroom_Treant_Attack_1 1_14: -4797688116125130175
+      Mushroom_Treant_Attack_1 1_15: 7389892128065281513
+      Mushroom_Treant_Attack_1 1_16: 1615670025347102773
+      Mushroom_Treant_Attack_1 1_17: -2380661472171407813
+      Mushroom_Treant_Attack_1 1_18: 3834834264150577002
+      Mushroom_Treant_Attack_1 1_19: -3000241252540717212
+      Mushroom_Treant_Attack_1 1_2: 3146014223288238251
+      Mushroom_Treant_Attack_1 1_20: 1484961293120063226
+      Mushroom_Treant_Attack_1 1_21: 5785981273111092151
+      Mushroom_Treant_Attack_1 1_22: -5036358488851918492
+      Mushroom_Treant_Attack_1 1_23: 9218158420597928249
+      Mushroom_Treant_Attack_1 1_3: -5295212276915511477
+      Mushroom_Treant_Attack_1 1_4: -958595177518817757
+      Mushroom_Treant_Attack_1 1_5: -7257875679564252507
+      Mushroom_Treant_Attack_1 1_6: 4348759852205020985
+      Mushroom_Treant_Attack_1 1_7: -6818416646670751396
+      Mushroom_Treant_Attack_1 1_8: 16244627027530035
+      Mushroom_Treant_Attack_1 1_9: -1110830115667837991
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf9cede642b94dd48337a77e12df717, type: 3}
+  m_Name: ShopDatabase
+  m_EditorClassIdentifier: 
+  shopItems:
+  - id: 0
+    name: "<color=red>Pyromancer\u2019s Tome"
+    description: Burn brighter, hit hotter, and leave enemies smoldering!
+    cost: 1000
+    icon: {fileID: -1963832511, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+  - id: 1
+    name: "<color=#1E90FF>Hydromancer\u2019s Tome"
+    description: Unleash aquatic power, turn the tides with water magic!
+    cost: 1000
+    icon: {fileID: -853384034, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+  - id: 2
+    name: "<color=#FFD700>Aeromancer\u2019s Tome"
+    description: "Command lightning itself\u2014zap your foes with storm magic!"
+    cost: 1000
+    icon: {fileID: 360096041, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+  - id: 3
+    name: "<color=#6B8E23>Geomancer\u2019s Tome "
+    description: "Harness nature\u2019s might\u2014shake things up with earth magic!"
+    cost: 1000
+    icon: {fileID: 412297599, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+  - id: 4
+    name: '<color=#D3D3D3>Spell Scroll: Potency I'
+    description: 'Empowers the spell in your first slot, make it pack a bigger punch! '
+    cost: 2000
+    icon: {fileID: -804744696, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+  - id: 5
+    name: '<color=#9B59B6>Spell Scroll: Potency II'
+    description: 'Boosts your second-slot spell, increasing its magical might! '
+    cost: 2000
+    icon: {fileID: -255082522, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+  - id: 6
+    name: '<color=#006400>Spell Scroll: Potency III'
+    description: 'Strengthens your third-slot spell for maximum elemental impact! '
+    cost: 2000
+    icon: {fileID: 1845906269, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}
+  - id: 7
+    name: '<color=#4F4F4F>Spell Scroll: Potency IV'
+    description: Supercharges the spell in your fourth slot, unleash its full potential!
+    cost: 2000
+    icon: {fileID: -1131658864, guid: fc87eb8835c224c6e9fbd117bef2e93f, type: 3}

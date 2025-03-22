@@ -1,0 +1,4498 @@
+fileFormatVersion: 2
+guid: 8b88c846fb1fc48eb912627f162cc2eb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8934533122450216148
+    second: MagicEffects01 1_0
+  - first:
+      213: 6650971563190604619
+    second: MagicEffects01 1_1
+  - first:
+      213: 4094198136248410892
+    second: MagicEffects01 1_2
+  - first:
+      213: -6614231126671225375
+    second: MagicEffects01 1_3
+  - first:
+      213: -6760282801034078834
+    second: MagicEffects01 1_4
+  - first:
+      213: -2075384187942170602
+    second: MagicEffects01 1_5
+  - first:
+      213: -968902418082537385
+    second: MagicEffects01 1_6
+  - first:
+      213: 4285796676015053431
+    second: MagicEffects01 1_7
+  - first:
+      213: 7789834007134973211
+    second: MagicEffects01 1_8
+  - first:
+      213: 4965016081355289703
+    second: MagicEffects01 1_9
+  - first:
+      213: 5638223687107967700
+    second: MagicEffects01 1_10
+  - first:
+      213: 2637078563793289866
+    second: MagicEffects01 1_11
+  - first:
+      213: -2752760049044905021
+    second: MagicEffects01 1_12
+  - first:
+      213: -6042882202847702790
+    second: MagicEffects01 1_13
+  - first:
+      213: 6541946512071534272
+    second: MagicEffects01 1_14
+  - first:
+      213: -8377277557053187939
+    second: MagicEffects01 1_15
+  - first:
+      213: 8492901263121757960
+    second: MagicEffects01 1_16
+  - first:
+      213: 4941606725699225074
+    second: MagicEffects01 1_17
+  - first:
+      213: -4155955557311554651
+    second: MagicEffects01 1_18
+  - first:
+      213: -9143793483073579993
+    second: MagicEffects01 1_19
+  - first:
+      213: -8573973307556107699
+    second: MagicEffects01 1_20
+  - first:
+      213: 6529828410932639718
+    second: MagicEffects01 1_21
+  - first:
+      213: -1651787302579926050
+    second: MagicEffects01 1_22
+  - first:
+      213: 9022816871396135750
+    second: MagicEffects01 1_23
+  - first:
+      213: -3327073439416640771
+    second: MagicEffects01 1_24
+  - first:
+      213: 1357248099940718925
+    second: MagicEffects01 1_25
+  - first:
+      213: 355359170327789002
+    second: MagicEffects01 1_26
+  - first:
+      213: 2589553186668245460
+    second: MagicEffects01 1_27
+  - first:
+      213: 2090575857516440390
+    second: MagicEffects01 1_28
+  - first:
+      213: -5522213558477322937
+    second: MagicEffects01 1_29
+  - first:
+      213: 2587905679260790490
+    second: MagicEffects01 1_30
+  - first:
+      213: -7553233689706048342
+    second: MagicEffects01 1_31
+  - first:
+      213: 6655738389362431740
+    second: MagicEffects01 1_32
+  - first:
+      213: 6109834753577498264
+    second: MagicEffects01 1_33
+  - first:
+      213: -382770344283164853
+    second: MagicEffects01 1_34
+  - first:
+      213: 8503034500031452234
+    second: MagicEffects01 1_35
+  - first:
+      213: -6728628280059883019
+    second: MagicEffects01 1_36
+  - first:
+      213: -8565308012871024588
+    second: MagicEffects01 1_37
+  - first:
+      213: 5973192820605527891
+    second: MagicEffects01 1_38
+  - first:
+      213: 8131895827207421926
+    second: MagicEffects01 1_39
+  - first:
+      213: 5716114720391311744
+    second: MagicEffects01 1_40
+  - first:
+      213: -4686857792411102964
+    second: MagicEffects01 1_41
+  - first:
+      213: -5385225035898621251
+    second: MagicEffects01 1_42
+  - first:
+      213: 7347795310504731597
+    second: MagicEffects01 1_43
+  - first:
+      213: 3310327181783641492
+    second: MagicEffects01 1_44
+  - first:
+      213: -6828172975445810682
+    second: MagicEffects01 1_45
+  - first:
+      213: -5681205557711850653
+    second: MagicEffects01 1_46
+  - first:
+      213: -2270507877949656997
+    second: MagicEffects01 1_47
+  - first:
+      213: -1590183543356254420
+    second: MagicEffects01 1_48
+  - first:
+      213: 8585881494217235323
+    second: MagicEffects01 1_49
+  - first:
+      213: 7228903255728740106
+    second: MagicEffects01 1_50
+  - first:
+      213: -1795898590773214922
+    second: MagicEffects01 1_51
+  - first:
+      213: 1548050196146121172
+    second: MagicEffects01 1_52
+  - first:
+      213: -1938135962732801450
+    second: MagicEffects01 1_53
+  - first:
+      213: -229825820683696572
+    second: MagicEffects01 1_54
+  - first:
+      213: 3928886299649291505
+    second: MagicEffects01 1_55
+  - first:
+      213: 4886785071896603938
+    second: MagicEffects01 1_56
+  - first:
+      213: 6541773770811652332
+    second: MagicEffects01 1_57
+  - first:
+      213: -2058975884531596682
+    second: MagicEffects01 1_58
+  - first:
+      213: 5461206244447044170
+    second: MagicEffects01 1_59
+  - first:
+      213: -8535506337068602607
+    second: MagicEffects01 1_60
+  - first:
+      213: -8892637703190800056
+    second: MagicEffects01 1_61
+  - first:
+      213: 6097208993191111623
+    second: MagicEffects01 1_62
+  - first:
+      213: 8066005498882579577
+    second: MagicEffects01 1_63
+  - first:
+      213: 239198089453117256
+    second: MagicEffects01 1_64
+  - first:
+      213: -7664394441419139678
+    second: MagicEffects01 1_65
+  - first:
+      213: 8702667757659024296
+    second: MagicEffects01 1_66
+  - first:
+      213: 7318638838549173922
+    second: MagicEffects01 1_67
+  - first:
+      213: 6756495444104735835
+    second: MagicEffects01 1_68
+  - first:
+      213: -7268267127046223962
+    second: MagicEffects01 1_69
+  - first:
+      213: -3060554922202756228
+    second: MagicEffects01 1_70
+  - first:
+      213: -2867824828433193620
+    second: MagicEffects01 1_71
+  - first:
+      213: 1854691098838892283
+    second: MagicEffects01 1_72
+  - first:
+      213: -7022281871322081961
+    second: MagicEffects01 1_73
+  - first:
+      213: 5887919129960171309
+    second: MagicEffects01 1_74
+  - first:
+      213: -7313481335983517212
+    second: MagicEffects01 1_75
+  - first:
+      213: -3780198525997234164
+    second: MagicEffects01 1_76
+  - first:
+      213: -8708377800425197427
+    second: MagicEffects01 1_77
+  - first:
+      213: 2494340245915228919
+    second: MagicEffects01 1_78
+  - first:
+      213: 8266686289813790911
+    second: MagicEffects01 1_79
+  - first:
+      213: -6712920001683847899
+    second: MagicEffects01 1_80
+  - first:
+      213: 6110179549550422315
+    second: MagicEffects01 1_81
+  - first:
+      213: 8541759160883143446
+    second: MagicEffects01 1_82
+  - first:
+      213: 1672443054533004416
+    second: MagicEffects01 1_83
+  - first:
+      213: -7452618926609014637
+    second: MagicEffects01 1_84
+  - first:
+      213: 7793152204529847744
+    second: MagicEffects01 1_85
+  - first:
+      213: -1382919244827761061
+    second: MagicEffects01 1_86
+  - first:
+      213: -4740675138306577067
+    second: MagicEffects01 1_87
+  - first:
+      213: -1944352350896785675
+    second: MagicEffects01 1_88
+  - first:
+      213: 3321851654795025408
+    second: MagicEffects01 1_89
+  - first:
+      213: -2059538214085080542
+    second: MagicEffects01 1_90
+  - first:
+      213: 436634842403795116
+    second: MagicEffects01 1_91
+  - first:
+      213: 2676146534881521680
+    second: MagicEffects01 1_92
+  - first:
+      213: -3571925884167913404
+    second: MagicEffects01 1_93
+  - first:
+      213: -8437765188875034013
+    second: MagicEffects01 1_94
+  - first:
+      213: -5736771478701148240
+    second: MagicEffects01 1_95
+  - first:
+      213: -174743872921127065
+    second: MagicEffects01 1_96
+  - first:
+      213: -6412135842572725249
+    second: MagicEffects01 1_97
+  - first:
+      213: 6046437411724988173
+    second: MagicEffects01 1_98
+  - first:
+      213: -2580235093897325205
+    second: MagicEffects01 1_99
+  - first:
+      213: 1201247674162426955
+    second: MagicEffects01 1_100
+  - first:
+      213: 6935274068116991876
+    second: MagicEffects01 1_101
+  - first:
+      213: 3551706702331497669
+    second: MagicEffects01 1_102
+  - first:
+      213: -4423623620056088895
+    second: MagicEffects01 1_103
+  - first:
+      213: 5554454510132842731
+    second: MagicEffects01 1_104
+  - first:
+      213: -1831585295630782817
+    second: MagicEffects01 1_105
+  - first:
+      213: -5453899420749797121
+    second: MagicEffects01 1_106
+  - first:
+      213: -8588440229961530955
+    second: MagicEffects01 1_107
+  - first:
+      213: 7844021632452003074
+    second: MagicEffects01 1_108
+  - first:
+      213: -5577575150579162852
+    second: MagicEffects01 1_109
+  - first:
+      213: 7061085034264722522
+    second: MagicEffects01 1_110
+  - first:
+      213: -8121207027012878014
+    second: MagicEffects01 1_111
+  - first:
+      213: 2731043177452051747
+    second: MagicEffects01 1_112
+  - first:
+      213: -4792745881850790231
+    second: MagicEffects01 1_113
+  - first:
+      213: 2648064345967815112
+    second: MagicEffects01 1_114
+  - first:
+      213: 3504515065428054687
+    second: MagicEffects01 1_115
+  - first:
+      213: -2460032111112677949
+    second: MagicEffects01 1_116
+  - first:
+      213: -5422008016499241394
+    second: MagicEffects01 1_117
+  - first:
+      213: -6192903854303307588
+    second: MagicEffects01 1_118
+  - first:
+      213: -947988513102543864
+    second: MagicEffects01 1_119
+  - first:
+      213: 3392783216045456275
+    second: MagicEffects01 1_120
+  - first:
+      213: 2154619219526183505
+    second: MagicEffects01 1_121
+  - first:
+      213: 572000760195245874
+    second: MagicEffects01 1_122
+  - first:
+      213: 3580381130777323361
+    second: MagicEffects01 1_123
+  - first:
+      213: -7827338428542642517
+    second: MagicEffects01 1_124
+  - first:
+      213: -8154608307338780232
+    second: MagicEffects01 1_125
+  - first:
+      213: -4873626577014061687
+    second: MagicEffects01 1_126
+  - first:
+      213: 8731990638431539555
+    second: MagicEffects01 1_127
+  - first:
+      213: -887381590540776738
+    second: MagicEffects01 1_128
+  - first:
+      213: 4986624099732447172
+    second: MagicEffects01 1_129
+  - first:
+      213: -7627430386107550729
+    second: MagicEffects01 1_130
+  - first:
+      213: 4067454192333487061
+    second: MagicEffects01 1_131
+  - first:
+      213: 2985864470286289746
+    second: MagicEffects01 1_132
+  - first:
+      213: -7817626186227713413
+    second: MagicEffects01 1_133
+  - first:
+      213: 6380128601671671588
+    second: MagicEffects01 1_134
+  - first:
+      213: 6219193139392808958
+    second: MagicEffects01 1_135
+  - first:
+      213: 7338866755858079931
+    second: MagicEffects01 1_136
+  - first:
+      213: -8946599311775092575
+    second: MagicEffects01 1_137
+  - first:
+      213: -5749461644060290947
+    second: MagicEffects01 1_138
+  - first:
+      213: 2212779493125203213
+    second: MagicEffects01 1_139
+  - first:
+      213: 7588123961532969409
+    second: MagicEffects01 1_140
+  - first:
+      213: 6290206348462524858
+    second: MagicEffects01 1_141
+  - first:
+      213: 5117785483895157217
+    second: MagicEffects01 1_142
+  - first:
+      213: -6926330366458292310
+    second: MagicEffects01 1_143
+  - first:
+      213: -4895460859232892930
+    second: MagicEffects01 1_144
+  - first:
+      213: -7721275962186391527
+    second: MagicEffects01 1_145
+  - first:
+      213: 2457147348526342042
+    second: MagicEffects01 1_146
+  - first:
+      213: -7580216767095723543
+    second: MagicEffects01 1_147
+  - first:
+      213: 1528885695230219983
+    second: MagicEffects01 1_148
+  - first:
+      213: 5653585255798695960
+    second: MagicEffects01 1_149
+  - first:
+      213: -5209186325211954898
+    second: MagicEffects01 1_150
+  - first:
+      213: -4068153778170806539
+    second: MagicEffects01 1_151
+  - first:
+      213: -3236356545619750009
+    second: MagicEffects01 1_152
+  - first:
+      213: 8284673787681777853
+    second: MagicEffects01 1_153
+  - first:
+      213: -3699531570205003649
+    second: MagicEffects01 1_154
+  - first:
+      213: 5087437971569713273
+    second: MagicEffects01 1_155
+  - first:
+      213: 2814288728527646060
+    second: MagicEffects01 1_156
+  - first:
+      213: -4945619948054672185
+    second: MagicEffects01 1_157
+  - first:
+      213: 5522092645844194913
+    second: MagicEffects01 1_158
+  - first:
+      213: -384209300515253988
+    second: MagicEffects01 1_159
+  - first:
+      213: 6301881961576573766
+    second: MagicEffects01 1_160
+  - first:
+      213: -656781686954709757
+    second: MagicEffects01 1_161
+  - first:
+      213: 7963328995948378109
+    second: MagicEffects01 1_162
+  - first:
+      213: 4922745706859027513
+    second: MagicEffects01 1_163
+  - first:
+      213: 8302484394589898748
+    second: MagicEffects01 1_164
+  - first:
+      213: -6554936595236117209
+    second: MagicEffects01 1_165
+  - first:
+      213: 7952120114552084153
+    second: MagicEffects01 1_166
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MagicEffects01 1_0
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 779
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d45b95a986ddfb70800000000000000
+      internalID: 8934533122450216148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_1
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 818
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43533bf56ffc4c50800000000000000
+      internalID: 6650971563190604619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_2
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 767
+        width: 97
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03272f438381d830800000000000000
+      internalID: 4094198136248410892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 790
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed0e6085d78534a0800000000000000
+      internalID: -6614231126671225375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_4
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 782
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e855e272c96ae22a0800000000000000
+      internalID: -6760282801034078834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 790
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6109e31b311c233e0800000000000000
+      internalID: -2075384187942170602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_6
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 787
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7506c2c5264cd82f0800000000000000
+      internalID: -968902418082537385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 789
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a5d65ae553a7b30800000000000000
+      internalID: 4285796676015053431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 791
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1da986d1cc0b1c60800000000000000
+      internalID: 7789834007134973211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_9
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 786
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764b849f1d747e440800000000000000
+      internalID: 4965016081355289703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_10
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 736
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da7342229efe3e40800000000000000
+      internalID: 5638223687107967700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_11
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 767
+        width: 44
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8242bf5bf8c89420800000000000000
+      internalID: 2637078563793289866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 728
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3aac4f15b3cc9d0800000000000000
+      internalID: -2752760049044905021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_13
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 732
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af09bbf27ae532ca0800000000000000
+      internalID: -6042882202847702790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 720
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c621a721b9a9ca50800000000000000
+      internalID: 6541946512071534272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 725
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d981ef2527eedbb80800000000000000
+      internalID: -8377277557053187939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_16
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 722
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807b6d493b8dcd570800000000000000
+      internalID: 8492901263121757960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_17
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 732
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5cbf0a22d149440800000000000000
+      internalID: 4941606725699225074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_18
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 724
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab522890741356c0800000000000000
+      internalID: -4155955557311554651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_19
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 727
+        width: 43
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7241ed5e548ba1180800000000000000
+      internalID: -9143793483073579993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_20
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 715
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4aef6124b0230980800000000000000
+      internalID: -8573973307556107699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_21
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 721
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7b4edd75c9e9a50800000000000000
+      internalID: 6529828410932639718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_22
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 703
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb0939233ca319e0800000000000000
+      internalID: -1651787302579926050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_23
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 648
+        width: 53
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643d7fcb32c773d70800000000000000
+      internalID: 9022816871396135750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_24
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 659
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa1fed955cd3d1d0800000000000000
+      internalID: -3327073439416640771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_25
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 703
+        width: 54
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d495a05b4f9e5d210800000000000000
+      internalID: 1357248099940718925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_26
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 703
+        width: 28
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdb01b584d7ee400800000000000000
+      internalID: 355359170327789002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 669
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1775a37e0ffe320800000000000000
+      internalID: 2589553186668245460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 657
+        width: 62
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b66438aa7330d10800000000000000
+      internalID: 2090575857516440390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_29
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 661
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7450d19c6082d53b0800000000000000
+      internalID: -5522213558477322937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_30
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 668
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade2e8401861ae320800000000000000
+      internalID: 2587905679260790490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_31
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 657
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4de8b5af58d2790800000000000000
+      internalID: -7553233689706048342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_32
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 669
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6d0ef2dceed5c50800000000000000
+      internalID: 6655738389362431740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_33
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 661
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 896b25b465e7ac450800000000000000
+      internalID: 6109834753577498264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_34
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 666
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4fa27e566020baf0800000000000000
+      internalID: -382770344283164853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_35
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 664
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a441447a3d8d00670800000000000000
+      internalID: 8503034500031452234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_36
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 651
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f11265aa3c1f92a0800000000000000
+      internalID: -6728628280059883019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_37
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 639
+        width: 57
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43004054eb9e12980800000000000000
+      internalID: -8565308012871024588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_38
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 639
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3572b17193b05e250800000000000000
+      internalID: 5973192820605527891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_39
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 630
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6effd239b2c4ad070800000000000000
+      internalID: 8131895827207421926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_40
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 373
+        width: 21
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0813e4c8d08b35f40800000000000000
+      internalID: 5716114720391311744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_41
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 639
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01909a7bafe4feb0800000000000000
+      internalID: -4686857792411102964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_42
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 592
+        width: 45
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2f8bbac56d345b0800000000000000
+      internalID: -5385225035898621251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_43
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 603
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc36ae497ec98f560800000000000000
+      internalID: 7347795310504731597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_44
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 597
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49da8807805a0fd20800000000000000
+      internalID: 3310327181783641492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_45
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 599
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60261a52bd47d31a0800000000000000
+      internalID: -6828172975445810682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_46
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 587
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3633c9445ad4821b0800000000000000
+      internalID: -5681205557711850653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_47
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 617
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50b51b5d198d70e0800000000000000
+      internalID: -2270507877949656997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_48
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 595
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2714921e788ee9e0800000000000000
+      internalID: -1590183543356254420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_49
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 617
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b1b62aabd272770800000000000000
+      internalID: 8585881494217235323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_50
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 575
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a075061f539325460800000000000000
+      internalID: 7228903255728740106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 599
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631865c2fbfa317e0800000000000000
+      internalID: -1795898590773214922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_52
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 601
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d963c39377cb7510800000000000000
+      internalID: 1548050196146121172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_53
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 596
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652d6ee4c9b5a15e0800000000000000
+      internalID: -1938135962732801450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_54
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 594
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4468fed32ae7fccf0800000000000000
+      internalID: -229825820683696572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_55
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 602
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4be7df545368630800000000000000
+      internalID: 3928886299649291505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_56
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 600
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d2410b12951d340800000000000000
+      internalID: 4886785071896603938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_57
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 594
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce83232b59c09ca50800000000000000
+      internalID: 6541773770811652332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_58
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 575
+        width: 60
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6720669875c0d63e0800000000000000
+      internalID: -2058975884531596682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_59
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 570
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a424965052a1acb40800000000000000
+      internalID: 5461206244447044170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_60
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 575
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b2ee0a53acb8980800000000000000
+      internalID: -8535506337068602607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_61
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 527
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8491119cf11079480800000000000000
+      internalID: -8892637703190800056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_62
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 524
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb29706643ad9450800000000000000
+      internalID: 6097208993191111623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_63
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 558
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c5e35044530ff60800000000000000
+      internalID: 8066005498882579577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_64
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 530
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f1ec0256dc15300800000000000000
+      internalID: 239198089453117256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_65
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 511
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5dbbcfcd992a590800000000000000
+      internalID: -7664394441419139678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8abe285873616c870800000000000000
+      internalID: 8702667757659024296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_67
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 533
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6d9137f37019560800000000000000
+      internalID: 7318638838549173922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_68
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 532
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c68681fc4e3cd50800000000000000
+      internalID: 6756495444104735835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_69
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 533
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7c2cf8e8de12b90800000000000000
+      internalID: -7268267127046223962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_70
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 539
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b08868389b685d0800000000000000
+      internalID: -3060554922202756228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_71
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 535
+        width: 36
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65a13f43807338d0800000000000000
+      internalID: -2867824828433193620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_72
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 511
+        width: 61
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfefe525abf2db910800000000000000
+      internalID: 1854691098838892283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_73
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 383
+        width: 32
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7559e2bf7d7db8e90800000000000000
+      internalID: -7022281871322081961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_74
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 530
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27c08fc04716b150800000000000000
+      internalID: 5887919129960171309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_75
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 519
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1d041397b418a90800000000000000
+      internalID: -7313481335983517212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_76
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 462
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c08ca7d08790a8bc0800000000000000
+      internalID: -3780198525997234164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_77
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 467
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8032cb8780a52780800000000000000
+      internalID: -8708377800425197427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_78
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 466
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fadcb2fc3dad9220800000000000000
+      internalID: 2494340245915228919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_79
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 470
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb061fdb16b29b270800000000000000
+      internalID: 8266686289813790911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_80
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 482
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525050633dae6d2a0800000000000000
+      internalID: -6712920001683847899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_81
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 487
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b292fcc5de7bbc450800000000000000
+      internalID: 6110179549550422315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_82
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 489
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613e06d53bc6a8670800000000000000
+      internalID: 8541759160883143446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_83
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 485
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c428cd816b53710800000000000000
+      internalID: 1672443054533004416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_84
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 447
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390ed19629af29890800000000000000
+      internalID: -7452618926609014637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_85
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 477
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cdcd8fd3a6d62c60800000000000000
+      internalID: 7793152204529847744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_86
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 465
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b566dfa1642eecce0800000000000000
+      internalID: -1382919244827761061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_87
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 477
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55de5b1341db53eb0800000000000000
+      internalID: -4740675138306577067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_88
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 476
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6f996a6d54405e0800000000000000
+      internalID: -1944352350896785675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_89
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 476
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cd998ea76991e20800000000000000
+      internalID: 3321851654795025408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_90
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 447
+        width: 60
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22acd1cf7ec0b63e0800000000000000
+      internalID: -2059538214085080542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_91
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 466
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca07906631d3f0600800000000000000
+      internalID: 436634842403795116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_92
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 462
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010718a3815932520800000000000000
+      internalID: 2676146534881521680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_93
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 400
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 440062e4558fd6ec0800000000000000
+      internalID: -3571925884167913404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_94
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 399
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36262f2144907ea80800000000000000
+      internalID: -8437765188875034013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_95
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 398
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7fc6e1cb4e260b0800000000000000
+      internalID: -5736771478701148240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_96
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 395
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7673cd79f5f239df0800000000000000
+      internalID: -174743872921127065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_97
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 422
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff317e39c648307a0800000000000000
+      internalID: -6412135842572725249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_98
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 428
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f00826ac249e350800000000000000
+      internalID: 6046437411724988173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_99
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 426
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65d04f4ad9213cd0800000000000000
+      internalID: -2580235093897325205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_100
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 426
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4437b92560bba010800000000000000
+      internalID: 1201247674162426955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_101
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 383
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f6712350b0f3060800000000000000
+      internalID: 6935274068116991876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_102
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 404
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ccc7d29d623a4130800000000000000
+      internalID: 3551706702331497669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_103
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 412
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce778241c12c92c0800000000000000
+      internalID: -4423623620056088895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_104
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 417
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0d88db2f2651d40800000000000000
+      internalID: 5554454510132842731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_105
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 410
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e2916b0e6e496e0800000000000000
+      internalID: -1831585295630782817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_106
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 400
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8ef717f5bdf44b0800000000000000
+      internalID: -5453899420749797121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_107
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 401
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b108764d1bbfc880800000000000000
+      internalID: -8588440229961530955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_108
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 398
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20508c48d109bdc60800000000000000
+      internalID: 7844021632452003074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_109
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 383
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11eea9a3f87892b0800000000000000
+      internalID: -5577575150579162852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_110
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 386
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5cfc2c6d630ef160800000000000000
+      internalID: 7061085034264722522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_111
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 383
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 241cd77ac3dab4f80800000000000000
+      internalID: -8121207027012878014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_112
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 383
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d984adc4d96e520800000000000000
+      internalID: 2731043177452051747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_113
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 333
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae3195730fbc7db0800000000000000
+      internalID: -4792745881850790231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_114
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 327
+        width: 11
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9e9cb1e70dfb420800000000000000
+      internalID: 2648064345967815112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_115
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 363
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9218d062e982a030800000000000000
+      internalID: 3504515065428054687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_116
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 337
+        width: 7
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5131924d53cddd0800000000000000
+      internalID: -2460032111112677949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_117
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 338
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e0e3f9f6821c4b0800000000000000
+      internalID: -5422008016499241394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_118
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 319
+        width: 19
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb89a1481c26e0aa0800000000000000
+      internalID: -6192903854303307588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_119
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 319
+        width: 32
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8044f51587118d2f0800000000000000
+      internalID: -947988513102543864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_120
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 319
+        width: 11
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39bfb48fb56951f20800000000000000
+      internalID: 3392783216045456275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_121
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 335
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a6616b3ceb6ed10800000000000000
+      internalID: 2154619219526183505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_122
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 338
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237e0ba29a720f700800000000000000
+      internalID: 572000760195245874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_123
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 333
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1676e743ba110b130800000000000000
+      internalID: 3580381130777323361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_124
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 319
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba693f59b25bf5390800000000000000
+      internalID: -7827338428542642517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_125
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 298
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b16f9e03f205de80800000000000000
+      internalID: -8154608307338780232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_126
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 299
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9858c2523766d5cb0800000000000000
+      internalID: -4873626577014061687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_127
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 306
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3619fb9b8334e2970800000000000000
+      internalID: 8731990638431539555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_128
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 266
+        width: 6
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda889b15236fa3f0800000000000000
+      internalID: -887381590540776738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_129
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 299
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf54fcc23c043540800000000000000
+      internalID: 4986624099732447172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_130
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 267
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3f907c97ce52690800000000000000
+      internalID: -7627430386107550729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_131
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 255
+        width: 19
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dbf532a900827830800000000000000
+      internalID: 4067454192333487061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_132
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 290
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25bcfda7aebef6920800000000000000
+      internalID: 2985864470286289746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_133
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 284
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7afa173766328390800000000000000
+      internalID: -7817626186227713413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_134
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 291
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f13fbe825ca8850800000000000000
+      internalID: 6380128601671671588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_135
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 285
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef70e07a5330f4650800000000000000
+      internalID: 6219193139392808958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_136
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 282
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb028d47e64e8d560800000000000000
+      internalID: 7338866755858079931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_137
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 283
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a034e9b35b47d380800000000000000
+      internalID: -8946599311775092575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_138
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 269
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d709d00c81fc530b0800000000000000
+      internalID: -5749461644060290947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_139
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 255
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d052ff5a93f55be10800000000000000
+      internalID: 2212779493125203213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_140
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 255
+        width: 9
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c17dc61a8e6e4960800000000000000
+      internalID: 7588123961532969409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_141
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 270
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab90404d85d4b4750800000000000000
+      internalID: 6290206348462524858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_142
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 282
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1b83c48c6060740800000000000000
+      internalID: 5117785483895157217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_143
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 261
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7904e9a3bb0ef90800000000000000
+      internalID: -6926330366458292310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_144
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 267
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef748992944df0cb0800000000000000
+      internalID: -4895460859232892930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_145
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 284
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9102e15eb6488d490800000000000000
+      internalID: -7721275962186391527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_146
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 273
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f94b5be7a891220800000000000000
+      internalID: 2457147348526342042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_147
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 270
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9acc41309adc690800000000000000
+      internalID: -7580216767095723543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_148
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 228
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc69f5e7071b73510800000000000000
+      internalID: 1528885695230219983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_149
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 210
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818644f06d1957e40800000000000000
+      internalID: 5653585255798695960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_150
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 222
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e214becf2a045b7b0800000000000000
+      internalID: -5209186325211954898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_151
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 206
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe377851b30b87c0800000000000000
+      internalID: -4068153778170806539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_152
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 206
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78313d36ed62613d0800000000000000
+      internalID: -3236356545619750009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_153
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 229
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db823c27ae219f270800000000000000
+      internalID: 8284673787681777853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_154
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 193
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70769a43af98acc0800000000000000
+      internalID: -3699531570205003649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_155
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 241
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9702f3871e53a9640800000000000000
+      internalID: 5087437971569713273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_156
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 203
+        width: 11
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6da64710bc5e0720800000000000000
+      internalID: 2814288728527646060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_157
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 203
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc8d1a3cd0ad5bb0800000000000000
+      internalID: -4945619948054672185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_158
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 191
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166175c010a62ac40800000000000000
+      internalID: 5522092645844194913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_159
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 255
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1113634da30baaf0800000000000000
+      internalID: -384209300515253988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_160
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 191
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ba6385148c47750800000000000000
+      internalID: 6301881961576573766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_161
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 192
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d25161984a2e6f0800000000000000
+      internalID: -656781686954709757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_162
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 130
+        width: 19
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df73211c78d638e60800000000000000
+      internalID: 7963328995948378109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_163
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 127
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c59e8732b115440800000000000000
+      internalID: 4922745706859027513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_164
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 136
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf741c48199583370800000000000000
+      internalID: 8302484394589898748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_165
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 90
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7252ebb65ef2805a0800000000000000
+      internalID: -6554936595236117209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MagicEffects01 1_166
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 0
+        width: 28
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b69d1fac1b9b5e60800000000000000
+      internalID: 7952120114552084153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MagicEffects01 1_0: 8934533122450216148
+      MagicEffects01 1_1: 6650971563190604619
+      MagicEffects01 1_10: 5638223687107967700
+      MagicEffects01 1_100: 1201247674162426955
+      MagicEffects01 1_101: 6935274068116991876
+      MagicEffects01 1_102: 3551706702331497669
+      MagicEffects01 1_103: -4423623620056088895
+      MagicEffects01 1_104: 5554454510132842731
+      MagicEffects01 1_105: -1831585295630782817
+      MagicEffects01 1_106: -5453899420749797121
+      MagicEffects01 1_107: -8588440229961530955
+      MagicEffects01 1_108: 7844021632452003074
+      MagicEffects01 1_109: -5577575150579162852
+      MagicEffects01 1_11: 2637078563793289866
+      MagicEffects01 1_110: 7061085034264722522
+      MagicEffects01 1_111: -8121207027012878014
+      MagicEffects01 1_112: 2731043177452051747
+      MagicEffects01 1_113: -4792745881850790231
+      MagicEffects01 1_114: 2648064345967815112
+      MagicEffects01 1_115: 3504515065428054687
+      MagicEffects01 1_116: -2460032111112677949
+      MagicEffects01 1_117: -5422008016499241394
+      MagicEffects01 1_118: -6192903854303307588
+      MagicEffects01 1_119: -947988513102543864
+      MagicEffects01 1_12: -2752760049044905021
+      MagicEffects01 1_120: 3392783216045456275
+      MagicEffects01 1_121: 2154619219526183505
+      MagicEffects01 1_122: 572000760195245874
+      MagicEffects01 1_123: 3580381130777323361
+      MagicEffects01 1_124: -7827338428542642517
+      MagicEffects01 1_125: -8154608307338780232
+      MagicEffects01 1_126: -4873626577014061687
+      MagicEffects01 1_127: 8731990638431539555
+      MagicEffects01 1_128: -887381590540776738
+      MagicEffects01 1_129: 4986624099732447172
+      MagicEffects01 1_13: -6042882202847702790
+      MagicEffects01 1_130: -7627430386107550729
+      MagicEffects01 1_131: 4067454192333487061
+      MagicEffects01 1_132: 2985864470286289746
+      MagicEffects01 1_133: -7817626186227713413
+      MagicEffects01 1_134: 6380128601671671588
+      MagicEffects01 1_135: 6219193139392808958
+      MagicEffects01 1_136: 7338866755858079931
+      MagicEffects01 1_137: -8946599311775092575
+      MagicEffects01 1_138: -5749461644060290947
+      MagicEffects01 1_139: 2212779493125203213
+      MagicEffects01 1_14: 6541946512071534272
+      MagicEffects01 1_140: 7588123961532969409
+      MagicEffects01 1_141: 6290206348462524858
+      MagicEffects01 1_142: 5117785483895157217
+      MagicEffects01 1_143: -6926330366458292310
+      MagicEffects01 1_144: -4895460859232892930
+      MagicEffects01 1_145: -7721275962186391527
+      MagicEffects01 1_146: 2457147348526342042
+      MagicEffects01 1_147: -7580216767095723543
+      MagicEffects01 1_148: 1528885695230219983
+      MagicEffects01 1_149: 5653585255798695960
+      MagicEffects01 1_15: -8377277557053187939
+      MagicEffects01 1_150: -5209186325211954898
+      MagicEffects01 1_151: -4068153778170806539
+      MagicEffects01 1_152: -3236356545619750009
+      MagicEffects01 1_153: 8284673787681777853
+      MagicEffects01 1_154: -3699531570205003649
+      MagicEffects01 1_155: 5087437971569713273
+      MagicEffects01 1_156: 2814288728527646060
+      MagicEffects01 1_157: -4945619948054672185
+      MagicEffects01 1_158: 5522092645844194913
+      MagicEffects01 1_159: -384209300515253988
+      MagicEffects01 1_16: 8492901263121757960
+      MagicEffects01 1_160: 6301881961576573766
+      MagicEffects01 1_161: -656781686954709757
+      MagicEffects01 1_162: 7963328995948378109
+      MagicEffects01 1_163: 4922745706859027513
+      MagicEffects01 1_164: 8302484394589898748
+      MagicEffects01 1_165: -6554936595236117209
+      MagicEffects01 1_166: 7952120114552084153
+      MagicEffects01 1_17: 4941606725699225074
+      MagicEffects01 1_18: -4155955557311554651
+      MagicEffects01 1_19: -9143793483073579993
+      MagicEffects01 1_2: 4094198136248410892
+      MagicEffects01 1_20: -8573973307556107699
+      MagicEffects01 1_21: 6529828410932639718
+      MagicEffects01 1_22: -1651787302579926050
+      MagicEffects01 1_23: 9022816871396135750
+      MagicEffects01 1_24: -3327073439416640771
+      MagicEffects01 1_25: 1357248099940718925
+      MagicEffects01 1_26: 355359170327789002
+      MagicEffects01 1_27: 2589553186668245460
+      MagicEffects01 1_28: 2090575857516440390
+      MagicEffects01 1_29: -5522213558477322937
+      MagicEffects01 1_3: -6614231126671225375
+      MagicEffects01 1_30: 2587905679260790490
+      MagicEffects01 1_31: -7553233689706048342
+      MagicEffects01 1_32: 6655738389362431740
+      MagicEffects01 1_33: 6109834753577498264
+      MagicEffects01 1_34: -382770344283164853
+      MagicEffects01 1_35: 8503034500031452234
+      MagicEffects01 1_36: -6728628280059883019
+      MagicEffects01 1_37: -8565308012871024588
+      MagicEffects01 1_38: 5973192820605527891
+      MagicEffects01 1_39: 8131895827207421926
+      MagicEffects01 1_4: -6760282801034078834
+      MagicEffects01 1_40: 5716114720391311744
+      MagicEffects01 1_41: -4686857792411102964
+      MagicEffects01 1_42: -5385225035898621251
+      MagicEffects01 1_43: 7347795310504731597
+      MagicEffects01 1_44: 3310327181783641492
+      MagicEffects01 1_45: -6828172975445810682
+      MagicEffects01 1_46: -5681205557711850653
+      MagicEffects01 1_47: -2270507877949656997
+      MagicEffects01 1_48: -1590183543356254420
+      MagicEffects01 1_49: 8585881494217235323
+      MagicEffects01 1_5: -2075384187942170602
+      MagicEffects01 1_50: 7228903255728740106
+      MagicEffects01 1_51: -1795898590773214922
+      MagicEffects01 1_52: 1548050196146121172
+      MagicEffects01 1_53: -1938135962732801450
+      MagicEffects01 1_54: -229825820683696572
+      MagicEffects01 1_55: 3928886299649291505
+      MagicEffects01 1_56: 4886785071896603938
+      MagicEffects01 1_57: 6541773770811652332
+      MagicEffects01 1_58: -2058975884531596682
+      MagicEffects01 1_59: 5461206244447044170
+      MagicEffects01 1_6: -968902418082537385
+      MagicEffects01 1_60: -8535506337068602607
+      MagicEffects01 1_61: -8892637703190800056
+      MagicEffects01 1_62: 6097208993191111623
+      MagicEffects01 1_63: 8066005498882579577
+      MagicEffects01 1_64: 239198089453117256
+      MagicEffects01 1_65: -7664394441419139678
+      MagicEffects01 1_66: 8702667757659024296
+      MagicEffects01 1_67: 7318638838549173922
+      MagicEffects01 1_68: 6756495444104735835
+      MagicEffects01 1_69: -7268267127046223962
+      MagicEffects01 1_7: 4285796676015053431
+      MagicEffects01 1_70: -3060554922202756228
+      MagicEffects01 1_71: -2867824828433193620
+      MagicEffects01 1_72: 1854691098838892283
+      MagicEffects01 1_73: -7022281871322081961
+      MagicEffects01 1_74: 5887919129960171309
+      MagicEffects01 1_75: -7313481335983517212
+      MagicEffects01 1_76: -3780198525997234164
+      MagicEffects01 1_77: -8708377800425197427
+      MagicEffects01 1_78: 2494340245915228919
+      MagicEffects01 1_79: 8266686289813790911
+      MagicEffects01 1_8: 7789834007134973211
+      MagicEffects01 1_80: -6712920001683847899
+      MagicEffects01 1_81: 6110179549550422315
+      MagicEffects01 1_82: 8541759160883143446
+      MagicEffects01 1_83: 1672443054533004416
+      MagicEffects01 1_84: -7452618926609014637
+      MagicEffects01 1_85: 7793152204529847744
+      MagicEffects01 1_86: -1382919244827761061
+      MagicEffects01 1_87: -4740675138306577067
+      MagicEffects01 1_88: -1944352350896785675
+      MagicEffects01 1_89: 3321851654795025408
+      MagicEffects01 1_9: 4965016081355289703
+      MagicEffects01 1_90: -2059538214085080542
+      MagicEffects01 1_91: 436634842403795116
+      MagicEffects01 1_92: 2676146534881521680
+      MagicEffects01 1_93: -3571925884167913404
+      MagicEffects01 1_94: -8437765188875034013
+      MagicEffects01 1_95: -5736771478701148240
+      MagicEffects01 1_96: -174743872921127065
+      MagicEffects01 1_97: -6412135842572725249
+      MagicEffects01 1_98: 6046437411724988173
+      MagicEffects01 1_99: -2580235093897325205
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

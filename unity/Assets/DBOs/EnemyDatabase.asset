@@ -1,0 +1,295 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a959c37a93a44c7b15dc5ccfdaf21e, type: 3}
+  m_Name: EnemyDatabase
+  m_EditorClassIdentifier: 
+  enemyList:
+  - id: 0
+    campaignLevel: 1
+    name: Leafer
+    damage: 3
+    health: 8
+    speed: 5
+    goldDrop: 10
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 882204674330703507, guid: 96feeae9d5276f4469357caa15029ebf, type: 3}
+  - id: 1
+    campaignLevel: 1
+    name: Eagle
+    damage: 4
+    health: 9
+    speed: 5
+    goldDrop: 16
+    spawnRate: 0.5
+    airborne: 1
+    prefab: {fileID: 3163556101277404659, guid: 6127e9111b410fe4e8c97947f49d2399, type: 3}
+  - id: 2
+    campaignLevel: 1
+    name: Mushroom
+    damage: 5
+    health: 10
+    speed: 5
+    goldDrop: 17
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 5227079700478754145, guid: 599950ce527004ced9290be3b5bb2d96, type: 3}
+  - id: 3
+    campaignLevel: 2
+    name: Seagull
+    damage: 6
+    health: 12
+    speed: 5
+    goldDrop: 18
+    spawnRate: 0.5
+    airborne: 1
+    prefab: {fileID: 6900862898513935031, guid: 9f943ce89b8cf43318deff0e1d973d24, type: 3}
+  - id: 4
+    campaignLevel: 2
+    name: Viper
+    damage: 7
+    health: 13
+    speed: 5
+    goldDrop: 19
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 803954793568860442, guid: eed65d43ede66411c91ae578df96f43f, type: 3}
+  - id: 5
+    campaignLevel: 2
+    name: PirateL
+    damage: 8
+    health: 15
+    speed: 5
+    goldDrop: 10
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 1241954079870856122, guid: 61b07b2612069425a833469dc8f8ed35, type: 3}
+  - id: 6
+    campaignLevel: 3
+    name: PuppetC
+    damage: 9
+    health: 18
+    speed: 5
+    goldDrop: 11
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 6836466353107227800, guid: 82233ebaeda2c4ea1bb385af3dc1bb71, type: 3}
+  - id: 7
+    campaignLevel: 3
+    name: ElementalEarth
+    damage: 10
+    health: 20
+    speed: 5
+    goldDrop: 12
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 5513674759438898024, guid: 9d68d5595c38c409ba140ddeb8c07e28, type: 3}
+  - id: 8
+    campaignLevel: 3
+    name: PuppetR
+    damage: 11
+    health: 22
+    speed: 5
+    goldDrop: 13
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 614134440622434488, guid: 27c5c5548913946778e49bc7d9f78045, type: 3}
+  - id: 9
+    campaignLevel: 4
+    name: Bat
+    damage: 9
+    health: 15
+    speed: 5
+    goldDrop: 14
+    spawnRate: 0.5
+    airborne: 1
+    prefab: {fileID: 1652914958173413635, guid: 28aa5484d18054a4ab86580b8301c54f, type: 3}
+  - id: 10
+    campaignLevel: 4
+    name: Rat
+    damage: 11
+    health: 18
+    speed: 5
+    goldDrop: 15
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 7863146277846973591, guid: a825b6bf13f8d4f11a9d03bb367d9d86, type: 3}
+  - id: 11
+    campaignLevel: 4
+    name: Spider
+    damage: 12
+    health: 20
+    speed: 5
+    goldDrop: 16
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 188814171079612475, guid: 31e2c3d9f915c40b2ae162ac7f9eefda, type: 3}
+  - id: 12
+    campaignLevel: 5
+    name: Snowman
+    damage: 10
+    health: 22
+    speed: 5
+    goldDrop: 17
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 2537597584037184379, guid: 99711e75041784c2287704a5053b2e29, type: 3}
+  - id: 13
+    campaignLevel: 5
+    name: FrozenWidow
+    damage: 11
+    health: 18
+    speed: 5
+    goldDrop: 18
+    spawnRate: 0.5
+    airborne: 1
+    prefab: {fileID: 610825926345259384, guid: 3e7b1e70878729e45985dab024296d5e, type: 3}
+  - id: 14
+    campaignLevel: 5
+    name: FrozenScorpion
+    damage: 14
+    health: 20
+    speed: 5
+    goldDrop: 16
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 7432493423427465908, guid: b5dcba44377808f4c9498613233f5345, type: 3}
+  - id: 15
+    campaignLevel: 6
+    name: Crow
+    damage: 12
+    health: 28
+    speed: 5
+    goldDrop: 20
+    spawnRate: 0.5
+    airborne: 1
+    prefab: {fileID: 7659246008739269979, guid: e6143da2b998c435f867e27e686d20c0, type: 3}
+  - id: 16
+    campaignLevel: 6
+    name: Rat
+    damage: 11
+    health: 20
+    speed: 5
+    goldDrop: 21
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 7863146277846973591, guid: fec26d0f8e1d34c728ae93f961e26705, type: 3}
+  - id: 17
+    campaignLevel: 6
+    name: SkullTriple
+    damage: 13
+    health: 22
+    speed: 5
+    goldDrop: 22
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 8995808990814277370, guid: 912481477835047df8af50580e0060eb, type: 3}
+  - id: 18
+    campaignLevel: 7
+    name: Bat
+    damage: 16
+    health: 23
+    speed: 5
+    goldDrop: 23
+    spawnRate: 0.5
+    airborne: 1
+    prefab: {fileID: 1652914958173413635, guid: 9917e5d693cf74d2ba61ece6ac440458, type: 3}
+  - id: 19
+    campaignLevel: 7
+    name: WolfB
+    damage: 18
+    health: 24
+    speed: 5
+    goldDrop: 24
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 5175497663485827479, guid: 8740a532557a44e638d4d2b4cd41a9c9, type: 3}
+  - id: 21
+    campaignLevel: 8
+    name: Seagull
+    damage: 14
+    health: 26
+    speed: 5
+    goldDrop: 26
+    spawnRate: 0.5
+    airborne: 1
+    prefab: {fileID: 6900862898513935031, guid: 21471218ebec448bd986013de7f1536e, type: 3}
+  - id: 22
+    campaignLevel: 8
+    name: Snowman
+    damage: 18
+    health: 27
+    speed: 5
+    goldDrop: 27
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 2537597584037184379, guid: d9810bcbe0a3742e887df5b6b230d7e4, type: 3}
+  - id: 23
+    campaignLevel: 8
+    name: ElementalAir
+    damage: 14
+    health: 20
+    speed: 5
+    goldDrop: 31
+    spawnRate: 0.5
+    airborne: 1
+    prefab: {fileID: 2469223931307737731, guid: a83ee47f5ef324171abfb82f00ff48d5, type: 3}
+  - id: 24
+    campaignLevel: 9
+    name: Boar
+    damage: 27
+    health: 28
+    speed: 5
+    goldDrop: 29
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 198617792258138325, guid: 1c7cb719585fb3a4984e388d2c74366e, type: 3}
+  - id: 25
+    campaignLevel: 9
+    name: Ant
+    damage: 28
+    health: 29
+    speed: 5
+    goldDrop: 30
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 7249117401815591307, guid: c10bedc8334a9174ab86faff1af0b3eb, type: 3}
+  - id: 26
+    campaignLevel: 10
+    name: Crow
+    damage: 30
+    health: 30
+    speed: 5
+    goldDrop: 35
+    spawnRate: 0.5
+    airborne: 1
+    prefab: {fileID: 7659246008739269979, guid: 572f76e7b7d574eddbf07b876bb7ca8c, type: 3}
+  - id: 27
+    campaignLevel: 10
+    name: SkullTriple
+    damage: 32
+    health: 30
+    speed: 5
+    goldDrop: 36
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 8995808990814277370, guid: 5125f74b1174a49358787fa32b1840ec, type: 3}
+  - id: 27
+    campaignLevel: 10
+    name: WolfB
+    damage: 35
+    health: 30
+    speed: 5
+    goldDrop: 40
+    spawnRate: 0.5
+    airborne: 0
+    prefab: {fileID: 5175497663485827479, guid: 737cf0904bf6e4c5bb1df34cb62ad54d, type: 3}

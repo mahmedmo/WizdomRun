@@ -1,0 +1,482 @@
+fileFormatVersion: 2
+guid: 08be197a532717c4ea1fc1589b6103cd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 53614598965328666
+    second: FlameBurst_0
+  - first:
+      213: -8252476974528244474
+    second: FlameBurst_1
+  - first:
+      213: -2589422021114392022
+    second: FlameBurst_2
+  - first:
+      213: 5003358141622107516
+    second: FlameBurst_3
+  - first:
+      213: -254693232414192959
+    second: FlameBurst_4
+  - first:
+      213: 4111104772544095819
+    second: FlameBurst_5
+  - first:
+      213: -4946888738465638673
+    second: FlameBurst_6
+  - first:
+      213: -5773740480734483102
+    second: FlameBurst_7
+  - first:
+      213: 8889991765205839761
+    second: FlameBurst_8
+  - first:
+      213: 3906679568002180872
+    second: FlameBurst_9
+  - first:
+      213: 5107899663815225116
+    second: FlameBurst_10
+  - first:
+      213: -8613552564968571667
+    second: FlameBurst_11
+  - first:
+      213: 6773408232959078226
+    second: FlameBurst_12
+  - first:
+      213: -5836289805457702710
+    second: FlameBurst_13
+  - first:
+      213: -2613205517982061640
+    second: FlameBurst_14
+  - first:
+      213: 6004114971379707549
+    second: FlameBurst_15
+  - first:
+      213: 4205702446371863895
+    second: FlameBurst_16
+  - first:
+      213: -453575458424779948
+    second: FlameBurst_17
+  - first:
+      213: -2963966214390480645
+    second: FlameBurst_18
+  - first:
+      213: -5586226937349206219
+    second: FlameBurst_19
+  - first:
+      213: 2328761466581711533
+    second: FlameBurst_20
+  - first:
+      213: -5441597400393284219
+    second: FlameBurst_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlameBurst_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 170
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b7a16913a7eb000800000000000000
+      internalID: 53614598965328666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameBurst_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 170
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646a09faf4f03294f98337a5fa59a088
+      internalID: -8252476974528244474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameBurst_2
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 170
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34ebed564afac340b754c73692bd372
+      internalID: -2589422021114392022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameBurst_3
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 170
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f475779b5458641a631aa2beff1a8d
+      internalID: 5003358141622107516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameBurst_4
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 123
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ac1e06acc0e9f48b023ca53021232f
+      internalID: -254693232414192959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameBurst_5
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 125
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fd473028d5b1f49867d59757b3a659
+      internalID: 4111104772544095819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameBurst_6
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 126
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f72e4f678b24c43b75cadf82423b2d
+      internalID: -4946888738465638673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameBurst_7
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 120
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c478f0903aac9e48a33b3a159cddba5
+      internalID: -5773740480734483102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameBurst_8
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 52
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9695b4025617ff04fbf16e3196ff60d1
+      internalID: 8889991765205839761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameBurst_9
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 48
+        width: 70
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71aa9d835ca4cc3499354cd9624947b4
+      internalID: 3906679568002180872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameBurst_10
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 48
+        width: 73
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543026cf0346541448841472b392d536
+      internalID: 5107899663815225116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameBurst_11
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 48
+        width: 74
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7dcb8c3a0c1e748aac4cf40e97f0b2
+      internalID: -8613552564968571667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlameBurst_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 67
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937de9f3e4b96bd4cb49ad2c888a7860
+      internalID: 6773408232959078226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c8022973b4993974690589c58eabd41f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FlameBurst_0: 53614598965328666
+      FlameBurst_1: -8252476974528244474
+      FlameBurst_10: 5107899663815225116
+      FlameBurst_11: -8613552564968571667
+      FlameBurst_12: 6773408232959078226
+      FlameBurst_2: -2589422021114392022
+      FlameBurst_3: 5003358141622107516
+      FlameBurst_4: -254693232414192959
+      FlameBurst_5: 4111104772544095819
+      FlameBurst_6: -4946888738465638673
+      FlameBurst_7: -5773740480734483102
+      FlameBurst_8: 8889991765205839761
+      FlameBurst_9: 3906679568002180872
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

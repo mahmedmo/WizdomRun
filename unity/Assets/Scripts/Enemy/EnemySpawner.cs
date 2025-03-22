@@ -1,58 +1,119 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
-
+using System.Collections.Generic;
+using UnityEngine.Rendering;
 public class EnemySpawner : MonoBehaviour
 {
-    [Header("Tilemap")]
+    public EnemyDatabase enemyDatabase;
     public Tilemap tilemap;
 
-    [Header("Enemy Speed")]
-    public float enemySpeed = 5.0f;
+    public int enemySpacing = 1;
 
-    [Header("Enemy Sprites")]
-    public GameObject[] enemyPrefabs;
+    void Start()
+    {
+        tilemap = GameObject.Find("LOverlay01").GetComponent<Tilemap>();
+    }
     void Update()
     {
-        if (GameManager.Instance != null && GameManager.Instance.IsPaused)
+        if (LevelManager.Instance.inCutscene && GameManager.Instance.isPaused) DestroyEnemies();
+        if (LevelManager.Instance.enemyCount > LevelManager.Instance.maxEnemyCount || GameManager.Instance.isPaused)
             return;
 
-        if (GameManager.Instance != null && GameManager.Instance.CanEnemySpawn())
+        if (GameManager.Instance.CanEnemySpawn())
             SpawnEnemy();
+
+    }
+    void DestroyEnemies()
+    {
+        if (LevelManager.Instance.enemyCount == 0) return;
+        Transform[] children = new Transform[transform.childCount];
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            children[i] = transform.GetChild(i);
+        }
+
+        foreach (Transform child in children)
+        {
+
+            Destroy(child.gameObject);
+            LevelManager.Instance.DecrementEnemyCount();
+        }
     }
 
+    // Filters the enemy database list to return an
+    // enemy weighted according to their spawnRates
+    Enemy SelectEnemy(List<Enemy> enemies)
+    {
+        float totalRate = 0f;
+        foreach (Enemy enemy in enemies)
+        {
+            totalRate += enemy.spawnRate;
+        }
+
+        float randomValue = Random.Range(0f, totalRate);
+        foreach (Enemy enemy in enemies)
+        {
+            randomValue -= enemy.spawnRate;
+            if (randomValue <= 0f)
+            {
+                return enemy;
+            }
+        }
+        return enemies[enemies.Count - 1];
+    }
     void SpawnEnemy()
     {
-        if (enemyPrefabs.Length <= 0 || tilemap == null)
+        if (enemyDatabase.enemyList == null || enemyDatabase.enemyList.Count == 0 || tilemap == null)
             return;
 
-        // Spawn position logic (center-top of tilemap)
-        int spawnX = tilemap.origin.x + tilemap.size.x / 2;
-        int spawnY = tilemap.origin.y + tilemap.size.y + 5;
-        Vector3 spawnPos = tilemap.CellToWorld(new Vector3Int(spawnX, spawnY, -2));
+        List<Enemy> enemyPool = enemyDatabase.enemyList.FindAll(e =>
+            e.campaignLevel == CampaignManager.Instance.GetLevel()
+        );
 
-        GameObject enemy = Instantiate(enemyPrefabs[Random.Range(0, enemyPrefabs.Length)], spawnPos, Quaternion.identity);
-        enemy.transform.parent = this.transform;
+        // Determine group spawn, defaults to one enemy
+        int groupCount = 1;
 
-        // Z level positioning
-        Vector3 enemyLocalPos = enemy.transform.localPosition;
-        enemyLocalPos.z = -2;
-        enemy.transform.localPosition = enemyLocalPos;
-
-        // Spite movement enabler
-        Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
-        if (rb != null)
+        // 40% chance for multi enemy spawns
+        if (Random.value < 0.4f)
         {
-            rb.linearVelocity = new Vector2(0, -enemySpeed);
+            groupCount = Random.Range(2, LevelManager.Instance.maxEnemyCount);
         }
 
-        // Add EnemyMonitor script to created sprite to handle
-        // sprite specific functions and pass needed vals
-        if (enemy.GetComponent<EnemyMonitor>() == null)
+        int remainingSpawnCount = LevelManager.Instance.maxEnemyCount - LevelManager.Instance.enemyCount;
+        groupCount = Mathf.Clamp(groupCount, 1, remainingSpawnCount);
+
+        for (int i = 0; i < groupCount; i++)
         {
-            enemy.AddComponent<EnemyMonitor>();
+            Enemy selectedEnemy = SelectEnemy(enemyPool);
+
+            int spawnX = tilemap.origin.x + tilemap.size.x / 2;
+
+            // Place enemies in reverse order to fix Z value overlaps
+            int spawnY = tilemap.origin.y + tilemap.size.y + 5 - (enemySpacing * i);
+
+            Vector3 spawnPos = tilemap.CellToWorld(new Vector3Int(spawnX, spawnY, 0));
+            spawnPos.z = -3;
+            GameObject enemy = Instantiate(selectedEnemy.prefab, spawnPos, Quaternion.identity);
+            enemy.transform.parent = this.transform;
+
+            Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
+            if (rb == null)
+            {
+                rb = enemy.AddComponent<Rigidbody2D>();
+
+            }
+            rb.bodyType = RigidbodyType2D.Kinematic;
+
+            // Attack EnemyMonitor script (internal checks for Enemy)
+            EnemyMonitor monitor = enemy.AddComponent<EnemyMonitor>();
+            monitor.Speed = -selectedEnemy.speed;
+            monitor.Health = selectedEnemy.health;
+            monitor.Damage = selectedEnemy.damage;
+            monitor.Airborne = selectedEnemy.airborne;
+            monitor.GoldDrop = selectedEnemy.goldDrop;
+
+            LevelManager.Instance.IncrementEnemyCount();
         }
-        
-        enemy.GetComponent<EnemyMonitor>().EnemySpeed = -enemySpeed;
-        enemy.GetComponent<EnemyMonitor>().parentSpawner = this;
     }
+
 }

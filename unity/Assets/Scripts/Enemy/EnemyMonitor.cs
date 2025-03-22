@@ -1,44 +1,38 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections;
-
+using DG.Tweening;
 public class EnemyMonitor : MonoBehaviour
 {
-    public EnemySpawner parentSpawner;
-
-    [Header("Enemy Behavior")]
-    private float enemySpeed = -5.0f;
-    public float EnemySpeed { get { return enemySpeed; } set { enemySpeed = value; } }
+    public float Speed { get; set; }
+    public int Damage { get; set; }
+    public int Health { get; set; }
+    public int GoldDrop { get; set; }
+    public bool Airborne { get; set; }
 
     [Header("Animation Durations")]
     public float idleDuration = 1f;
     public float attackDuration = 0.5f;
-
-    [Header("Damage Scaling")]
-    private int attackDamage = 10; // Damage dealt to the player when attacking
-
-    [Header("Health Settings")]
-    public int health = 20; // Public health variable
+    public float deathDuration = 0.5f;
 
     private Tilemap tilemap;
     private Rigidbody2D enemyRb;
     private Animator animator;
     private SpriteRenderer enemySprite;
-    private EnemyState currentState = EnemyState.Moving;
+    private EnemyState currentState = EnemyState.Run;
     private float stateTimer = 0f;
+    private bool isWaiting = false;
 
     void Start()
     {
-        if (parentSpawner != null)
-            tilemap = parentSpawner.tilemap;
+        tilemap = GameObject.Find("LStruct01").GetComponent<Tilemap>();
 
         enemyRb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        enemySprite = GetComponent<SpriteRenderer>(); // Assuming a single SpriteRenderer on the enemy
+        enemySprite = GetComponent<SpriteRenderer>();
+        enemyRb.linearVelocity = new Vector2(0, Speed);
 
-        enemyRb.linearVelocity = new Vector2(0, enemySpeed);
-
-        SetState(EnemyState.Moving);
+        SetState(EnemyState.Run);
     }
 
     void Update()
@@ -50,79 +44,205 @@ public class EnemyMonitor : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+        if (GameManager.Instance.IsFrozen)
+        {
+            enemyRb.linearVelocity = Vector2.zero;
+            return;
+        }
+        if (PlayerMonitor.Instance!.playerDead)
+        {
+            SetState(EnemyState.Idle);
+        }
+        // State machine for Enemy, checks for other enemies to indicate pause, if no enemy, attacks.
         switch (currentState)
         {
-            case EnemyState.Moving:
-                enemyRb.linearVelocity = new Vector2(0, enemySpeed);
-
-                // Position Enemy object in front of the player in the tilemap
+            case EnemyState.Run:
+                if (IsEnemyBelow())
+                {
+                    enemyRb.linearVelocity = Vector2.zero;
+                    isWaiting = true;
+                    SetState(EnemyState.Idle);
+                    break;
+                }
+                else
+                {
+                    enemyRb.linearVelocity = new Vector2(0, Speed);
+                }
                 if (transform.position.y <= tilemap.origin.y + 4.5f)
                 {
                     enemyRb.linearVelocity = Vector2.zero;
                     GameManager.Instance.PauseMovement();
                     SetState(EnemyState.Idle);
+
                 }
+
                 break;
 
             case EnemyState.Idle:
-                stateTimer += Time.deltaTime;
-                if (stateTimer >= idleDuration)
+                if (isWaiting && !IsEnemyBelow())
                 {
-                    SetState(EnemyState.Attacking);
+                    isWaiting = false;
+                    SetState(EnemyState.Run);
+                    break;
+                }
+                else if (isWaiting)
+                {
+                    enemyRb.linearVelocity = Vector2.zero;
+                    break;
+                }
+                stateTimer += Time.deltaTime;
+                if (stateTimer >= idleDuration && !isWaiting)
+                {
+                    SetState(EnemyState.Attack);
                 }
                 break;
 
-            case EnemyState.Attacking:
+            case EnemyState.Attack:
                 stateTimer += Time.deltaTime;
                 if (stateTimer >= attackDuration)
                 {
-                    PlayerMonitor.Instance.OnHit(attackDamage);
+                    PlayerMonitor.Instance?.OnHit(Damage * LevelManager.Instance.enemyDmgMultiplier);
                     SetState(EnemyState.Idle);
+                }
+                break;
+            case EnemyState.Death:
+                stateTimer += Time.deltaTime;
+                if (stateTimer >= deathDuration)
+                {
+                    LevelManager.Instance.DecrementEnemyCount();
+                    Destroy(gameObject);
                 }
                 break;
         }
     }
 
-    // Handle collisions (using 2D triggers)
+    // Helper method to check for nearby enemies
+    private bool IsEnemyBelow(float rayDistance = 2f, float safeSeparation = 1f)
+    {
+        Vector2 origin = enemyRb.position;
+        Vector2 direction = Vector2.down;
+
+        RaycastHit2D[] hits = Physics2D.RaycastAll(origin, direction, rayDistance);
+
+        Debug.DrawRay(origin, direction * rayDistance, Color.red, 0.1f);
+
+        float closestDistance = float.MaxValue;
+        foreach (RaycastHit2D hit in hits)
+        {
+            if (hit.collider != null && hit.collider.gameObject != gameObject && hit.collider.CompareTag("Enemy"))
+            {
+                if (hit.distance < closestDistance)
+                {
+                    closestDistance = hit.distance;
+                }
+            }
+        }
+
+        if (closestDistance != float.MaxValue && closestDistance <= safeSeparation)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    // Enemy collision detector (For player spells)
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // If colliding with a spell (tagged "Magic")
         if (other.CompareTag("Magic"))
         {
-            TakeSpellDamage(5);
+            if (Airborne && !other.gameObject.GetComponent<SpellMonitor>().Airborne)
+            {
+                DodgeSpellDamage();
+                return;
+            }
+            int damageTaken = other.gameObject.GetComponent<SpellMonitor>().Damage;
+
+            Debug.Log("HIT " + damageTaken);
+            TakeSpellDamage(damageTaken);
         }
     }
+    public void DodgeSpellDamage()
+    {
+        StartCoroutine(FlashBlueCoroutine());
+    }
 
-    /// <summary>
-    /// Called when the enemy is hit by a spell.
-    /// Subtracts health, flashes the enemy, and destroys it if health is 0 or below.
-    /// </summary>
-    /// <param name="damageAmount">Amount of damage taken (5 in this case).</param>
     public void TakeSpellDamage(int damageAmount)
     {
-        health -= damageAmount;
-        StartCoroutine(FlashCoroutine());
+        Health -= damageAmount;
+        StartCoroutine(FlashRedCoroutine());
 
-        if (health <= 0)
+        if (Health <= 0)
         {
-            Destroy(gameObject);
+            LevelManager.Instance.AddGold(GoldDrop);
+            SetState(EnemyState.Death);
         }
     }
 
-    // A simple coroutine to flash the enemy (changes its color briefly)
-    private IEnumerator FlashCoroutine()
+
+    // Flashes the sprite with red to indicate damage
+    private IEnumerator FlashRedCoroutine()
     {
-        if (enemySprite != null)
+        Color originalColor = enemySprite.color;
+        Color flashColor = Color.red;
+
+        MaterialPropertyBlock mpb = new MaterialPropertyBlock();
+        enemySprite.GetPropertyBlock(mpb);
+
+        mpb.SetColor("_Color", flashColor);
+        enemySprite.SetPropertyBlock(mpb);
+        enemySprite.color = flashColor;
+
+        yield return new WaitForSeconds(0.2f);
+
+        float flashDuration = 0.4f;
+        float t = 0f;
+        while (t < flashDuration)
         {
-            Color originalColor = enemySprite.color;
-            enemySprite.color = Color.red;
-            yield return new WaitForSeconds(0.2f);
-            enemySprite.color = originalColor;
+            t += Time.deltaTime;
+            Color lerpedColor = Color.Lerp(flashColor, originalColor, t / flashDuration);
+            mpb.SetColor("_Color", lerpedColor);
+            enemySprite.SetPropertyBlock(mpb);
+            enemySprite.color = lerpedColor;
+            yield return null;
         }
+
+        mpb.SetColor("_Color", originalColor);
+        enemySprite.SetPropertyBlock(mpb);
+        enemySprite.color = originalColor;
+    }
+    // Flashes the sprite with blue to indicate dodge
+    private IEnumerator FlashBlueCoroutine()
+    {
+        Color flashColor = new Color(0f, 248f / 255f, 255f / 255f);
+        Color originalColor = enemySprite.color;
+
+        MaterialPropertyBlock mpb = new MaterialPropertyBlock();
+        enemySprite.GetPropertyBlock(mpb);
+
+        mpb.SetColor("_Color", flashColor);
+        enemySprite.SetPropertyBlock(mpb);
+        enemySprite.color = flashColor;
+
+        yield return new WaitForSeconds(0.5f);
+
+        float flashDuration = 0.4f;
+        float t = 0f;
+        while (t < flashDuration)
+        {
+            t += Time.deltaTime;
+            Color lerpedColor = Color.Lerp(flashColor, originalColor, t / flashDuration);
+            mpb.SetColor("_Color", lerpedColor);
+            enemySprite.SetPropertyBlock(mpb);
+            enemySprite.color = lerpedColor;
+            yield return null;
+        }
+        mpb.SetColor("_Color", originalColor);
+        enemySprite.SetPropertyBlock(mpb);
+        enemySprite.color = originalColor;
     }
 
-    // Helper method to change states and trigger corresponding animations
+    // Enemy state machine
     void SetState(EnemyState newState)
     {
         currentState = newState;
@@ -130,14 +250,17 @@ public class EnemyMonitor : MonoBehaviour
 
         switch (newState)
         {
-            case EnemyState.Moving:
-                animator.SetTrigger("MoveTrigger");
+            case EnemyState.Run:
+                animator.SetTrigger("IsRun");
                 break;
             case EnemyState.Idle:
-                animator.SetTrigger("IdleTrigger");
+                animator.SetTrigger("IsIdle");
                 break;
-            case EnemyState.Attacking:
-                animator.SetTrigger("MeleeTrigger");
+            case EnemyState.Attack:
+                animator.SetTrigger("IsAttack");
+                break;
+            case EnemyState.Death:
+                animator.SetTrigger("Death");
                 break;
         }
     }

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115269aba67f94772970c9763c4df88b, type: 3}
+  m_Name: CSTilemapDatabase
+  m_EditorClassIdentifier: 
+  cutsceneAreas:
+  - cutsceneId: 40
+    cutsceneType: 2
+    tilemap: {fileID: 3798815902700718445, guid: c84ff9c9571e84bf6bf6a2d546db95a7, type: 3}
+  - cutsceneId: 2
+    cutsceneType: 1
+    tilemap: {fileID: 3801781807232459549, guid: 2fcc45a1ec68745fa9356e9fe6c0c943, type: 3}
+  - cutsceneId: 5
+    cutsceneType: 1
+    tilemap: {fileID: 9098657862327922219, guid: 9590ed93a4e1db140991b16f853c9d3b, type: 3}
+  - cutsceneId: 8
+    cutsceneType: 1
+    tilemap: {fileID: 4603489303667561795, guid: 1aef0d724366c50449b73e4c15803fb3, type: 3}
+  - cutsceneId: 11
+    cutsceneType: 1
+    tilemap: {fileID: 2217854838141541721, guid: d728746270159c0418df38a5b0dae536, type: 3}
+  - cutsceneId: 14
+    cutsceneType: 1
+    tilemap: {fileID: 6291094066848624319, guid: 660e8dbd6883ff742a2a050a2fbbf126, type: 3}
+  - cutsceneId: 17
+    cutsceneType: 1
+    tilemap: {fileID: 7126088963516658688, guid: f4522b51539a8ad48a74edc99487ad10, type: 3}
+  - cutsceneId: 20
+    cutsceneType: 1
+    tilemap: {fileID: 7599049914966480419, guid: df8bcfff3685bc143bab111583aa0a08, type: 3}
+  - cutsceneId: 23
+    cutsceneType: 1
+    tilemap: {fileID: 7270868447309163681, guid: 17ae30154b3d93c408057c883060f692, type: 3}
+  - cutsceneId: 26
+    cutsceneType: 1
+    tilemap: {fileID: 4318815980075114757, guid: 40f7ee85f4406694985ad579d4aa7b49, type: 3}
+  - cutsceneId: 29
+    cutsceneType: 1
+    tilemap: {fileID: 2412247227338840024, guid: 846e35df5730f7240ab83148bd93bf31, type: 3}

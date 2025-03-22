@@ -33,6 +33,7 @@ public class TStructRegen : MonoBehaviour
     private int skipLeft = 0;
     private int skipRight = 0;
 
+
     void Start()
     {
         bottomRowPos = tilemap.origin;
@@ -48,7 +49,12 @@ public class TStructRegen : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.Instance != null && GameManager.Instance.IsPaused)
+        if (LevelManager.Instance.inCutscene && LevelManager.Instance.bossCSFlag && GameManager.Instance.isPaused)
+        {
+            DestroyStructuresAboveThreshold();
+        }
+
+        if (GameManager.Instance != null && GameManager.Instance.isPaused)
             return;
 
         if (!GameManager.Instance.RunStart()) return;
@@ -60,6 +66,28 @@ public class TStructRegen : MonoBehaviour
         CheckBounds();
     }
 
+    void DestroyStructuresAboveThreshold()
+    {
+        // Convert the threshold cell position to world coordinates
+        int halfRows = tilemap.size.y / 2;
+        float thresholdY = tilemap.CellToWorld(new Vector3Int(0, tilemap.origin.y + tilemap.size.y * 4 + 9, 0)).y;
+
+        // Iterate through each child row and destroy if above threshold
+        // (Note: Using a for loop with an array copy to safely iterate while destroying)
+        Transform[] children = new Transform[transform.childCount];
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            children[i] = transform.GetChild(i);
+        }
+
+        foreach (Transform child in children)
+        {
+            if (child.position.y > thresholdY)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+    }
     void CheckBounds()
     {
         float topOfMapWorldY = tilemap.CellToWorld(new Vector3Int(0, topRowPos.y, 0)).y;

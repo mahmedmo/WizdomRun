@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 3f401d727f355402296723029f800575
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8828165891991328670
+    second: Pirate_Lord_Move 1_0
+  - first:
+      213: 7223057923725092812
+    second: Pirate_Lord_Move 1_1
+  - first:
+      213: -7536522220641007326
+    second: Pirate_Lord_Move 1_2
+  - first:
+      213: -6065131790055384542
+    second: Pirate_Lord_Move 1_3
+  - first:
+      213: -136019622490445664
+    second: Pirate_Lord_Move 1_4
+  - first:
+      213: -6635209867059330345
+    second: Pirate_Lord_Move 1_5
+  - first:
+      213: 774468363143420025
+    second: Pirate_Lord_Move 1_6
+  - first:
+      213: 3568710643445462996
+    second: Pirate_Lord_Move 1_7
+  - first:
+      213: -5174847805638628090
+    second: Pirate_Lord_Move 1_8
+  - first:
+      213: -257668185504153691
+    second: Pirate_Lord_Move 1_9
+  - first:
+      213: -2067492060721467087
+    second: Pirate_Lord_Move 1_10
+  - first:
+      213: 4817960574410466563
+    second: Pirate_Lord_Move 1_11
+  - first:
+      213: 1539321304955132413
+    second: Pirate_Lord_Move 1_12
+  - first:
+      213: 6024127273939456216
+    second: Pirate_Lord_Move 1_13
+  - first:
+      213: -1890107956470175894
+    second: Pirate_Lord_Move 1_14
+  - first:
+      213: -5904378219271861741
+    second: Pirate_Lord_Move 1_15
+  - first:
+      213: -598172336370658259
+    second: Pirate_Lord_Move 1_16
+  - first:
+      213: -6549170273548044068
+    second: Pirate_Lord_Move 1_17
+  - first:
+      213: 2410454475288713985
+    second: Pirate_Lord_Move 1_18
+  - first:
+      213: -1819140325501056676
+    second: Pirate_Lord_Move 1_19
+  - first:
+      213: -8846204295410009379
+    second: Pirate_Lord_Move 1_20
+  - first:
+      213: 8888980463167357777
+    second: Pirate_Lord_Move 1_21
+  - first:
+      213: 4960542387061242982
+    second: Pirate_Lord_Move 1_22
+  - first:
+      213: 5387291972052825228
+    second: Pirate_Lord_Move 1_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 431
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26823a515ed0c7580800000000000000
+      internalID: -8828165891991328670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 431
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc764b789e47d3460800000000000000
+      internalID: 7223057923725092812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 431
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229cad478f4e86790800000000000000
+      internalID: -7536522220641007326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 431
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ad1d975c254dba0800000000000000
+      internalID: -6065131790055384542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_4
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 431
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a869febfd2cc1ef0800000000000000
+      internalID: -136019622490445664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_5
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 431
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d203cfd7cffae3a0800000000000000
+      internalID: -6635209867059330345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 303
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97811fa7fd67fba00800000000000000
+      internalID: 774468363143420025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_7
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 303
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7f8b02c6b968130800000000000000
+      internalID: 3568710643445462996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_8
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 303
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d233a965f3f28b0800000000000000
+      internalID: -5174847805638628090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_9
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 303
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5affa1586249c6cf0800000000000000
+      internalID: -257668185504153691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_10
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 303
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131b1c0cceace43e0800000000000000
+      internalID: -2067492060721467087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_11
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 303
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305a293ad95dcd240800000000000000
+      internalID: 4817960574410466563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_12
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 175
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df99a093294cc5510800000000000000
+      internalID: 1539321304955132413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_13
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 175
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d057e4a6dff99350800000000000000
+      internalID: 6024127273939456216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_14
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 175
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67a47be3dcf4c5e0800000000000000
+      internalID: -1890107956470175894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_15
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 175
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a4fb4da4f6f0ea0800000000000000
+      internalID: -5904378219271861741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_16
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 175
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d245928ed6dd2b7f0800000000000000
+      internalID: -598172336370658259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_17
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 175
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8fe9fc55cac15a0800000000000000
+      internalID: -6549170273548044068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 47
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b95daf297a37120800000000000000
+      internalID: 2410454475288713985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_19
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 47
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59cbed138d11c6e0800000000000000
+      internalID: -1819140325501056676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_20
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 47
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda3d810018fb3580800000000000000
+      internalID: -8846204295410009379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_21
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 47
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1534a7aa2a00c5b70800000000000000
+      internalID: 8888980463167357777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_22
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 47
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66cbd0ad40367d440800000000000000
+      internalID: 4960542387061242982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pirate_Lord_Move 1_23
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 47
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84b587618183ca40800000000000000
+      internalID: 5387291972052825228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pirate_Lord_Move 1_0: -8828165891991328670
+      Pirate_Lord_Move 1_1: 7223057923725092812
+      Pirate_Lord_Move 1_10: -2067492060721467087
+      Pirate_Lord_Move 1_11: 4817960574410466563
+      Pirate_Lord_Move 1_12: 1539321304955132413
+      Pirate_Lord_Move 1_13: 6024127273939456216
+      Pirate_Lord_Move 1_14: -1890107956470175894
+      Pirate_Lord_Move 1_15: -5904378219271861741
+      Pirate_Lord_Move 1_16: -598172336370658259
+      Pirate_Lord_Move 1_17: -6549170273548044068
+      Pirate_Lord_Move 1_18: 2410454475288713985
+      Pirate_Lord_Move 1_19: -1819140325501056676
+      Pirate_Lord_Move 1_2: -7536522220641007326
+      Pirate_Lord_Move 1_20: -8846204295410009379
+      Pirate_Lord_Move 1_21: 8888980463167357777
+      Pirate_Lord_Move 1_22: 4960542387061242982
+      Pirate_Lord_Move 1_23: 5387291972052825228
+      Pirate_Lord_Move 1_3: -6065131790055384542
+      Pirate_Lord_Move 1_4: -136019622490445664
+      Pirate_Lord_Move 1_5: -6635209867059330345
+      Pirate_Lord_Move 1_6: 774468363143420025
+      Pirate_Lord_Move 1_7: 3568710643445462996
+      Pirate_Lord_Move 1_8: -5174847805638628090
+      Pirate_Lord_Move 1_9: -257668185504153691
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
