@@ -58,7 +58,7 @@ public class LevelManager : MonoBehaviour
             Debug.Log("ELEMENTALIST SPAWN");
             CutsceneManager.Instance.StartCutscene(CutsceneManager.Instance.allocatedCutscene.cutscene);
         }
-        if (levelProgress >= 200 && !bossCSFlag)
+        if (levelProgress >= 1000 && !bossCSFlag)
         {
             inCutscene = true;
             bossCSFlag = true;
